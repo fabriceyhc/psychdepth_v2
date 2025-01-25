@@ -12,7 +12,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 n = "\n"
 
-class StoryGenerator:
+
+
+class WriterProfileGenerator:
     def __init__(
         self,
         model_id="meta-llama/Llama-3.2-1B-Instruct",
@@ -43,7 +45,9 @@ class StoryGenerator:
             quantization_config=bnb_config if load_in_8bit else None,
             device_map=device_map,
             cache_dir=cache_dir,
-            trust_remote_code=True
+            trust_remote_code=True,
+            use_cache=True
+
         )
         
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -51,14 +55,7 @@ class StoryGenerator:
             cache_dir=cache_dir
         )
 
-        # Initialize guidance with the quantized model
-        self.guidance_model = guidance.models.Transformers(
-            model=self.model,
-            tokenizer=self.tokenizer,
-            max_length=max_input_len,
-            echo=False
-        )
-
+        self.max_input_len = max_input_len
         self.verbose = verbose
 
         # Set a default writer profile (system prompt)
@@ -89,8 +86,7 @@ class StoryGenerator:
         - `examples`: An optional list of few-shot examples (each a dict), if you want to provide them.
         """
 
-        # Guidance program definition using Python DSL:
-        @guidance(dedent=False)
+        @guidance(dedent=True)
         def story_task(lm, premise, num_words, profile, examples, temperature):
             # If a writer profile is provided, treat it like a system message.
             if profile:
@@ -115,7 +111,6 @@ class StoryGenerator:
 
             # The assistant block—where we capture the actual story generation.
             with assistant():
-                # We'll store the generated story in `story`.
                 lm += gen(name="story", max_tokens=int(num_words*2), temperature=temperature)
                 
             return lm
@@ -127,18 +122,27 @@ class StoryGenerator:
         # Execute the Guidance program with your model
         start_time = time.time()
         try:
-            output = self.guidance_model + story_task(
+
+            # Reconstructing guidance interface to reset state
+            guidance_model = guidance.models.Transformers(
+                model=self.model,
+                tokenizer=self.tokenizer,
+                max_length=self.max_input_len,
+                echo=False
+            )
+
+            output = guidance_model + story_task(
                 premise=premise,
                 num_words=num_words,
                 profile=profile or "",
                 examples=examples or [],
                 temperature=temperature
             )
-            time_taken = time.time() - start_time
+            generation_time = time.time() - start_time
 
             return {
                 "story": output["story"].strip(),
-                "time_taken": time_taken
+                "generation_time": generation_time
             }
 
         except Exception as e:
@@ -152,7 +156,7 @@ if __name__ == "__main__":
     # TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=7 python -m dataset.strategies.writer_profile
 
     # Example usage
-    generator = StoryGenerator(model_id="meta-llama/Llama-3.2-1B-Instruct")
+    generator = WriterProfileGenerator(model_id="meta-llama/Llama-3.2-1B-Instruct")
 
     # If you provide a custom profile, it overrides the default
     custom_profile = textwrap.dedent("""\
@@ -162,7 +166,7 @@ if __name__ == "__main__":
     )
 
     # A simple premise
-    premise = "A young child explores a mysterious attic filled with old family memories."
+    premise = "You are allowed to 'downvote' a government candidate instead of voting normally, reducing their votes by one. Turns out people have little love for politicians, and the majority end with negative votes. In these democracies, anonymity is the key to winning."
 
     # (Optional) A few-shot example
     few_shot_examples = [
@@ -174,10 +178,10 @@ if __name__ == "__main__":
 
     result = generator.generate_story(
         premise=premise, 
-        num_words=500, 
+        num_words=50, 
         # profile=custom_profile,
         # examples=few_shot_examples
     )
 
     print("Generated Story:\n", result["story"])
-    print("Time Taken (sec):", result["time_taken"])
+    print("Time Taken (sec):", result["generation_time"])
