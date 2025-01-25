@@ -4,14 +4,18 @@ import os
 from huggingface_hub import snapshot_download
 
 models = [
-    ("bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",   "Q8_0"),
-    ("bartowski/Meta-Llama-3.1-70B-Instruct-GGUF",  "Q8_0"),
-    ("bartowski/Llama-3.2-1B-Instruct-GGUF",        "Q8_0"),
-    ("bartowski/Llama-3.2-3B-Instruct-GGUF",        "Q8_0"),
-    ("bartowski/Llama-3.3-70B-Instruct-GGUF",       "Q8_0"),
-    ("bartowski/Qwen2.5-14B-Instruct-GGUF",         "Q8_0"),
-    ("bartowski/Qwen2.5-32B-Instruct-GGUF",         "Q8_0"),
-    ("bartowski/Athene-V2-Chat-GGUF",               "Q8_0"),
+    ("bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",    "Q8_0"),
+    ("bartowski/Meta-Llama-3.1-70B-Instruct-GGUF",   "Q8_0"),
+    ("bartowski/Llama-3.2-1B-Instruct-GGUF",         "Q8_0"),
+    ("bartowski/Llama-3.2-3B-Instruct-GGUF",         "Q8_0"),
+    ("bartowski/Llama-3.3-70B-Instruct-GGUF",        "Q8_0"),
+    ("bartowski/Qwen2.5-14B-Instruct-GGUF",          "Q8_0"),
+    ("bartowski/Qwen2.5-32B-Instruct-GGUF",          "Q8_0"),
+    ("bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF",  "Q8_0"),
+    ("bartowski/DeepSeek-R1-Distill-Llama-70B-GGUF", "Q8_0"),
+    ("bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF",  "Q8_0"),
+    ("bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF",  "Q8_0"),
+    ("bartowski/Athene-V2-Chat-GGUF",                "Q8_0"),
 ]
 
 # Common metadata/config files we usually want (adjust as needed).
