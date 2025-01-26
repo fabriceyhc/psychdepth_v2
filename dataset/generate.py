@@ -175,4 +175,7 @@ def main():
         print(f"Error saving results: {traceback.format_exc()}")
 
 if __name__ == "__main__":
+
+    # TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=7 python -m dataset.generate
+    
     main()
