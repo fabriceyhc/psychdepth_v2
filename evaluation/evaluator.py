@@ -5,7 +5,7 @@ import guidance
 from huggingface_hub import login
 from guidance import models, gen, system, user, assistant
 
-
+login(token='XXXXXXX')
 
 class PsychDepthEvaluator:
     def __init__(self, 
