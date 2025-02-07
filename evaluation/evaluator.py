@@ -2,7 +2,10 @@ import time
 import traceback
 import pandas as pd
 import guidance
+from huggingface_hub import login
 from guidance import models, gen, system, user, assistant
+
+login(token='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')
 
 class PsychDepthEvaluator:
     def __init__(self, 
