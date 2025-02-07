@@ -5,7 +5,7 @@ import guidance
 from huggingface_hub import login
 from guidance import models, gen, system, user, assistant
 
-login(token='XXXXXXX')
+
 
 class PsychDepthEvaluator:
     def __init__(self, 
@@ -29,7 +29,7 @@ class PsychDepthEvaluator:
             if verbose:
                 print(f"Loading transformers model: {model_id} to {device_map}")
             from transformers import AutoTokenizer, AutoModelForCausalLM
-            tokenizer = AutoTokenizer.from_pretrained(model_id)
+            tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-Math-7B")
             model = AutoModelForCausalLM.from_pretrained(
                 model_id,
                 cache_dir=cache_dir, 

@@ -4,10 +4,9 @@ import chardet
 from huggingface_hub import login
 from evaluator import PsychDepthEvaluator  
 
-login(token='XXXXX')
 # Detect file encoding
 stories_path = "../data/stories/study_stories.csv"
-model = "meta-llama/Llama-3.3-70B-Instruct"
+model = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 with open(stories_path, "rb") as f:
     result = chardet.detect(f.read(100000))  # Read a portion of the file
     encoding = result["encoding"]
@@ -43,6 +42,6 @@ for _, row in stories_df.iterrows():
 
 # Convert results to DataFrame and save
 results_df = pd.DataFrame(results)
-results_df.to_csv("../data/stories/evaluation_results_{model}.csv", index=False)
+results_df.to_csv(f'../data/stories/evaluation_results_{model}.csv', index=False)
 
-print("Results saved to ../data/stories/evaluation_results.csv")
+print(f'Results saved to ../data/stories/evaluation_results{model}.csv')
