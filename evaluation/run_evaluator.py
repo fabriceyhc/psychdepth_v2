@@ -4,7 +4,7 @@ import chardet
 from huggingface_hub import login
 from evaluator import PsychDepthEvaluator  
 
-login(token='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')
+login(token='')
 # Detect file encoding
 stories_path = "../data/stories/study_stories.csv"
 model = "meta-llama/Llama-3.3-70B-Instruct"
