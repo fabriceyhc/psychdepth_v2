@@ -1,9 +1,10 @@
 import pandas as pd
 from scipy.stats import pearsonr
 
-model = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+model = "meta-llama/Llama-3.1-8B-Instruct"
+stripped_model = model[model.index('/')+1:]
 # Load AI-generated annotations
-ai_df = pd.read_csv(f'../data/stories/evaluation_results_{model}.csv')
+ai_df = pd.read_csv(f'../data/stories/evaluation_results_{stripped_model}.csv')
 
 # Keep only the 'Average across personas' rows
 ai_df = ai_df[ai_df["persona"] == "Average across personas"].drop(columns=["persona", "persona_id", "time_taken"])

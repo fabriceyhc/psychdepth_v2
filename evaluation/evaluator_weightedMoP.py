@@ -6,7 +6,8 @@ from huggingface_hub import login
 from guidance import models, gen, system, user, assistant
 
 
-class WeightedPsychDepthEvaluator:
+
+class PsychDepthEvaluator:
     def __init__(self, 
                  model_id,
                  model_type="transformers",
@@ -44,10 +45,11 @@ class WeightedPsychDepthEvaluator:
         if self.personas is None:
             self.personas = [
                 "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you specialize in evaluating the genuineness and believability of characters, dialogue, and scenarios in stories.",
+                "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you examine the text for its ability to provoke a wide range of intense emotional responses in the reader.",
                 "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you focus on identifying and assessing moments in the narrative that effectively evoke empathetic connections with the characters.",
                 "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you evaluate how well a story captures and maintains the reader's interest through pacing, suspense, and narrative flow.",
-                "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you examine the text for its ability to provoke a wide range of intense emotional responses in the reader.",
                 "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you analyze the structural and thematic intricacy of the plot, character development, and the use of literary devices.",
+                
             ]
         self.keys = [
             "authenticity_score",
@@ -130,10 +132,29 @@ class WeightedPsychDepthEvaluator:
                 print(f"Error: {e}")
                 traceback.print_exc()
 
+        
         if len(persona_outputs) > 1:
-            averaged_output = {key: sum(d[key] for d in persona_outputs.values()) / len(persona_outputs) for key in self.keys}
-            averaged_output.update({"average": True, "persona": "Average across personas"})
-            persona_outputs["average"] = averaged_output
+            main_persona_weight = 0.3
+            alt_persona_weight = (1 - main_persona_weight) / (len(persona_outputs) - 1)
+            weighted_averages = {key: 0 for key in self.keys}
+
+            for persona in persona_outputs.values():
+                persona_id = persona["persona_id"]
+                for idx, key in enumerate(self.keys):
+                    if persona_id == idx:
+                        weight = main_persona_weight
+                    else:
+                        if(idx == 5): # No persona for human likeness so no weighting bias - persona could be added to see improvements?
+                            weight = 1 / (len(persona_outputs))
+                        else:
+                            weight = alt_persona_weight
+                    weighted_averages[key] += persona[key] * weight
+                #print(weighted_averages)
+
+            # Update averaged_output with new weighting system
+            weighted_averages.update({"average": True, "persona": "Average across personas"})
+            persona_outputs["weighted_average"] = weighted_averages
+            print(weighted_averages)
 
         return persona_outputs
 
@@ -141,7 +162,7 @@ if __name__ == "__main__":
 
     # CUDA_VISIBLE_DEVICES=0 python -m story_eval.evaluator
 
-    evaluator = WeightedPsychDepthEvaluator(
+    evaluator = PsychDepthEvaluator(
         model_id="meta-llama/Llama-3.2-3B-Instruct",
         model_type="transformers",
         cache_dir="/data2/.shared_models/",

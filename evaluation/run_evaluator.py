@@ -3,10 +3,13 @@ import json
 import chardet
 from huggingface_hub import login
 from evaluator import PsychDepthEvaluator  
+from evaluator_weightedMoP import WeightedPsychDepthEvaluator
 
 # Detect file encoding
 stories_path = "../data/stories/study_stories.csv"
-model = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+model = "meta-llama/Llama-3.1-8B-Instruct"
+stripped_model = model[model.index('/')+1:]
+print(stripped_model)
 with open(stories_path, "rb") as f:
     result = chardet.detect(f.read(100000))  # Read a portion of the file
     encoding = result["encoding"]
@@ -19,7 +22,7 @@ stories_df = pd.read_csv(stories_path, encoding=encoding)
 evaluator = PsychDepthEvaluator(
     model_id= model,
     model_type="transformers",
-    cache_dir="/data2/.shared_models/",
+    cache_dir="/data2/nickmakaha/local_models",
     device_map="auto",
     verbose=True
 )
@@ -41,7 +44,8 @@ for _, row in stories_df.iterrows():
         })
 
 # Convert results to DataFrame and save
-results_df = pd.DataFrame(results)
-results_df.to_csv(f'../data/stories/evaluation_results_{model}.csv', index=False)
 
-print(f'Results saved to ../data/stories/evaluation_results{model}.csv')
+results_df = pd.DataFrame(results)
+results_df.to_csv(f'../data/stories/evaluation_results_{stripped_model}.csv', index=False)
+
+print(f'Results saved to ../data/stories/evaluation_results{stripped_model}.csv')
