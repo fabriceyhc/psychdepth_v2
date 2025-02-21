@@ -7,7 +7,7 @@ from guidance import models, gen, system, user, assistant
 
 
 
-class PsychDepthEvaluator:
+class WeightedPsychDepthEvaluator:
     def __init__(self, 
                  model_id,
                  model_type="transformers",
@@ -134,7 +134,7 @@ class PsychDepthEvaluator:
 
         
         if len(persona_outputs) > 1:
-            main_persona_weight = 0.3
+            main_persona_weight = 0.5
             alt_persona_weight = (1 - main_persona_weight) / (len(persona_outputs) - 1)
             weighted_averages = {key: 0 for key in self.keys}
 
@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
     # CUDA_VISIBLE_DEVICES=0 python -m story_eval.evaluator
 
-    evaluator = PsychDepthEvaluator(
+    evaluator = WeightedPsychDepthEvaluator(
         model_id="meta-llama/Llama-3.2-3B-Instruct",
         model_type="transformers",
         cache_dir="/data2/.shared_models/",

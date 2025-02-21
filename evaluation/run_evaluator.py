@@ -19,7 +19,7 @@ with open(stories_path, "rb") as f:
 stories_df = pd.read_csv(stories_path, encoding=encoding)
 
 # Initialize evaluator
-evaluator = PsychDepthEvaluator(
+evaluator = WeightedPsychDepthEvaluator(
     model_id= model,
     model_type="transformers",
     cache_dir="/data2/nickmakaha/local_models",

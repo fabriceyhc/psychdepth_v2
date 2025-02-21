@@ -5,8 +5,9 @@ import guidance
 from huggingface_hub import login
 from guidance import models, gen, system, user, assistant
 
+login(token='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')
 
-class WeightedPsychDepthEvaluator:
+class PsychDepthEvaluator:
     def __init__(self, 
                  model_id,
                  model_type="transformers",
@@ -141,7 +142,7 @@ if __name__ == "__main__":
 
     # CUDA_VISIBLE_DEVICES=0 python -m story_eval.evaluator
 
-    evaluator = WeightedPsychDepthEvaluator(
+    evaluator = PsychDepthEvaluator(
         model_id="meta-llama/Llama-3.2-3B-Instruct",
         model_type="transformers",
         cache_dir="/data2/.shared_models/",
