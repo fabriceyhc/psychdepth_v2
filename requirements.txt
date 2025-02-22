@@ -6,3 +6,8 @@ bitsandbytes
 accelerate
 huggingface-hub
 pandas
+dspy
+uv
+--find-links https://flashinfer.ai/whl/cu124/torch2.5/flashinfer-python
+sgl-kernel
+sglang[all]>=0.4.3.post2

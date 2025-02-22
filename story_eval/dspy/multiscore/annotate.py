@@ -122,10 +122,18 @@ def evaluate_model(evaluator, model, signature_name, module_name, num_demos, tra
 
 # Main Execution
 def main(model_id):
-    # Server setup
-    server_process, port = launch_server_cmd(
-        f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models"
-    )
+
+    # Determine the number of GPUs from CUDA_VISIBLE_DEVICES and set the --tp parameter
+    cuda_visible_devices = os.environ.get("CUDA_VISIBLE_DEVICES", "")
+    num_gpus = 1
+    if cuda_visible_devices:
+        # Count the non-empty entries (in case of stray commas)
+        gpu_list = [gpu.strip() for gpu in cuda_visible_devices.split(",") if gpu.strip()]
+        num_gpus = len(gpu_list)
+
+    # Server setup with optional --tp argument
+    server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models/hf --tp {num_gpus}"
+    server_process, port = launch_server_cmd(server_cmd)
     wait_for_server(f"http://localhost:{port}")
     print(f"SGLang server started on http://localhost:{port}")
 
