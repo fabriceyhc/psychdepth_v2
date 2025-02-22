@@ -93,7 +93,7 @@ def prepare_dataset(file_path, max_rows=None):
     return dataset[:max_rows] if max_rows else dataset
 
 # Evaluation Helper
-def evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset):
+def evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset, model_id):
     pre_score = evaluator(model, metric=score_pds)
     
     optimizer = dspy.MIPROv2(
@@ -106,7 +106,8 @@ def evaluate_model(evaluator, model, signature_name, module_name, num_demos, tra
     optimized_model = optimizer.compile(model, trainset=trainset, requires_permission_to_run=False)
     post_score = evaluator(optimized_model, metric=score_pds)
 
-    save_path = f'./story_eval/dspy/multiscore/optimized_prompts/MIPROv2_{module_name}-{signature_name}_demos={num_demos}.json'
+    save_path = f'./story_eval/dspy/multiscore/optimized_prompts/{model_id}/MIPROv2_{module_name}-{signature_name}_demos={num_demos}.json'
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
     optimized_model.save(save_path, save_program=False)
     
     return {
@@ -120,9 +121,10 @@ def evaluate_model(evaluator, model, signature_name, module_name, num_demos, tra
 
 # Main Execution
 def main():
+    model_id = "meta-llama/Llama-3.1-8B-Instruct"
     # Server setup
     server_process, port = launch_server_cmd(
-        "python -m sglang.launch_server --model-path meta-llama/Llama-3.1-8B-Instruct --download-dir /data2/.shared_models"
+        f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models"
     )
     wait_for_server(f"http://localhost:{port}")
     print(f"SGLang server started on http://localhost:{port}")
@@ -136,7 +138,7 @@ def main():
 
         # Model setup
         lm = dspy.LM(
-            "openai/meta-llama/Llama-3.1-8B-Instruct",
+            f"openai/{model_id}",
             api_base=f"http://localhost:{port}/v1",
             api_key="local",
             model_type='chat'
@@ -159,11 +161,11 @@ def main():
                 module_name = module.__name__
                 
                 for num_demos in NUM_DEMOS_OPTIONS:
-                    result = evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset)
+                    result = evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset, model_id)
                     results.append(result)
 
         # Save results
-        pd.DataFrame(results).to_csv("./story_eval/dspy/multiscore/optimized_prompts/summary.csv")
+        pd.DataFrame(results).to_csv(f"./story_eval/dspy/multiscore/optimized_prompts/{model_id}/summary.csv")
         terminate_process(server_process)
 
     except Exception as e:
@@ -173,5 +175,5 @@ def main():
         terminate_process(server_process)
 
 if __name__ == "__main__":
-    # CUDA_VISIBLE_DEVICES=1 python -m story_eval.dspy.multiscore.annotate
+    # CUDA_VISIBLE_DEVICES=1,2 python -m story_eval.dspy.multiscore.annotate
     main()
