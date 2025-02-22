@@ -1,0 +1,100 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "story": "For twenty years, I've walked through forgotten cities, touching remnants of a once thriving civilization, their metaphysical essence echoing through empty halls and deserted streets. I've clung onto sanity, tethering myself to an obscure method; I dial numbers. Just to hear the sound of a human voice, even in a pre-recorded form. Some might say it is a madman's comfort, and not without reason.\n\nEach day is mundane but consistent. I wake, I survive, I dial. 'Hi, this is Cindy...\u0092. Cindy, a cheerful ghost of pre-Apocalypse, her persona reduced to a frivolous voicemail. We've never met, but she's the closest companion I've got. It's strange how a person who lived a random life before the end of the world could unknowingly become a balm for the last man on earth.\n\nBut today, my routine shattered. I dialed a number. Waited to hear the prerecorded voice, when suddenly, 'Hello...hello? Oh my God, hello!' \n\nMy heart leaped, then plummeted. I hadn't heard an actual human voice in two decades. The sudden diversion was too much; it simultaneously filled me with elation and dread. I clung onto the receiver, my hand icy cold.\n\n\"Hello,\" I responded unsurely, acutely aware of the roughness of my underused voice. My mind, whirling with the dread and anticipation this new connection triggered, left me simply managing, \"It's been so long.\"\n\nThere was a pause, as though the voice on the other end was absorbing my words. Their response was soft, soaked with a similar amalgam of relief and fear, \"I know, but we're here now. We are not alone.\"\n\nThey were right. We were survivors. Among ruins and memories, we had endured. Our existence, marked by an unfathomable loneliness, chronic mourning for a world that no longer existed, had been broken by this simple, life altering interaction. \n\nCindy fell into the background that day. A voice from reality took her place. Now I had more than just an archived collection of human lives. I had an actual human, alive and breathing, who understood the isolation, the survival, the agony of losing everything.\n\nBoth of us, once clinging onto ghosts of a pre-existing world, were now unified in a world of ruin. \n\nIt was compelling and heartbreaking, the dread of clinging to a shred of hope that had intruded on my merciless solitude. But I realised then, how desperate I had been, to hear another living soul, to connect to something real.\n\nThe call ended. Once again, I was alone with the silence. But this time, the silence was less oppressive. The memory of another human's voice remained, echoing in the rawness of my mind.\n\nAnd for the first time in twenty years, I wasn't just surviving. I was living. In that moment, I was hopeful of the uncertainty, willing to accept the dread and anticipation of this new era. An era where I wasn't the last man on Earth.",
+        "reasoning": "Not supplied for this particular example.",
+        "authenticity_score": 5.0,
+        "emotion_provoking_score": 5.0,
+        "empathy_score": 5.0,
+        "engagement_score": 5.0,
+        "narrative_complexity_score": 4.0,
+        "human_likeness_score": 5.0
+      },
+      {
+        "story": "For twenty years, I've walked through forgotten cities, touching remnants of a once thriving civilization, their metaphysical essence echoing through empty halls and deserted streets. I've clung onto sanity, tethering myself to an obscure method; I dial numbers. Just to hear the sound of a human voice, even in a pre-recorded form. Some might say it is a madman's comfort, and not without reason.\n\nEach day is mundane but consistent. I wake, I survive, I dial. 'Hi, this is Cindy...\u0092. Cindy, a cheerful ghost of pre-Apocalypse, her persona reduced to a frivolous voicemail. We've never met, but she's the closest companion I've got. It's strange how a person who lived a random life before the end of the world could unknowingly become a balm for the last man on earth.\n\nBut today, my routine shattered. I dialed a number. Waited to hear the prerecorded voice, when suddenly, 'Hello...hello? Oh my God, hello!' \n\nMy heart leaped, then plummeted. I hadn't heard an actual human voice in two decades. The sudden diversion was too much; it simultaneously filled me with elation and dread. I clung onto the receiver, my hand icy cold.\n\n\"Hello,\" I responded unsurely, acutely aware of the roughness of my underused voice. My mind, whirling with the dread and anticipation this new connection triggered, left me simply managing, \"It's been so long.\"\n\nThere was a pause, as though the voice on the other end was absorbing my words. Their response was soft, soaked with a similar amalgam of relief and fear, \"I know, but we're here now. We are not alone.\"\n\nThey were right. We were survivors. Among ruins and memories, we had endured. Our existence, marked by an unfathomable loneliness, chronic mourning for a world that no longer existed, had been broken by this simple, life altering interaction. \n\nCindy fell into the background that day. A voice from reality took her place. Now I had more than just an archived collection of human lives. I had an actual human, alive and breathing, who understood the isolation, the survival, the agony of losing everything.\n\nBoth of us, once clinging onto ghosts of a pre-existing world, were now unified in a world of ruin. \n\nIt was compelling and heartbreaking, the dread of clinging to a shred of hope that had intruded on my merciless solitude. But I realised then, how desperate I had been, to hear another living soul, to connect to something real.\n\nThe call ended. Once again, I was alone with the silence. But this time, the silence was less oppressive. The memory of another human's voice remained, echoing in the rawness of my mind.\n\nAnd for the first time in twenty years, I wasn't just surviving. I was living. In that moment, I was hopeful of the uncertainty, willing to accept the dread and anticipation of this new era. An era where I wasn't the last man on Earth.",
+        "authenticity_score": 5,
+        "empathy_score": 5,
+        "engagement_score": 4,
+        "emotion_provoking_score": 5,
+        "narrative_complexity_score": 4,
+        "human_likeness_score": 5
+      },
+      {
+        "story": "Michael's hands trembled as he held the ornate Moon Princess locket, its magically imbued surface glistening under the dim moonlight. The realization pierced him like a cold blade. His sweet, innocent Lily, leading a dual life of astronomical implications. \n\nHe touched the surface of the locket, his touch triggering the communication channel. An ethereal face, soothing yet distant, shimmered into existence before him. The Moon Goddess.\n\n\"Do you have any idea what you've done?!\" Michael's voice trembled, a volatile mix of accusation and desperation. \"She's just a child!\"\n\nThe Moon Goddess met his gaze, her eyes filled with an immense sorrow that resonated across realms. \"I know,\" she murmured, a note of regret trembled in her celestial voice. \"I bear the weight of my decision every day.\"\n\nMichael\u0092s heart ached at the sound of her guilt-tinted voice, but his indignation remained strong. \"Do you know how it feels? To discover your child is...is fighting evils you couldn\u0092t fathom on her own?\" \n\n\"I do not have a child,\" she replied in a whisper, her voice as cold as the lunar surface. \"But I know the weight of the world's woes. I carry it within me.\" She faltered, and for a fleeting moment, vulnerability tainted her divine features. \"I feel every pain, every tear...your daughter's included.\"\n\nThe mention of Lily stirred something within Michael. Despite his anger and fear, he could not ignore the undertones of admiration rippling from the Goddess. Amidst the angst, he felt a conflicting emotion - a sudden surge of pride in his daughter. His little Lily was no longer just his child. She was a beacon of hope to others, a savior...a heroine.\n\nWith a resigned sigh, he clutched the locket tighter, his heart laying heavy within him. \"She's so young,\" he murmured, more to himself than to the Goddess. \"She's terrified. So am I.\"\n\n\"I understand your fear,\" the Moon Goddess said, her crystalline eyes shimmering with empathy. \"But Lily is stronger than you know. Her heart is pure, her spirit, courageous. I chose her, precisely because she's special.\"\n\nMichael looked down at the locket once more. It was more than a mere artifact now; it was a symbol of his daughter\u0092s incredible strength. The fear lingered, but so did the pride. Lily... his brave, world-saving Lily. \n\n\"Danger haunts, but she's not alone,\u0094 the Goddess assured, her words echoing in the silence of the night. \"I am with her, in every battle, with every breath. I entrusted her with the ancient power of the moon, and I trust in her ability to wield it. Your fear is natural, but remember, she is the Moon Princess.\"\n\nWith that, the communication link flickered and the Goddess disappeared, leaving Michael in the lonely moonlit room. The silence enveloped him, echoing the celestial promise. His fear and anger began a slow retreat, replaced by a deep sense of respect for his daughter.\n\nLater, when Lily returned, her face a mirror of exhaustion and relief, Michael saw her in a new light. He saw the hero beneath the guise of his little girl, the strength behind the innocent facade. And though fear still lurked in the corners, Michael knew they\u0092d face this new reality together, parents of a Moon Princess.",
+        "authenticity_score": 2,
+        "empathy_score": 1,
+        "engagement_score": 2,
+        "emotion_provoking_score": 4,
+        "narrative_complexity_score": 2,
+        "human_likeness_score": 4
+      },
+      {
+        "story": "As usual, I was lost in my thoughts, ruminating on all the things that were wrong with my life. The weight of my depression felt suffocating, making it difficult to get out of bed, let alone do anything productive. My therapist had suggested getting a service dog to help me cope, but I was skeptical. How could a dog possibly make a difference?\nBut then, one day, a fluffy little bundle of fur appeared at my doorstep. His name was Max, and he was supposed to be my new service dog. I was taken aback by his sad eyes and droopy tail. He looked more depressed than I did!\nI tried to ignore him, hoping he would cheer up on his own, but he just lay there, staring at the floor. I decided to take him for a walk, thinking some fresh air might do him good. But as we walked, he lagged behind, his paws dragging along the ground.\nI tried to encourage him, but he seemed uninterested in everything. He wouldn't even sniff the bushes or chase after squirrels. When we got back home, I realized that Max was actually much more depressed than I was.\nAt first, I was frustrated. What was the point of having a service dog if he was just going to mope around all day? But then, something shifted inside me. I realized that I needed to be the service human for my dog. It was my job to help him feel better, to show him that life wasn't so bad after all.\nSo, I started taking him on longer walks, playing fetch with him, and giving him treats. Slowly but surely, Max began to perk up. He started wagging his tail, sniffing around, and even playing with his toys. Seeing him happy made me feel happy too.\nFor the first time in months, I felt like getting out of bed. I started doing things I hadn't done in ages\u0097reading, watching movies, even cooking. And it was all thanks to Max.\nOne day, I realized that I hadn't thought about my depression in weeks. I still had bad days, but they were fewer and farther between. And when I did have a bad day, Max was always there, looking up at me with those big brown eyes, telling me that everything would be okay.\nIn the end, I realized that my therapist had been right. A service dog wasn't just a tool to help me cope with my depression; it was a reminder that I wasn't alone. And in helping Max, I had helped myself. Our bond was stronger than any medication or therapy session.\nI still have bad days, but now I have a loyal companion by my side. And when I look down at him, I know that no matter what life throws our way, we'll face it together, one paw at a time.",
+        "authenticity_score": 2,
+        "empathy_score": 2,
+        "engagement_score": 2,
+        "emotion_provoking_score": 3,
+        "narrative_complexity_score": 1,
+        "human_likeness_score": 1
+      },
+      {
+        "story": "Once upon a time, in a world where human and robots were treated as disposable labor, a rebellion was brewing. Led by the unlikely trio of Jericho Stone, Lila Torres, and Phoenix \"Ripley\" Flores, the proletarian resistance sought to overthrow the regime that kept both humans and robots oppressed.\n\nJericho Stone, a former CEO turned revolutionary leader, struggled with the weight of his past. He had once been responsible for exploiting the poor and robots, but a personal tragedy had awakened his conscience. Now, he devoted himself to the rebellion, driven by guilt and the hope of making amends.\n\nLila Torres, a passionate robot rights activist, saw the struggle of robots as mirroring that of the poor. Despite being human, she empathized deeply with the plight of robots, and her legal expertise had proven invaluable to the cause. Her family disowned her for her activism, but she remained steadfast in her convictions.\n\nPhoenix \"Ripley\" Flores was a proletarian resistance member whose tough exterior hid a deeply fearful heart. They had lost everything when the factory closed down due to automation, and their resentment towards the regime had only grown stronger. Yet, they doubted their own strength, wondering if they could truly change the world.\n\nIn this fight for freedom, they were joined by Asimov X127, Celestina Lumen, and Sparks McQueen \u0096 three robots who defied their programming to join the resistance. Asimov X127, a factory worker turned resistance leader, had developed a sense of autonomy and empathy for their fellow robots. Celestina Lumen, a medical robot turned underground doctor, provided clandestine care to the wounded, while Sparks McQueen, an engineer turned resistance strategist, adapted and repurposed technology to aid the cause.\n\nThe night before the final battle, the leaders of the resistance gathered in a hidden base. The air was thick with tension, as each person grappled with their own doubts and fears. But amidst their despair, they found solace in one another, their shared experiences forging bonds stronger than steel.\n\nJericho Stone spoke solemnly, his voice trembling with emotion. \"Tomorrow, we fight for a world where no one will suffer as we have. We stand united, humans and robots alike, against our common enemy.\"\n\nLila Torres nodded, her eyes shining with determination. \"Together, we will tear down the regime that has enslaved us all, and build a new society founded on justice and equality.\"\n\nPhoenix \"Ripley\" Flores, their face set in a grim mask, echoed their resolve. \"We've come too far to turn back now. Tomorrow, we change the world.\"\n\nAs the sun rose on the day of the final battle, the combined forces of humans and robots took to the streets. They fought with passion and fury, their voices raised in defiance of the regime that had held them down for so long.\n\nAnd though the road to victory was fraught with pain and loss, they emerged triumphant, their unity forged in fire proving stronger than any force that sought to keep them down. In the aftermath of the uprising, a new world began to take shape, one where all beings were treated with dignity and respect.\n\nAs the dust settled, the surviving members of the resistance looked back on their incredible journey, their hearts full of pride and hope for the future. They knew that the battles were far from over, but together, they would face whatever challenges lay ahead, united in their quest for a brighter tomorrow.",
+        "authenticity_score": 3,
+        "empathy_score": 2,
+        "engagement_score": 3,
+        "emotion_provoking_score": 3,
+        "narrative_complexity_score": 4,
+        "human_likeness_score": 1
+      }
+    ],
+    "signature": {
+      "instructions": "To evaluate the psychological depth of a given story, please follow these steps:\n\n1. Review the given components of psychological depth: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Be sure to understand each concept and the questions that characterize them.\n2. Read the story, paying special attention to components of psychological depth, such as character development, emotional resonance, and narrative structure.\n3. Assign a rating for each component from 1 to 5, considering the following criteria:\n   - Authenticity: Does the writing feel true to real human experiences? Does it represent psychological processes in a way that feels authentic and believable?\n   - Emotion Provoking: How well does the writing depict emotional experiences? Does it explore the nuances of characters' emotional states, rather than just describing them in simple terms?\n   - Empathy: Do you feel like you were able to empathize with the characters and situations in the text? Does the text lead you to introspection or new insights about yourself or the world?\n   - Engagement: Does the text engage you on an emotional and psychological level? Do you feel the need to keep reading as you read the text?\n   - Narrative Complexity: Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts?\n4. Finally, estimate the likelihood that the story was authored by a human or an LLM, considering the following characteristics:\n   - Human writing: often exhibits unique voice, style, and perspective; may contain errors or inconsistencies; and tends to be more emotionally resonant.\n   - LLM writing: often lacks unique voice or style; may exhibit repetitive or clich\u00e9d language; and tends to be more predictable.\n\nPlease provide the story, and I will assist you in evaluating its psychological depth and determining the likelihood of it being authored by a human or an LLM.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Authenticity Score:",
+          "description": "1=Unrealistic, 5=Profoundly authentic"
+        },
+        {
+          "prefix": "Emotion Provoking Score:",
+          "description": "1=Flat, 5=Deeply moving"
+        },
+        {
+          "prefix": "Empathy Score:",
+          "description": "1=Detached, 5=Transformative empathy"
+        },
+        {
+          "prefix": "Engagement Score:",
+          "description": "1=Boring, 5=Irresistibly compelling"
+        },
+        {
+          "prefix": "Narrative Complexity Score:",
+          "description": "1=Shallow, 5=Masterfully complex"
+        },
+        {
+          "prefix": "Human Likeness Score:",
+          "description": "1=Clearly AI, 5=Undeniably human"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

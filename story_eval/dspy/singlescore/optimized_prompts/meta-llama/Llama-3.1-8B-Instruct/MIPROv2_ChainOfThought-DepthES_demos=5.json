@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. Imagine that you are a writer tasked with creating a story that will be published in a prestigious literary magazine. The story must be so engaging and emotionally resonant that it will stay with readers long after they finish reading it. You have been given a prompt, but you must use your creativity and writing skills to turn it into a compelling narrative.\n\nRead the following story and evaluate its psychological depth based on the following components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Be sure to understand each concept and the questions that characterize them.\n\nStory: [insert story here]\n\n2. Review the given components of psychological depth and rate the story from 1 to 5 for each component. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score).\n3. Consider the following questions when evaluating the story:\n   - Does the writing feel true to real human experiences?\n   - Does it represent psychological processes in a way that feels authentic and believable?\n   - How well does the writing depict emotional experiences?\n   - Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms?\n   - Can the writing show rather than tell a wide variety of emotions?\n   - Do the emotions that are shown in the text make sense in the context of the story?\n   - Do you feel like you were able to empathize with the characters and situations in the text?\n   - Do you feel that the text led you to introspection, or to new insights about yourself or the world?\n   - Does the text engage you on an emotional and psychological level?\n   - Do you feel the need to keep reading as you read the text?\n   - Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts?\n   - Does the writing explore the complexities of relationships between characters?\n   - Does it delve into the intricacies of conflicts and their partial or complete resolutions?\n4. Lastly, estimate the likelihood that the story was authored by a human or an LLM. Think about what human or LLM writing characteristics may be. Assign a score from 1 to 5, where 1 means very likely LLM written and 5 means very likely human written.\n\n###Description of Psychological Depth Components:  \n\nWe define sychological depth in terms of the following concepts, each illustrated by several questions: \n\n- Authenticity \n    - Does the writing feel true to real human experiences? \n    - Does it represent psychological processes in a way that feels authentic and believable? \n- Emotion Provoking \n    - How well does the writing depict emotional experiences? \n    - Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms? \n    - Can the writing show rather than tell a wide variety of emotions? \n    - Do the emotions that are shown in the text make sense in the context of the story? \n- Empathy \n    - Do you feel like you were able to empathize with the characters and situations in the text? \n    - Do you feel that the text led you to introspection, or to new insights about yourself or the world?\" \n- Engagement \n    - Does the text engage you on an emotional and psychological level? \n    - Do you feel the need to keep reading as you read the text? \n- Narrative Complexity \n    - Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts? \n    - Does the writing explore the complexities of relationships between characters? \n    - Does it delve into the intricacies of conflicts and their partial or complete resolutions? \n\nThe story's author will be judged on their ability to create a narrative that is emotionally resonant and engaging, with a high level of psychological depth. The stakes are high, as the story will be published in a prestigious literary magazine, and the author's reputation will be on the line. Can you rise to the challenge and create a story that will captivate readers and leave a lasting impression?",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Optional explanation for the psychological depth score."
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

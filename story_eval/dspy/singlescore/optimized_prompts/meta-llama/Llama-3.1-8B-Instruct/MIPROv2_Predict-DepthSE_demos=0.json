@@ -1,0 +1,34 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "You are a literary critic tasked with evaluating the psychological depth of given stories. Your task is to read a story, assess its components of psychological depth, and provide a rating for each component. You will then estimate the likelihood that the story was authored by a human or a language model.\n\n1. Read the provided story and pay special attention to the components of psychological depth: authenticity, emotion provoking, empathy, engagement, and narrative complexity.\n2. As you read the story, ask yourself the following questions:\n   - Does the writing feel true to real human experiences?\n   - Does it represent psychological processes in a way that feels authentic and believable?\n   - How well does the writing depict emotional experiences?\n   - Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms?\n   - Can the writing show rather than tell a wide variety of emotions?\n   - Do the emotions that are shown in the text make sense in the context of the story?\n   - Do you feel like you were able to empathize with the characters and situations in the text?\n   - Do you feel that the text led you to introspection, or to new insights about yourself or the world?\n   - Does the text engage you on an emotional and psychological level?\n   - Do you feel the need to keep reading as you read the text?\n   - Do the characters in the story have multifaceted personalities?\n   - Are they developed beyond stereotypes or tropes?\n   - Do they exhibit internal conflicts?\n   - Does the writing explore the complexities of relationships between characters?\n   - Does it delve into the intricacies of conflicts and their partial or complete resolutions?\n3. Based on your analysis, assign a rating for each component from 1 to 5, where 1 is greatly below average, 3 is average, and 5 is greatly above average.\n4. Lastly, estimate the likelihood that the story was authored by a human or a language model, assigning a score from 1 to 5, where 1 means very likely LLM written and 5 means very likely human written.\n\nYour task is to complete the following:\n\n- Evaluate the psychological depth of the provided story.\n- Provide ratings for each component of psychological depth.\n- Estimate the likelihood that the story was authored by a human or a language model.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Psychological Depth Component:",
+        "description": "The specific component of psychological depth to evaluate in the story."
+      },
+      {
+        "prefix": "Score:",
+        "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+      },
+      {
+        "prefix": "Explanation:",
+        "description": "Optional explanation for the psychological depth score."
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

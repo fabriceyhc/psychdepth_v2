@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. Review the given components of psychological depth: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Be sure to understand each concept and the questions that characterize them.\n2. Read a given story, paying special attention to components of psychological depth.\n3. Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score).\n4. Lastly, estimate the likelihood that each story was authored by a human or an LLM. Think about what human or LLM writing characteristics may be. Assign a score from 1 to 5, where 1 means very likely LLM written and 5 means very likely human written. \n\n###Description of Psychological Depth Components:  \n\nWe define sychological depth in terms of the following concepts, each illustrated by several questions: \n\n- Authenticity \n    - Does the writing feel true to real human experiences? \n    - Does it represent psychological processes in a way that feels authentic and believable? \n- Emotion Provoking \n    - How well does the writing depict emotional experiences? \n    - Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms? \n    - Can the writing show rather than tell a wide variety of emotions? \n    - Do the emotions that are shown in the text make sense in the context of the story? \n- Empathy \n    - Do you feel like you were able to empathize with the characters and situations in the text? \n    - Do you feel that the text led you to introspection, or to new insights about yourself or the world?\" \n- Engagement \n    - Does the text engage you on an emotional and psychological level? \n    - Do you feel the need to keep reading as you read the text? \n- Narrative Complexity \n    - Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts? \n    - Does the writing explore the complexities of relationships between characters? \n    - Does it delve into the intricacies of conflicts and their partial or complete resolutions? ",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Optional explanation for the psychological depth score."
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

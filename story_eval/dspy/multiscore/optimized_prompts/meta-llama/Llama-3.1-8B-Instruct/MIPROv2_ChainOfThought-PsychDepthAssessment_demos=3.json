@@ -1,0 +1,86 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "story": "The sun had long since set, casting a dark shroud over the city. But one creature stirred, awake and alert. A creature that had lived for centuries, yet still yearned for the warmth of the sun on their skin. A vampire.\n\nTheir name was Marcus, and they had lived through wars, famines, and plagues. They had seen civilizations rise and fall, and had witnessed humanity's greatest achievements and darkest moments. Yet, despite it all, Marcus still yearned for something they had lost centuries ago - the feeling of the sun's rays on their skin.\n\nIt was a foolish desire, they knew. The sun was a dangerous place for their kind, a place where they would burn and wither like a flower in a furnace. But still, the longing remained, a constant ache in the pit of their stomach.\n\nOne day, while wandering the empty streets, Marcus stumbled upon a small, dimly lit shop. The sign above the door read \"Game On!\" in flickering neon letters. Out of curiosity, Marcus pushed open the door and stepped inside.\n\nThe shop was cramped and cluttered, filled with rows of glowing screens and the sound of frantic button mashing. Marcus wandered down the aisles, taking in the sights and sounds. They had heard of video games, of course, but had never bothered to try them. What was the point? They had lived through so much already, what could a game possibly offer them?\n\nBut as they watched the players, entranced by the colorful explosions and dramatic music, something sparked within Marcus. Perhaps this was the closest they could get to experiencing the sun again.\n\nWithout hesitation, Marcus approached the shopkeeper, a pimply-faced teenager with a scowl on his face. \"Excuse me,\" Marcus said, their voice low and smooth. \"I'd like to try one of these... video games.\"\n\nThe teenager looked up, startled, then blinked slowly. \"Uh, sure. What game do you want to play?\"\n\nMarcus shrugged. \"I don't know. Something... sunny.\"\n\nThe teenager snorted. \"You want a sunny game? Try 'Sunset Paradise'. It's a tropical island adventure. You can explore the beaches, go snorkeling, or just soak up the sun.\"\n\nMarcus's eyes lit up. \"Perfect. I'll take it.\"\n\nThe teenager handed them a controller, and Marcus sat down at one of the gaming stations. As they booted up the game, a rush of excitement coursed through their veins. This was absurd, they knew. They were a centuries-old vampire, playing a video game about sunbathing. But they didn't care.\n\nAs the game loaded, Marcus closed their eyes, took a deep breath, and let themselves be transported. The sound of waves crashing against the shore filled their ears, and the warmth of the virtual sun seeped into their skin. They felt alive, if only for a moment.\n\nThey began to explore the island, marveling at the bright colors and exotic wildlife. They swam in the crystal-clear waters, chasing schools of rainbow-colored fish. They even tried their hand at surfing, laughing as they wiped out time and time again.\n\nFor hours, Marcus lost themselves in this virtual paradise. They forgot about the darkness outside, the loneliness that had plagued them for so long. They forgot that they were a monster, a creature cursed to walk the night forever.\n\nAs the sun began to set in the game, Marcus realized they had been playing for days. Their hunger had grown to a dull ache, their body craving the sustenance it needed to survive. But still, they hesitated. They didn't want to leave this place, this fake, sun-kissed utopia.\n\nBut as they gazed out at the virtual horizon, they knew they couldn't stay here forever. With a heavy heart, Marcus saved their progress and shut down the game.\n\nThe shop was closing, and the teenager glared at them as they left. But Marcus didn't mind. They had found something special here, something that had brought them a fleeting moment of joy.\n\nAnd perhaps, tomorrow night, they would return.",
+        "reasoning": "Not supplied for this particular example.",
+        "authenticity_score": 3.0,
+        "emotion_provoking_score": 4.0,
+        "empathy_score": 2.0,
+        "engagement_score": 3.0,
+        "narrative_complexity_score": 2.0,
+        "human_likeness_score": 2.0
+      },
+      {
+        "augmented": true,
+        "story": "As the night deepened, three individuals found themselves awake and restless, each haunted by their own unique demons. John Smith, a young executive, lay in his bed, gripping his arm tightly as he tried to shake off the feeling of inadequacy that had been plaguing him since starting his new job. Emily Johnson, a creative writer, tossed and turned, her mind blank as she struggled to overcome her writer's block. And Sarah Taylor, a recently divorced mother of two, felt the weight of her children's needs heavy on her shoulders, her fear of being alone and uncertain about her future keeping her awake.\n\nAs the darkness intensified, a sense of unease settled over them all. It was as if the shadows themselves were closing in, wrapping around their ankles like cold, damp chains. Each of them felt a presence in the room, watching them, waiting for them to reveal their deepest fears and desires.\n\nFor John, that fear was of failure. He had worked so hard to get where he was, but what if he wasn't good enough? What if he couldn't live up to the expectations of his bosses and colleagues? He squeezed his eyes shut, willing the doubts away, but they lingered, like a nagging voice in the back of his mind.\n\nEmily, on the other hand, feared losing her creativity. She had always been able to write with ease, but now, every time she sat down at her desk, she found herself staring at a blank page. The words wouldn't come, no matter how hard she tried. She felt like she was losing a part of herself, like she was disappearing into thin air.\n\nSarah, too, was grappling with the unknown. She had just finalized her divorce, and the thought of starting over terrified her. How would she provide for her children? Would she ever find love again? These questions swirled through her mind like a tornado, leaving her feeling helpless and alone.\n\nAnd then, there was the presence. It was there, lurking just beyond the edge of their consciousness, watching them with an unblinking gaze. It seemed to understand their deepest fears and desires, and yet, it offered no comfort or solution. It simply observed, a silent witness to their pain and uncertainty.\n\nAs the night wore on, the presence grew stronger, its energy enveloping the three individuals in a cold, dark embrace. They felt their fears and doubts amplified, as if the presence was feeding off of them. But, in that moment, something unexpected happened.\n\nJohn, Emily, and Sarah felt a connection between them, a thread of understanding that bound them together. They realized that they weren't alone in their struggles, that everyone faces fear and uncertainty at some point in their lives. In that instant, the presence dissipated, replaced by a sense of peace and clarity.\n\nAs they drifted off to sleep, each of them knew that they would face their demons head-on, armed with the knowledge that they weren't alone in their struggles. The darkness may have been oppressive, but it had also brought them together, creating a bond that would last long after the night had passed.",
+        "reasoning": "The story explores the theme of shared human experience, highlighting the common struggles and fears that people face. The three main characters, John, Emily, and Sarah, are each dealing with their own unique demons, but they are all connected by their sense of uncertainty and fear. The presence that watches them is a symbol of the collective unconscious, representing the shared human experience of fear and uncertainty.",
+        "authenticity_score": 4.0,
+        "emotion_provoking_score": 4.0,
+        "empathy_score": 4.0,
+        "engagement_score": 4.0,
+        "narrative_complexity_score": 4.0,
+        "human_likeness_score": 3.0
+      },
+      {
+        "augmented": true,
+        "story": "Jane woke up to another gray day, the heaviness of her depression weighing down on her like a physical force. She lay in bed, staring at the ceiling and wondering why she even bothered. What was the point of getting up, anyway? But then, she remembered Max. Her service dog, her constant companion, her only friend these days. He needed her, and she needed him. With a heavy sigh, Jane hauled herself out of bed and went to find Max.\n\nHe was sitting in the living room, his tail thumping listlessly against the floor. Jane could see the sadness in his eyes, the same sadness she felt every day. \"Hey, buddy,\" she said softly, scratching behind his ears. \"I guess it's time for our morning walk.\"\n\nAs they walked through the desolate streets, Jane couldn't help but feel like a burden to everyone around her. Her family had all but given up on her, and her friends had slowly drifted away. She had lost her job due to her lack of motivation and her inability to concentrate. And now, she was relying on a dog to get her through each day. The thought made her feel pathetic and weak.\n\nBut as they walked, something unexpected happened. Max began to perk up, his tail wagging more enthusiastically with each passing minute. He sniffed at every fire hydrant and tree, taking an interest in his surroundings that Jane hadn't seen before. When they encountered other dogs, Max would greet them eagerly, as if trying to make friends. It was like he knew that Jane needed this, needed him to be happy.\n\nOver the next few days, Jane noticed a change in Max. He was still depressed, but he seemed to be slowly coming out of his shell. He would bark excitedly when Jane put on her coat, eager to go out and explore the world. And when they returned home, he would bound into the living room, his tail wagging wildly as he searched for his favorite toy.\n\nOne afternoon, as they were sitting in the park, Max suddenly stood up and started pulling on his leash. Jane was taken aback, unsure of what he wanted. But as she followed him, she saw that he was leading her to a group of children playing tag. Max watched intently, his ears perked up and his tail wagging. Jane realized that he was trying to tell her something - that there was still joy in the world, even in the darkest of times.\n\nAs the weeks passed, Jane found herself looking forward to her daily walks with Max. He became her reason for getting up in the morning, her excuse to leave the house and interact with the outside world. And even though he was still depressed, even though he still had moments of panic and fear, he was slowly healing. Just like Jane.\n\nDr. Lee observed their progress with a keen eye, noting the way that Jane and Max seemed to bring each other comfort. She wondered if their unique bond could be the key to their recovery, and decided to incorporate their relationship into their therapy sessions.\n\nAs the months went by, Jane and Max continued to grow and heal together. They learned to trust each other, to rely on each other in a world that seemed hostile and unforgiving. And as they did, they both began to find happiness again, to discover the joy that had been missing from their lives for so long.\n\nOn a cold, gray winter day, Jane and Max sat in the park, watching the snow fall gently around them. Max leaned against Jane's leg, his head resting on her knee. She stroked his fur softly, feeling a sense of peace that she hadn't known in years.\n\n\"You know, Max,\" she whispered, \"I don't think I could have made it without you. You've shown me that there's still hope, still love in the world. Even when everything else seems dark and bleak, you're always there for me.\"\n\nMax looked up at her, his brown eyes filled with a deep understanding. He licked her hand, as if to say, \"I'm here for you, Jane. I'll always be here for you.\"\n\nAnd in that moment, Jane knew that she wasn't alone. She had Max, her loyal companion, her friend. Together, they could face anything.",
+        "reasoning": "Not supplied for this particular example.",
+        "authenticity_score": 4.0,
+        "emotion_provoking_score": 4.0,
+        "empathy_score": 5.0,
+        "engagement_score": 4.0,
+        "narrative_complexity_score": 3.0,
+        "human_likeness_score": 4.0
+      }
+    ],
+    "signature": {
+      "instructions": "1. Review the given components of psychological depth: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Be sure to understand each concept and the questions that characterize them.\n2. Read a given story, paying special attention to components of psychological depth.\n3. Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score).\n4. Lastly, estimate the likelihood that each story was authored by a human or an LLM. Think about what human or LLM writing characteristics may be. Assign a score from 1 to 5, where 1 means very likely LLM written and 5 means very likely human written. \n\n###Description of Psychological Depth Components:  \n\nWe define sychological depth in terms of the following concepts, each illustrated by several questions: \n\n- Authenticity \n    - Does the writing feel true to real human experiences? \n    - Does it represent psychological processes in a way that feels authentic and believable? \n- Emotion Provoking \n    - How well does the writing depict emotional experiences? \n    - Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms? \n    - Can the writing show rather than tell a wide variety of emotions? \n    - Do the emotions that are shown in the text make sense in the context of the story? \n- Empathy \n    - Do you feel like you were able to empathize with the characters and situations in the text? \n    - Do you feel that the text led you to introspection, or to new insights about yourself or the world?\" \n- Engagement \n    - Does the text engage you on an emotional and psychological level? \n    - Do you feel the need to keep reading as you read the text? \n- Narrative Complexity \n    - Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts? \n    - Does the writing explore the complexities of relationships between characters? \n    - Does it delve into the intricacies of conflicts and their partial or complete resolutions? ",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Authenticity Score:",
+          "description": "1=Unrealistic, 5=Profoundly authentic"
+        },
+        {
+          "prefix": "Emotion Provoking Score:",
+          "description": "1=Flat, 5=Deeply moving"
+        },
+        {
+          "prefix": "Empathy Score:",
+          "description": "1=Detached, 5=Transformative empathy"
+        },
+        {
+          "prefix": "Engagement Score:",
+          "description": "1=Boring, 5=Irresistibly compelling"
+        },
+        {
+          "prefix": "Narrative Complexity Score:",
+          "description": "1=Shallow, 5=Masterfully complex"
+        },
+        {
+          "prefix": "Human Likeness Score:",
+          "description": "1=Clearly AI, 5=Undeniably human"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -4,6 +4,7 @@ import dspy
 import pandas as pd
 import textwrap
 import traceback
+import argparse
 from dspy.datasets import DataLoader
 from dspy.evaluate import Evaluate
 from sglang.utils import launch_server_cmd, wait_for_server, print_highlight, terminate_process
@@ -120,8 +121,7 @@ def evaluate_model(evaluator, model, signature_name, module_name, num_demos, tra
     }
 
 # Main Execution
-def main():
-    model_id = "meta-llama/Llama-3.1-8B-Instruct"
+def main(model_id):
     # Server setup
     server_process, port = launch_server_cmd(
         f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models"
@@ -164,8 +164,10 @@ def main():
                     result = evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset, model_id)
                     results.append(result)
 
-        # Save results
-        pd.DataFrame(results).to_csv(f"./story_eval/dspy/multiscore/optimized_prompts/{model_id}/summary.csv")
+        # Ensure summary save directory exists
+        summary_dir = f"./story_eval/dspy/multiscore/optimized_prompts/{model_id}"
+        os.makedirs(summary_dir, exist_ok=True)
+        pd.DataFrame(results).to_csv(f"{summary_dir}/summary.csv")
         terminate_process(server_process)
 
     except Exception as e:
@@ -175,5 +177,15 @@ def main():
         terminate_process(server_process)
 
 if __name__ == "__main__":
-    # CUDA_VISIBLE_DEVICES=1,2 python -m story_eval.dspy.multiscore.annotate
-    main()
+
+    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.multiscore.annotate --model_id meta-llama/Llama-3.1-8B-Instruct
+
+    parser = argparse.ArgumentParser(description="Evaluate a model using SGLang with a specified Hugging Face model_id.")
+    parser.add_argument(
+        "--model_id",
+        type=str,
+        default="meta-llama/Llama-3.1-8B-Instruct",
+        help="Hugging Face model id to use (default: meta-llama/Llama-3.1-8B-Instruct)"
+    )
+    args = parser.parse_args()
+    main(args.model_id)

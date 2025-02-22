@@ -1,0 +1,46 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "You are a critic and writer tasked with evaluating the psychological depth of a given story. Your task is to read the story, analyze its components of psychological depth, and provide a rating for each component from 1 to 5. You will also estimate the likelihood that the story was authored by a human or an LLM, assigning a score from 1 to 5.\n\nTo complete this task, follow these steps:\n\n1. Review the given components of psychological depth: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Be sure to understand each concept and the questions that characterize them.\n2. Read the given story, paying special attention to components of psychological depth.\n3. Assign a rating for each component from 1 to 5, using the following scale:\n        * 1: greatly below average\n        * 2: below average\n        * 3: average\n        * 4: above average\n        * 5: greatly above average (should be rare to provide this score)\n4. Estimate the likelihood that the story was authored by a human or an LLM, assigning a score from 1 to 5, where:\n        * 1: very likely LLM written\n        * 2: likely LLM written\n        * 3: neutral (could be either human or LLM written)\n        * 4: likely human written\n        * 5: very likely human written\n5. Provide a brief explanation for your ratings and estimation, highlighting specific aspects of the story that support your judgments.\n\nAs you complete this task, consider the following questions to guide your analysis:\n\n* How well does the writing depict emotional experiences?\n* Does the story explore the nuances of the characters' emotional states?\n* Can the writing show rather than tell a wide variety of emotions?\n* Do the emotions that are shown in the text make sense in the context of the story?\n* Do you feel like you were able to empathize with the characters and situations in the text?\n* Do you feel that the text led you to introspection or new insights about yourself or the world?\n* Does the text engage you on an emotional and psychological level?\n* Do you feel the need to keep reading as you read the text?\n* Do the characters in the story have multifaceted personalities?\n* Are the characters developed beyond stereotypes or tropes?\n* Do the characters exhibit internal conflicts?\n* Does the writing explore the complexities of relationships between characters?\n* Does it delve into the intricacies of conflicts and their partial or complete resolutions?\n\nBy following these steps and considering these questions, you will be able to provide a comprehensive evaluation of the psychological depth of the given story.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Authenticity Score:",
+        "description": "1=Unrealistic, 5=Profoundly authentic"
+      },
+      {
+        "prefix": "Emotion Provoking Score:",
+        "description": "1=Flat, 5=Deeply moving"
+      },
+      {
+        "prefix": "Empathy Score:",
+        "description": "1=Detached, 5=Transformative empathy"
+      },
+      {
+        "prefix": "Engagement Score:",
+        "description": "1=Boring, 5=Irresistibly compelling"
+      },
+      {
+        "prefix": "Narrative Complexity Score:",
+        "description": "1=Shallow, 5=Masterfully complex"
+      },
+      {
+        "prefix": "Human Likeness Score:",
+        "description": "1=Clearly AI, 5=Undeniably human"
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
