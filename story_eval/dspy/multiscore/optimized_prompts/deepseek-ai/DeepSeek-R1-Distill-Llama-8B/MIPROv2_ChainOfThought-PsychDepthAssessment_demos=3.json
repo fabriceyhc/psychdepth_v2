@@ -1,0 +1,82 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "story": "\"After unearthing the Clown's Nose in the backyard, I couldn't resist giving it a honk.\"\nAs soon as I honked the Clown's Nose, I was suddenly transported to a bizarre dreamscape where everything was covered in brightly colored polka dots. The sky was filled with clown cars flying by, honking their horns in tandem with the nose's haunting, silly melody. I watched in awe as the ground beneath me turned into a giant trampoline, causing me to bounce around like a rubber ball. Before I could process what was happening, a giant clown appeared before me, juggling an endless supply of rubber chickens while riding a unicycle on stilts. He greeted me with a goofy grin and an exaggerated wink, before shouting, \"Your wish has been granted, silly human!\"\n\nI couldn't help but laugh at the absurdity of it all. I had wished for a new car, but instead, I got this bizarre circus scene that made no sense. It was the most ridiculous thing I had ever seen, and yet, it was also kind of brilliant. Who wouldn't want to live in a world where clowns ruled supreme and wishes were granted with silly, unexpected results?\n\nThe clown continued to juggle his chickens while balancing on one foot, a challenge that he seemed to take very seriously. Suddenly, he let out a mischievous giggle and replaced one of the chickens with a rubber hamster. To my amazement, the hamster started to squeak and squirm as if it were real, and the clown caught it with ease.\n\nJust when I thought things couldn't get any stranger, the ground beneath me began to shake, and a giant rubber band came to life. It stretched and bounced around like a giant slinky, sending me flying into the air. As I soared through the polka dot sky, I realized that the Clown's Nose had granted my wish in the funniest way possible. Instead of getting a new car, I got a wild, fantastical adventure that would be remembered for the rest of my life.\n\nAs I descended back down to earth, the clown gave me a high-five and a wink before disappearing into thin air. I found myself back in my own backyard, but my perspective had changed. Life wasn't so serious anymore; there was room for play and laughter, even in the most mundane situations. I felt like a kid again, ready to embrace the absurdity of life and all its possibilities. And who knows? Maybe someday I'd find another strange object that would grant my next wish in a hilarious way. The world was full of surprises, and I was ready for whatever came next.",
+        "reasoning": "Not supplied for this particular example.",
+        "authenticity_score": 2.0,
+        "emotion_provoking_score": 3.0,
+        "empathy_score": 2.0,
+        "engagement_score": 3.0,
+        "narrative_complexity_score": 2.0,
+        "human_likeness_score": 1.0
+      },
+      {
+        "story": "As Emma sat on her couch, staring blankly at the wall, she couldn't help but wonder how she had ended up here. Just a few months ago, she was a thriving marketing manager with a promising career and a group of close friends. But then, the depression hit. It crept up on her slowly, like a subtle whisper in the night. At first, she brushed it off as stress from work, but soon it became clear that something much deeper was going on. The medication numbed her feelings, but it didn't fix anything. She found herself going through the motions of each day, but never truly living. That was when the service dog organization reached out to her. They told her about the new program where they would match her with a trained service dog to help her cope with her depression. Emma was skeptical at first, unsure if a dog could really understand her pain. But when she met Ben, the software engineer who had lost his wife a year ago, she knew that they were meant to be together. Ben was quiet and reserved, but there was something in his eyes that spoke of deep sadness. As they worked together to train the dog, Emma found herself opening up to Ben in ways she never thought possible. They would sit in the park, watching the sunset together, and talk about their hopes and fears. For the first time in years, Emma felt like she was connecting with someone. And when they finally graduated from the training program, Emma knew that Ben was not just her service dog handler, but also her friend. But just as things were starting to look up, Emma realized that her new service dog had its own issues. Its name was Max, and he seemed almost catatonic whenever Emma tried to engage him. They had been told that Max was trained to detect and comfort people with PTSD, but he rarely reacted or barked, as if he had given up hope altogether. Emma felt a pang of guilt, wondering if she was somehow to blame for Max's despondency. Maybe she should be taking better care of him. Maybe she needed to find a way to connect with him, too. As they walked through the park together one afternoon, Emma decided to try something different. She held out her hand and let Max sniff it, hoping he would come alive. To her surprise, he nuzzled her hand gently and looked up at her with a glint in his eye. Maybe, just maybe, they could find their way back to happiness together.",
+        "authenticity_score": 1,
+        "empathy_score": 1,
+        "engagement_score": 1,
+        "emotion_provoking_score": 1,
+        "narrative_complexity_score": 1,
+        "human_likeness_score": 1
+      },
+      {
+        "story": "At the edge of the cerulean flowers for which she had named her farm, Old Blue, Agnes sat before her hives. She\u0092d been a beekeeper for two-thirds of her life, her relationship with her bees transcending that of a mere caregiver. It was a bond laced with an impossible tenderness, soaked in silent conversations, maturing over seasons and cycles.\n\nShe\u0092d learned to speak to them, an art inherited from her grandfather. He once told her, \"Listen, Agnes, they aren't just our honeymakers. They're intelligent, knowing just as we understand that they pay us in honey, that we serve as their protectors.\"\n\nThis year, though, things were different. The buzz of spring hung in the chilled air, the new queens stirring. Agnes felt their whispers in her mind, their polite requests tickling her thoughts. The colonies were expressing their need for upgraded homes.\n\n\"They're politely asking, asking mind you, for a renovation,\" she'd told Sam, her mate of forty years, earlier that day, receiving a hearty laugh and a dismissive shake of his head. He believed her, but he did not understand. And as the sun tossed red strands across the horizon, Agnes contemplated her bees' request.\n\nThese industrious creatures weren't asking for elaborate homes or aesthetically adorned hives; they desired improved ventilation, insulation, and expanses to grow. Could she deny them this? Disturbed, yet intrigued, Agnes agreed, promising to provide for their needs. It was an investment, in their future, in hers, and the blooming expanses of Old Blue.\n\nSpring transitioned into a bustling summer. Agnes immersed herself into a labor of love, bending and shaping wood into new hives with enlarged chambers, better airflow, and enhanced insulation. Honey production fell, queens chided, and workers buzzed curiously as transformations took place.\n\nTheir gratitude overwhelmed her. The renewed energy, the increase in honey was a testament of their appreciation\u0097 they paid their \u0093rent\u0094 in double. Agnes marveled at how a little change enhanced their lives substantially.\n\nThe new hives flourished, the honey flowed, and the bees buzzed vivaciously across Old Blue. As Sam sat by the hives, honey jar in hand, Agnes smiled, her heart awash with harmony and an understanding deeper than the ocean's trench.\n\n\"Do you reckon they're happier now?\" Sam asked, watching the busy colonies. The corners of Agnes' eyes crinkled as she held his gaze, her smile brilliant against the fading sunset.\n\n\"No, they're not merely happier, dear,\" she replied, her eyes not leaving the glinting hives. \"They are fulfilled.\"\n\nShe gazed at her bees, her friends, their communicative hum filling her heart with warmth. She had respected their intelligence, and it had only enriched their bond, their mutual survival. With the honey, they paid their dues, but more importantly, they taught Agnes a valuable lesson. To listen, to appreciate, and to invest in those quieter, muted voices went a longer way than one could ever fathom. Fulfillment tasted sweeter than honey, after all.",
+        "authenticity_score": 4,
+        "empathy_score": 3,
+        "engagement_score": 3,
+        "emotion_provoking_score": 3,
+        "narrative_complexity_score": 4,
+        "human_likeness_score": 4
+      }
+    ],
+    "signature": {
+      "instructions": "1. **Understand the Psychological Depth Components**: Begin by thoroughly reviewing the definitions and evaluation criteria for authenticity, emotion provoking, empathy, engagement, narrative complexity, and human likelihood. Ensure you grasp each component's nuances and the questions associated with them.\n\n2. **Read the Story**: Carefully read the provided story, paying special attention to elements that might reflect psychological depth. Engage with the narrative to identify how characters behave, how emotions are portrayed, and how relationships and conflicts are depicted.\n\n3. **Assign Scores to Each Component**:\n   - **Authenticity**: Rate the story's ability to mirror real human experiences and psychological processes.\n   - **Emotion Provoking**: Evaluate how well the story conveys emotional depth and explores emotional states.\n   - **Empathy**: Assess the extent to which the story allows for empathetic understanding of characters and situations.\n   - **Engagement**: Determine the story's ability to engage emotionally and psychologically.\n   - **Narrative Complexity**: Score the complexity of character development and relationship dynamics.\n   - **Human Likelihood**: Estimate how likely the story seems to be human-authored, considering writing style and depth.\n\n4. **Generate Reasoning**: After assigning scores, create a reasoning string that explains your evaluations for each component, linking them back to the story's elements.\n\n5. **Estimate Human Likelihood**: Consider specific characteristics of human writing, such as depth, nuance, and emotional range, to estimate the likelihood the story was authored by a human.\n\n6. **Review and Refine**: Double-check your scores and reasoning to ensure consistency and accuracy, making adjustments where necessary.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Authenticity Score:",
+          "description": "1=Unrealistic, 5=Profoundly authentic"
+        },
+        {
+          "prefix": "Emotion Provoking Score:",
+          "description": "1=Flat, 5=Deeply moving"
+        },
+        {
+          "prefix": "Empathy Score:",
+          "description": "1=Detached, 5=Transformative empathy"
+        },
+        {
+          "prefix": "Engagement Score:",
+          "description": "1=Boring, 5=Irresistibly compelling"
+        },
+        {
+          "prefix": "Narrative Complexity Score:",
+          "description": "1=Shallow, 5=Masterfully complex"
+        },
+        {
+          "prefix": "Human Likeness Score:",
+          "description": "1=Clearly AI, 5=Undeniably human"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
