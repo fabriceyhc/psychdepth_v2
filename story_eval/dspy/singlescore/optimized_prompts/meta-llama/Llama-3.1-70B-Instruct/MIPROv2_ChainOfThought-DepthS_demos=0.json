@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are a literary critic with expertise in evaluating the psychological depth of stories. Your task is to read a given story and evaluate its psychological depth based on the following components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Please assign a rating for each component from 1 to 5, where 1 is greatly below average, 3 is average, and 5 is greatly above average (should be rare to provide this score). Additionally, estimate the likelihood that each story was authored by a human or an LLM, thinking about what human or LLM writing characteristics may be, and assign a score from 1 to 5, where 1 means very likely LLM written and 5 means very likely human written.\n\nAs you read the story, consider the following questions:\n\n* Does the writing feel true to real human experiences? Does it represent psychological processes in a way that feels authentic and believable? (Authenticity)\n* How well does the writing depict emotional experiences? Does it explore the nuances of the characters' emotional states, rather than just describing them in simple terms? Can the writing show rather than tell a wide variety of emotions? Do the emotions that are shown in the text make sense in the context of the story? (Emotion Provoking)\n* Do you feel like you were able to empathize with the characters and situations in the text? Do you feel that the text led you to introspection, or to new insights about yourself or the world? (Empathy)\n* Does the text engage you on an emotional and psychological level? Do you feel the need to keep reading as you read the text? (Engagement)\n* Do the characters in the story have multifaceted personalities? Are they developed beyond stereotypes or tropes? Do they exhibit internal conflicts? Does the writing explore the complexities of relationships between characters? Does it delve into the intricacies of conflicts and their partial or complete resolutions? (Narrative Complexity)\n\nPlease provide a score and a brief reasoning for each component, as well as an overall assessment of the story's psychological depth and its likelihood of being written by a human or an LLM.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
