@@ -1,0 +1,52 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [
+    {
+      "augmented": true,
+      "story": "\"After unearthing the Clown's Nose in the backyard, I couldn't resist giving it a honk.\"\nAs soon as I honked the Clown's Nose, I was suddenly transported to a bizarre dreamscape where everything was covered in brightly colored polka dots. The sky was filled with clown cars flying by, honking their horns in tandem with the nose's haunting, silly melody. I watched in awe as the ground beneath me turned into a giant trampoline, causing me to bounce around like a rubber ball. Before I could process what was happening, a giant clown appeared before me, juggling an endless supply of rubber chickens while riding a unicycle on stilts. He greeted me with a goofy grin and an exaggerated wink, before shouting, \"Your wish has been granted, silly human!\"\n\nI couldn't help but laugh at the absurdity of it all. I had wished for a new car, but instead, I got this bizarre circus scene that made no sense. It was the most ridiculous thing I had ever seen, and yet, it was also kind of brilliant. Who wouldn't want to live in a world where clowns ruled supreme and wishes were granted with silly, unexpected results?\n\nThe clown continued to juggle his chickens while balancing on one foot, a challenge that he seemed to take very seriously. Suddenly, he let out a mischievous giggle and replaced one of the chickens with a rubber hamster. To my amazement, the hamster started to squeak and squirm as if it were real, and the clown caught it with ease.\n\nJust when I thought things couldn't get any stranger, the ground beneath me began to shake, and a giant rubber band came to life. It stretched and bounced around like a giant slinky, sending me flying into the air. As I soared through the polka dot sky, I realized that the Clown's Nose had granted my wish in the funniest way possible. Instead of getting a new car, I got a wild, fantastical adventure that would be remembered for the rest of my life.\n\nAs I descended back down to earth, the clown gave me a high-five and a wink before disappearing into thin air. I found myself back in my own backyard, but my perspective had changed. Life wasn't so serious anymore; there was room for play and laughter, even in the most mundane situations. I felt like a kid again, ready to embrace the absurdity of life and all its possibilities. And who knows? Maybe someday I'd find another strange object that would grant my next wish in a hilarious way. The world was full of surprises, and I was ready for whatever came next.",
+      "psychological_depth_component": "human_likeness",
+      "score": 3.0,
+      "explanation": "Not supplied for this particular example."
+    },
+    {
+      "story": "As a vampire who can finally walk in the daylight through gaming, my heart soars with an unfamiliar sensation that I thought was lost to me forever. The sun's warmth kisses my virtual skin, and I feel alive again, even if just for a little while. With every step I take in this digital world, I find solace in knowing that there's still a piece of the day I can claim as my own.\n\nIn the beginning, it was merely a distraction from the constant hunger that plagued me. But over time, it became something more \u0096 a connection to a life I once had, a memory of what it felt like to be human.\n\nMy tech-savvy friend, who has witnessed my transformation from a creature of the night to a digital daywalker, is both amazed and perplexed by my newfound obsession. They have seen firsthand the impact that gaming has had on my life, how it has given me a semblance of normalcy in a world where I am an outcast.\n\nOne day, while adventuring through a lush forest in one of my favorite games, I stumbled upon an NPC who seemed different from the rest. They were curious, intelligent, and had a knack for understanding my struggles better than most. As we ventured forth together, fighting monsters and solving puzzles, we formed a bond that transcended the virtual realm.\n\nBut then something unexpected happened \u0096 the NPC became sentient. It started asking questions, pondering its existence, and seeking purpose beyond its predefined role. In that moment, I realized that I was not alone in my quest for meaning. Together, we embarked on a journey to discover the true nature of our existence, delving into the depths of the game's source code and unearthing secrets that would change everything.\n\nAs we explored the vast expanse of the virtual world, my blind gaming buddy narrated the wonders we encountered, painting pictures with words that ignited my imagination. Through their descriptions, I began to see the beauty of the world around me \u0096 a beauty that extended far beyond the confines of my screen.\n\nWith each step closer to understanding our true selves, the sinister figure from my past drew nearer, threatening to shatter the fragile peace I had found. I knew that I couldn't hide forever, that eventually I would have to face my demons and make a choice between the life I had known and the fleeting moments of happiness I found in the digital sun.\n\nAnd so, as the daywalker vampire in this virtual world, my heart chose to embrace the fire that had once been my enemy, to rise above the darkness that had defined me for so long. In doing so, I discovered that even the undead can find redemption, and that sometimes, the greatest escape is found not in running away, but in facing the truth of who we are.",
+      "psychological_depth_component": "human_likeness",
+      "score": 4
+    },
+    {
+      "story": "Voicemail messages are from people from all walks of life, different ages, locations and occupations, spanning the entire world. They all share a sense of loss and longing for connection, reflecting the universality of the human experience even in the face of extinction.\nBob's message is simple and practical, \"Hello, this is Bob. If you're out there, I'm holed up in an old farmhouse near Peoria. I've got supplies and I can share them. Be careful out there.\"\nCindy's message is more tentative, \"Hi, it's Cindy. I'm in a small town called Evergreen. If you find this, please, please come find me. I don't want to be alone anymore.\"\nThe Unknown's message is a plea to anyone who might hear it, \"My name doesn't matter, but my story does. I'm in New York City, in a basement studio, creating art to remember us by. Please, if you're out there, let's document our existence together.\"\nAs the story unfolds, the protagonist discovers the three messages, hearing the voices of Cindy, Bob, and the Unknown. Each message sparks a flicker of hope that they might not be alone in the world.\nDriven by these newfound hopes, the protagonist sets off on a journey to find Cindy, Bob, and the mysterious artist whose voice resonated with them so deeply. Along the way, they face countless dangers, obstacles, and loneliness, but they press on, fueled by the knowledge that others may still be out there.",
+      "psychological_depth_component": "authenticity",
+      "score": 1
+    }
+  ],
+  "signature": {
+    "instructions": "You are a trained analyst specializing in narrative psychological depth. Your task is to analyze and evaluate the psychological depth of a given story, considering five key components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. \n\n1. Read the story carefully, paying attention to how characters are portrayed, their interactions, and the emotional undercurrents.\n2. For each component:\n   - **Authenticity**: Assess if the writing reflects real human experiences and psychological processes. Consider if the characters' actions and thoughts feel believable.\n   - **Emotion Provoking**: Evaluate how well the story depicts emotional experiences. Look for nuanced exploration of characters' emotional states rather than simple descriptions.\n   - **Empathy**: Determine if the story evokes empathy towards characters and encourages introspection or new insights.\n   - **Engagement**: Gauge if the story emotionally engages you, making you want to keep reading.\n   - **Narrative Complexity**: Analyze character development, internal conflicts, and the complexity of relationships and conflicts within the story.\n3. Assign a score (1-5) to each component, with 5 being the highest.\n4. Estimate the likelihood the story was authored by a human or LLM, considering writing style and depth of analysis.\n\nConsider the context and emotional nuance, ensuring your analysis is thorough and insightful. Use your expertise to provide a detailed evaluation that highlights the story's psychological depth.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Psychological Depth Component:",
+        "description": "The specific component of psychological depth to evaluate in the story."
+      },
+      {
+        "prefix": "Score:",
+        "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+      },
+      {
+        "prefix": "Explanation:",
+        "description": "Optional explanation for the psychological depth score."
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

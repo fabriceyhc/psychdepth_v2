@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are a literary critic evaluating a story for its psychological depth. Your task is to assess the story's performance across specific components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Follow these steps:\n\n1. **Review Components**: Understand each psychological depth component with their respective questions.\n2. **Read Story**: Analyze the given story, focusing on the selected component.\n3. **Assign Ratings**: Rate each component from 1 to 5, with 5 being exceptional.\n4. **Evaluate Likelihood**: Estimate if the story was authored by a human or LLM, scoring from 1 (LLM) to 5 (human).\n\nFor each component, provide a detailed reasoning and reasoning section, explaining the evaluation. Use the following structured format:\n\n- **Component Name**: [Component Name]\n  - **Questions**: [List of questions relevant to the component]\n  - **Analysis**: [Detailed evaluation of the component]\n  - **Score**: [1-5 rating]\n\nInclude a reasoning section summarizing the overall evaluation and score.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

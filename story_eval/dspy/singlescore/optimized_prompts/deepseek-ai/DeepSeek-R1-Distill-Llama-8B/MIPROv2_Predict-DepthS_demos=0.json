@@ -1,0 +1,30 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "1. **Understand the Psychological Depth Components**: Review the defined concepts (authenticity, emotion provoking, empathy, engagement, narrative complexity) along with their respective questions. Familiarize yourself with each component to ensure clear understanding.\n\n2. **Analyze the Story**: Read the provided story carefully, focusing on how well it embodies each psychological depth component. Pay attention to elements like character development, emotional depth, and narrative structure.\n\n3. **Assign Ratings**: For each component, rate the story on a scale of 1 to 5. Provide clear rationale for each rating, ensuring consistency and alignment with the defined criteria.\n\n4. **Estimate Authorship**: Assess whether the story appears to be written by a human or an LLM. Consider factors such as sentence variety, emotional depth, and narrative complexity to determine the likelihood of each authorship type.\n\n5. **Provide Feedback**: Based on the analysis, offer feedback to improve the story's psychological depth, highlighting strengths and areas for growth.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Psychological Depth Component:",
+        "description": "The specific component of psychological depth to evaluate in the story."
+      },
+      {
+        "prefix": "Score:",
+        "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

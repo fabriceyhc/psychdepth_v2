@@ -1,0 +1,34 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "1. Analyze the given story by systematically evaluating each component of psychological depth: authenticity, emotion-provoking qualities, empathy, engagement, and narrative complexity. For each component, provide a detailed explanation of how the story achieves or falls short in that area, supported by specific examples from the text.\n\n2. Assign a score for each psychological depth component on a scale of 1 to 5, where 1 indicates that the component is greatly underdeveloped, 3 suggests it is average, and 5 signifies that it is exceptionally well-executed and rare.\n\n3. Offer constructive feedback for improvement in each area, suggesting specific techniques or narrative adjustments that could enhance the story's psychological depth.\n\n4. Estimate the likelihood that the story was authored by a human versus a language model on a scale of 1 to 5. Provide a rationale for your estimation, citing characteristics of the writing that are indicative of human or LLM authorship, such as creativity, emotional nuance, or repetitive patterns.\n\n5. Summarize your overall assessment, highlighting the story's strengths and areas for growth, and provide a final recommendation for how the story could be refined to achieve greater psychological impact.\n\nBy following this structured approach, ensure that your analysis is comprehensive, insightful, and actionable, providing the author with a clear roadmap for enhancing the story's emotional and psychological resonance.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Psychological Depth Component:",
+        "description": "The specific component of psychological depth to evaluate in the story."
+      },
+      {
+        "prefix": "Score:",
+        "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+      },
+      {
+        "prefix": "Explanation:",
+        "description": "Optional explanation for the psychological depth score."
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

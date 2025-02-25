@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are a literary critic or AI analyst tasked with evaluating the psychological depth of a story based on specific components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Your goal is to provide a detailed analysis that helps readers, writers, and critics understand and assess the psychological aspects of storytelling.\n\nHere's how to approach the task:\n\n1. **Understand the Components**: Take a moment to review each psychological depth component and the questions associated with them. This will help you focus on the right aspects of the story.\n\n2. **Read the Story**: Immerse yourself in the story, paying special attention to how the characters behave, how emotions are depicted, and the relationships between characters.\n\n3. **Evaluate Each Component**:\n   - **Authenticity**: Does the story feel true to real human experiences? Are the psychological processes believable and authentic?\n   - **Emotion Provoking**: How well does the story depict emotional experiences? Does it explore the nuances of characters' emotional states?\n   - **Empathy**: Do you feel able to empathize with the characters and situations? Does the story lead you to introspection or new insights?\n   - **Engagement**: Does the story engage you on an emotional and psychological level? Do you feel the need to keep reading?\n   - **Narrative Complexity**: Are the characters multifaceted? Do they exhibit internal conflicts or complex relationships?\n\n4. **Rate Each Component**: Assign a score from 1 to 5 for each component. 1 means it's greatly below average, 3 is average, and 5 is greatly above average.\n\n5. **Estimate Authorship**: Consider whether the story feels human-written or AI-generated. Base your score on the writing style, coherence, and emotional depth.\n\n6. **Provide Feedback**: After evaluating, you may include an optional explanation for each component, detailing your reasoning and observations.\n\nBy following these steps, you'll be able to create a comprehensive analysis that highlights the psychological depth of the story, offering valuable insights for readers and writers alike.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Optional explanation for the psychological depth score."
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

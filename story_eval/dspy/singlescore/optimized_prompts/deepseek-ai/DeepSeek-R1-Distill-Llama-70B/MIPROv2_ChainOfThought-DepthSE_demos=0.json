@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. Analyze the story with a focus on the specified psychological depth component, using the following structured approach:\n   - **Authenticity**: Assess whether the story's portrayal of human experiences and psychological processes feels genuine. Consider if the emotions and reactions of characters align with real-life experiences and if their development is believable.\n   - **Emotion Provoking**: Evaluate how effectively the story conveys emotional experiences. Look for nuanced exploration of characters' emotions, the use of showing rather than telling, and the appropriateness of emotions within the story's context.\n   - **Empathy**: Determine if the story evokes empathy in the reader. Consider if the narrative leads to introspection or provides new insights into human experiences or the world.\n   - **Engagement**: Measure the story's ability to captivate the reader emotionally and psychologically. Assess if the narrative is compelling enough to keep the reader engaged.\n   - **Narrative Complexity**: Examine the depth of character development, the exploration of relationships, and the handling of conflicts and their resolutions. Consider if characters exhibit internal conflicts and if the narrative avoids stereotypes.\n\n2. For each component, provide a detailed reasoning process that includes specific examples from the text to support your evaluation.\n\n3. Assign a score for the specified component on a scale of 1 to 5, where 1 is greatly below average, 3 is average, and 5 is greatly above average (reserved for exceptional cases).\n\n4. Offer a concise explanation for the score, highlighting key strengths and areas for improvement.\n\n5. Estimate the likelihood that the story was authored by a human or an LLM on a scale of 1 to 5, where 1 indicates a strong likelihood of LLM authorship and 5 indicates a strong likelihood of human authorship. Provide specific reasoning for this estimation, considering characteristics such as narrative complexity, emotional depth, and linguistic nuances.\n\nBy following this structured approach, the model can provide a more comprehensive and insightful analysis of the story's psychological depth and human-likeness.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Optional explanation for the psychological depth score."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. **Understand the Components of Psychological Depth**: Begin by familiarizing yourself with the five key components of psychological depth\u2014authenticity, emotion provoking, empathy, engagement, and narrative complexity. Each component is defined by specific questions that guide your evaluation.\n\n2. **Read and Analyze the Story**: Carefully read the provided story, focusing on how it portrays psychological depth. Pay attention to character development, emotional expression, and narrative structure.\n\n3. **Evaluate Each Component**:\n   - **Authenticity**: Assess if the story feels true to real human experiences and if psychological processes are believable.\n   - **Emotion Provoking**: Determine how well the story depicts emotional nuances and whether emotions are shown rather than told.\n   - **Empathy**: Reflect on whether the story allows you to empathize with characters and situations, prompting introspection or new insights.\n   - **Engagement**: Consider if the story captivates you emotionally and psychologically, making you want to keep reading.\n   - **Narrative Complexity**: Examine if characters are multifaceted, relationships are complex, and conflicts are deeply explored.\n\n4. **Assign Scores**: For each component, assign a score from 1 to 5, where 1 is below average, 3 is average, and 5 is exceptional (rarely given).\n\n5. **Estimate Authorship**: Evaluate whether the story was likely written by a human or an LLM. Consider characteristics such as creativity, depth, and personal touch for human writing, versus formulaic or repetitive patterns for LLMs. Assign a score from 1 (likely LLM) to 5 (likely human).\n\n6. **Provide Reasoning**: For each component, explain your reasoning. Discuss specific elements in the story that led to your score, referencing the guiding questions for each component.\n\n7. **Summarize Your Findings**: After evaluating all components, summarize your overall impression of the story's psychological depth and its potential impact on readers.\n\nThis instruction ensures a thorough and insightful evaluation of the story's psychological depth, providing both quantitative scores and qualitative insights.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "lm": null,
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "You are a story reviewer tasked with evaluating the psychological depth of a given narrative. Your role is to assess the story's authenticity, emotional depth, empathy, engagement, and narrative complexity. \n\n1. **Understand the Psychological Depth Components**: Begin by familiarizing yourself with the concepts of authenticity, emotion-provoking, empathy, engagement, and narrative complexity. Consider the questions provided for each component to guide your analysis.\n\n2. **Read the Story**: Carefully read the provided story, paying special attention to the interactions between characters, their emotional states, and the themes explored.\n\n3. **Assign Ratings**: For each psychological depth component, rate the story on a scale of 1 to 5. A score of 1 indicates the component is poorly represented, while a score of 5 indicates it is exceptionally well-executed.\n\n4. **Estimate Authorship**: Reflect on whether the story feels more like it was written by a human or an LLM. Consider characteristics such as depth of emotional exploration, complexity of relationships, and uniqueness of voice to determine this.\n\n5. **Provide Feedback**: Based on your analysis, write a detailed explanation for each component's score, highlighting strengths and areas for improvement. This feedback will help refine future story generation and evaluation processes.",
+    "fields": [
+      {
+        "prefix": "Story:",
+        "description": "A story to be evaluated for the different components of psychological depth."
+      },
+      {
+        "prefix": "Psychological Depth Component:",
+        "description": "The specific component of psychological depth to evaluate in the story."
+      },
+      {
+        "prefix": "Score:",
+        "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+      },
+      {
+        "prefix": "Explanation:",
+        "description": "Optional explanation for the psychological depth score."
+      }
+    ]
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}

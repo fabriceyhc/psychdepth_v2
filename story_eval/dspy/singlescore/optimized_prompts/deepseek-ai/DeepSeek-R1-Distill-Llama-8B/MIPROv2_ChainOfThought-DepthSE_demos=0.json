@@ -1,0 +1,40 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. Carefully review the psychological depth components: authenticity, emotion provoking, empathy, engagement, and narrative complexity. Understand each concept and the questions associated with them.\n2. Analyze the given story, focusing on how well it reflects human-like qualities and emotional depth.\n3. For each component, assign a score from 1 to 5, with 1 being below average and 5 being exceptional. Provide a brief rationale for each score.\n4. Compare the story's psychological depth to that of human-authored works, discussing how the story's elements align with or differ from typical human writing patterns.\n5. Summarize your findings, highlighting strengths and areas for improvement in the story's psychological depth.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Psychological Depth Component:",
+          "description": "The specific component of psychological depth to evaluate in the story."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "Assign a rating for each component from 1 to 5. 1 is greatly below average, 3 is average and 5 is greatly above average (should be rare to provide this score)."
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Optional explanation for the psychological depth score."
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
