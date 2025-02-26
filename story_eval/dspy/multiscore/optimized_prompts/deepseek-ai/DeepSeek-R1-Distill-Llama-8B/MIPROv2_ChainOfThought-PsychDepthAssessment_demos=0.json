@@ -1,0 +1,52 @@
+{
+  "predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "1. **Understand the Components**: Begin by thoroughly reviewing each psychological depth component: authenticity, emotion provoking, empathy, engagement, narrative complexity, and human likeness. Familiarize yourself with the definitions and example questions provided.\n\n2. **Read the Story**: Carefully read the given story, paying attention to elements that might reflect psychological depth. Consider the characters' emotions, interactions, and the narrative structure.\n\n3. **Analyze Each Component**:\n   - **Authenticity**: Assess whether the story feels true to human experiences. Consider if psychological processes are believable and realistic.\n   - **Emotion Provoking**: Evaluate how well the story depicts emotional experiences. Check if emotions are shown through nuanced exploration rather than simple description.\n   - **Empathy**: Determine if you can connect with the characters and if the story prompts introspection or new insights about yourself or the world.\n   - **Engagement**: Gauge how emotionally and psychologically engaging the text is. Note if you feel compelled to keep reading.\n   - **Narrative Complexity**: Explore the depth of character development, internal conflicts, and relationships between characters. Assess how well conflicts are depicted.\n   - **Human Likeness**: Compare the writing style to that of humans versus AI. Consider aspects like emotional depth, complexity, and coherence.\n\n4. **Assign Scores**: Rate each component on a scale of 1 to 5. Use the provided rubric to ensure scoring is consistent and fair.\n\n5. **Estimate Human Likeness**: Score the likelihood the story was authored by a human, considering factors like emotional depth, complexity, and writing style.\n\n6. **Provide Reasoning**: Clearly explain your reasoning for each score, referencing specific elements of the story that influenced your decisions.\n\n7. **Review and Ensure Accuracy**: Double-check your scores and reasoning to ensure consistency and accuracy.",
+      "fields": [
+        {
+          "prefix": "Story:",
+          "description": "A story to be evaluated for the different components of psychological depth."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Authenticity Score:",
+          "description": "1=Unrealistic, 5=Profoundly authentic"
+        },
+        {
+          "prefix": "Emotion Provoking Score:",
+          "description": "1=Flat, 5=Deeply moving"
+        },
+        {
+          "prefix": "Empathy Score:",
+          "description": "1=Detached, 5=Transformative empathy"
+        },
+        {
+          "prefix": "Engagement Score:",
+          "description": "1=Boring, 5=Irresistibly compelling"
+        },
+        {
+          "prefix": "Narrative Complexity Score:",
+          "description": "1=Shallow, 5=Masterfully complex"
+        },
+        {
+          "prefix": "Human Likeness Score:",
+          "description": "1=Clearly AI, 5=Undeniably human"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
