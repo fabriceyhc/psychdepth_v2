@@ -1,0 +1,9 @@
+,module,signature,num_demos,pre_score,post_score,save_path
+0,Predict,PsychDepthAssessment,0,67.85,67.85,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_Predict-PsychDepthAssessment_demos=0.json
+1,Predict,PsychDepthAssessment,3,67.85,71.01,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_Predict-PsychDepthAssessment_demos=3.json
+2,Predict,PsychDepthAssessment,5,67.85,70.94,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_Predict-PsychDepthAssessment_demos=5.json
+3,Predict,PsychDepthAssessment,10,67.85,70.65,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_Predict-PsychDepthAssessment_demos=10.json
+4,ChainOfThought,PsychDepthAssessment,0,67.93,67.93,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_ChainOfThought-PsychDepthAssessment_demos=0.json
+5,ChainOfThought,PsychDepthAssessment,3,67.93,69.5,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_ChainOfThought-PsychDepthAssessment_demos=3.json
+6,ChainOfThought,PsychDepthAssessment,5,67.93,67.93,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_ChainOfThought-PsychDepthAssessment_demos=5.json
+7,ChainOfThought,PsychDepthAssessment,10,67.93,67.93,./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-70B/MIPROv2_ChainOfThought-PsychDepthAssessment_demos=10.json
