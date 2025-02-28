@@ -17,11 +17,16 @@ class PsychDepthEvaluator:
         if "llama.cpp" in model_type.lower():
             if verbose:
                 print(f"Loading llama.cpp model: {model_id}")
-            self.model = models.LlamaCpp(
-                model=model_id,
-                echo=False,
+            
+            from llama_cpp import Llama
+            model = Llama(
+                model_path=model_id,
                 n_gpu_layers=-1 if "auto" in device_map else device_map,
                 n_ctx=max_input_len
+            )
+            self.model = models.LlamaCpp(
+                model=model,
+                echo=False,
             )
         elif "transformers" in model_type.lower():
             if verbose:
@@ -138,13 +143,13 @@ class PsychDepthEvaluator:
 
 if __name__ == "__main__":
 
-    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.evaluator
-    file_path = "llm_stories.csv"
+    # CUDA_VISIBLE_DEVICES=7 python -m story_eval.evaluator
+    file_path = "./dataset/data/llm_stories.csv"
     df = pd.read_csv(file_path)
 
     evaluator = PsychDepthEvaluator(
-        model_id="bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF",
-        model_type="transformers",
+        model_id="/data2/.shared_models/llama.cpp_models/DeepSeek-R1-Distill-Llama-8B-Q8_0.gguf",
+        model_type="llama.cpp",
         cache_dir="/data2/.shared_models/",
         device_map="auto",
         verbose=True
