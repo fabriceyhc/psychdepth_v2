@@ -132,7 +132,7 @@ def main(model_id):
         num_gpus = len(gpu_list)
 
     # Server setup with optional --tp argument
-    server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models/hf --tp {num_gpus}"
+    server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/ruichenzheng/local_models/hf --tp {num_gpus}"
     server_process, port = launch_server_cmd(server_cmd)
     wait_for_server(f"http://localhost:{port}")
     print(f"SGLang server started on http://localhost:{port}")

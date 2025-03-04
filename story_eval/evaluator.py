@@ -3,6 +3,8 @@ import traceback
 import pandas as pd
 import guidance
 import json
+import argparse
+import os
 from guidance import models, gen, system, user, assistant
 
 class PsychDepthEvaluator:
@@ -138,12 +140,24 @@ class PsychDepthEvaluator:
 
 if __name__ == "__main__":
 
-    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.evaluator
-    file_path = "llm_stories.csv"
-    df = pd.read_csv(file_path)
+    # CUDA_VISIBLE_DEVICES=2 python -m story_eval.evaluator --model_id meta-llama/Llama-3.1-8B-Instruct --dataset ./data/stories/study_stories.csv
+    parser = argparse.ArgumentParser(
+        description="Evaluate a story dataset using specified evaluator"
+    )
+    parser.add_argument("--model_id",
+                        type=str, 
+                        default="bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF",
+                        help="Hugging Face model id to use (default: bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF)")
+    parser.add_argument("--dataset", 
+                        type=str, 
+                        default="./data/stories/study_stories.csv",
+                        help="Path to the dataset for evaluation")
+    args = parser.parse_args()
+
+    dataset_df = pd.read_csv(args.dataset)
 
     evaluator = PsychDepthEvaluator(
-        model_id="bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF",
+        model_id=args.model_id,
         model_type="transformers",
         cache_dir="/data2/.shared_models/",
         device_map="auto",
@@ -151,32 +165,25 @@ if __name__ == "__main__":
     )
 
     results = {}
-    for index, row in df.iterrows():
-        story_id = index 
+    for index, row in dataset_df.iterrows():
         story_text = row["text"]  
 
-        print(f"Evaluating story {story_id}...")
+        print(f"Evaluating story {index}...")
 
         try:
             evaluation_result = evaluator.evaluate(story=story_text, personas=evaluator.personas, temperature=1.0)
-            results[story_id] = evaluation_result
+            results[index] = evaluation_result
             print(evaluation_result)
         except Exception as e:
-            print(f"Error evaluating story {story_id}: {e}")
+            print(f"Error evaluating story {index}: {e}")
             traceback.print_exc()
-
-    with open("story_evaluation_results_DS_R1_distilled_Llama_8B.json", "w") as f:
+    save_path = f"./story_eval/evaluations/story_evaluation_results_{args.model_id.replace('/', '-')}.json"
+    with open(save_path, "w") as f:
         json.dump(results, f, indent=4)
 
-    print("Evaluation completed and saved to JSON.")
+    print(f"Evaluation completed and saved to {save_path}.")
 
-    json_file_path = "story_evaluation_results.json"
-
-    # merge score with original dataset
-    with open(json_file_path, "r") as file:
-        json_data = json.load(file)
-
-    # Extract the "average" scores for each index
+    # Extract the "average" scores directly from the `results` dictionary
     average_scores = {
         int(idx): {
             "authenticity_score": values["average"]["authenticity_score"],
@@ -186,15 +193,16 @@ if __name__ == "__main__":
             "narrative_complexity_score": values["average"]["narrative_complexity_score"],
             "human_likeness_score": values["average"]["human_likeness_score"],
         }
-        for idx, values in json_data.items()
+        for idx, values in results.items()
     }
 
     # Convert to DataFrame
     avg_scores_df = pd.DataFrame.from_dict(average_scores, orient="index")
 
     # Merge with the original DataFrame on index
-    scored_df = df.merge(avg_scores_df, left_index=True, right_index=True, how="left")
+    scored_df = dataset_df.merge(avg_scores_df, left_index=True, right_index=True, how="left")
 
-    scored_df.to_csv("llm_stories_average_scored.csv")
+    csv_save_path = f"./story_eval/evaluations/story_evaluation_results_{args.model_id.replace('/', '-')}_averaged.json"
+    scored_df.to_csv(csv_save_path)
 
-    print("Saved story scores to llm_stories_average_scored.csv")
+    print(f"Saved story scores to {csv_save_path}")
