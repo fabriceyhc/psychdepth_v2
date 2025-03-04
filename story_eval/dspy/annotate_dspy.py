@@ -354,7 +354,7 @@ def main(top_N, evaluation_type, strategy):
                     df_predictions = pd.DataFrame(predictions)
                     # Save predictions using a filename derived from the strategy file.
                     out_filename = f"{model_id.replace('/', '_')}_predictions_" + os.path.basename(strategy_file).split('.')[0] + ".csv"
-                    out_path = os.path.join("./dspy_annotations/", out_filename)
+                    out_path = os.path.join("./story_eval/dspy/dspy_annotations/", out_filename)
                     os.makedirs(os.path.dirname(out_path), exist_ok=True)
                     df_predictions.to_csv(out_path, index=False)
                     print(f"Predictions saved to {out_path}")

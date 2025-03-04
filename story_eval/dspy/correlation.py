@@ -33,11 +33,11 @@ if __name__ == "__main__":
 
     # Load annotations
     all_summary = {}
-    for file in os.listdir("./dspy_annotations/"):
+    for file in os.listdir("./story_eval/dspy/dspy_annotations/"):
         # Compute correlations for singlescore annotations
         if "DepthS" in file or "DepthSE" in file or "DepthES" in file:
             print(f"result for {file}")
-            rating_df = pd.read_csv("./dspy_annotations/"+file)
+            rating_df = pd.read_csv("./story_eval/dspy/dspy_annotations/"+file)
             rating_df = rating_df.drop_duplicates(subset=["story_id", "psychological_depth_component"])
             rating_df = rating_df.pivot(
                 index=["story_id"],
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         # Compute annotations for multiscore annotations
         else:
             print(f"result for {file}")
-            rating_df = pd.read_csv("./dspy_annotations/"+file)
+            rating_df = pd.read_csv("./story_eval/dspy/dspy_annotations/"+file)
             # Merge AI and human annotations on story_id
             merged_df = pd.merge(rating_df, multiscore_df, on="story_id", suffixes=("_ai", "_human"))
             # Compute Spearman correlation for each score type
