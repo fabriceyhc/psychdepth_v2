@@ -19,6 +19,7 @@ DEFAULT_PERSONAS = [
     "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you examine the text for its ability to provoke a wide range of intense emotional responses in the reader.",
     "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you analyze the structural and thematic intricacy of the plot, character development, and the use of literary devices.",
 ]
+
 class MultiPersonaModule(dspy.Module):
     def __init__(self, base_model, personas):
         super().__init__()
@@ -102,12 +103,7 @@ def main(model_id, use_personas):
         gpu_list = [gpu.strip() for gpu in cuda_visible_devices.split(",") if gpu.strip()]
         num_gpus = len(gpu_list)
 
-<<<<<<< HEAD
     server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models/hf --tp {num_gpus}"
-=======
-    # Server setup with optional --tp argument
-    server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/ruichenzheng/local_models/hf --tp {num_gpus}"
->>>>>>> a34db1c70955e8e86ae545fdd1ff2896e97c0bf5
     server_process, port = launch_server_cmd(server_cmd)
     wait_for_server(f"http://localhost:{port}")
 
