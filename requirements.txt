@@ -1,6 +1,6 @@
 --extra-index-url https://download.pytorch.org/whl/cu121
 torch
-transformers
+transformers==4.48.3
 guidance
 bitsandbytes
 accelerate
