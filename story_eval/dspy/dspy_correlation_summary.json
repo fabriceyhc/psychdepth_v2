@@ -1,4 +1,31 @@
 {
+    "deepseek-ai_DeepSeek-R1-Distill-Llama-8B_predictions_MIPROv2_Predict-PsychDepthAssessment_demos=10.csv": {
+        "authenticity_score": {
+            "correlation": -0.002650493467052754,
+            "p_value": 0.9535729548789071
+        },
+        "empathy_score": {
+            "correlation": 0.410035380065519,
+            "p_value": 4.326290579346927e-21
+        },
+        "engagement_score": {
+            "correlation": -0.0007908298889831818,
+            "p_value": 0.986140417820931
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.28065894768645444,
+            "p_value": 3.137671734116861e-10
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.16817555526828482,
+            "p_value": 0.00019870413674406292
+        },
+        "human_likeness_score": {
+            "correlation": 0.06014527591183051,
+            "p_value": 0.18605436784384308
+        },
+        "average": 0.17108571193284447
+    },
     "deepseek-ai_DeepSeek-R1-Distill-Llama-8B_predictions_MIPROv2_ChainOfThought-DepthS_demos=5.csv": {
         "authenticity_score": {
             "correlation": 0.38673909521122896,

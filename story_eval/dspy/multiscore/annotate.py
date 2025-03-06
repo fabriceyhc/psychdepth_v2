@@ -2,114 +2,78 @@ import random
 import os
 import dspy
 import pandas as pd
+import textwrap
 import traceback
 import argparse
-from dspy.datasets import DataLoader
-from dspy.evaluate import Evaluate
-from sglang.utils import launch_server_cmd, wait_for_server, terminate_process
+from sglang.utils import launch_server_cmd, wait_for_server, print_highlight, terminate_process
+from story_eval.dspy.multiscore.singatures import PDSMultiScore
 
-from story_eval.dspy.multiscore.signatures import PDSMultiscore
+def load_and_recreate_strategy(strategy_file):
+    filename = os.path.basename(strategy_file)
+    parts = filename.split("_")
 
-SEED = 0
+    module_and_sig = parts[1].split("-")
+    module_type = module_and_sig[0]
 
-DEFAULT_PERSONAS = [
-    "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you specialize in evaluating the genuineness and believability of characters, dialogue, and scenarios in stories.",
-    "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you focus on identifying and assessing moments in the narrative that effectively evoke empathetic connections with the characters.",
-    "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you evaluate how well a story captures and maintains the reader's interest through pacing, suspense, and narrative flow.",
-    "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you examine the text for its ability to provoke a wide range of intense emotional responses in the reader.",
-    "You are a helpful AI who specializes in evaluating the psychological depth present in stories. In particular, you analyze the structural and thematic intricacy of the plot, character development, and the use of literary devices.",
-]
+    if module_type == "Predict":
+        program_instance = dspy.Predict(PDSMultiScore)
+    elif module_type == "ChainOfThought":
+        program_instance = dspy.ChainOfThought(PDSMultiScore)
+    else:
+        raise ValueError(f"Unknown module type: {module_type} in file {filename}")
 
-class MultiPersonaModule(dspy.Module):
-    def __init__(self, base_model, personas):
-        super().__init__()
-        self.base_model = base_model
-        self.personas = personas
+    program_instance.load(strategy_file)
+    return program_instance
 
-    def forward(self, story):
-        all_preds = []
-        for persona in self.personas:
-            modified_story = f"System Prompt: {persona}\n\nStory: {story}"
-            pred = self.base_model(story=modified_story)
-            all_preds.append(pred)
+def prepare_dataset(dataset):
+    df = pd.read_csv(dataset)
+    dataset = []
+    for _, row in df.iterrows():
+        ex = dspy.Example(story=row["text"]).with_inputs("story")
+        ex.story_id = row["story_id"]
+        dataset.append(ex)
+    return dataset
+
+def evaluate_strategy_on_dataset(strategy, dataset):
+    predictions = []
+    for example in dataset:
+        try:
+            print(f"Evaluating story: {example.story_id}")
+            prediction = strategy(**ex.inputs())
+            predictions.append({
+                "story_id": example.story_id,
+                "authenticity_score": prediction.authenticity_score,
+                "emotion_provoking_score": prediction.emotion_provoking_score,
+                "empathy_score": prediction.empathy_score,
+                "engagement_score": prediction.engagement_score,
+                "narrative_complexity_score": prediction.narrative_complexity_score,
+                "human_likeness_score": prediction.human_likeness_score
+            })
+        except Exception as e:
+            print("Error processing example:", e)
+            traceback.print_exc()
+            predictions.append({"story_id": ex.story_id, "error": str(e)})
+    return predictions
+
+def main(dataset, strategy_file):
+    testset = prepare_dataset(dataset)
+    parts = os.path.normpath(strategy_file).split(os.sep)
+    model_id = "/".join(parts[-3:-1])
+    try: 
+        # Determine GPU count
+        cuda_visible_devices = os.environ.get("CUDA_VISIBLE_DEVICES", "")
+        num_gpus = 1
+        if cuda_visible_devices:
+            # Count the non-empty entries (in case of stray commas)
+            gpu_list = [gpu.strip() for gpu in cuda_visible_devices.split(",") if gpu.strip()]
+            num_gpus = len(gpu_list)
         
-        avg_scores = {}
-        for key in all_preds[0].keys():
-            avg_scores[key] = sum(getattr(p, key) for p in all_preds) / len(all_preds)
-        return dspy.Prediction(**avg_scores)
-
-def score_pds(example, prediction, trace=None):
-    fields = ['authenticity_score', 'empathy_score', 'engagement_score', 
-              'emotion_provoking_score', 'narrative_complexity_score', 'human_likeness_score']
-    absolute_errors = [abs(getattr(prediction, f) - getattr(example, f) for f in fields]
-    mae = sum(absolute_errors) / len(absolute_errors)
-    return 1 - (mae / 4)
-
-def prepare_dataset(file_path, max_rows=None):
-    df = pd.read_csv(file_path)
-    dataset = [
-        dspy.Example(
-            story=row["text"],
-            authenticity_score=row["authenticity_score"],
-            empathy_score=row["empathy_score"],
-            engagement_score=row["engagement_score"],
-            emotion_provoking_score=row["emotion_provoking_score"],
-            narrative_complexity_score=row["narrative_complexity_score"],
-            human_likeness_score=row["human_likeness_score"],
-        ).with_inputs("story")
-        for _, row in df.iterrows()
-    ]
-    random.Random(SEED).shuffle(dataset)
-    return dataset[:max_rows] if max_rows else dataset
-
-def evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset, model_id, personas):
-    if personas:
-        pre_model = MultiPersonaModule(model, personas)
-    else:
-        pre_model = model
-    pre_score = evaluator(pre_model, metric=score_pds)
-    
-    optimizer = dspy.MIPROv2(
-        metric=score_pds,
-        num_threads=24,
-        max_labeled_demos=num_demos,
-        max_bootstrapped_demos=num_demos
-    )
-    optimized_model = optimizer.compile(model, trainset=trainset, requires_permission_to_run=False)
-    
-    if personas:
-        post_model = MultiPersonaModule(optimized_model, personas)
-    else:
-        post_model = optimized_model
-    post_score = evaluator(post_model, metric=score_pds)
-
-    save_path = f'./story_eval/dspy/multiscore/optimized_prompts/{model_id}/MIPROv2_{module_name}-{signature_name}_demos={num_demos}{"_persona" if personas else ""}.json'
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-    optimized_model.save(save_path, save_program=False)
-    
-    return {
-        "module": module_name,
-        "signature": signature_name,
-        "num_demos": num_demos,
-        "pre_score": pre_score,
-        "post_score": post_score,
-        "save_path": save_path,
-    }
-
-def main(model_id, use_personas):
-    cuda_visible_devices = os.environ.get("CUDA_VISIBLE_DEVICES", "")
-    num_gpus = 1
-    if cuda_visible_devices:
-        gpu_list = [gpu.strip() for gpu in cuda_visible_devices.split(",") if gpu.strip()]
-        num_gpus = len(gpu_list)
-
-    server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models/hf --tp {num_gpus}"
-    server_process, port = launch_server_cmd(server_cmd)
-    wait_for_server(f"http://localhost:{port}")
-
-    try:
-        trainset = prepare_dataset("./data/stories_w_human_annotations_multiscore_train.csv")
-        testset = prepare_dataset("./data/stories_w_human_annotations_multiscore_test.csv", max_rows=200)
+        # Server setup with optional --tp argument
+        server_cmd = f"python -m sglang.launch_server --model-path {model_id} --download-dir /data2/.shared_models/hf --tp {num_gpus}"
+        server_process, port = launch_server_cmd(server_cmd)
+        wait_for_server(f"http://localhost:{port}")
+        print(f"SGLang server started on http://localhost:{port}")
+        # Setup the language model using the extracted model_id
 
         lm = dspy.LM(
             f"openai/{model_id}",
@@ -118,39 +82,39 @@ def main(model_id, use_personas):
             model_type='chat'
         )
         dspy.configure(lm=lm)
-
-        MODULES = [dspy.Predict, dspy.ChainOfThought]
-        SIGNATURES = [PDSMultiscore]
-        NUM_DEMOS_OPTIONS = [0, 3, 5, 10]
-        personas = DEFAULT_PERSONAS if use_personas else []
-
-        results = []
-        evaluator = Evaluate(devset=testset, num_threads=1, display_progress=True)
         
-        for signature in SIGNATURES:
-            signature_name = signature.__name__
-            for module in MODULES:
-                model = module(signature)
-                module_name = module.__name__
-                for num_demos in NUM_DEMOS_OPTIONS:
-                    result = evaluate_model(evaluator, model, signature_name, module_name, num_demos, trainset, model_id, personas)
-                    results.append(result)
-
-        summary_dir = f"./story_eval/dspy/multiscore/optimized_prompts/{model_id}"
-        os.makedirs(summary_dir, exist_ok=True)
-        pd.DataFrame(results).to_csv(f"{summary_dir}/summary_persona.csv" if use_personas else f"{summary_dir}/summary.csv")
+        try:
+            print(f"Evaluating strategy from file: {strategy_file}")
+            loaded_program = load_and_recreate_strategy(strategy_file)
+            predictions = evaluate_strategy_on_dataset(loaded_program, testset)
+            df_predictions = pd.DataFrame(predictions)
+            # Save predictions using a filename derived from the strategy file.
+            out_filename = f"{model_id.replace('/', '_')}_predictions_" + os.path.basename(strategy_file).split('.')[0] + ".csv"
+            out_path = os.path.join("./story_eval/dspy/dspy_annotations/", out_filename)
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            df_predictions.to_csv(out_path, index=False)
+            print(f"Predictions saved to {out_path}")
+        except Exception as e:
+            print(f"Error evaluating strategy {strategy_file}: {e}")
+            traceback.print_exc()
+        
         terminate_process(server_process)
-
     except Exception as e:
-        traceback.print_exc()
+        # Use traceback to print the full error details
+        print("An error occurred:")
+        traceback.print_exc()  # This prints the full stack trace
         terminate_process(server_process)
 
 if __name__ == "__main__":
-
-    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.multiscore.annotate --model_id meta-llama/Llama-3.1-8B-Instruct --use_personas
-
-    parser = argparse.ArgumentParser(description="Evaluate a model with personas using SGLang.")
-    parser.add_argument("--model_id", type=str, default="meta-llama/Llama-3.1-8B-Instruct")
-    parser.add_argument("--use_personas", action="store_true", help="Enable persona-based evaluation")
+    # Example usage:
+    # Use this command for directly loading a desired strategy
+    # CUDA_VISIBLE_DEVICES=4 python -m story_eval.dspy.multiscore.annotate --strategy ./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/MIPROv2_Predict-PsychDepthAssessment_demos=10.json
+    parser = argparse.ArgumentParser(
+        description="Load optimized prompts into a DSPy model and evaluate a dataset using the top strategies."
+    )
+    parser.add_argument("--dataset", type=str,
+                        default= "./data/stories_w_human_annotations_multiscore.csv", help="Test dataset used for annotation.")
+    parser.add_argument("--strategy", type=str,
+                        default=None, help="Annotate the testset using a given strategy")
     args = parser.parse_args()
-    main(args.model_id, args.use_personas)
+    main(args.dataset, args.strategy)

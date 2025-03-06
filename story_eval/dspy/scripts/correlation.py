@@ -89,5 +89,5 @@ if __name__ == "__main__":
             output["average"] = total / 5   
             # print(output)
             all_summary[file] = output
-        with open("./story_eval/dspy_correlation_summary.json", "w") as f:
-            json.dump(all_summary, f, indent=4)
+    with open("./story_eval/dspy/dspy_correlation_summary.json", "w") as f:
+        json.dump(all_summary, f, indent=4)
