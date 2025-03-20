@@ -143,7 +143,7 @@ def main(model_id, use_personas):
 
 if __name__ == "__main__":
     
-    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.singlescore.annotate --model_id meta-llama/Llama-3.1-8B-Instruct --use_personas
+    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.singlescore.optimize --model_id meta-llama/Llama-3.1-8B-Instruct --use_personas
 
     parser = argparse.ArgumentParser(description="Evaluate a model with personas using SGLang.")
     parser.add_argument("--model_id", type=str, default="meta-llama/Llama-3.1-8B-Instruct")

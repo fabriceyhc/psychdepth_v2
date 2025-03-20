@@ -145,14 +145,14 @@ class PsychDepthEvaluator:
 
 if __name__ == "__main__":
 
-    # CUDA_VISIBLE_DEVICES=2 python -m story_eval.evaluator --model_id /data2/.shared_models/llama.cpp_models/DeepSeek-R1-Distill-Llama-8B-Q8_0.gguf --dataset ./dataset/data/llm_stories.csv
+    # CUDA_VISIBLE_DEVICES=7 python -m story_eval.evaluator --model_id /data2/.shared_models/llama.cpp_models/DeepSeek-R1-Distill-Llama-8B-Q8_0.gguf --dataset ./dataset/data/llm_stories.csv
     parser = argparse.ArgumentParser(
         description="Evaluate a story dataset using specified evaluator"
     )
     parser.add_argument("--model_id",
                         type=str, 
-                        default="bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF",
-                        help="Hugging Face model id to use (default: bartowski/DeepSeek-R1-Distill-Llama-8B-GGUF)")
+                        default="/data2/.shared_models/llama.cpp_models/DeepSeek-R1-Distill-Llama-8B-Q8_0.gguf",
+                        help="Hugging Face model id to use")
     parser.add_argument("--dataset", 
                         type=str, 
                         default="./data/stories/study_stories.csv",

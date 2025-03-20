@@ -35,13 +35,15 @@ class MultiPersonaModule(dspy.Module):
         
         avg_scores = {}
         for key in all_preds[0].keys():
+            if key == "reasoning":
+                continue
             avg_scores[key] = sum(getattr(p, key) for p in all_preds) / len(all_preds)
         return dspy.Prediction(**avg_scores)
 
 def score_pds(example, prediction, trace=None):
     fields = ['authenticity_score', 'empathy_score', 'engagement_score', 
               'emotion_provoking_score', 'narrative_complexity_score', 'human_likeness_score']
-    absolute_errors = [abs(getattr(prediction, f) - getattr(example, f) for f in fields)]
+    absolute_errors = [abs(getattr(prediction, f) - getattr(example, f)) for f in fields]
     mae = sum(absolute_errors) / len(absolute_errors)
     return 1 - (mae / 4)
 
@@ -147,7 +149,7 @@ def main(model_id, use_personas):
 
 if __name__ == "__main__":
 
-    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.multiscore.annotate --model_id meta-llama/Llama-3.1-8B-Instruct --use_personas
+    # CUDA_VISIBLE_DEVICES=0 python -m story_eval.dspy.multiscore.optimize --model_id meta-llama/Llama-3.1-8B-Instruct --use_personas
 
     parser = argparse.ArgumentParser(description="Evaluate a model with personas using SGLang.")
     parser.add_argument("--model_id", type=str, default="meta-llama/Llama-3.1-8B-Instruct")

@@ -7,6 +7,7 @@ import traceback
 import argparse
 from sglang.utils import launch_server_cmd, wait_for_server, print_highlight, terminate_process
 from story_eval.dspy.multiscore.singatures import PDSMultiScore
+from story_eval.dspy.multiscore.optimize import MultiPersonaModule, DEFAULT_PERSONAS
 
 def load_and_recreate_strategy(strategy_file):
     filename = os.path.basename(strategy_file)
@@ -14,19 +15,30 @@ def load_and_recreate_strategy(strategy_file):
 
     module_and_sig = parts[1].split("-")
     module_type = module_and_sig[0]
+    persona = parts[-1]
 
-    if module_type == "Predict":
-        program_instance = dspy.Predict(PDSMultiScore)
-    elif module_type == "ChainOfThought":
-        program_instance = dspy.ChainOfThought(PDSMultiScore)
+    if persona == "persona.json":
+        print("yess")
+        if module_type == "Predict":
+            program_instance = MultiPersonaModule(dspy.Predict(PDSMultiScore), DEFAULT_PERSONAS)
+        elif module_type == "ChainOfThought":
+            program_instance = MultiPersonaModule(dspy.ChainOfThought(PDSMultiScore), DEFAULT_PERSONAS)
+        else:
+            raise ValueError(f"Unknown module type: {module_type} in file {filename}")
+        program_instance.base_model.load(strategy_file)
     else:
-        raise ValueError(f"Unknown module type: {module_type} in file {filename}")
-
-    program_instance.load(strategy_file)
+        if module_type == "Predict":
+            program_instance = dspy.Predict(PDSMultiScore)
+        elif module_type == "ChainOfThought":
+            program_instance = dspy.ChainOfThought(PDSMultiScore)
+        else:
+            raise ValueError(f"Unknown module type: {module_type} in file {filename}")
+        program_instance.load(strategy_file)
     return program_instance
 
 def prepare_dataset(dataset):
     df = pd.read_csv(dataset)
+    df = df.drop_duplicates(subset=["story_id"])
     dataset = []
     for _, row in df.iterrows():
         ex = dspy.Example(story=row["text"]).with_inputs("story")
@@ -39,7 +51,7 @@ def evaluate_strategy_on_dataset(strategy, dataset):
     for example in dataset:
         try:
             print(f"Evaluating story: {example.story_id}")
-            prediction = strategy(**ex.inputs())
+            prediction = strategy(**example.inputs())
             predictions.append({
                 "story_id": example.story_id,
                 "authenticity_score": prediction.authenticity_score,
@@ -108,13 +120,13 @@ def main(dataset, strategy_file):
 if __name__ == "__main__":
     # Example usage:
     # Use this command for directly loading a desired strategy
-    # CUDA_VISIBLE_DEVICES=4 python -m story_eval.dspy.multiscore.annotate --strategy ./story_eval/dspy/multiscore/optimized_prompts/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/MIPROv2_Predict-PsychDepthAssessment_demos=10.json
+    # CUDA_VISIBLE_DEVICES=0,2,3,5 python -m story_eval.dspy.multiscore.annotate --strategy ./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-3.1-70B-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json
     parser = argparse.ArgumentParser(
         description="Load optimized prompts into a DSPy model and evaluate a dataset using the top strategies."
     )
     parser.add_argument("--dataset", type=str,
                         default= "./data/stories_w_human_annotations_multiscore.csv", help="Test dataset used for annotation.")
     parser.add_argument("--strategy", type=str,
-                        default=None, help="Annotate the testset using a given strategy")
+                        default="./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-3.1-70B-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json", help="Annotate the testset using a given strategy")
     args = parser.parse_args()
     main(args.dataset, args.strategy)
