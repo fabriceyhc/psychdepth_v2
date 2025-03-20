@@ -9,56 +9,44 @@ import traceback
 import guidance
 from guidance import models, gen, user, system, assistant
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from typing import Optional, Dict, Any, List
+
+from dataset.strategies.base import BaseGenerator
 
 n = "\n"
 
-
-
-class WriterProfileGenerator:
+class WriterProfileGenerator(BaseGenerator):
+    """Specialized generator for creating stories with different writing profiles."""
+    
     def __init__(
         self,
-        model_id="meta-llama/Llama-3.2-1B-Instruct",
-        load_in_8bit=False,
-        max_input_len=4096,
-        cache_dir="/data2/.shared_models",
-        device_map="auto",
-        verbose=False
+        # Base parameters
+        backend_type: str = "transformers",
+        model_id: str = "meta-llama/Llama-3.2-1B-Instruct",
+        load_in_8bit: bool = False,
+        max_input_len: int = 4096,
+        cache_dir: str = "/data2/.shared_models",
+        device_map: str = "auto",
+        verbose: bool = False,
+        # OpenAI-specific
+        openai_base_url: Optional[str] = None,
+        # LlamaCpp-specific
+        llamacpp_model_path: Optional[str] = None,
+        llamacpp_n_ctx: int = 2048,
     ):
-        """
-        Initialize with bitsandbytes 8-bit quantization
-        """
-        if verbose:
-            print(f"Loading {model_id} {'with 8-bit quantization' if load_in_8bit else ''}")
-
-        if load_in_8bit:
-            # Configure 8-bit quantization
-            bnb_config = BitsAndBytesConfig(
-                load_in_8bit=True,
-                llm_int8_threshold=6.0,
-                llm_int8_has_fp16_weight=False,
-                bnb_4bit_use_double_quant=False,
-            )
-
-        # Load model and tokenizer
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            quantization_config=bnb_config if load_in_8bit else None,
-            device_map=device_map,
+        super().__init__(
+            backend_type=backend_type,
+            model_id=model_id,
+            load_in_8bit=load_in_8bit,
+            max_input_len=max_input_len,
             cache_dir=cache_dir,
-            trust_remote_code=True,
-            use_cache=True
-
-        )
-        
-        self.tokenizer = AutoTokenizer.from_pretrained(
-            model_id,
-            cache_dir=cache_dir
+            device_map=device_map,
+            verbose=verbose,
+            openai_base_url=openai_base_url,
+            llamacpp_model_path=llamacpp_model_path,
+            llamacpp_n_ctx=llamacpp_n_ctx,
         )
 
-        self.max_input_len = max_input_len
-        self.verbose = verbose
-
-        # Set a default writer profile (system prompt)
         self.default_profile = textwrap.dedent("""\
             You are a seasoned writer who has won several accolades for your emotionally rich stories. 
             When you write, you delve deep into the human psyche, pulling from the reservoir of universal 
@@ -72,116 +60,52 @@ class WriterProfileGenerator:
             """
         )
 
-    def generate_story(self, 
-                       premise: str, 
-                       num_words: int = 500, 
-                       profile: str = None,
-                       examples: list = None,
-                       temperature: float = 1.0):
-        """
-        Generate a story with the given premise and writer profile. 
-        - `premise`: The main idea or scenario for the story.
-        - `num_words`: Roughly how many words you want in the story.
-        - `profile`: An optional 'system' message describing the writer's style/persona.
-        - `examples`: An optional list of few-shot examples (each a dict), if you want to provide them.
-        """
-
+    def generate_story(
+        self, 
+        premise: str, 
+        num_words: int = 500, 
+        profile: Optional[str] = None,
+        examples: Optional[List[Dict]] = None,
+        temperature: float = 1.0
+    ) -> Optional[Dict[str, Any]]:
+        """Generate a story with the given premise and writing profile."""
         @guidance(dedent=True)
         def story_task(lm, premise, num_words, profile, examples, temperature):
-            # If a writer profile is provided, treat it like a system message.
             if profile:
                 with system():
-                    lm += f"{profile}"
-
-            # The user instruction (requesting a story).
+                    lm += profile
             with user():
-                lm += f"""
-                Please write a {num_words}-word story on the following prompt:
-                
-                {premise}
-                
-                Only respond with the story text.
-                """
-                # (Optional) If you want to embed example-based prompting:
-                if examples and len(examples) > 0:
-                    lm += "### Examples:\n"
+                lm += f"Please write a {num_words}-word story on:{n}{premise}{n}Only respond with the story text."
+                if examples:
+                    lm += f"{n}### Examples:"
                     for ex in examples:
-                        lm += f"{n}Example premise: {ex['premise']}\n"
-                        lm += f"Example story excerpt: {ex['story_excerpt']}\n"
-
-            # The assistant block—where we capture the actual story generation.
+                        lm += f"{n}Premise: {ex['premise']}{n}Story: {ex['story_excerpt']}"
             with assistant():
                 lm += gen(name="story", max_tokens=int(num_words*2), temperature=temperature)
-                
             return lm
 
-        # If user didn't provide a profile, use the default
-        if not profile:
-            profile = self.default_profile
-
-        # Execute the Guidance program with your model
-        start_time = time.time()
         try:
-
-            # Reconstructing guidance interface to reset state
-            guidance_model = guidance.models.Transformers(
-                model=self.model,
-                tokenizer=self.tokenizer,
-                max_length=self.max_input_len,
-                echo=False
-            )
-
-            output = guidance_model + story_task(
+            start_time = time.time()
+            output = self.guidance_model + story_task(
                 premise=premise,
                 num_words=num_words,
-                profile=profile or "",
+                profile=profile or self.default_profile,
                 examples=examples or [],
                 temperature=temperature
             )
-            generation_time = time.time() - start_time
-
             return {
                 "story": output["story"].strip(),
-                "generation_time": generation_time
+                "generation_time": time.time() - start_time
             }
-
         except Exception as e:
-            print(f"An error occurred during generation: {e}")
+            print(f"Generation error: {e}")
             traceback.print_exc()
             return None
 
 
+# Example usage remains the same as original
 if __name__ == "__main__":
-
-    # TOKENIZERS_PARALLELISM=false CUDA_VISIBLE_DEVICES=7 python -m dataset.strategies.writer_profile
-
-    # Example usage
     generator = WriterProfileGenerator(model_id="meta-llama/Llama-3.2-1B-Instruct")
-
-    # If you provide a custom profile, it overrides the default
-    custom_profile = textwrap.dedent("""\
-        You are a futuristic sci-fi writer specializing in post-apocalyptic worlds and robot protagonists.
-        All your stories reflect high-tech environments, philosophical themes, and machine-human interactions.
-        """
-    )
-
-    # A simple premise
-    premise = "You are allowed to 'downvote' a government candidate instead of voting normally, reducing their votes by one. Turns out people have little love for politicians, and the majority end with negative votes. In these democracies, anonymity is the key to winning."
-
-    # (Optional) A few-shot example
-    few_shot_examples = [
-        {
-            "premise": "A fisherman who hears voices under the sea.",
-            "story_excerpt": "He sank his hands into the brine, recalling the echoes of a silent past..."
-        }
-    ]
-
-    result = generator.generate_story(
-        premise=premise, 
-        num_words=50, 
-        # profile=custom_profile,
-        # examples=few_shot_examples
-    )
-
+    premise = "A world where politicians receive downvotes instead of votes..."
+    result = generator.generate_story(premise=premise, num_words=50)
     print("Generated Story:\n", result["story"])
-    print("Time Taken (sec):", result["generation_time"])
