@@ -64,7 +64,7 @@ def evaluate_strategy_on_dataset(strategy, dataset):
         except Exception as e:
             print("Error processing example:", e)
             traceback.print_exc()
-            predictions.append({"story_id": ex.story_id, "error": str(e)})
+            predictions.append({"story_id": example.story_id, "error": str(e)})
     return predictions
 
 def main(dataset, strategy_file):
