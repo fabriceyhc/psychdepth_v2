@@ -29,8 +29,8 @@ def main(args):
     df = pd.read_csv(args.input)
     df['avg_score'] = df[SCORE_COLUMNS].mean(axis=1)
 
-    # Apply filtering only for SFT and DPO
-    if args.type != 'kto' and args.min_avg_pds_score > 0:
+    # Apply filtering only for SFT
+    if args.type == 'sft' and args.min_avg_pds_score > 0:
         df = df[df['avg_score'] > args.min_avg_pds_score]
     
     # Format data according to specified type
@@ -76,13 +76,16 @@ def main(args):
     print(f"{len(formatted_data)} rows saved to {args.output}")
 
 if __name__ == "__main__":
+
+    # RUN: ./dataset/scripts/format.sh 
+
     parser = argparse.ArgumentParser(description='Convert dataset to ShareGPT format')
     parser.add_argument('--input', type=str, required=True, help='Input CSV file path')
     parser.add_argument('--output', type=str, required=True, help='Output JSON file path')
     parser.add_argument('--type', type=str, required=True, choices=['sft', 'dpo', 'kto'], 
                        help='Type of format to generate: sft, dpo, or kto')
-    parser.add_argument('--min_avg_pds_score', type=float, default=4.0,
-                       help='Minimum average PDS score for filtering (SFT/DPO) or labeling (KTO)')
+    parser.add_argument('--min_avg_pds_score', type=float, default=3.5,
+                       help='Minimum average PDS score for filtering (SFT) or labeling (KTO)')
     parser.add_argument('--threshold', type=float, default=0.5,
                        help='Minimum score difference for DPO comparisons only')
     
