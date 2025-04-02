@@ -1,4 +1,28 @@
 {
+  "openr1_kto": {
+    "file_name": "kto_openr1.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "kto_tag": "label"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "openr1_dpo": {
+    "file_name": "dpo_openr1.json",
+    "ranking": true,
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
   "reddit_sft": {
     "file_name": "sft_reddit_vote.json"
   },
