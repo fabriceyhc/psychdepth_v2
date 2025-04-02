@@ -1,0 +1,3 @@
+python -m dataset.format --input ./data/stories_w_human_annotations_multiscore.csv --output ./data/sft/pdsv2_sft.json --type sft --min_avg_pds_score 3.5
+python -m dataset.format --input ./data/stories_w_human_annotations_multiscore.csv --output ./data/dpo/pdsv2_dpo.json --type dpo --threshold 0.5 --min_avg_pds_score 3.0
+python -m dataset.format --input ./data/stories_w_human_annotations_multiscore.csv --output ./data/kto/pdsv2_kto.json --type kto --min_avg_pds_score 3.5
