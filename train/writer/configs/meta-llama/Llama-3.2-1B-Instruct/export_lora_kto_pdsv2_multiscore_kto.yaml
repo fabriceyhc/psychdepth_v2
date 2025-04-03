@@ -1,0 +1,14 @@
+### model
+model_name_or_path: meta-llama/Llama-3.2-1B-Instruct
+adapter_name_or_path: 
+  /data2/.shared_models/lora/meta-llama/Llama-3.2-1B-Instruct/pdsv2_multiscore_kto/kto
+cache_dir: /data2/.shared_models
+template: llama3
+trust_remote_code: true
+
+### export
+export_dir: 
+  /data2/.shared_models/merged/meta-llama/Llama-3.2-1B-Instruct/pdsv2_multiscore_kto/kto
+export_size: 1
+export_device: cpu
+export_legacy_format: false

@@ -12,3 +12,4 @@ uv
 sgl-kernel
 sglang[all]==0.4.3.post2
 ruamel.yaml
+deepspeed

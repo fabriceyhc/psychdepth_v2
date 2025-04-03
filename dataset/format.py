@@ -63,8 +63,8 @@ def main(args):
         for _, row in df.iterrows():
             formatted_data.append({
                 "conversations": [
-                    {"role": "user", "content": f"{PROFILE}\n\nWrite a {NUM_WORDS}-word story on the following prompt:\n{row['premise']}\n\nOnly respond with the story."},
-                    {"role": "assistant", "content": row['text']}
+                    {"from": "human", "value": f"{PROFILE}\n\nWrite a {NUM_WORDS}-word story on the following prompt:\n{row['premise']}\n\nOnly respond with the story."},
+                    {"from": "gpt", "value": row['text']}
                 ],
                 "label": row['avg_score'] >= args.min_avg_pds_score
             })

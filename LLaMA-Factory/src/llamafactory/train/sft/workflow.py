@@ -26,6 +26,7 @@ from ...model import load_model, load_tokenizer
 from ..trainer_utils import create_modelcard_and_push
 from .metric import ComputeAccuracy, ComputeSimilarity, eval_logit_processor
 from .trainer import CustomSeq2SeqTrainer
+from transformers import DataCollatorForLanguageModeling, EarlyStoppingCallback
 
 
 if TYPE_CHECKING:
@@ -83,9 +84,9 @@ def run_sft(
     gen_kwargs["eos_token_id"] = [tokenizer.eos_token_id] + tokenizer.additional_special_tokens_ids
     gen_kwargs["pad_token_id"] = tokenizer.pad_token_id
     gen_kwargs["logits_processor"] = get_logits_processor()
-    callbacks.append(
-      EarlyStoppingCallback(early_stopping_patience=5)
-    )
+    # callbacks.append(
+    #   EarlyStoppingCallback(early_stopping_patience=5)
+    # )
     # Initialize our Trainer
     trainer = CustomSeq2SeqTrainer(
         model=model,

@@ -1,4 +1,30 @@
 {
+  "pdsv2_multiscore_sft": {
+    "file_name": "pdsv2/sft/pdsv2_multiscore_sft.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "pdsv2_multiscore_dpo": {
+    "file_name": "pdsv2/dpo/pdsv2_multiscore_dpo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "pdsv2_multiscore_kto": {
+    "file_name": "pdsv2/kto/pdsv2_multiscore_kto.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "kto_tag": "label"
+    }
+  },
   "openr1_kto": {
     "file_name": "kto_openr1.json",
     "formatting": "sharegpt",
