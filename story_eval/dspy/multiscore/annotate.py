@@ -67,7 +67,18 @@ def evaluate_strategy_on_dataset(strategy, dataset):
             predictions.append({"story_id": example.story_id, "error": str(e)})
     return predictions
 
-def main(dataset, strategy_file):
+def safe_makedirs(out_path):
+    base_dir = os.getcwd()
+    if not os.path.isabs(out_path):
+        out_path = os.path.join(base_dir, out_path)
+    
+    parent_dir = os.path.dirname(out_path)
+    if parent_dir: 
+        os.makedirs(parent_dir, exist_ok=True)
+    
+    return out_path
+
+def main(dataset, strategy_file, out_path):
     testset = prepare_dataset(dataset)
     parts = os.path.normpath(strategy_file).split(os.sep)
     model_id = "/".join(parts[-3:-1])
@@ -101,9 +112,10 @@ def main(dataset, strategy_file):
             predictions = evaluate_strategy_on_dataset(loaded_program, testset)
             df_predictions = pd.DataFrame(predictions)
             # Save predictions using a filename derived from the strategy file.
-            out_filename = f"{model_id.replace('/', '_')}_predictions_" + os.path.basename(strategy_file).split('.')[0] + ".csv"
-            out_path = os.path.join("./story_eval/dspy/dspy_annotations/", out_filename)
-            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            if out_path is None:
+                out_filename = f"{model_id.replace('/', '_')}_predictions_" + os.path.basename(strategy_file).split('.')[0] + ".csv"
+                out_path = os.path.join("./story_eval/dspy/dspy_annotations/", out_filename)
+            out_path = safe_makedirs(out_path)
             df_predictions.to_csv(out_path, index=False)
             print(f"Predictions saved to {out_path}")
         except Exception as e:
@@ -125,8 +137,10 @@ if __name__ == "__main__":
         description="Load optimized prompts into a DSPy model and evaluate a dataset using the top strategies."
     )
     parser.add_argument("--dataset", type=str,
-                        default= "./data/stories_w_human_annotations_multiscore.csv", help="Test dataset used for annotation.")
+                        default= "./data/stories_w_human_annotations_multiscore.csv", help="Test dataset used for annotation")
     parser.add_argument("--strategy", type=str,
                         default="./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-3.1-70B-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json", help="Annotate the testset using a given strategy")
+    parser.add_argument("--output", type=str,
+                        default=None, help="Path of annotation output")
     args = parser.parse_args()
-    main(args.dataset, args.strategy)
+    main(args.dataset, args.strategy, args.output)
