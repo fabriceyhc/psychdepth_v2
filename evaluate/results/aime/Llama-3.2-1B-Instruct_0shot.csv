@@ -630,4 +630,4 @@ For Case 1, there are 2 ways to place all chips in the same row (either all whit
 ## Step 7:  Calculate the number of ways to place 5 chips of each color in each row and column
 We can place 5 chips of each color in each row and column in 5! ways. However, we need to consider the constraint that each row and column must have exactly one chip of each color.
 
-## Step ",5,902,False,9.570856094360352
+## Step ",5,902,False,9.469046115875244

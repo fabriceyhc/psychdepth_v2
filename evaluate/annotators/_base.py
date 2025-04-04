@@ -9,6 +9,8 @@ from guidance import models
 
 class BaseDatasetProcessor(ABC):
     """Base class for dataset processing with guidance models"""
+
+    STOP_STRINGS = ['<|im_end|>','</|im_end|>','</|im_start|>', '<|im_start|>', '```']
     
     def __init__(self, config: Dict):
         self.config = config
@@ -67,7 +69,7 @@ class BaseDatasetProcessor(ABC):
 
         for idx, row in tqdm(self.dataset.iterrows(), total=len(self.dataset)):
             if self._is_processed(row, existing):
-                print(f"Already processed row with id={id}. Skipping!")
+                print(f"Already processed row with id={idx}. Skipping!")
                 continue
                 
             try:

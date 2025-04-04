@@ -7,8 +7,6 @@ from datasets import load_dataset
 
 from evaluate.annotators._base import BaseDatasetProcessor
 
-STOP_STRINGS = ['<|im_end|>','</|im_end|>','</|im_start|>', '<|im_start|>', '```']
-
 class AIMEProcessor(BaseDatasetProcessor):
     """Processor for MATH-500 dataset"""
     
@@ -60,7 +58,7 @@ class AIMEProcessor(BaseDatasetProcessor):
             """
             
         with assistant():
-            lm += f"Step-by-step Solution:\n{gen(name='solution', stop=STOP_STRINGS, max_tokens=500)}"
+            lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=500)}"
             lm += f"Final Answer:\n{gen(name='answer', regex=r'\d+', max_tokens=3)}"
         return lm
 
