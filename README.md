@@ -1,8 +1,20 @@
 # psychdepth_v2
 
+## Clone the repository
+```
+git clone https://github.com/fabriceyhc/psychdepth_v2.git
+cd psychdepth_v2
+```
+
 ## Environment Setup
 ```
 pip install -r requirements.txt
+```
+
+Next, set up LLaMA-Factory dependencies
+```
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]"
 ```
 
 ## Generate stories
