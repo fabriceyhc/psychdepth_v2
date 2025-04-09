@@ -85,5 +85,6 @@ class BaseGenerator:
             raise ValueError("Model path is required")
         self.guidance_model = models.LlamaCpp(
             model_path=model_path,
-            n_ctx=n_ctx
+            n_ctx=n_ctx,
+            n_gpu_layers=-1
         )

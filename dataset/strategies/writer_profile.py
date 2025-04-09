@@ -14,6 +14,22 @@ from typing import Optional, Dict, Any, List
 from dataset.strategies.base import BaseGenerator
 
 n = "\n"
+STOP_STRINGS = ['<|im_end|>','</|im_end|>','</|im_start|>', '<|im_start|>', '```', '<|reserved_special_token_*|>']
+
+@guidance
+def story_task(lm, premise, num_words, profile, examples, temperature):
+    if profile:
+        with system():
+            lm += profile
+    with user():
+        lm += f"Please write a {num_words}-word story on:{n}{premise}{n}Only respond with the story text."
+        if examples:
+            lm += f"{n}### Examples:"
+            for ex in examples:
+                lm += f"{n}Premise: {ex['premise']}{n}Story: {ex['story_excerpt']}"
+    with assistant():
+        lm += gen(name="story", max_tokens=int(num_words*2), temperature=temperature, stop=STOP_STRINGS)
+    return lm
 
 class WriterProfileGenerator(BaseGenerator):
     """Specialized generator for creating stories with different writing profiles."""
@@ -69,21 +85,6 @@ class WriterProfileGenerator(BaseGenerator):
         temperature: float = 1.0
     ) -> Optional[Dict[str, Any]]:
         """Generate a story with the given premise and writing profile."""
-        @guidance(dedent=True)
-        def story_task(lm, premise, num_words, profile, examples, temperature):
-            if profile:
-                with system():
-                    lm += profile
-            with user():
-                lm += f"Please write a {num_words}-word story on:{n}{premise}{n}Only respond with the story text."
-                if examples:
-                    lm += f"{n}### Examples:"
-                    for ex in examples:
-                        lm += f"{n}Premise: {ex['premise']}{n}Story: {ex['story_excerpt']}"
-            with assistant():
-                lm += gen(name="story", max_tokens=int(num_words*2), temperature=temperature)
-            return lm
-
         try:
             start_time = time.time()
             output = self.guidance_model + story_task(
