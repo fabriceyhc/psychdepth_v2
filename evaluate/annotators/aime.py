@@ -59,7 +59,8 @@ class AIMEProcessor(BaseDatasetProcessor):
             
         with assistant():
             lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=500)}"
-            lm += f"Final Answer:\n{gen(name='answer', regex=r'\d+', max_tokens=3)}"
+            regex = r'\d+' # Separating this from below to avoid f-string syntax error
+            lm += f"Final Answer:\n{gen(name='answer', regex=regex, max_tokens=3)}"
         return lm
 
 
@@ -70,7 +71,7 @@ if __name__ == "__main__":
     config = {
         "model": {
             "type": "transformers",
-            "path": "meta-llama/Llama-3.2-1B-Instruct",
+            "path": "/data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/model",
             "cache_dir": "/data2/.shared_models"
         },
         "save_dir": "./evaluate/results/aime",
