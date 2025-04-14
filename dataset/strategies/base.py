@@ -43,6 +43,7 @@ class BaseGenerator:
             load_dotenv(find_dotenv()) # load openai api key from ./.env
             self._init_openai_backend(model_id, openai_base_url)
         elif backend_type == "llamacpp":
+            print(f"llamacpp_model_path: {llamacpp_model_path}")
             self._init_llamacpp_backend(llamacpp_model_path, llamacpp_n_ctx)
         else:
             raise ValueError(f"Unsupported backend type: {backend_type}")
@@ -83,8 +84,13 @@ class BaseGenerator:
         """Initialize Llama.cpp backend."""
         if not model_path:
             raise ValueError("Model path is required")
+        from llama_cpp import Llama
         self.guidance_model = models.LlamaCpp(
-            model_path=model_path,
-            n_ctx=n_ctx,
-            n_gpu_layers=-1
-        )
+                model=Llama(
+                    model_path=model_path,
+                    n_gpu_layers=-1,
+                    n_ctx=n_ctx,
+                    verbose=False
+                ),
+                echo=False
+            )
