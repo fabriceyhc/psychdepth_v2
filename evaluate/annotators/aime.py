@@ -34,6 +34,7 @@ class AIMEProcessor(BaseDatasetProcessor):
         )
         time_taken = time.time() - start_time
         
+        # 2. Extract answer using regex
         match = re.search(r'\d+', output['answer'])
         extracted_answer = match.group(0) if match else ""
 
@@ -71,7 +72,7 @@ if __name__ == "__main__":
     config = {
         "model": {
             "type": "transformers",
-            "path": "meta-llama/Llama-3.2-1B-Instruct",
+            "path": "meta-llama/Llama-3.1-8B-Instruct",
             "cache_dir": "/data2/.shared_models"
         },
         "save_dir": "./evaluate/results/aime",
