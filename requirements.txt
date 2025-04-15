@@ -1,7 +1,7 @@
 --extra-index-url https://download.pytorch.org/whl/cu121
 torch
 transformers==4.48.3
-guidance
+guidance>=0.2.1
 bitsandbytes
 accelerate
 huggingface-hub
@@ -10,6 +10,6 @@ dspy
 uv
 --find-links https://flashinfer.ai/whl/cu124/torch2.5/flashinfer-python
 sgl-kernel
-sglang[all]==0.4.3.post2
+sglang[all]>=0.4.3.post2
 ruamel.yaml
 deepspeed

@@ -132,7 +132,7 @@ def main(dataset, strategy_file, out_path):
 if __name__ == "__main__":
     # Example usage:
     # Use this command for directly loading a desired strategy
-    # CUDA_VISIBLE_DEVICES=0,2,3,5 python -m story_eval.dspy.multiscore.annotate --strategy ./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-3.1-70B-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json
+    # CUDA_VISIBLE_DEVICES=0,1,2,3 python -m story_eval.dspy.multiscore.annotate --strategy ./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-4-Scout-17B-16E-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json
     parser = argparse.ArgumentParser(
         description="Load optimized prompts into a DSPy model and evaluate a dataset using the top strategies."
     )

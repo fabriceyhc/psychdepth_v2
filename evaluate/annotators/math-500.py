@@ -1,18 +1,18 @@
 import time
-import re
 import pandas as pd
-from typing import Dict
+from typing import List, Dict
 import guidance
 from guidance import models, gen, select, user, system, assistant
 from datasets import load_dataset
+from .utils.math import compute_score
 
 from evaluate.annotators._base import BaseDatasetProcessor
 
-class AIMEProcessor(BaseDatasetProcessor):
+class MATH500Processor(BaseDatasetProcessor):
     """Processor for MATH-500 dataset"""
     
     def load_dataset(self) -> pd.DataFrame:
-        dataset = load_dataset("HuggingFaceH4/aime_2024", split="train").to_pandas()
+        dataset = load_dataset("HuggingFaceH4/MATH-500", split="test").to_pandas()
         return dataset
 
     def _is_processed(self, row: Dict, existing: pd.DataFrame) -> bool:
@@ -23,7 +23,9 @@ class AIMEProcessor(BaseDatasetProcessor):
 
     def grade_answer(self, predicted_answer, ground_truth) -> bool:
         """Grade the predicted answer"""
-        return int(predicted_answer) == int(ground_truth)
+        # TODO: Implement Latex equivalence checking
+        # return int(predicted_answer) == ground_truth
+        return compute_score(predicted_answer, ground_truth)
 
     def process_entry(self, row: Dict) -> Dict:
 
@@ -33,15 +35,24 @@ class AIMEProcessor(BaseDatasetProcessor):
             problem=row['problem']
         )
         time_taken = time.time() - start_time
+        # Extract answer after "Final Answer" text
+        raw_answer = output['answer']
         
-        match = re.search(r'\d+', output['answer'])
-        extracted_answer = match.group(0) if match else ""
+        # Handle different formats using split/partition
+        answer = raw_answer.partition('Final Answer:')[-1]  # Get text after last occurrence
+        answer = answer.split('\n')[0].strip()  # Take first line/segment
+        answer = answer.replace('**', '').replace('__', '')  # Remove markdown formatting
 
-        # 3. Grade answer using the extracted answer
-        is_correct = self.grade_answer(extracted_answer, row['answer'])
+        print(answer)
+        
+        output.set('answer', answer)
+        # ['answer'] = answer
+
+        # 2. Grade answer
+        is_correct = self.grade_answer(output['answer'], row["answer"])
 
         return {
-            "id": row['id'],
+            "unique_id": row['unique_id'],
             "problem": row['problem'],
             "solution": output['solution'],
             "predicted_answer": output['answer'],
@@ -52,6 +63,8 @@ class AIMEProcessor(BaseDatasetProcessor):
     
     @guidance(dedent=True)
     def annotation_prompt(self, lm, problem: str):
+        # with system():
+        #     lm += f"You are an expert mathematician specializing in {subject} problems (difficulty: {level})"
         with user():
             lm += f"""Solve this problem step-by-step. Your answer should be numerical with one, two, or three digits. 
             
@@ -60,23 +73,23 @@ class AIMEProcessor(BaseDatasetProcessor):
             
         with assistant():
             lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=1000)}"
-            lm += f"Final Answer:\n{gen(name='answer', stop=self.STOP_STRINGS, max_tokens=50)}"
+            lm += f"Final Answer:\n{gen(name='answer', max_tokens=100, stop=self.STOP_STRINGS)}"
         return lm
 
 
 if __name__ == "__main__":
 
-    # CUDA_VISIBLE_DEVICES=3 python -m evaluate.annotators.aime
+    # CUDA_VISIBLE_DEVICES=3 python -m evaluate.annotators.math-500
 
     config = {
         "model": {
             "type": "transformers",
-            "path": "meta-llama/Llama-3.2-1B-Instruct",
+            "path": "meta-llama/Llama-3.1-8B-Instruct",
             "cache_dir": "/data2/.shared_models"
         },
-        "save_dir": "./evaluate/results/aime",
+        "save_dir": "./evaluate/results/math-500",
         "shots": 0  # Zero-shot for math problems
     }
 
-    math_processor = AIMEProcessor(config)
+    math_processor = MATH500Processor(config)
     math_results = math_processor.run()
