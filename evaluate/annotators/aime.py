@@ -71,7 +71,7 @@ if __name__ == "__main__":
     config = {
         "model": {
             "type": "transformers",
-            "path": "/data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/model",
+            "path": "meta-llama/Llama-3.2-1B-Instruct",
             "cache_dir": "/data2/.shared_models"
         },
         "save_dir": "./evaluate/results/aime",
