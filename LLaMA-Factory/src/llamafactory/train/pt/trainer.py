@@ -31,9 +31,7 @@ if TYPE_CHECKING:
 
 
 class CustomTrainer(Trainer):
-    r"""
-    Inherits Trainer for custom optimizer.
-    """
+    r"""Inherit Trainer for custom optimizer."""
 
     def __init__(
         self, finetuning_args: "FinetuningArguments", processor: Optional["ProcessorMixin"], **kwargs
@@ -72,3 +70,7 @@ class CustomTrainer(Trainer):
             return torch.utils.data.SequentialSampler(self.train_dataset)
 
         return super()._get_train_sampler()
+
+    @override
+    def compute_loss(self, model, inputs, *args, **kwargs):
+        return super().compute_loss(model, inputs, *args, **kwargs)
