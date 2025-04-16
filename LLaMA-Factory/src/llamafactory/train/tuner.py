@@ -14,9 +14,10 @@
 
 import os
 import shutil
-from typing import TYPE_CHECKING, Any, Dict, List, Optional
+from typing import TYPE_CHECKING, Any, Optional
 
 import torch
+import torch.distributed as dist
 from transformers import PreTrainedModel
 
 from ..data import get_template_and_fix_tokenizer
@@ -37,6 +38,7 @@ from .trainer_utils import get_ray_trainer, get_swanlab_callback
 
 
 if is_ray_available():
+    import ray
     from ray.train.huggingface.transformers import RayTrainReportCallback
 
 
@@ -47,9 +49,9 @@ if TYPE_CHECKING:
 logger = logging.get_logger(__name__)
 
 
-def _training_function(config: Dict[str, Any]) -> None:
+def _training_function(config: dict[str, Any]) -> None:
     args = config.get("args")
-    callbacks: List[Any] = config.get("callbacks")
+    callbacks: list[Any] = config.get("callbacks")
     model_args, data_args, training_args, finetuning_args, generating_args = get_train_args(args)
 
     callbacks.append(LogCallback())
@@ -76,9 +78,21 @@ def _training_function(config: Dict[str, Any]) -> None:
     else:
         raise ValueError(f"Unknown task: {finetuning_args.stage}.")
 
+    if is_ray_available() and ray.is_initialized():
+        return  # if ray is intialized it will destroy the process group on return
 
-def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: Optional[List["TrainerCallback"]] = None) -> None:
+    try:
+        if dist.is_initialized():
+            dist.destroy_process_group()
+    except Exception as e:
+        logger.warning(f"Failed to destroy process group: {e}.")
+
+
+def run_exp(args: Optional[dict[str, Any]] = None, callbacks: Optional[list["TrainerCallback"]] = None) -> None:
     args = read_args(args)
+    if "-h" in args or "--help" in args:
+        get_train_args(args)
+
     ray_args = get_ray_args(args)
     callbacks = callbacks or []
     if ray_args.use_ray:
@@ -93,7 +107,7 @@ def run_exp(args: Optional[Dict[str, Any]] = None, callbacks: Optional[List["Tra
         _training_function(config={"args": args, "callbacks": callbacks})
 
 
-def export_model(args: Optional[Dict[str, Any]] = None) -> None:
+def export_model(args: Optional[dict[str, Any]] = None) -> None:
     model_args, data_args, finetuning_args, _ = get_infer_args(args)
 
     if model_args.export_dir is None:
@@ -175,6 +189,7 @@ def export_model(args: Optional[Dict[str, Any]] = None) -> None:
     except Exception as e:
         logger.warning_rank0(f"Cannot save tokenizer, please copy the files manually: {e}.")
 
-    with open(os.path.join(model_args.export_dir, "Modelfile"), "w", encoding="utf-8") as f:
+    ollama_modelfile = os.path.join(model_args.export_dir, "Modelfile")
+    with open(ollama_modelfile, "w", encoding="utf-8") as f:
         f.write(template.get_ollama_modelfile(tokenizer))
-        logger.info_rank0(f"Saved ollama modelfile to {model_args.export_dir}.")
+        logger.info_rank0(f"Ollama modelfile saved in {ollama_modelfile}")
