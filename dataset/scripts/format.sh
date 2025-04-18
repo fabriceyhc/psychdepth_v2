@@ -1,3 +1,5 @@
 python -m dataset.formatters.format_pds --input ./data/stories_w_human_annotations_multiscore.csv --output ./LLaMA-Factory/data/pdsv2/sft/pdsv2_multiscore_sft.json --type sft --min_avg_pds_score 3.5
 python -m dataset.formatters.format_pds --input ./data/stories_w_human_annotations_multiscore.csv --output ./LLaMA-Factory/data/pdsv2/dpo/pdsv2_multiscore_dpo.json --type dpo --threshold 0.5 --min_avg_pds_score 3.0
 python -m dataset.formatters.format_pds --input ./data/stories_w_human_annotations_multiscore.csv --output ./LLaMA-Factory/data/pdsv2/kto/pdsv2_multiscore_kto.json --type kto --min_avg_pds_score 3.5
+
+python -m dataset.formatters.format_reasoning_sft --hf_dataset_path allenai/ai2_arc --subset ARC-Challenge --output ./LLaMA-Factory/data/arc/sft/arc_challenge_train.json --split train
