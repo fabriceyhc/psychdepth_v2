@@ -9,6 +9,7 @@ cd psychdepth_v2
 ## Environment Setup
 ```
 pip install -r requirements.txt
+pip install --no-build-isolation flash-attn
 ```
 
 Next, set up LLaMA-Factory dependencies
