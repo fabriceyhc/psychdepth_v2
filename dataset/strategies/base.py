@@ -6,6 +6,7 @@ import glob
 import textwrap
 import time
 import traceback
+import torch
 import guidance
 from guidance import models, gen, user, system, assistant
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
@@ -66,6 +67,8 @@ class BaseGenerator:
             device_map=device_map,
             cache_dir=cache_dir,
             trust_remote_code=True,
+            torch_dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
             use_cache=True
         )
         self.tokenizer = AutoTokenizer.from_pretrained(model_id, cache_dir=cache_dir)

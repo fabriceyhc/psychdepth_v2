@@ -108,13 +108,16 @@ def main(args):
                                 best_generation_time = generation_time
                                 best_word_count = word_count
                                 error_msg = f"Attempt {attempt+1}: Word count {word_count} not within range"
+                                print(error_msg)
                                 error_msgs.append(error_msg)
                         else:
                             error_msg = f"Attempt {attempt+1}: Empty response"
+                            print(error_msg)
                             error_msgs.append(error_msg)
 
                     except Exception as e:
                         error_msg = f"Attempt {attempt+1} error: {str(e)}"
+                        print(error_msg)
                         error_msgs.append(error_msg)
 
                 # Update result row
@@ -164,7 +167,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate story versions with a single model configuration')
     
     # Core arguments
-    parser.add_argument('--input_csv', type=str, default='./dataset/data/premises.csv',
+    parser.add_argument('--input_csv', type=str, default='./data/premises.csv',
                       help='Path to input CSV with premises')
     parser.add_argument('--output_csv', type=str, default='stories.csv',
                       help='Output CSV filename')
@@ -174,7 +177,7 @@ if __name__ == "__main__":
     # Generation parameters
     parser.add_argument('--num_versions', type=int, default=1,
                       help='Number of versions per premise')
-    parser.add_argument('--default_num_words', type=int, default=1000,
+    parser.add_argument('--default_num_words', type=int, default=500,
                       help='Target word count for stories')
     parser.add_argument('--default_temperature', type=float, default=1.0,
                       help='Generation temperature')

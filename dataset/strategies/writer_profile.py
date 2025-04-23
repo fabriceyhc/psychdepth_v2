@@ -28,7 +28,7 @@ def story_task(lm, premise, num_words, profile, examples, temperature):
             for ex in examples:
                 lm += f"{n}Premise: {ex['premise']}{n}Story: {ex['story_excerpt']}"
     with assistant():
-        lm += gen(name="story", max_tokens=int(num_words*2), temperature=temperature, stop=STOP_STRINGS)
+        lm += gen(name="story", max_tokens=int(num_words*1.5), temperature=temperature, stop=STOP_STRINGS)
     return lm
 
 class WriterProfileGenerator(BaseGenerator):
