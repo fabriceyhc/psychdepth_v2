@@ -62,7 +62,7 @@ class AIMEProcessor(BaseDatasetProcessor):
             """
             
         with assistant():
-            lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=100)}"
+            lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=1000)}"
             lm += f"Final Answer:\n{gen(name='answer', stop=self.STOP_STRINGS, max_tokens=50)}"
         return lm
     
