@@ -216,7 +216,7 @@ def main(args):
         "--base_model", args.base_model,
         "--cache_dir", args.cache_dir,
         "--type", args.type,
-        "--save_dir", base_results_dir, 
+        "--save_dir", eval_save_dir, 
         "--shots", str(shots) 
     ]
     if not run_command(math_evaluation_command_base, env=my_env):
@@ -425,7 +425,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--datasets",
-        required=True,
         help="Dataset identifiers for training."
     )
     parser.add_argument(
