@@ -118,7 +118,7 @@ if __name__ == "__main__":
                        help="Comma-separated list of datasets")
     parser.add_argument("--template", required=True,
                        help="Prompt template to use")
-    parser.add_argument("--num_train_epochs", default=3,
+    parser.add_argument("--num_train_epochs", type=int, default=3,
                        help="Number of epochs to train")
     parser.add_argument("--train_output_dir", 
                        help="Output directory for trained lora model")

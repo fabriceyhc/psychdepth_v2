@@ -5,6 +5,7 @@ import guidance
 from guidance import models, gen, select, user, system, assistant
 from datasets import load_dataset
 from .utils.math import compute_score
+import argparse
 
 from evaluate.annotators._base import BaseDatasetProcessor
 
@@ -76,20 +77,39 @@ class MATH500Processor(BaseDatasetProcessor):
             lm += f"Final Answer:\n{gen(name='answer', max_tokens=100, stop=self.STOP_STRINGS)}"
         return lm
 
+def main(args):
+    # Initialize the MATH500Processor with the provided configuration
+    config = {
+        "model": {
+            "type": args.type,
+            "path": args.base_model,
+            "cache_dir": args.cache_dir
+        },
+        "save_dir": args.save_dir,
+        "shots": args.shots
+    }
+    
+    math_processor = MATH500Processor(config)
+    math_results = math_processor.run()
+
+    # Compute accuracy
+    accuracy = math_results['is_correct'].mean() * 100
+    print(f"Accuracy: {accuracy:.2f}")
+
 
 if __name__ == "__main__":
 
+    parser = argparse.ArgumentParser(description="Run AIME evaluation")
+    parser.add_argument("--base_model", default="meta-llama/Llama-3.2-1B-Instruct",
+                        help="Base model identifier or path")
+    parser.add_argument("--cache_dir", default='/data2/.shared_models',
+                        help="Directory for storing base models")
+    parser.add_argument("--type", default="transformers",
+                        choices=["transformers", "llama.cpp"],
+                        help="Model type (transformers or llama.cpp)")
+    parser.add_argument("--save_dir", default="./evaluate/results/aime_1983_2024",
+                        help="Directory for saving results")
+    parser.add_argument("--shots", type=int, default=0,
+                        help="Number of shots for zero-shot evaluation")
+
     # CUDA_VISIBLE_DEVICES=3 python -m evaluate.annotators.math-500
-
-    config = {
-        "model": {
-            "type": "transformers",
-            "path": "meta-llama/Llama-3.1-8B-Instruct",
-            "cache_dir": "/data2/.shared_models"
-        },
-        "save_dir": "./evaluate/results/math-500",
-        "shots": 0  # Zero-shot for math problems
-    }
-
-    math_processor = MATH500Processor(config)
-    math_results = math_processor.run()

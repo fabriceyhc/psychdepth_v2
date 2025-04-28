@@ -36,14 +36,39 @@ def load_and_recreate_strategy(strategy_file):
         program_instance.load(strategy_file)
     return program_instance
 
+# def prepare_dataset(dataset):
+#     df = pd.read_csv(dataset)
+#     df = df.drop_duplicates(subset=["story_id"])
+#     dataset = []
+#     for _, row in df.iterrows():
+#         ex = dspy.Example(story=row["text"]).with_inputs("story")
+#         ex.story_id = row["story_id"]
+#         dataset.append(ex)
+#     return dataset
 def prepare_dataset(dataset):
     df = pd.read_csv(dataset)
-    df = df.drop_duplicates(subset=["story_id"])
-    dataset = []
-    for _, row in df.iterrows():
-        ex = dspy.Example(story=row["text"]).with_inputs("story")
-        ex.story_id = row["story_id"]
-        dataset.append(ex)
+    
+    # Check if the data format has premise_id or directly starts with story_id
+    if 'premise_id' in df.columns and all(df['story_id'] == 1):
+        # Format where premise_id is the primary identifier
+        print("Dataset has premise_id format - using premise_id as story_id")
+        df = df.drop_duplicates(subset=["premise_id"])
+        dataset = []
+        for _, row in df.iterrows():
+            ex = dspy.Example(story=row["text"]).with_inputs("story")
+            # Use premise_id as the story_id for identification
+            ex.story_id = row["premise_id"]
+            dataset.append(ex)
+    else:
+        # Original format where story_id is the primary identifier
+        print("Dataset has story_id format")
+        df = df.drop_duplicates(subset=["story_id"])
+        dataset = []
+        for _, row in df.iterrows():
+            ex = dspy.Example(story=row["text"]).with_inputs("story")
+            ex.story_id = row["story_id"]
+            dataset.append(ex)
+    
     return dataset
 
 def evaluate_strategy_on_dataset(strategy, dataset):

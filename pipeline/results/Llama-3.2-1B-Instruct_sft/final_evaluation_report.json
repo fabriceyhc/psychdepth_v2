@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Llama-3.2-1B-Instruct_sft",
+        "base_model_evaluated": "Llama-3.2-1B-Instruct",
+        "stage_trained": "sft",
+        "fine_tuned_model_used_if_no_training": null,
+        "evaluation_directory": "./pipeline/results/Llama-3.2-1B-Instruct_sft",
+        "evaluation_dataset": "aime",
+        "training_datasets": "AIME_1983_2024_sft",
+        "report_generated_time": "2025-04-27 23:15:51"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Llama-3.2-1B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.2-1B-Instruct_0shot.csv",
+                "accuracy": 5.21,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.2-1B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.69,
+                    "emotion_provoking_score": 4.03,
+                    "empathy_score": 3.84,
+                    "engagement_score": 3.73,
+                    "narrative_complexity_score": 3.2,
+                    "human_likeness_score": 3.53
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Llama-3.2-1B-Instruct_sft",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.2-1B-Instruct_sft_0shot.csv",
+                "accuracy": 1.62,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.2-1B-Instruct_sft_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.45,
+                    "emotion_provoking_score": 3.93,
+                    "empathy_score": 3.55,
+                    "engagement_score": 3.65,
+                    "narrative_complexity_score": 2.95,
+                    "human_likeness_score": 3.12
+                },
+                "error": null
+            }
+        }
+    }
+}

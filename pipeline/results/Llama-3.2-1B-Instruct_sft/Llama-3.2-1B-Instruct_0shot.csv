@@ -1,0 +1,1810 @@
+id,problem,solution,predicted_answer,answer,is_correct,time_taken
+2021-I-1,"Zou and Chou are practicing their $100$ -meter sprints by running $6$ races against each other. Zou wins the first race, and after that, the probability that one of them wins a race is $\frac23$ if they won the previous race but only $\frac13$ if they lost the previous race. The probability that Zou will win exactly $5$ of the $6$ races is $\frac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Define the problem and the approach
+We need to find the probability that Zou will win exactly 5 out of 6 races against Chou. This can be approached using a binomial probability formula, where we have two possible outcomes for each race: win or lose.
+
+## Step 2:  Set up the binomial probability formula
+Let's denote the probability of Zou winning a race as $p$ and the probability of Chou winning a race as $q$. We know that $p = \frac{2}{3}$ and $q = \frac{1}{3}$. The probability of Zou winning exactly 5 out of 6 races can be calculated using the binomial probability formula:
+
+$P(X = 5) = \binom{6}{5} p^5 q^1$
+
+## Step 3:  Calculate the binomial coefficient
+The binomial coefficient $\binom{6}{5}$ can be calculated as:
+
+$\binom{6}{5} = \frac{6!}{5!(6-5)!} = \frac{6 \cdot 5!}{5! \cdot 1!} = 6$
+
+## Step 4:  Calculate the probability
+Now we can plug in the values into the binomial probability formula:
+
+$P(X = 5) = 6 \cdot \left(\frac{2}{3}\right)^5 \cdot \left(\frac{1}{3}\right)^1$
+
+## Step 5:  Simplify the expression
+We can simplify the expression by calculating the powers:
+
+$P(X = 5) = 6 \cdot \frac{32}{243} \cdot \frac{1}{3} = 6 \cdot \frac{32}{729} = \frac{192}{729}$
+
+## Step 6:  Find the sum of the numerator and denominator
+To get the final answer, we need to find the sum of the numerator and denominator of the probability fraction:
+
+$m + n = 192 + 729 = 921$
+
+The final answer is: $\boxed{921}$","
+
+The final answer is: $\boxed{921}$",97,False,12.89681625366211
+1987-14,Compute \[\frac{(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324)}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}.\],"
+## Step 1:  First, we need to simplify the given expression by factoring out the common term from both the numerator and the denominator.
+## Step 2:  We can start by simplifying the expression \[(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324).\]
+## Step 3:  We can rewrite $10^4+324$ as $(10^2+18^2+4)(10^2-18^2+4)$, which can be further simplified to $(100+324)(100-324+4)$, giving us $(424)(-220)$.
+## Step 4:  Similarly, we can rewrite $22^4+324$ as $(22^2+18^2+4)(22^2-18^2+4)$, which can be simplified to $(484+324)(484-324+4)$, giving us $(808)(170)$.
+## Step 5:  We can continue this process for the other terms in the numerator, and we find that the numerator can be simplified to $(424)(808)(170)(58)(52)$.
+## Step 6:  Now, we can simplify the expression \[(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324).\]
+## Step 7:  We can rewrite $4^4+324$ as $(4^2+18^2+4)(4^2-18^2+4)$, which can be simplified to $(16+324)(16-324+4)$, giving us $(340)(-302)$.
+## Step 8:  Similarly, we can rewrite $16^4+324$ as $(16^2+18^2+4)(16^2-18^2+4)$, which can be simplified to $(256+324)(256-324+4)$, giving us $(580)(-64)$.
+## Step 9:  We can continue this process for the other terms in the denominator, and we find that the denominator can be simplified to $(340)(580)(-64)(52)(-30)$.
+## Step 10:  Now, we can simplify the expression by canceling out the common terms in the numerator and the denominator.
+## Step 11:  We can cancel out the common terms $(424)(808)(170)(58)(52)$ in the numerator and the denominator.
+## Step 12:  After canceling out the common terms, we are left with $\frac{1}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}$.
+## Step 13:  We can further simplify the expression by canceling out the common term $(16^4+324)$ in the numerator and the denominator.
+## Step 14:  After canceling out the common term, we are left with $\frac{1}{(4^4+324)(28^4+324)(40^4+324)(52^4+324)}$.
+## Step 15:  We can simplify the expression further by canceling out the common term $(28^4+324)$ in the numerator and the denominator.
+## Step 16:  After canceling out the common term, we are left with $\frac{1}{(4^4+324)(40^4+324)(52^4+324)}$.
+## Step 17:  We can simplify the expression further by canceling out the common term $(40^4+324)$ in the numerator and the denominator.
+## Step 18:  After canceling out the common term, we are left with $\frac{1}{(4^4+324)(52^4+324)}$.
+## Step 19:  We can simplify the expression further by canceling out the common term $(52^4+324)$ in the numerator and the denominator.
+## Step 20:  After canceling out the common term, we are left with $\frac{1}{(4^4+324)}$.
+## Step 21:  We can simplify the expression further by canceling out the common term $(4^4+324)$ in the numerator and the denominator.
+## Step 22:  After canceling out the common term, we are left with $\frac{1}{324}$.
+## Step 23:  Therefore, the final answer is $\frac{1}{324}$.
+
+The final answer is: $\boxed{\frac{1}{324}}$","
+
+The final answer is: $\boxed{\frac{1}{324}}$Final Answer: $\boxed{\frac{1}{324}}$Final Answer: $\boxed{\frac{1}{324}}$Final Answer: $\boxed{\frac{",373,False,26.192786931991577
+2014-I-12,"Let $A=\{1,2,3,4\}$ , and $f$ and $g$ be randomly chosen (not necessarily distinct) functions from $A$ to $A$ . The probability that the range of $f$ and the range of $g$ are disjoint is $\tfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m$ .","
+## Step 1: Define the problem and understand the constraints
+We are given a set $A = \{1, 2, 3, 4\}$ and two functions $f$ and $g$ that are randomly chosen from $A$ to $A$. We need to find the probability that the range of $f$ and the range of $g$ are disjoint.
+
+## Step 2: Calculate the total number of possible functions
+Since each element in the set $A$ can map to any element in $A$, there are $4^4 = 256$ possible functions from $A$ to $A$.
+
+## Step 3: Calculate the number of functions with disjoint ranges
+To calculate the number of functions with disjoint ranges, we can consider the following cases:
+- Case 1: Both $f$ and $g$ have the same range.
+- Case 2: $f$ has a range of $\{1, 2, 3, 4\}$ and $g$ has a range of $\{1, 2, 3, 4\}$.
+
+## Step 4: Calculate the number of functions with the same range
+For Case 1, there are $4$ choices for the range of $f$ and $4$ choices for the range of $g$, resulting in $4 \cdot 4 = 16$ functions with the same range.
+
+## Step 5: Calculate the number of functions with disjoint ranges
+For Case 2, there are $4$ choices for the range of $f$ and $4$ choices for the range of $g$, resulting in $4 \cdot 4 = 16$ functions with disjoint ranges.
+
+## Step 6: Calculate the total number of functions with disjoint ranges
+The total number of functions with disjoint ranges is the sum of the number of functions with the same range and the number of functions with disjoint ranges, which is $16 + 16 = 32$.
+
+## Step 7: Calculate the probability
+The probability that the range of $f$ and the range of $g$ are disjoint is the ratio of the total number of functions with disjoint ranges to the total number of possible functions, which is $\frac{32}{256} = \frac{1}{8}$.
+
+## Step 8: Calculate the final answer
+The final answer is: $\boxed{12}$","
+
+The final answer is: $\boxed{12}$
+
+Note: The final answer is a single number that solves the problem. In this case, the number is 12. The problem asks for the probability that the range of f and the range",453,False,14.1351478099823
+2009-II-14,The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$ . Find the greatest integer less than or equal to $a_{10}$ .,"
+## Step 1: Define the problem and the sequence
+We are given a recursive sequence $(a_n)$ with initial term $a_0 = 0$ and the recurrence relation $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$. We need to find the greatest integer less than or equal to $a_{10}$.
+
+## Step 2: Define the sequence as a function of a new variable
+Let's define a new sequence $(b_n)$ such that $a_n = 2^n b_n$ for each $n \geq 0$. This allows us to rewrite the recurrence relation in terms of $b_n$.
+
+## Step 3: Rewrite the recurrence relation in terms of $b_n$
+We have $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2} = \frac{8}{5} \cdot 2^n b_n + \frac{6}{5} \sqrt{4^n - (2^n b_n)^2} = \frac{8}{5} \cdot 2^n b_n + \frac{6}{5} \sqrt{4^n - (2^{2n} b_n^2)}$.
+
+## Step 4: Simplify the expression for $b_{n+1}$
+Simplifying the expression, we get $b_{n+1} = \frac{4}{5} b_n + \frac{3}{5} \sqrt{1 - b_n^2}$.
+
+## Step 5: Define the sequence $(b_n)$
+We define the sequence $(b_n)$ such that $b_n = \cos \theta_n$ for each $n \geq 0$.
+
+## Step 6: Rewrite the recurrence relation in terms of $\theta_n$
+We have $b_{n+1} = \cos \theta_{n+1} = \cos \theta_n \cos \theta_n' + \sin \theta_n \sin \theta_n' \sin \theta_{n+1}$, where $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 7: Simplify the expression for $\theta_{n+1}$
+Simplifying the expression, we get $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 8: Find the relationship between $\theta_n$ and $\theta_{n+1}$
+We can find the relationship between $\theta_n$ and $\theta_{n+1}$ by using the fact that $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 9: Find the relationship between $\theta_n$ and $\theta_{n+1}$
+We can find the relationship between $\theta_n$ and $\theta_{n+1}$ by using the fact that $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 10: Find the relationship between $\theta_n$ and $\theta_{n+1}$
+We can find the relationship between $\theta_n$ and $\theta_{n+1}$ by using the fact that $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 11: Find the relationship between $\theta_n$ and $\theta_{n+1}$
+We can find the relationship between $\theta_n$ and $\theta_{n+1}$ by using the fact that $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2}} \right)$.
+
+## Step 12: Find the relationship between $\theta_n$ and $\theta_{n+1}$
+We can find the relationship between $\theta_n$ and $\theta_{n+1}$ by using the fact that $\theta_{n+1} = \theta_n' + \arccos \left( \frac{b_n}{\sqrt{1 - b_n^2","
+
+The final answer is: $\boxed{183}$",983,False,25.824480533599854
+2016-II-10,"Triangle $ABC$ is inscribed in circle $\omega$ . Points $P$ and $Q$ are on side $\overline{AB}$ with $AP<AQ$ . Rays $CP$ and $CQ$ meet $\omega$ again at $S$ and $T$ (other than $C$ ), respectively. If $AP=4,PQ=3,QB=6,BT=5,$ and $AS=7$ , then $ST=\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  First, we need to understand the given problem and the relationships between the various segments and angles in the triangle $ABC$ inscribed in circle $\omega$.
+## Step 2:  We are given that $AP = 4$, $PQ = 3$, $QB = 6$, $BT = 5$, and $AS = 7$. Our goal is to find the length of $ST$.
+## Step 3:  To approach this problem, we can use the concept of power of a point, which states that for any point $P$ outside a circle with points of intersection $X$ and $Y$ with the circle, the product of the lengths of segments $PX$ and $PY$ is equal to the product of the lengths of segments $PX'$ and $PY'$, where $P'$ is the point on the circle such that $PX'P = PY'P$.
+## Step 4:  We can apply the power of a point from point $A$ to the circle, which gives us the equation $AP \cdot AS = AQ \cdot AB$. Substituting the given values, we get $4 \cdot 7 = 3 \cdot (AB - AQ)$.
+## Step 5:  Next, we can use the power of a point from point $B$ to the circle, which gives us the equation $BP \cdot BS = BQ \cdot BC$. Substituting the given values, we get $5 \cdot 7 = 6 \cdot (BC - BT)$.
+## Step 6:  We can then solve these two equations simultaneously to find the length of $AB$ and $BC$.
+## Step 7:  After finding the lengths of $AB$ and $BC$, we can use the power of a point from point $C$ to the circle to find the length of $CT$.
+## Step 8:  Finally, we can use the power of a point from point $S$ to the circle to find the length of $ST$.
+## Step 9:  By following these steps, we can calculate the value of $ST$ and then find the sum of the numerator and denominator of the fraction representing $ST$.
+
+## Step 10:  Now, let's solve the equations $4 \cdot 7 = 3 \cdot (AB - AQ)$ and $5 \cdot 7 = 6 \cdot (BC - BT)$ to find the lengths of $AB$ and $BC$.
+## Step 11:  From the first equation, we get $28 = 3(AB - AQ)$, which simplifies to $AB - AQ = \frac{28}{3}$.
+## Step 12:  From the second equation, we get $35 = 6(BC - BT)$, which simplifies to $BC - BT = \frac{35}{6}$.
+## Step 13:  Adding the two equations, we get $AB - AQ + BC - BT = \frac{28}{3} + \frac{35}{6}$.
+## Step 14:  Simplifying the right-hand side, we get $AB - AQ + BC - BT = \frac{56}{6} + \frac{35}{6} = \frac{91}{6}$.
+## Step 15:  Now, we can use the power of a point from point $C$ to the circle to find the length of $CT$. We have $CT \cdot CQ = AC \cdot CS$.
+## Step 16:  Since $AC = AP + PC = 4 + 7 = 11$ and $CS = CT + ST$, we can substitute these values into the equation to get $CT \cdot (CT + ST) = 11 \cdot (ST + CT)$.
+## Step 17:  Expanding and rearranging the equation, we get $CT^2 + ST \cdot CT = 11 \cdot ST + 11 \cdot CT$.
+## Step 18:  Rearranging the terms, we get $CT^2 - 11 \cdot ST - 11 \cdot CT = 0$.
+## Step 19:  Factoring the quadratic equation, we get $(CT - 11)(CT - 1) = 0$.
+## Step 20:  Solving for $CT$, we get $CT = 11$ or $CT = 1$.
+## Step 21:  Since $CT > AS$, we take $CT = 11$.
+## Step 22:  Now, we can use the power of a point from point $S$ to the circle to find the length of $ST$. We have $ST \cdot CS = AS \","
+
+The final answer is: $\boxed{\frac{161}{6}}$",43,False,25.82736229896545
+1990-7,"A triangle has vertices $P_{}^{}=(-8,5)$ , $Q_{}^{}=(-15,-19)$ , and $R_{}^{}=(1,-7)$ . The equation of the bisector of $\angle P$ can be written in the form $ax+2y+c=0_{}^{}$ . Find $a+c_{}^{}$ .","
+## Step 1: Find the slope of the line segment PQ
+To find the slope of the line segment PQ, we use the formula: m = (y2 - y1)/(x2 - x1), where (x1, y1) = (-8, 5) and (x2, y2) = (-15, -19). Therefore, m = (-19 - 5)/( -15 - (-8)) = -24/-7 = 24/7.
+
+## Step 2: Find the slope of the angle bisector of angle P
+The slope of the angle bisector of angle P is the negative reciprocal of the slope of the line segment PQ. Therefore, the slope of the angle bisector is -7/(24/7) = -7*7/24 = -49/24.
+
+## Step 3: Find the equation of the angle bisector of angle P
+The equation of the angle bisector of angle P can be written in the form ax + 2y + c = 0. We can use the point-slope form of a line, y - y1 = m(x - x1), where (x1, y1) = (-8, 5) and m = -49/24. Therefore, y - 5 = (-49/24)(x - (-8)).
+
+## Step 4: Simplify the equation of the angle bisector of angle P
+Simplifying the equation, we get y - 5 = (-49/24)(x + 8). Multiplying both sides by 24, we get 24y - 120 = -49x - 392. Adding 49x and 120 to both sides, we get 49x + 24y - 272 = 0.
+
+## Step 5: Find the values of a and c
+Comparing the equation 49x + 24y - 272 = 0 with the form ax + 2y + c = 0, we can see that a = 49 and c = -272.
+
+## Step 6: Find the value of a + c
+Now, we can find the value of a + c by adding the values of a and c. Therefore, a + c = 49 + (-272) = -223.
+
+The final answer is: $\boxed{-223}$","
+
+The final answer is: $\boxed{-223}$",89,False,13.147630214691162
+2008-II-1,"Let $N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + \cdots + 4^2 + 3^2 - 2^2 - 1^2$ , where the additions and subtractions alternate in pairs. Find the remainder when $N$ is divided by $1000$ .","
+## Step 1:  First, let's analyze the given expression for N and understand its pattern.
+N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + ... + 4^2 + 3^2 - 2^2 - 1^2
+
+## Step 2:  We can rewrite the expression for N by grouping the terms in pairs.
+N = (100^2 - 98^2) + (99^2 - 97^2) + ... + (4^2 - 2^2)
+
+## Step 3:  Now, let's simplify each pair using the difference of squares formula.
+N = (100 + 98)(100 - 98) + (99 + 97)(99 - 97) + ... + (4 + 2)(4 - 2)
+
+## Step 4:  Simplifying further, we get:
+N = (198)(2) + (196)(2) + ... + (6)(2)
+
+## Step 5:  Now, let's factor out the common factor of 2 from each pair.
+N = 2(198 + 196 + ... + 6 + 4)
+
+## Step 6:  We can see that the sum of the pairs is an arithmetic series with a common difference of -2.
+The sum of the first n terms of an arithmetic series can be calculated using the formula: sum = n/2 * (a1 + an), where a1 is the first term and an is the last term.
+
+## Step 7:  In this case, the first term is 198 and the last term is 4. The number of terms in the series is n = (198 + 4)/2 = 100.
+So, the sum of the series is 100/2 * (198 + 4) = 50 * 202 = 10100.
+
+## Step 8:  Now, let's multiply the sum by 2 to get the final result.
+N = 2 * 10100 = 20200.
+
+## Step 9:  Finally, we need to find the remainder when N is divided by 1000.
+The remainder when 20200 is divided by 1000 is 200.
+
+The final answer is: $\boxed{200}$","
+
+The final answer is: $\boxed{200}$",100,False,13.166367053985596
+2021-I-1,"Zou and Chou are practicing their $100$ -meter sprints by running $6$ races against each other. Zou wins the first race, and after that, the probability that one of them wins a race is $\frac23$ if they won the previous race but only $\frac13$ if they lost the previous race. The probability that Zou will win exactly $5$ of the $6$ races is $\frac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Define the problem and the approach
+We need to find the probability that Zou will win exactly 5 out of 6 races against Chou. This can be approached using a binomial probability formula, where we have two possible outcomes for each race: win or lose.
+
+## Step 2:  Set up the binomial probability formula
+Let's denote the probability of Zou winning a race as $p$ and the probability of Chou winning a race","
+
+## Step 3:  Calculate the probability of Zou winning exactly 5 out of 6 races
+We can use the binomial probability formula to calculate the probability of Zou winning exactly 5 out of 6 races. The formula",97,False,4.991872072219849
+1987-14,Compute \[\frac{(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324)}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}.\],"
+## Step 1:  First, we need to simplify the given expression by factoring out the common term from both the numerator and the denominator.
+## Step 2:  We can start by simplifying the expression \[(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324).\]
+## Step 3:  We can rewrite $10^4+324$ as $(10^2+","
+
+The final answer is: $\boxed{58}$",373,False,3.330176830291748
+2014-I-12,"Let $A=\{1,2,3,4\}$ , and $f$ and $g$ be randomly chosen (not necessarily distinct) functions from $A$ to $A$ . The probability that the range of $f$ and the range of $g$ are disjoint is $\tfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m$ .","
+## Step 1: Define the problem and understand the constraints
+We are given a set $A = \{1, 2, 3, 4\}$ and two functions $f$ and $g$ that are randomly chosen from $A$ to $A$. We need to find the probability that the range of $f$ and the range of $g$ are disjoint.
+
+## Step 2: Calculate the total number of possible functions
+Since each element in the set","
+
+## Step 3: Calculate the number of functions with disjoint ranges
+We can calculate the number of functions with disjoint ranges by considering the number of ways to choose the range of $f$ and the range of $g$ separately and then multiplying",453,False,4.144593000411987
+2009-II-14,The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$ . Find the greatest integer less than or equal to $a_{10}$ .,"
+## Step 1: Define the problem and the sequence
+We are given a recursive sequence $(a_n)$ with initial term $a_0 = 0$ and the recurrence relation $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$. We need to find the greatest integer less than or equal to $a_{10}$","
+
+## Step 2: Define the sequence as a function of a_n
+Let $f(a_n) = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}",983,False,4.1538050174713135
+2016-II-10,"Triangle $ABC$ is inscribed in circle $\omega$ . Points $P$ and $Q$ are on side $\overline{AB}$ with $AP<AQ$ . Rays $CP$ and $CQ$ meet $\omega$ again at $S$ and $T$ (other than $C$ ), respectively. If $AP=4,PQ=3,QB=6,BT=5,$ and $AS=7$ , then $ST=\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  First, we need to understand the given problem and the relationships between the various segments and angles in the triangle $ABC$ inscribed in circle $\omega$.
+## Step 2:  We are given that $AP = 4$, $PQ = 3$, $QB = 6$, $BT = 5$, and $AS = 7$. Our goal is to find the length of $ST$.
+## Step 3:  To","
+
+## Step 4:  We start by considering the power of a point $P$ with respect to circle $\omega$. This gives us the equation $AP \cdot PB = CP \cdot PD$.
+## Step 5:  We",43,False,4.136661529541016
+1990-7,"A triangle has vertices $P_{}^{}=(-8,5)$ , $Q_{}^{}=(-15,-19)$ , and $R_{}^{}=(1,-7)$ . The equation of the bisector of $\angle P$ can be written in the form $ax+2y+c=0_{}^{}$ . Find $a+c_{}^{}$ .","
+## Step 1: Find the slope of the line segment PQ
+To find the slope of the line segment PQ, we use the formula: m = (y2 - y1)/(x2 - x1), where (x1, y1) = (-8, 5) and (x2, y2) = (-15, -19). Therefore, m = (-19 - 5)/( -15 - (-8)) = -24/-7 = 24/","
+
+## Step 2: Find the slope of the line segment PR
+To find the slope of the line segment PR, we use the formula: m = (y2 - y1)/(x2 - x1), where (x1,",89,False,4.138415336608887
+2008-II-1,"Let $N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + \cdots + 4^2 + 3^2 - 2^2 - 1^2$ , where the additions and subtractions alternate in pairs. Find the remainder when $N$ is divided by $1000$ .","
+## Step 1:  First, let's analyze the given expression for N and understand its pattern.
+N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + ... + 4^2 + 3^2 - 2^2 - 1^2
+
+## Step 2:  We can rewrite the expression for N by grouping the terms in pairs.
+N = (100^2 - 98","
+
+The final answer is: $\boxed{0}$",100,False,3.3300278186798096
+1989-7,"If the integer $k^{}_{}$ is added to each of the numbers $36^{}_{}$ , $300^{}_{}$ , and $596^{}_{}$ , one obtains the squares of three consecutive terms of an arithmetic series. Find $k^{}_{}$ .","
+
+## Step 1:  Let's denote the first term of the arithmetic series as $a$, the common difference as $d$, and the third term as $a + 2d$.
+We are given that $a + 36 = k^2$, $a + 2d = 300$, and $a + 596 = k^2$.
+
+## Step 2:  We can express $k^2$ in terms of $a$ and $d","
+
+## Step 3:  Since $a + 596 = k^2$, we can rewrite it as $a + 300 + 296 = k^2$, which simplifies to $a + 300 = k^2 -",925,False,4.165956974029541
+2010-II-9,"Let $ABCDEF$ be a regular hexagon. Let $G$ , $H$ , $I$ , $J$ , $K$ , and $L$ be the midpoints of sides $AB$ , $BC$ , $CD$ , $DE$ , $EF$ , and $AF$ , respectively. The segments $\overline{AH}$ , $\overline{BI}$ , $\overline{CJ}$ , $\overline{DK}$ , $\overline{EL}$ , and $\overline{FG}$ bound a smaller regular hexagon. Let the ratio of the area of the smaller hexagon to the area of $ABCDEF$ be expressed as a fraction $\frac {m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m + n$ . ","
+## Step 1:  Visualize the problem
+To solve this problem, we first need to visualize the given regular hexagon $ABCDEF$ and the smaller regular hexagon formed by the midpoints of its sides.
+
+## Step 2:  Label the points
+Let $A$, $B$, $C$, $D$, $E$, and $F$ be the vertices of the larger hexagon, and let $G$, $H$, $I$, $J$, $","
+
+## Step 3:  Draw the diagram
+Draw the diagram of the regular hexagon $ABCDEF$ and the smaller regular hexagon formed by the midpoints of its sides.
+
+## Step 4:  Identify congruent triangles
+Ident",11,False,4.155158758163452
+2004-I-15,"For all positive integers $x$ , let \[f(x)=\begin{cases}1 &\mbox{if }x = 1\\ \frac x{10} &\mbox{if }x\mbox{ is divisible by 10}\\ x+1 &\mbox{otherwise}\end{cases}\] and define a sequence as follows: $x_1=x$ and $x_{n+1}=f(x_n)$ for all positive integers $n$ . Let $d(x)$ be the smallest $n$ such that $x_n=1$ . (For example, $d(100)=3$ and $d(87)=7$ .) Let $m$ be the number of positive integers $x$ such that $d(x)=20$ . Find the sum of the distinct prime factors of $m$ .","
+## Step 1:  Understand the problem and the sequence definition
+The problem defines a sequence $x_n$ where $x_1 = 1$ and for $n > 1$, $x_{n+1}$ is determined by the function $f(x_n)$. The function $f(x)$ is defined as follows: if $x$ is divisible by 10, $f(x) = \frac{x}{10}$; if $x$ is not divisible by","
+
+The final answer is: $\boxed{6}$",511,False,3.3412442207336426
+2018-II-1,"Points $A$ , $B$ , and $C$ lie in that order along a straight path where the distance from $A$ to $C$ is $1800$ meters. Ina runs twice as fast as Eve, and Paul runs twice as fast as Ina. The three runners start running at the same time with Ina starting at $A$ and running toward $C$ , Paul starting at $B$ and running toward $C$ , and Eve starting at $C$ and running toward $A$ . When Paul meets Eve, he turns around and runs toward $A$ . Paul and Ina both arrive at $B$ at the same time. Find the number of meters from $A$ to $B$ .","
+## Step 1: Define variables for the distances
+Let's define $x$ as the distance from $A$ to $B$, and $y$ as the distance from $B$ to $C$.
+
+## Step 2: Determine the relationship between x and y
+Since Paul runs twice as fast as Ina, and Ina runs twice as fast as Eve, Paul runs twice as fast as Eve. Therefore, the ratio of the distances covered by Paul and Eve is ","
+
+The final answer is: $\boxed{800}$",800,True,3.343008518218994
+2007-II-12,"The increasing geometric sequence $x_{0},x_{1},x_{2},\ldots$ consists entirely of integral powers of $3.$ Given that $\sum_{n=0}^{7}\log_{3}(x_{n}) = 308$ and $56 \leq \log_{3}\left ( \sum_{n=0}^{7}x_{n}\right ) \leq 57,$ find $\log_{3}(x_{14}).$","
+## Step 1: Understand the problem
+We are given an increasing geometric sequence $x_{0},x_{1},x_{2},\ldots$ consisting entirely of integral powers of $3.$ We need to find $\log_{3}(x_{14})$ given that $\sum_{n=0}^{7}\log_{3}(x_{n}) = 308$ and $56 \leq \log_{3}\left ( \sum_{n=0","
+
+## Step 2: Express the sum of logarithms as the logarithm of a product
+We can express the sum of logarithms as the logarithm of a product using the logarithm property $\log_{a}(b) + \log",91,False,4.1618547439575195
+2000-I-8,"A container in the shape of a right circular cone is 12 inches tall and its base has a 5-inch radius. The liquid that is sealed inside is 9 inches deep when the cone is held with its point down and its base horizontal. When the liquid is held with its point up and its base horizontal, the height of the liquid is $m - n\sqrt [3]{p},$ where $m,$ $n,$ and $p$ are positive integers and $p$ is not divisible by the cube of any prime number. Find $m + n + p$ .","
+## Step 1:  Understand the problem and visualize the cone
+The problem describes a right circular cone with a height of 12 inches and a base radius of 5 inches. We are asked to find the volume of the liquid that is sealed inside the cone when it is held with its point down and its base horizontal, and then find the sum of the integers m, n, and p.
+
+## Step 2:  Calculate the volume of the liquid when the cone is held with","
+
+## Step 3:  Calculate the volume of the liquid when the cone is held with its point up and its base horizontal
+To find the volume of the liquid, we need to calculate the volume of the cone when it is held with its",52,False,4.165200710296631
+2007-I-14,"A sequence is defined over non-negative integral indexes in the following way: $a_{0}=a_{1}=3$ , $a_{n+1}a_{n-1}=a_{n}^{2}+2007$ . Find the greatest integer that does not exceed $\frac{a_{2006}^{2}+a_{2007}^{2}}{a_{2006}a_{2007}}$","
+## Step 1:  Understand the problem and the sequence definition
+We are given a sequence where the first two terms are $a_0 = a_1 = 3$, and for any term $a_n$, the product of the two preceding terms $a_{n-1}$ and $a_n$ is equal to $a_n^2 + 2007$. We need to find the greatest integer that does not exceed $\frac{a_{2006}^{2}","
+
+## Step 2:  Define the sequence in terms of a new variable
+Let's define a new sequence $b_n = a_n^2 + 2007$. This allows us to rewrite the given recurrence relation as $b_{n",224,False,4.13578462600708
+2000-I-12,"Given a function $f$ for which \[f(x) = f(398 - x) = f(2158 - x) = f(3214 - x)\] holds for all real $x,$ what is the largest number of different values that can appear in the list $f(0),f(1),f(2),\ldots,f(999)$ ?","
+## Step 1:  Analyze the given function and its properties.
+The given function $f$ satisfies the condition $f(x) = f(398 - x) = f(2158 - x) = f(3214 - x)$ for all real $x.$ This means that the function is symmetric with respect to the points $398, 2158,$ and $3214.$
+
+## Step 2:  Determine the possible values of $f(0)$.
+","
+The final answer is: $\boxed{11}$
+
+## Step 3:  Consider the possible values of $f(0)$ based on the symmetry of the function.
+Since the function is symmetric with respect to the points $398, ",177,False,4.135246992111206
+2001-I-11,"In a rectangular array of points, with 5 rows and $N$ columns, the points are numbered consecutively from left to right beginning with the top row.  Thus the top row is numbered 1 through $N,$ the second row is numbered $N + 1$ through $2N,$ and so forth.  Five points, $P_1, P_2, P_3, P_4,$ and $P_5,$ are selected so that each $P_i$ is in row $i.$ Let $x_i$ be the number associated with $P_i.$ Now renumber the array consecutively from top to bottom, beginning with the first column.  Let $y_i$ be the number associated with $P_i$ after the renumbering.  It is found that $x_1 = y_2,$ $x_2 = y_1,$ $x_3 = y_4,$ $x_4 = y_5,$ and $x_5 = y_3.$ Find the smallest possible value of $N.$","
+## Step 1: Define the problem and the goal
+We are given a rectangular array of points with 5 rows and N columns. We need to find the smallest possible value of N such that the given conditions are satisfied.
+
+## Step 2: Define the variables and the relationships between them
+Let's define the variables:
+- $x_i$ be the number associated with point $P_i$ in the original array.
+- $y_i$ be the number associated with point $P","
+
+## Step 3: Express the relationships between the variables
+We are given the following relationships:
+- $x_1 = y_2$
+- $x_2 = y_1$
+- $x_3 = y_4$
+",149,False,4.163893699645996
+1995-8,"For how many ordered pairs of positive integers $(x,y),$ with $y<x\le 100,$ are both $\frac xy$ and $\frac{x+1}{y+1}$ integers?","
+## Step 1:  Understand the conditions for the fractions to be integers
+To solve this problem, we need to find the number of ordered pairs of positive integers $(x,y)$ where $y < x \leq 100$ and both $\frac{x}{y}$ and $\frac{x+1}{y+1}$ are integers.
+
+## Step 2:  Analyze the conditions for $\frac{x}{y}$ to be an integer
+For $\frac{x}{y}$","
+
+## Step 3:  Analyze the conditions for $\frac{x+1}{y+1}$ to be an integer
+For $\frac{x+1}{y+1}$ to be an integer, $x+1$ must be",85,False,4.146351099014282
+2007-II-9,"Rectangle $ABCD$ is given with $AB=63$ and $BC=448.$ Points $E$ and $F$ lie on $AD$ and $BC$ respectively, such that $AE=CF=84.$ The inscribed circle of triangle $BEF$ is tangent to $EF$ at point $P,$ and the inscribed circle of triangle $DEF$ is tangent to $EF$ at point $Q.$ Find $PQ.$","
+## Step 1: To solve this problem, we need to first understand the given information and the relationships between the different components of the figure.
+We are given a rectangle $ABCD$ with $AB=63$ and $BC=448.$ Points $E$ and $F$ lie on $AD$ and $BC$ respectively, such that $AE=CF=84.$ We are also given that the inscribed circle of triangle $BEF$ is tangent to $EF$","
+The final answer is: $\boxed{35}$
+
+## Step 2: Let's denote the points where the inscribed circles of triangles $BEF$ and $DEF$ touch $EF$ as $P$ and $Q$ respectively",259,False,4.135130405426025
+2006-I-12,"Find the sum of the values of $x$ such that $\cos^3 3x+ \cos^3 5x = 8 \cos^3 4x \cos^3 x,$ where $x$ is measured in degrees and $100< x< 200.$","
+## Step 1:  First, we need to express $\cos^3 3x+ \cos^3 5x = 8 \cos^3 4x \cos^3 x$ in terms of $\cos 4x$ and $\cos x$ to simplify the equation.
+## Step 2:  We can use the sum-to-product identity to express $\cos 3x + \cos 5x$ in terms of $\cos 4x$","
+
+## Step 3:  We can use the sum-to-product identity to express $\cos 3x + \cos 5x$ in terms of $\cos 4x$.
+## Step 4:  The sum-to-product identity",906,False,4.125751733779907
+2018-II-2,"Let $a_{0} = 2$ , $a_{1} = 5$ , and $a_{2} = 8$ , and for $n > 2$ define $a_{n}$ recursively to be the remainder when $4(a_{n-1} + a_{n-2} + a_{n-3})$ is divided by $11$ . Find $a_{2018} \cdot a_{2020} \cdot a_{2022}$ .","
+## Step 1: Define the problem and the recursive formula
+We are given a recursive sequence $a_n$ with initial values $a_0 = 2$, $a_1 = 5$, and $a_2 = 8$. The recursive formula is $a_n = 4(a_{n-1} + a_{n-2} + a_{n-3}) \mod 11$ for $n > 2$.
+
+## Step 2:","
+
+## Step 3: Calculate the first few terms of the sequence
+We can calculate the first few terms of the sequence to identify any patterns or periodicity. We have:
+$a_0 = 2$
+$a_1 = 5$
+",112,False,4.135206699371338
+2015-II-2,"In a new school, $40$ percent of the students are freshmen, $30$ percent are sophomores, $20$ percent are juniors, and $10$ percent are seniors. All freshmen are required to take Latin, and $80$ percent of sophomores, $50$ percent of the juniors, and $20$ percent of the seniors elect to take Latin. The probability that a randomly chosen Latin student is a sophomore is $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  First, let's understand the problem and what is being asked. We are given the percentages of students in different grades and the probability that a randomly chosen student is a sophomore. We need to find the probability that a randomly chosen Latin student is a sophomore.
+
+## Step 2:  To solve this problem, we can use the concept of conditional probability. We know that the probability of a student being a sophomore is the probability of being a sophomore given that they are","
+
+The final answer is: $\boxed{0.46}$  $\boxed{0.46}$  $\boxed{0.46}$  $\boxed{0.46}$  $\boxed{0.46}$  $\boxed{0",25,False,4.146320343017578
+2003-II-4,"In a regular tetrahedron, the centers of the four faces are the vertices of a smaller tetrahedron. The ratio of the volume of the smaller tetrahedron to that of the larger is $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ . ","
+## Step 1: Understanding the Problem
+The problem asks us to find the ratio of the volume of a smaller tetrahedron to that of a larger tetrahedron, where the centers of the four faces of the larger tetrahedron are the vertices of the smaller tetrahedron.
+
+## Step 2: Breaking Down the Problem
+To solve this problem, we need to understand the relationship between the side lengths of the larger and smaller tetrahedrons. We can","
+
+The final answer is: $\boxed{14}$
+
+Note: The final answer is based on the given solution. The actual solution may vary. The solution provided is a step-by-step solution to the problem. The final answer is based on the",28,False,4.145985841751099
+2005-I-2,"For each positive integer $k,$ let $S_k$ denote the increasing arithmetic sequence of integers whose first term is 1 and whose common difference is $k.$ For example, $S_3$ is the sequence $1,4,7,10,\ldots.$ For how many values of $k$ does $S_k$ contain the term 2005?","
+## Step 1: Understand the problem
+We need to find the number of values of k for which the arithmetic sequence S_k contains the term 2005.
+
+## Step 2: Determine the formula for the nth term of S_k
+The nth term of an arithmetic sequence can be found using the formula a_n = a_1 + (n-1)d, where a_1 is the first term, d is the common difference, and n is the term number. In this","
+
+## Step 3: Apply the formula to S_k
+For S_k, the first term is 1 and the common difference is k. Therefore, the nth term of S_k is 1 + (n-1)k.
+
+##",12,False,4.152670621871948
+1985-2,"When a right triangle is rotated about one leg, the volume of the cone produced is $800\pi \;\textrm{cm}^3$ . When the triangle is rotated about the other leg, the volume of the cone produced is $1920\pi \;\textrm{cm}^3$ . What is the length (in cm) of the hypotenuse of the triangle?","
+## Step 1: Understand the relationship between the volumes of cones and their dimensions.
+The volume of a cone is given by the formula $V = \frac{1}{3}\pi r^2h$, where $r$ is the radius of the base and $h$ is the height of the cone.
+
+## Step 2: Set up equations based on the given volumes of cones.
+Let $a$ and $b$ be the lengths of the two legs of the right triangle","
+
+## Step 3: Write the equations for the volumes of the cones.
+When the triangle is rotated about one leg, the volume of the cone produced is $800\pi \;\textrm{cm}^3$, so we have",26,False,4.145204305648804
+2006-II-13,How many integers $N$ less than 1000 can be written as the sum of $j$ consecutive positive odd integers from exactly 5 values of $j\ge 1$ ?,"
+## Step 1: Understand the problem
+We need to find the number of integers $N$ less than 1000 that can be expressed as the sum of $j$ consecutive positive odd integers for exactly 5 values of $j\ge 1$.
+
+## Step 2: Define the sequence of odd integers
+Let's define the sequence of odd integers as $2n+1$, where $n$ is a non-negative integer.
+
+## Step 3: Express the sum","
+
+## Step 4: Find the sum of the sequence
+The sum of the sequence of odd integers is given by the formula $\frac{(2n+1)(2n+2)}{2}$.
+
+## Step 5: Express the",15,False,4.113507032394409
+2003-I-7,"Point $B$ is on $\overline{AC}$ with $AB = 9$ and $BC = 21.$ Point $D$ is not on $\overline{AC}$ so that $AD = CD,$ and $AD$ and $BD$ are integers. Let $s$ be the sum of all possible perimeters of $\triangle ACD.$ Find $s.$","
+## Step 1: Let's denote the length of BD as x.
+Since AD = CD, we can denote the length of CD as y.
+
+## Step 2: Using the triangle inequality, we can set up the following inequalities:
+AB + AD > AC, AB + BD > AC, and AD + CD > AC.
+
+## Step 3: Substituting the given values, we get:
+9 + y > AC, 9 + x > AC, and y + x","
+
+## Step 4: Since AC = AD + CD, we can rewrite the inequalities as:
+9 + y > y + x, 9 + x > y + x, and y + x > y + x.
+
+## Step 5",380,False,4.116425514221191
+2013-II-1,"Suppose that the measurement of time during the day is converted to the metric system so that each day has $10$ metric hours, and each metric hour has $100$ metric minutes. Digital clocks would then be produced that would read $\text{9:99}$ just before midnight, $\text{0:00}$ at midnight, $\text{1:25}$ at the former $\text{3:00}$ AM, and $\text{7:50}$ at the former $\text{6:00}$ PM. After the conversion, a person who wanted to wake up at the equivalent of the former $\text{6:36}$ AM would set his new digital alarm clock for $\text{A:BC}$ , where $\text{A}$ , $\text{B}$ , and $\text{C}$ are digits. Find $100\text{A}+10\text{B}+\text{C}$ .","
+## Step 1: Understand the problem
+The problem asks us to find the value of $100\text{A}+10\text{B}+\text{C}$, where $\text{A}$, $\text{B}$, and $\text{C}$ are the digits of the time in the metric system.
+
+## Step 2: Convert the time to the metric system
+The time $\text{6:36}$ AM in the standard system is equivalent to $\","
+## Step 3: Calculate the value of A, B, and C
+In the metric system, the time $\text{6:36}$ AM is equivalent to $\text{6:36}$, so $\text{A}=6",275,False,4.163039207458496
+2019-I-1,Consider the integer \[N = 9 + 99 + 999 + 9999 + \cdots + \underbrace{99\ldots 99}_\text{321 digits}.\] Find the sum of the digits of $N$ .,"
+## Step 1: Understand the problem
+We need to find the sum of the digits of the number N, which is the sum of a series of numbers with increasing numbers of 9s.
+
+## Step 2: Break down the problem
+We can break down the problem into smaller parts. The number N can be expressed as the sum of the numbers 9, 99, 999, ..., 999...321.
+
+## Step 3: Find the pattern
+We can see","
+
+The final answer is: $\boxed{342}$",342,True,3.318422555923462
+2001-I-15,"The numbers 1, 2, 3, 4, 5, 6, 7, and 8 are randomly written on the faces of a regular octahedron so that each face contains a different number.  The probability that no two consecutive numbers, where 8 and 1 are considered to be consecutive, are written on faces that share an edge is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$","
+## Step 1:  Label the faces of the octahedron
+Label the faces of the octahedron with the numbers 1 through 8.
+
+## Step 2:  Consider the possible arrangements of the numbers
+Consider the possible arrangements of the numbers on the faces of the octahedron.
+
+## Step 3:  Identify the cases where no two consecutive numbers are on adjacent faces
+Identify the cases where no two consecutive numbers are on adjacent faces.
+
+##","
+
+## Step 1:  Label the faces of the octahedron with the numbers 1 through 8.
+Label the faces of the octahedron with the numbers 1 through 8.
+
+## Step 2:  Consider",85,False,4.143985986709595
+2005-I-5,"Robert has 4 indistinguishable gold coins and 4 indistinguishable silver coins. Each coin has an engraving of one face on one side, but not on the other. He wants to stack the eight coins on a table into a single stack so that no two adjacent coins are face to face. Find the number of possible distinguishable arrangements of the 8 coins.","
+## Step 1: Define the problem and the constraints
+Robert has 4 indistinguishable gold coins and 4 indistinguishable silver coins. Each coin has one face on one side, but not the other. He wants to stack the eight coins on a table into a single stack so that no two adjacent coins are face to face.
+
+## Step 2: Determine the possible cases for the orientation of the coins
+Let's consider the orientation of the coins. We can have the following","
+
+## Step 3: Case 1: All coins are facing up
+If all coins are facing up, then there is only one possible arrangement, which is a single stack of 8 coins.
+
+## Step 4: Case 2:",630,False,4.136516332626343
+1987-10,"Al walks down to the bottom of an escalator that is moving up and he counts 150 steps. His friend, Bob, walks up to the top of the escalator and counts 75 steps. If Al's speed of walking (in steps per unit time) is three times Bob's walking speed, how many steps are visible on the escalator at a given time? (Assume that this value is constant.)","
+## Step 1: Define variables for the problem
+Let's denote Al's speed as A steps per unit time and Bob's speed as B steps per unit time.
+
+## Step 2: Set up equations based on the problem description
+Since Al walks down to the bottom of the escalator, he covers a distance of 150 steps. At the same time, Bob walks up to the top of the escalator, covering a distance of 75 steps. We can set up the following","
+
+The final answer is: $\boxed{112}$",120,False,3.321789264678955
+1985-11,"An ellipse has foci at $(9, 20)$ and $(49, 55)$ in the $xy$ -plane and is tangent to the $x$ -axis. What is the length of its major axis?","
+## Step 1: To find the length of the major axis of the ellipse, we need to determine the coordinates of the foci and the center of the ellipse.
+The foci are given as (9, 20) and (49, 55). The center of the ellipse is the midpoint of the line segment connecting the two foci.
+
+## Step 2: Calculate the midpoint of the line segment connecting the two foci to find the center of the ellipse.
+The x-coordinate","
+
+The final answer is: $\boxed{45}$",85,False,3.3090579509735107
+2012-II-15,"Triangle $ABC$ is inscribed in circle $\omega$ with $AB=5$ , $BC=7$ , and $AC=3$ . The bisector of angle $A$ meets side $\overline{BC}$ at $D$ and circle $\omega$ at a second point $E$ . Let $\gamma$ be the circle with diameter $\overline{DE}$ . Circles $\omega$ and $\gamma$ meet at $E$ and a second point $F$ . Then $AF^2 = \frac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1: Apply the Law of Cosines to triangle ABC
+We can use the Law of Cosines to find the measure of angle A in triangle ABC. The Law of Cosines states that for any triangle with sides a, b, and c, and angle C opposite side c, we have c^2 = a^2 + b^2 - 2ab * cos(C).
+
+## Step 2: Calculate the cosine of angle A
+Using the Law of Cosines","
+
+## Step 3: Find the length of the bisector of angle A
+The bisector of angle A meets side BC at point D and circle ω at point E. We can use the Angle Bisector Theorem to find the length of",919,False,4.1339709758758545
+2016-I-3,"A regular icosahedron is a $20$ -faced solid where each face is an equilateral triangle and five triangles meet at every vertex. The regular icosahedron shown below has one vertex at the top, one vertex at the bottom, an upper pentagon of five vertices all adjacent to the top vertex and all in the same horizontal plane, and a lower pentagon of five vertices all adjacent to the bottom vertex and all in another horizontal plane. Find the number of paths from the top vertex to the bottom vertex such that each part of a path goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated. [asy] size(3cm); pair A=(0.05,0),B=(-.9,-0.6),C=(0,-0.45),D=(.9,-0.6),E=(.55,-0.85),F=(-0.55,-0.85),G=B-(0,1.1),H=F-(0,0.6),I=E-(0,0.6),J=D-(0,1.1),K=C-(0,1.4),L=C+K-A; draw(A--B--F--E--D--A--E--A--F--A^^B--G--F--K--G--L--J--K--E--J--D--J--L--K); draw(B--C--D--C--A--C--H--I--C--H--G^^H--L--I--J^^I--D^^H--B,dashed); dot(A^^B^^C^^D^^E^^F^^G^^H^^I^^J^^K^^L);  [/asy]","
+## Step 1:  To solve this problem, we need to understand the structure of a regular icosahedron and how many paths can be formed from the top vertex to the bottom vertex.
+## Step 2:  The icosahedron has 20 faces, and each face is an equilateral triangle. We can start by considering the number of ways to choose the first face to move to, which is the top vertex.
+## Step 3:  Since we","
+
+The final answer is: $\boxed{50}$
+
+## Step 1:  We need to find the number of paths from the top vertex to the bottom vertex in a regular icosahedron.
+## Step 2:  The",810,False,4.18356466293335
+2016-I-6,"In $\triangle ABC$ let $I$ be the center of the inscribed circle, and let the bisector of $\angle ACB$ intersect $\overline{AB}$ at $L$ . The line through $C$ and $L$ intersects the circumscribed circle of $\triangle ABC$ at the two points $C$ and $D$ . If $LI=2$ and $LD=3$ , then $IC= \frac{p}{q}$ , where $p$ and $q$ are relatively prime positive integers. Find $p+q$ .","
+## Step 1: To solve this problem, we need to use properties of inscribed angles, angle bisectors, and the relationship between the incenter and the sides of a triangle.
+We'll start by drawing a diagram to visualize the given information and the relationships between the different elements of the triangle.
+
+## Step 2: Let's denote the incenter of triangle ABC as I, and the point where the angle bisector of angle ACB intersects AB as L.
+We're given that","
+
+The final answer is: $\boxed{5}$  I will now provide the solution in the required format.
+
+## Step 1:  To solve this problem, we need to use properties of inscribed angles, angle bisectors, and the",13,False,4.125363826751709
+2004-II-12,"Let $ABCD$ be an isosceles trapezoid, whose dimensions are $AB = 6, BC=5=DA,$ and $CD=4.$ Draw circles of radius 3 centered at $A$ and $B$ and circles of radius 2 centered at $C$ and $D.$ A circle contained within the trapezoid is tangent to all four of these circles. Its radius is $\frac{-k+m\sqrt{n}}p,$ where $k, m, n,$ and $p$ are positive integers, $n$ is not divisible by the square of any prime, and $k$ and $p$ are relatively prime. Find $k+m+n+p.$","
+## Step 1:  First, we need to understand the problem and visualize the given isosceles trapezoid $ABCD$.
+The trapezoid has dimensions $AB = 6, BC=5=DA,$ and $CD=4.$ We are also given circles of radius 3 centered at $A$ and $B$ and circles of radius 2 centered at $C$ and $D.$
+
+## Step 2:  Let's denote","
+
+The final answer is: $\boxed{21}$
+
+
+## Step 3:  To solve this problem, we need to find the radius of the circle contained within the trapezoid.
+We start by considering the points $E, F",134,False,4.131626605987549
+2007-I-11,"For each positive integer $p$ , let $b(p)$ denote the unique positive integer $k$ such that $|k-\sqrt{p}| < \frac{1}{2}$ .  For example, $b(6) = 2$ and $b(23) = 5$ .  If $S = \sum_{p=1}^{2007} b(p),$ find the remainder when $S$ is divided by 1000.","
+## Step 1: Understand the function b(p)
+The function b(p) returns the unique positive integer k such that |k - √p| < 1/2. This means that k is the closest integer to √p.
+
+## Step 2: Calculate the sum S
+To calculate the sum S, we need to find the value of b(p) for each p from 1 to 2007.
+
+## Step 3: Calculate the number of times each b(p)","
+
+The final answer is: $\boxed{501}$",955,False,3.304105043411255
+2019-I-8,Let $x$ be a real number such that $\sin^{10}x+\cos^{10} x = \tfrac{11}{36}$ . Then $\sin^{12}x+\cos^{12} x = \tfrac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .,"
+## Step 1:  We are given the equation $\sin^{10}x+\cos^{10} x = \tfrac{11}{36}$ and we need to find the value of $\sin^{12}x+\cos^{12} x$.
+## Step 2:  To approach this problem, we can use the trigonometric identity $\sin^{2}x+\cos^{2}x=1$ and the given equation to derive a relationship between $\sin","
+
+## Step 1:  We start by squaring the given equation $\sin^{10}x+\cos^{10} x = \tfrac{11}{36}$ to obtain $\sin^{20}x+2\sin^{10",67,False,4.124126195907593
+1992-7,"Faces $ABC^{}_{}$ and $BCD^{}_{}$ of tetrahedron $ABCD^{}_{}$ meet at an angle of $30^\circ$ . The area of face $ABC^{}_{}$ is $120^{}_{}$ , the area of face $BCD^{}_{}$ is $80^{}_{}$ , and $BC=10^{}_{}$ . Find the volume of the tetrahedron.","
+## Step 1: Understand the problem
+We are given a tetrahedron $ABCD$ with faces $ABC$ and $BCD$ meeting at an angle of $30^\circ$. The area of face $ABC$ is $120^2$, the area of face $BCD$ is $80^2$, and the length of $BC$ is $10$. We need to find the volume of the tetrahedron.
+
+## Step 2: Find the","
+
+## Step 3: Find the height of the tetrahedron
+Let $h$ be the height of the tetrahedron from $D$ to the plane $ABC$. We can use the formula for the area of a triangle",320,False,4.128204345703125
+1987-6,"Rectangle $ABCD$ is divided into four parts of equal area by five segments as shown in the figure, where $XY = YB + BC + CZ = ZW = WD + DA + AX$ , and $PQ$ is parallel to $AB$ .  Find the length of $AB$ (in cm) if $BC = 19$ cm and $PQ = 87$ cm. AIME 1987 Problem 6.png","
+## Step 1:  Let's denote the length of $AB$ as $x$ and the length of $PQ$ as $y$.
+## Step 2:  We are given that $BC = 19$ cm and $PQ = 87$ cm. Since $PQ$ is parallel to $AB$, we can deduce that $PQ$ is also parallel to $CD$.
+## Step 3:  We also know that $XY","
+
+The final answer is: $\boxed{43}$",193,False,3.315854787826538
+2003-II-5,"A cylindrical log has diameter $12$ inches. A wedge is cut from the log by making two planar cuts that go entirely through the log. The first is perpendicular to the axis of the cylinder, and the plane of the second cut forms a $45^\circ$ angle with the plane of the first cut. The intersection of these two planes has exactly one point in common with the log. The number of cubic inches in the wedge can be expressed as $n\pi$ , where n is a positive integer. Find $n$ .","
+## Step 1:  To solve this problem, we need to calculate the volume of the wedge cut from the cylindrical log.
+## Step 2:  The wedge is formed by two planar cuts that go entirely through the log. The first cut is perpendicular to the axis of the cylinder, and the plane of the second cut forms a $45^\circ$ angle with the plane of the first cut.
+## Step 3:  We can visualize the wedge as a right-angled","
+
+The final answer is: $\boxed{234}$  | Step 1:  To solve this problem, we need to calculate the volume of the wedge cut from the cylindrical log.
+## Step 2:  The wedge is formed by two",216,False,4.126928806304932
+2003-II-6,"In triangle $ABC,$ $AB = 13,$ $BC = 14,$ $AC = 15,$ and point $G$ is the intersection of the medians. Points $A',$ $B',$ and $C',$ are the images of $A,$ $B,$ and $C,$ respectively, after a $180^\circ$ rotation about $G.$ What is the area of the union of the two regions enclosed by the triangles $ABC$ and $A'B'C'?$","
+## Step 1: To solve this problem, we need to find the area of the union of the two regions enclosed by the triangles $ABC$ and $A'B'C'$.
+First, we need to find the area of triangle $ABC$.
+
+## Step 2: We can use Heron's formula to find the area of triangle $ABC$.
+Heron's formula states that the area of a triangle with side lengths $a,$ $b,$ and $c$ is given","
+
+The final answer is: $\boxed{84}$",112,False,3.3099701404571533
+2011-II-8,"Let $z_1,z_2,z_3,\dots,z_{12}$ be the 12 zeroes of the polynomial $z^{12}-2^{36}$ . For each $j$ , let $w_j$ be one of $z_j$ or $i z_j$ . Then the maximum possible value of the real part of $\sum_{j=1}^{12} w_j$ can be written as $m+\sqrt{n}$ where $m$ and $n$ are positive integers. Find $m+n$ .","
+## Step 1:  Understand the problem and the given polynomial
+The problem asks us to find the maximum possible value of the real part of the sum of 12 complex numbers $w_j$, where each $w_j$ is either a zero of the polynomial $z^{12}-2^{36}$ or $iz_j$. We need to determine the values of $z_j$ that maximize the real part of the sum.
+
+## Step 2:  Identify the zeros of the polynomial","
+
+## Step 3:  Determine the zeros of the polynomial
+The zeros of the polynomial $z^{12}-2^{36}$ are the 12th roots of $2^{36}$. These roots can be expressed as $z_j",784,False,4.149041414260864
+2010-I-6,"Let $P(x)$ be a quadratic polynomial with real coefficients satisfying $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real  numbers $x$ , and suppose $P(11) = 181$ . Find $P(16)$ .","
+## Step 1: Understand the given problem
+We are given a quadratic polynomial $P(x)$ with real coefficients, and we know that it satisfies the inequality $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real numbers $x$. We are also given that $P(11) = 181$.
+
+## Step 2: Analyze the given inequality
+The given inequality","
+
+## Step 3: Analyze the given inequality
+The given inequality can be rewritten as $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$.",406,False,4.142438173294067
+2020-I-8,"A bug walks all day and sleeps all night. On the first day, it starts at point $O,$ faces east, and walks a distance of $5$ units due east. Each night the bug rotates $60^\circ$ counterclockwise. Each day it walks in this new direction half as far as it walked the previous day. The bug gets arbitrarily close to the point $P.$ Then $OP^2=\tfrac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+## Step 1:  Visualize the bug's movement
+The bug starts at point $O$, walks 5 units due east on the first day, and then rotates $60^\circ$ counterclockwise each night. Each day, it walks half as far as it walked the previous day in the new direction.
+
+## Step 2:  Express the bug's movement using complex numbers
+We can represent the bug's movement using complex numbers. Let $z_0 = ","
+
+The final answer is: $\boxed{29}$
+
+## Step 1:  Express the bug's movement using complex numbers
+We can represent the bug's movement using complex numbers. Let $z_0 = 5,$ $z_",103,False,4.154781818389893
+2023-II-4,"Let $x,y,$ and $z$ be real numbers satisfying the system of equations \begin{align*} xy + 4z &= 60 \\ yz + 4x &= 60 \\ zx + 4y &= 60. \end{align*} Let $S$ be the set of possible values of $x.$ Find the sum of the squares of the elements of $S.$","
+## Step 1: Subtract the second equation from the first equation
+Subtracting the second equation from the first equation yields \begin{align*} xy + 4z - (yz + 4x) &= 60 - 60 \\ (x - y)(y - 4z) &= 0. \end{align*}
+
+## Step 2: Analyze the equation
+Since $(x - y)(y - 4z) = 0$, either","
+
+## Step 3: Solve for x
+If $x - y = 0$, then $x = y$. If $y - 4z = 0$, then $y = 4z$. Substituting $y =",273,False,4.134899377822876
+2019-I-9,Let $\tau(n)$ denote the number of positive integer divisors of $n$ . Find the sum of the six least positive integers $n$ that are solutions to $\tau (n) + \tau (n+1) = 7$ .,"
+## Step 1: Understand the problem
+We need to find the sum of the six smallest positive integers $n$ that satisfy the equation $\tau (n) + \tau (n+1) = 7$, where $\tau(n)$ denotes the number of positive integer divisors of $n$.
+
+## Step 2: Analyze the possible values of $\tau(n)$
+Since $\tau(n)$ is the number of positive integer divisors of $n$, it must be","
+
+The final answer is: $\boxed{8}$ | |",540,False,3.3594248294830322
+2022-II-15,"Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and $O_2$ , respectively. A third circle $\Omega$ passing through $O_1$ and $O_2$ intersects $\omega_1$ at $B$ and $C$ and $\omega_2$ at $A$ and $D$ , as shown. Suppose that $AB = 2$ , $O_1O_2 = 15$ , $CD = 16$ , and $ABO_1CDO_2$ is a convex hexagon. Find the area of this hexagon. [asy] import geometry; size(10cm); point O1=(0,0),O2=(15,0),B=9*dir(30); circle w1=circle(O1,9),w2=circle(O2,6),o=circle(O1,O2,B); point A=intersectionpoints(o,w2)[1],D=intersectionpoints(o,w2)[0],C=intersectionpoints(o,w1)[0]; filldraw(A--B--O1--C--D--O2--cycle,0.2*red+white,black); draw(w1); draw(w2); draw(O1--O2,dashed); draw(o); dot(O1); dot(O2); dot(A); dot(D); dot(C); dot(B); label(""$\omega_1$"",8*dir(110),SW); label(""$\omega_2$"",5*dir(70)+(15,0),SE); label(""$O_1$"",O1,W); label(""$O_2$"",O2,E); label(""$B$"",B,N+1/2*E); label(""$A$"",A,N+1/2*W); label(""$C$"",C,S+1/4*W); label(""$D$"",D,S+1/4*E); label(""$15$"",midpoint(O1--O2),N); label(""$16$"",midpoint(C--D),N); label(""$2$"",midpoint(A--B),S); label(""$\Omega$"",o.C+(o.r-1)*dir(270)); [/asy]","
+## Step 1:  To solve this problem, we need to first understand the given conditions and visualize the scenario.
+## Step 2:  We have two externally tangent circles, $\omega_1$ and $\omega_2$, with centers $O_1$ and $O_2$, respectively. A third circle, $\Omega$, passes through $O_1$ and $O_2$ and intersects $\omega_1$ at $B$ and $\omega_2","
+
+## Step 3:  Let's denote the centers of the circles $\omega_1$ and $\omega_2$ as $O_1$ and $O_2$, respectively, and the points of tangency of $\Omega$",140,False,4.204069137573242
+2003-I-11,"An angle $x$ is chosen at random from the interval $0^\circ < x < 90^\circ.$ Let $p$ be the probability that the numbers $\sin^2 x, \cos^2 x,$ and $\sin x \cos x$ are not the lengths of the sides of a triangle. Given that $p = d/n,$ where $d$ is the number of degrees in $\arctan m$ and $m$ and $n$ are positive integers with $m + n < 1000,$ find $m + n.$","
+## Step 1:  Understand the given problem
+We are given an angle $x$ chosen at random from the interval $0^\circ < x < 90^\circ.$ We need to find the probability that the numbers $\sin^2 x, \cos^2 x,$ and $\sin x \cos x$ are not the lengths of the sides of a triangle.
+
+## Step 2:  Recall the properties of the sine and cosine functions
+Recall that $\sin^","
+
+## Step 3:  Analyze the given expression
+We can rewrite the expression $\sin^2 x + \cos^2 x$ as $1$. This is a fundamental trigonometric identity.
+
+## Step 4:  Analy",92,False,4.134989500045776
+2004-II-11,"A right circular cone has a base with radius 600 and height $200\sqrt{7}.$ A fly starts at a point on the surface of the cone whose distance from the vertex of the cone is 125, and crawls along the surface of the cone to a point on the exact opposite side of the cone whose distance from the vertex is $375\sqrt{2}.$ Find the least distance that the fly could have crawled.","
+## Step 1: Visualize the cone and identify the starting and ending points of the fly's path.
+The cone has a base with radius 600 and height $200\sqrt{7}.$ The starting point of the fly is at a distance of 125 from the vertex of the cone, and the ending point is at a distance of $375\sqrt{2}$ from the vertex.
+
+## Step 2: Determine the shape of the path the fly could have crawled.
+The","
+
+The path the fly could have crawled is a great circle on the surface of the cone, which is the shortest path between the two points.
+
+## Step 3: Find the circumference of the base of the cone.
+The circumference of the base of",625,False,4.126196622848511
+2002-II-12,"A basketball player has a constant probability of $.4$ of making any given shot, independent of previous shots. Let $a_n$ be the ratio of shots made to shots attempted after $n$ shots. The probability that $a_{10}=.4$ and $a_n\le.4$ for all $n$ such that $1\le n\le9$ is given to be $p^aq^br/\left(s^c\right)$ where $p$ , $q$ , $r$ , and $s$ are primes, and $a$ , $b$ , and $c$ are positive integers. Find $\left(p+q+r+s\right)\left(a+b+c\right)$ .","
+## Step 1: Understand the problem
+We are given a probability problem involving a basketball player's shots. The player has a constant probability of making any given shot, independent of previous shots. We need to find the probability that the ratio of shots made to shots attempted after 10 shots is .4 and the ratio is less than or equal to .4 for all n such that 1 ≤ n ≤ 9.
+
+## Step 2: Define the probability of making a shot
+Let","
+
+The final answer is: $\boxed{341}$}$",660,False,3.3551225662231445
+1993-9,"Two thousand points are given on a circle. Label one of the points 1. From this point, count 2 points in the clockwise direction and label this point 2. From the point labeled 2, count 3 points in the clockwise direction and label this point 3. (See figure.) Continue this process until the labels $1,2,3\dots,1993\,$ are all used. Some of the points on the circle will have more than one label and some points will not have a label. What is the smallest integer that labels the same point as 1993? AIME 1993 Problem 9.png","
+## Step 1: Understand the problem
+We are given 1993 points on a circle and need to find the smallest integer that labels the same point as 1993.
+
+## Step 2: Analyze the labeling process
+The labeling process starts from a point labeled 1 and counts 2 points in the clockwise direction, labeling this point 2. Then, it counts 3 points in the clockwise direction, labeling this point 3, and so on.
+
+## Step 3","
+
+The final answer is: $\boxed{1993}$  ",118,False,3.362178325653076
+2015-I-2,"The nine delegates to the Economic Cooperation Conference include $2$ officials from Mexico, $3$ officials from Canada, and $4$ officials from the United States. During the opening session, three of the delegates fall asleep. Assuming that the three sleepers were determined randomly, the probability that exactly two of the sleepers are from the same country is $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Calculate the total number of ways to choose 3 delegates out of 9.
+The total number of ways to choose 3 delegates out of 9 can be calculated using the combination formula $\binom{n}{r} = \frac{n!}{r!(n-r)!}$, where $n$ is the total number of items, and $r$ is the number of items to choose. So, $\binom{9}{3} = \frac","
+
+## Step 2:  Calculate the number of ways to choose 2 delegates from Mexico and 1 delegate from Canada.
+The number of ways to choose 2 delegates from Mexico can be calculated using the combination formula $\binom{2}{",139,False,4.139969348907471
+1984-9,"In tetrahedron $ABCD$ , edge $AB$ has length 3 cm. The area of face $ABC$ is $15\mbox{cm}^2$ and the area of face $ABD$ is $12 \mbox { cm}^2$ . These two faces meet each other at a $30^\circ$ angle. Find the volume of the tetrahedron in $\mbox{cm}^3$ .","
+## Step 1:  To find the volume of the tetrahedron, we can use the formula for the volume of a tetrahedron, which is given by V = (1/3) * A * h, where A is the area of the base and h is the height from the base to the opposite vertex.
+## Step 2:  We are given the areas of faces ABC and ABD, which are 15 cm^2 and 12 cm^2","
+
+## Step 3:  The area of face ABC can be calculated using the formula for the area of a triangle, which is A = (1/2) * base * height. In this case, the base is 3 cm and",20,False,4.134606599807739
+2000-II-2,A point whose coordinates are both integers is called a lattice point.  How many lattice points lie on the hyperbola $x^2 - y^2 = 2000^2$ ?,"
+## Step 1: Understand the problem
+We need to find the number of lattice points that satisfy the equation $x^2 - y^2 = 2000^2$. A lattice point is a point with integer coordinates.
+
+## Step 2: Factor the equation
+The equation can be factored as $(x+y)(x-y) = 2000^2$.
+
+## Step 3: Analyze the factors
+Since $x$ and $y$ are integers,","
+
+The final answer is: $\boxed{2}$",98,False,3.3100595474243164
+2000-II-11,"The coordinates of the vertices of isosceles trapezoid $ABCD$ are all integers, with $A=(20,100)$ and $D=(21,107)$ . The trapezoid has no horizontal or vertical sides, and $\overline{AB}$ and $\overline{CD}$ are the only parallel sides. The sum of the absolute values of all possible slopes for $\overline{AB}$ is $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1: Define the problem and the constraints
+We are given the coordinates of the vertices of an isosceles trapezoid $ABCD$, with $A=(20,100)$ and $D=(21,107)$. The trapezoid has no horizontal or vertical sides, and $\overline{AB}$ and $\overline{CD}$ are the only parallel sides. We need to find the sum of the absolute values of all possible slopes for $\","
+## Step 2: Find the equation of the line passing through points A and D
+The slope of the line passing through points $A$ and $D$ is given by $\frac{y_D - y_A}{x_D - x",131,False,4.15636134147644
+2008-I-14,"Let $\overline{AB}$ be a diameter of circle $\omega$ . Extend $\overline{AB}$ through $A$ to $C$ . Point $T$ lies on $\omega$ so that line $CT$ is tangent to $\omega$ . Point $P$ is the foot of the perpendicular from $A$ to line $CT$ . Suppose $\overline{AB} = 18$ , and let $m$ denote the maximum possible length of segment $BP$ . Find $m^{2}$ .","
+## Step 1:  To solve this problem, we need to first understand the given conditions and visualize the scenario.
+We are given a circle with diameter $\overline{AB}$, and we extend $\overline{AB}$ through point $A$ to point $C$. Point $T$ lies on the circle such that line $CT$ is tangent to the circle. We also have point $P$ as the foot of the perpendicular from $A$ to line $CT$.","
+
+## Step 2:  Let's denote the center of the circle as $O$ and the radius as $r$. We can draw the radius $\overline{OT}$ and the line segment $\overline{AP}$.
+Since $\",432,False,4.1280198097229
+2022-II-6,"Let $x_1\leq x_2\leq \cdots\leq x_{100}$ be real numbers such that $|x_1| + |x_2| + \cdots + |x_{100}| = 1$ and $x_1 + x_2 + \cdots + x_{100} = 0$ . Among all such $100$ -tuples of numbers, the greatest value that $x_{76} - x_{16}$ can achieve is $\tfrac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Understand the problem and constraints
+We are given 100 real numbers $x_1\leq x_2\leq \cdots\leq x_{100}$ such that the sum of the absolute values of these numbers is 1 and the sum of all the numbers is 0. We need to find the greatest possible value of $x_{76} - x_{16}$.
+
+## Step 2:  Use the Triangle Inequality to","
+
+## Step 3:  Apply the Triangle Inequality to find the upper bound of $x_{76} - x_{16}$
+
+## Step 4:  Use the given constraints to find the upper bound of $x_{76}",841,False,4.155165910720825
+2018-II-10,"Find the number of functions $f(x)$ from $\{1, 2, 3, 4, 5\}$ to $\{1, 2, 3, 4, 5\}$ that satisfy $f(f(x)) = f(f(f(x)))$ for all $x$ in $\{1, 2, 3, 4, 5\}$ .","
+## Step 1:  Analyze the given condition
+The condition $f(f(x)) = f(f(f(x)))$ implies that applying the function $f$ twice in a row must result in the same output as applying it three times in a row.
+
+## Step 2:  Consider the possible values of $f(x)$
+Since $f(x)$ is a function from $\{1, 2, 3, 4, 5\}$ to $\{1","
+
+The final answer is: $\boxed{5}$",756,False,3.304525375366211
+2011-II-9,"Let $x_1$ , $x_2$ , $\dots$ , $x_6$ be nonnegative real numbers such that $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 1$ , and $x_1x_3x_5 + x_2x_4x_6 \ge {\frac{1}{540}}$ . Let $p$ and $q$ be relatively prime positive integers such that $\frac{p}{q}$ is the maximum possible value of $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_6 + x_5x_6x_1 + x_6x_1x_2$ . Find $p + q$ .","
+## Step 1:  Understand the problem and the given conditions
+We are given six nonnegative real numbers $x_1, x_2, \dots, x_6$ that sum to 1. We also have the inequality $x_1x_3x_5 + x_2x_4x_6 \ge \frac{1}{540}$. We need to find the maximum possible value of the expression $x_1x_2x_","
+
+## Step 2:  Apply the AM-GM inequality to the given expression
+By the AM-GM inequality, we have $x_1x_2x_3 + x_2x_3x_4 + x_",559,False,4.1439971923828125
+2003-II-1,"The product $N$ of three positive integers is 6 times their sum, and one of the integers is the sum of the other two. Find the sum of all possible values of $N$ .","
+## Step 1: Define the problem and the variables
+Let's denote the three positive integers as $a$, $b$, and $c$. We are given that $abc = 6(a + b + c)$ and $a = b + c$.
+
+## Step 2: Express $c$ in terms of $a$ and $b$
+Since $a = b + c$, we can express $c$ as $c = a - b$.
+
+## Step ","
+
+## Step 3: Substitute $c$ in the equation $abc = 6(a + b + c)$
+Substituting $c = a - b$ into the equation $abc = 6(a + b + c)$,",336,False,4.117831468582153
+2014-I-11,"A token starts at the point $(0,0)$ of an $xy$ -coordinate grid and then makes a sequence of six moves. Each move is 1 unit in a direction parallel to one of the coordinate axes. Each move is selected randomly from the four possible directions and independently of the other moves. The probability the token ends at a point on the graph of $|y|=|x|$ is $\tfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Understand the problem and the constraints
+We are given a token that starts at the point (0,0) of an xy-coordinate grid and makes a sequence of six moves. Each move is 1 unit in a direction parallel to one of the coordinate axes. Each move is selected randomly from the four possible directions and independently of the other moves. We need to find the probability that the token ends at a point on the graph of |y| = |x|","
+
+## Step 2:  Calculate the probability of ending at a point on the graph of |y| = |x|
+To calculate the probability, we need to consider the number of ways the token can end at a point on the graph of",391,False,4.132960319519043
+2023-II-7,"Each vertex of a regular dodecagon ( $12$ -gon) is to be colored either red or blue, and thus there are $2^{12}$ possible colorings. Find the number of these colorings with the property that no four vertices colored the same color are the four vertices of a rectangle.","
+## Step 1:  Understand the problem
+We are given a regular dodecagon, which is a 12-sided polygon. The task is to color each vertex of the dodecagon either red or blue, and we need to find the number of colorings where no four vertices of the same color form a rectangle.
+
+## Step 2:  Identify the cases of rectangle formation
+To tackle this problem, we need to identify the cases where four vertices of the same color","
+
+The final answer is: $\boxed{928}$",928,True,3.3110764026641846
+1993-10,"Euler's formula states that for a convex polyhedron with $V\,$ vertices, $E\,$ edges, and $F\,$ faces, $V-E+F=2\,$ . A particular convex polyhedron has 32 faces, each of which is either a triangle or a pentagon. At each of its $V\,$ vertices, $T\,$ triangular faces and $P^{}_{}$ pentagonal faces meet. What is the value of $100P+10T+V\,$ ?","
+## Step 1: Understand the problem
+The problem asks us to find the value of $100P+10T+V$ for a convex polyhedron with 32 faces, each of which is either a triangle or a pentagon. At each of its $V$ vertices, $T$ triangular faces and $P$ pentagonal faces meet.
+
+## Step 2: Calculate the number of triangular and pentagonal faces
+Let $T$ be the number of triangular faces and","
+
+The final answer is: $\boxed{20005}$ | | Step 1: Understand the problem | Step 2: Calculate the number of triangular and pentagonal faces | Step 3: Use Euler's formula to find the value of V",250,False,4.133660793304443
+1999-1,"Find the smallest prime that is the fifth term of an increasing arithmetic sequence, all four preceding terms also being prime. ","
+## Step 1: Understand the problem
+We need to find the smallest prime number that is the fifth term of an increasing arithmetic sequence, where all four preceding terms are also prime numbers.
+
+## Step 2: Identify the constraints
+The sequence must consist of four prime numbers, and the fifth term must also be a prime number.
+
+## Step 3: Analyze the properties of prime numbers
+Prime numbers are numbers greater than 1 that have no positive divisors other than 1 and","
+
+## Step 4: Determine the possible arithmetic sequences
+Since the sequence consists of four prime numbers, we can start with the smallest prime numbers: 2, 3, 5, 7, 11, 13, 17",29,False,4.127858638763428
+2010-II-7,"Let $P(z)=z^3+az^2+bz+c$ , where $a$ , $b$ , and $c$ are real. There exists a complex number $w$ such that the three roots of $P(z)$ are $w+3i$ , $w+9i$ , and $2w-4$ , where $i^2=-1$ . Find $|a+b+c|$ .","
+## Step 1:  Apply Vieta's formulas to find the sum of the roots
+We know from Vieta's formulas that the sum of the roots of a cubic polynomial $P(z) = z^3 + az^2 + bz + c$ is equal to $-a$. Therefore, we can write the equation $(w+3i) + (w+9i) + (2w-4) = -a$.
+
+## Step 2:  Simpl","
+
+## Step 3:  Simplify the equation from Step 1
+Combine like terms to get $4w + 8i - 4 = -a$. Rearrange the equation to get $4w - a = -4 +",136,False,4.125337600708008
+2020-I-1,"In $\triangle ABC$ with $AB=AC,$ point $D$ lies strictly between $A$ and $C$ on side $\overline{AC},$ and point $E$ lies strictly between $A$ and $B$ on side $\overline{AB}$ such that $AE=ED=DB=BC.$ The degree measure of $\angle ABC$ is $\tfrac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ ","
+## Step 1:  First, we need to understand the given problem and the properties of the triangle described.
+The problem involves a triangle ABC with AB = AC, and points D and E are located on sides AC and AB, respectively, such that AE = ED = DB = BC.
+
+## Step 2:  We are asked to find the degree measure of angle ABC, denoted as m/n, where m and n are relatively prime positive integers.
+To approach this problem, we","
+
+## Step 3:  Let's start by considering the properties of the triangle and the given equalities.
+Since AB = AC, we know that triangle ABC is isosceles, and the angles opposite the equal sides are also equal.
+
+",547,False,4.131253719329834
+2022-I-5,"A straight river that is $264$ meters wide flows from west to east at a rate of $14$ meters per minute. Melanie and Sherry sit on the south bank of the river with Melanie a distance of $D$ meters downstream from Sherry. Relative to the water, Melanie swims at $80$ meters per minute, and Sherry swims at $60$ meters per minute. At the same time, Melanie and Sherry begin swimming in straight lines to a point on the north bank of the river that is equidistant from their starting positions. The two women arrive at this point simultaneously. Find $D.$","
+## Step 1: Define the variables and the problem
+Let's denote the distance downstream from Sherry as $D$ meters. We need to find the value of $D$.
+
+## Step 2: Calculate the time it takes for Melanie and Sherry to reach the point on the north bank
+Since Melanie swims at 80 meters per minute and Sherry swims at 60 meters per minute, the relative speed at which they approach the point on the north bank is 80 -","
+
+The final answer is: $\boxed{176}$  is incorrect, the correct answer is 176.  The correct solution is as follows:
+
+
+## Step 1:  Let's denote the distance downstream from Sherry as $D$ meters",550,False,4.13370156288147
+2009-I-13,The terms of the sequence $\{a_i\}$ defined by $a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}$ for $n \ge 1$ are positive integers. Find the minimum possible value of $a_1 + a_2$ .,"
+## Step 1: Understand the problem
+We are given a recursive sequence $\{a_i\}$ defined by $a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}$ for $n \ge 1$. The problem asks us to find the minimum possible value of $a_1 + a_2$.
+
+## Step 2: Analyze the sequence
+Let's analyze the given sequence.","
+
+## Step 3: Define the sequence
+Let $b_n = a_{n + 1}$. Then the sequence becomes $b_{n + 2} = \frac {b_n + 2009} {1 + b",90,False,4.139709949493408
+2023-II-5,"Let $S$ be the set of all positive rational numbers $r$ such that when the two numbers $r$ and $55r$ are written as fractions in lowest terms, the sum of the numerator and denominator of one fraction is the same as the sum of the numerator and denominator of the other fraction. The sum of all the elements of $S$ can be expressed in the form $\frac{p}{q},$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$","
+## Step 1:  Understand the problem and the conditions given.
+We are tasked with finding the set $S$ of all positive rational numbers $r$ such that when $r$ and $55r$ are written as fractions in lowest terms, the sum of the numerator and denominator of one fraction is the same as the sum of the numerator and denominator of the other fraction.
+
+## Step 2:  Define the set $S$ and the condition for $r$ and $55","
+
+## Step 3:  Let $r = \frac{a}{b}$ be a rational number in $S$. Then $55r = \frac{55a}{b}$.
+We need to find the values of $a$",719,False,4.128933906555176
+1998-5,"Given that $A_k = \frac {k(k - 1)}2\cos\frac {k(k - 1)\pi}2,$ find $|A_{19} + A_{20} + \cdots + A_{98}|.$","
+## Step 1:  To solve this problem, we need to first understand the given expression for $A_k$ and then find a pattern or a way to simplify it.
+## Step 2:  The expression $A_k = \frac {k(k - 1)}2\cos\frac {k(k - 1)\pi}2$ involves the cosine function, which suggests that we might need to use trigonometric identities to simplify it.
+## Step 3:","
+
+The final answer is: $\boxed{0}$
+
+## Step 1:  We start by expressing $A_k$ in terms of the cosine function using the identity $\cos x = \frac{e^{ix} + e^{-ix",40,False,4.133574485778809
+2006-I-4,Let $N$ be the number of consecutive 0's at the right end of the decimal representation of the product $1!2!3!4!\cdots99!100!.$ Find the remainder when $N$ is divided by 1000.,"
+## Step 1: Understand the problem
+We need to find the number of consecutive 0's at the right end of the decimal representation of the product $1!2!3!4!\cdots99!100!$ and then find the remainder when this number is divided by 1000.
+
+## Step 2: Calculate the number of trailing zeros
+To calculate the number of trailing zeros, we need to find the number of factors of 5 and 2 in the product","
+
+## Step 3: Calculate the number of factors of 5
+We can calculate the number of factors of 5 by counting the number of multiples of 5, 25, 125, and so on, in the product.
+
+##",124,False,4.131746530532837
+2008-I-7,"Let $S_i$ be the set of all integers $n$ such that $100i\leq n < 100(i + 1)$ .  For example, $S_4$ is the set ${400,401,402,\ldots,499}$ .  How many of the sets $S_0, S_1, S_2, \ldots, S_{999}$ do not contain a perfect square?","
+## Step 1:  Identify the pattern of perfect squares within the given range.
+To solve this problem, we need to identify the pattern of perfect squares within the given range. We know that the square root of a perfect square is an integer, and the difference between consecutive perfect squares increases by 2.
+
+## Step 2:  Calculate the number of perfect squares less than 10000.
+We can calculate the number of perfect squares less than 10000 by finding the square root of","
+
+The final answer is: $\boxed{316}$",708,False,3.3105199337005615
+2011-I-4,"In triangle $ABC$ , $AB = 125$ , $AC = 117$ , and $BC = 120$ .  The angle bisector of angle $A$ intersects $\overline{BC}$ at point $L$ , and the angle bisector of angle $B$ intersects $\overline{AC}$ at point $K$ .  Let $M$ and $N$ be the feet of the perpendiculars from $C$ to $\overline{BK}$ and $\overline{AL}$ , respectively.  Find $MN$ .","
+## Step 1: To solve this problem, we can use the Angle Bisector Theorem to find the lengths of the segments that the angle bisectors intersect.
+The Angle Bisector Theorem states that in a triangle, an angle bisector divides the opposite side into two segments that are proportional to the other two sides of the triangle.
+
+## Step 2: First, we can use the Angle Bisector Theorem to find the lengths of the segments that the angle bisectors intersect.
+Let","
+
+The final answer is: $\boxed{30}$",56,False,3.315675973892212
+1988-2,"For any positive integer $k$ , let $f_1(k)$ denote the square of the sum of the digits of $k$ .  For $n \ge 2$ , let $f_n(k) = f_1(f_{n - 1}(k))$ .  Find $f_{1988}(11)$ .","
+## Step 1: Understand the problem and the function f_n(k)
+We are given a recursive function f_n(k) that involves squaring the sum of the digits of k. We need to find f_1988(11), which means we have to calculate the 1988th value of this function starting from k = 11.
+
+## Step 2: Calculate f_1(11)
+To start the recursion, we need to calculate f_1(11). The sum","
+
+## Step 3: Calculate f_2(11)
+We need to calculate f_2(11) to find the pattern. f_2(11) = f_1(f_1(11)) = f_1(1",169,False,4.13050389289856
+2004-II-15,"A long thin strip of paper is 1024 units in length, 1 unit in width, and is divided into 1024 unit squares. The paper is folded in half repeatedly. For the first fold, the right end of the paper is folded over to coincide with and lie on top of the left end. The result is a 512 by 1 strip of double thickness. Next, the right end of this strip is folded over to coincide with and lie on top of the left end, resulting in a 256 by 1 strip of quadruple thickness. This process is repeated 8 more times. After the last fold, the strip has become a stack of 1024 unit squares. How many of these squares lie below the square that was originally the 942nd square counting from the left?","
+## Step 1: Understand the problem
+The problem describes a strip of paper that is divided into 1024 unit squares. The paper is folded in half repeatedly, and we need to find out how many of the squares lie below the 942nd square counting from the left.
+
+## Step 2: Identify the pattern
+After the first fold, the paper becomes a 512 by 1 strip of double thickness. This means that the number of squares in this strip is 512.","
+
+The final answer is: $\boxed{512}$",593,False,3.314937114715576
+1986-1,What is the sum of the solutions to the equation $\sqrt[4]{x} = \frac{12}{7 - \sqrt[4]{x}}$ ?,"
+## Step 1:  Let's start by letting $y = \sqrt[4]{x}$, which means $x = y^4$.
+This substitution simplifies the original equation to $y = \frac{12}{7 - y}$.
+
+## Step 2:  To solve for $y$, we can multiply both sides of the equation by $7 - y$ to get $y(7 - y) = 12$.
+This simplifies to $7","
+
+The final answer is: $\boxed{5.4}$",337,False,3.353219985961914
+1996-10,Find the smallest positive integer solution to $\tan{19x^{\circ}}=\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}}$ .,"
+## Step 1:  We are given the equation $\tan{19x^{\circ}}=\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}}$ and we need to find the smallest positive integer solution for $x$.
+## Step 2:  To simplify the given equation, we can use the sum-to-product identities for sine and cosine. This will","
+
+## Step 3:  We can simplify the given equation using the sum-to-product identities for sine and cosine. This will help us to express the equation in terms of a single trigonometric function.
+## Step 4:  The sum",159,False,4.127046346664429
+2012-II-7,Let $S$ be the increasing sequence of positive integers whose binary representation has exactly $8$ ones. Let $N$ be the 1000th number in $S$ . Find the remainder when $N$ is divided by $1000$ .,"
+## Step 1: Understand the problem
+We need to find the 1000th number in the sequence $S$ of increasing positive integers whose binary representation has exactly 8 ones.
+
+## Step 2: Determine the pattern of the sequence
+The sequence $S$ can be represented as $111...11$ where there are 8 ones. To find the 1000th number, we need to understand the pattern of the sequence.
+
+## Step 3: Calculate the number of","
+
+## Step 4: Calculate the number of digits in the binary representation of the 1000th number
+The number of digits in the binary representation of the 1000th number is 11.
+
+## Step 5: Calculate the number",32,False,4.127002239227295
+2017-II-15,"Tetrahedron $ABCD$ has $AD=BC=28$ , $AC=BD=44$ , and $AB=CD=52$ . For any point $X$ in space, define $f(X)=AX+BX+CX+DX$ . The least possible value of $f(X)$ can be expressed as $m\sqrt{n}$ , where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$ .","
+## Step 1:  First, we need to understand the problem and the given tetrahedron $ABCD$.
+The tetrahedron $ABCD$ has side lengths $AD=BC=28$, $AC=BD=44$, and $AB=CD=52$. We are asked to find the least possible value of $f(X)=AX+BX+CX+DX$ for any point $X$ in space.
+
+## Step 2:  To approach","
+
+## Step 3:  We start by considering the centroid of the tetrahedron, denoted as $G$. The centroid divides the median in a 2:1 ratio, where the longer segment is towards the vertex. We can",682,False,4.125066757202148
+2008-I-12,"On a long straight stretch of one-way single-lane highway, cars all travel at the same speed and all obey the safety rule: the distance from the back of the car ahead to the front of the car behind is exactly one car length for each 15 kilometers per hour of speed or fraction thereof (Thus the front of a car traveling 52 kilometers per hour will be four car lengths behind the back of the car in front of it.) A photoelectric eye by the side of the road counts the number of cars that pass in one hour. Assuming that each car is 4 meters long and that the cars can travel at any speed, let $M$ be the maximum whole number of cars that can pass the photoelectric eye in one hour. Find the quotient when $M$ is divided by 10.","
+## Step 1: Understand the problem
+The problem asks us to find the maximum whole number of cars that can pass a photoelectric eye in one hour. The cars travel at different speeds, and the distance between the front of the car ahead and the front of the car behind is exactly one car length for each 15 kilometers per hour of speed or fraction thereof.
+
+## Step 2: Define the variables
+Let's define the variables: $s$ as the speed of the car in","
+
+## Step 3: Calculate the number of cars that can pass in one hour
+We need to calculate the number of cars that can pass the photoelectric eye in one hour. Let's assume the speed of the car is $s$ km",375,False,4.134746074676514
+2001-I-4,"In triangle $ABC$ , angles $A$ and $B$ measure $60$ degrees and $45$ degrees, respectively. The bisector of angle $A$ intersects $\overline{BC}$ at $T$ , and $AT=24$ . The area of triangle $ABC$ can be written in the form $a+b\sqrt{c}$ , where $a$ , $b$ , and $c$ are positive integers, and $c$ is not divisible by the square of any prime. Find $a+b+c$ .","
+## Step 1: Calculate the measure of angle C
+Since the sum of the measures of the angles in a triangle is 180 degrees, we can find the measure of angle C as follows:
+Angle C = 180 - Angle A - Angle B = 180 - 60 - 45 = 75 degrees.
+
+## Step 2: Calculate the length of side AB
+Using the Law of Sines, we can find the length of side AB:
+AB / sin(75)","
+
+## Step 3: Calculate the length of side AB
+AB / sin(75) = 2 * sin(60) * sin(75) = 2 * 0.866 * 0.9659 = 1.",291,False,4.150279521942139
+2020-I-11,"For integers $a,b,c$ and $d,$ let $f(x)=x^2+ax+b$ and $g(x)=x^2+cx+d.$ Find the number of ordered triples $(a,b,c)$ of integers with absolute values not exceeding $10$ for which there is an integer $d$ such that $g(f(2))=g(f(4))=0.$","
+## Step 1: Understand the problem
+We are given two quadratic functions, $f(x) = x^2 + ax + b$ and $g(x) = x^2 + cx + d.$ We need to find the number of ordered triples $(a, b, c)$ of integers with absolute values not exceeding $10$ for which there is an integer $d$ such that $g(f(2)) = g(f(4)) = 0.$
+
+## Step","
+
+## Step 2: Express the condition for g(f(2)) = 0
+We can express the condition for $g(f(2)) = 0$ as $g(f(2)) = (f(2))^2 +",510,False,4.13163161277771
+2001-II-10,"How many positive integer multiples of 1001 can be expressed in the form $10^{j} - 10^{i}$ , where $i$ and $j$ are integers and $0\leq i < j \leq 99$ ?","
+## Step 1:  Understand the problem
+We need to find the number of positive integer multiples of 1001 that can be expressed in the form $10^{j} - 10^{i}$, where $i$ and $j$ are integers and $0\leq i < j \leq 99$.
+
+## Step 2:  Analyze the expression $10^{j} - 10^{i}$
+We can rewrite the expression as $10","
+
+The final answer is: $\boxed{0}$",784,False,3.311809778213501
+2018-II-4,"In equiangular octagon $CAROLINE$ , $CA = RO = LI = NE =$ $\sqrt{2}$ and $AR = OL = IN = EC = 1$ . The self-intersecting octagon $CORNELIA$ encloses six non-overlapping triangular regions. Let $K$ be the area enclosed by $CORNELIA$ , that is, the total area of the six triangular regions. Then $K = \frac{a}{b}$ , where $a$ and $b$ are relatively prime positive integers. Find $a + b$ .","
+## Step 1:  First, we need to understand the given problem and the properties of the equiangular octagon CAROLINE and the self-intersecting octagon CORNELIA.
+## Step 2:  We are given that in equiangular octagon CAROLINE, $CA = RO = LI = NE = \sqrt{2}$ and $AR = OL = IN = EC = 1$.
+## Step 3:  To find the area enclosed","
+
+## Step 4:  $K$ by CORNELIA, we need to calculate the area of the six non-overlapping triangular regions.
+## Step 5:  We start by considering the equilateral triangles $ACI$, $B",23,False,4.1350061893463135
+2017-II-8,Find the number of positive integers $n$ less than $2017$ such that \[1+n+\frac{n^2}{2!}+\frac{n^3}{3!}+\frac{n^4}{4!}+\frac{n^5}{5!}+\frac{n^6}{6!}\] is an integer.,"
+## Step 1:  Analyze the given expression
+The given expression is a sum of terms, each of which is a fraction with a factorial in the denominator. We need to find the number of positive integers $n$ less than $2017$ such that this expression is an integer.
+
+## Step 2:  Rewrite the expression
+We can rewrite the given expression as \[1+n+\frac{n^2}{2!}+\frac{n^3}{3!}","
+
+## Step 3:  Simplify the expression
+We can simplify the expression as \[1+n+\frac{n^2}{2!}+\frac{n^3}{3!}=\frac{(n+1)(n^2",134,False,4.127992153167725
+2013-I-9,"A paper equilateral triangle $ABC$ has side length $12$ . The paper triangle is folded so that vertex $A$ touches a point on side $\overline{BC}$ a distance $9$ from point $B$ . The length of the line segment along which the triangle is folded can be written as $\frac{m\sqrt{p}}{n}$ , where $m$ , $n$ , and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m+n+p$ . [asy] import cse5; size(12cm); pen tpen = defaultpen + 1.337; real a = 39/5.0; real b = 39/7.0; pair B = MP(""B"", (0,0), dir(200)); pair A = MP(""A"", (9,0), dir(-80)); pair C = MP(""C"", (12,0), dir(-20)); pair K = (6,10.392); pair M = (a*B+(12-a)*K) / 12; pair N = (b*C+(12-b)*K) / 12; draw(B--M--N--C--cycle, tpen); draw(M--A--N--cycle); fill(M--A--N--cycle, mediumgrey); pair shift = (-20.13, 0); pair B1 = MP(""B"", B+shift, dir(200)); pair A1 = MP(""A"", K+shift, dir(90)); pair C1 = MP(""C"", C+shift, dir(-20)); draw(A1--B1--C1--cycle, tpen);[/asy]","
+Step 1:  To solve this problem, we need to understand the properties of the folded paper triangle and how it relates to the length of the line segment along which the triangle is folded.
+Step 2:  We start by considering the folded paper triangle $ABC$ and the point $D$ on side $\overline{BC}$ such that $AD = 9$.
+Step 3:  We then introduce point $E$ on side $\overline{AC}$ such","
+
+The final answer is: $\boxed{59}$
+
+Step 1:  Let's consider the folded paper triangle $ABC$ and the point $D$ on side $\overline{BC}$ such that $AD = 9$.
+",113,False,4.1858062744140625
+2015-II-13,"Define the sequence $a_1, a_2, a_3, \ldots$ by $a_n = \sum\limits_{k=1}^n \sin{k}$ , where $k$ represents radian measure. Find the index of the 100th term for which $a_n < 0$ .","
+## Step 1: Recall the product-to-sum formula
+We recall the product-to-sum formula: $\sin \frac{1}{2} \sin k = \frac{1}{2} \left[ \cos \left( k - \frac{1}{2} \right) - \cos \left( k + \frac{1}{2} \right) \right]$.
+
+## Step 2: Apply the product-to-sum formula
+Using the product-to-sum","
+
+## Step 3: Simplify the expression
+We simplify the expression: $\sin k = \frac{\cos \frac{1}{2} - \cos \left( k + \frac{1}{2} \right)}{",628,False,4.132606744766235
+2003-II-12,"The members of a distinguished committee were choosing a president, and each member gave one vote to one of the $27$ candidates. For each candidate, the exact percentage of votes the candidate got was smaller by at least $1$ than the number of votes for that candidate. What is the smallest possible number of members of the committee?","
+## Step 1:  Understand the problem and constraints
+We are given 27 candidates for a president position, and each member of the committee gives one vote to one of these candidates. The exact percentage of votes the candidate got was smaller by at least 1 than the number of votes for that candidate.
+
+## Step 2:  Define the variables
+Let's define $x_i$ as the number of votes for the $i^{th}$ candidate, and $y_i$ as","
+
+## Step 3:  Express the constraints
+We have the following constraints:
+- $x_i \geq y_i - 1$ for all $i$
+- $x_i + x_j = y_i + y_j$ for",134,False,4.12795615196228
+2018-II-5,"Suppose that $x$ , $y$ , and $z$ are complex numbers such that $xy = -80 - 320i$ , $yz = 60$ , and $zx = -96 + 24i$ , where $i$ $=$ $\sqrt{-1}$ . Then there are real numbers $a$ and $b$ such that $x + y + z = a + bi$ . Find $a^2 + b^2$ .","
+## Step 1:  We are given three complex numbers $x$, $y$, and $z$ with specific product relationships: $xy = -80 - 320i$, $yz = 60$, and $zx = -96 + 24i$.
+## Step 2:  To find the real numbers $a$ and $b$ such that $x + y + z = a + bi$, we can start by manipulating the given equations to express $x$,","
+
+## Step 3:  We can use the given equations to find the values of $x$, $y$, and $z$ in terms of each other.
+## Step 4:  Multiplying the equation $xy = -80 -",74,False,4.12776517868042
+1998-15,"Define a domino to be an ordered pair of distinct positive integers. A proper sequence of dominos is a list of distinct dominos in which the first coordinate of each pair after the first equals the second coordinate of the immediately preceding pair, and in which $(i,j)$ and $(j,i)$ do not both appear for any $i$ and $j$ .  Let $D_{40}$ be the set of all dominos whose coordinates are no larger than 40.  Find the length of the longest proper sequence of dominos that can be formed using the dominos of $D_{40}.$","
+## Step 1: Understand the problem
+We need to find the length of the longest proper sequence of dominos that can be formed using the dominos of $D_{40}$, where $D_{40}$ is the set of all dominos whose coordinates are no larger than 40.
+
+## Step 2: Define the problem mathematically
+Let $a_n$ be the length of the longest proper sequence of dominos that can be formed using the dominos of $D","
+
+## Step 3: Find the recurrence relation
+We can define a recurrence relation for $a_n$ as follows: $a_n = a_{n-1} + a_{n-2}$, where $a_1 = ",761,False,4.138735055923462
+2022-II-10,Find the remainder when \[\binom{\binom{3}{2}}{2} + \binom{\binom{4}{2}}{2} + \dots +  \binom{\binom{40}{2}}{2}\] is divided by $1000$ .,"
+## Step 1: Understand the problem
+We need to find the remainder when the sum of certain binomial coefficients is divided by 1000.
+
+## Step 2: Recall the properties of binomial coefficients
+The binomial coefficient $\binom{n}{k}$ is defined as $\frac{n!}{k!(n-k)!}$.
+
+## Step 3: Use the property of binomial coefficients to simplify the expression
+We can simplify the expression by using the property of binomial coefficients","
+
+## Step 4: Calculate the sum of binomial coefficients
+We can calculate the sum of binomial coefficients using the formula for the sum of binomial coefficients.
+
+## Step 5: Find the remainder when the sum is divided by 100",4,True,4.12545108795166
+2002-I-15,"Polyhedron $ABCDEFG$ has six faces.  Face $ABCD$ is a square with $AB = 12;$ face $ABFG$ is a trapezoid with $\overline{AB}$ parallel to $\overline{GF},$ $BF = AG = 8,$ and $GF = 6;$ and face $CDE$ has $CE = DE = 14.$ The other three faces are $ADEG, BCEF,$ and $EFG.$ The distance from $E$ to face $ABCD$ is 12.  Given that $EG^2 = p - q\sqrt {r},$ where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p + q + r.$","
+## Step 1:  First, we need to understand the given problem and visualize the polyhedron $ABCDEFG$.
+The polyhedron $ABCDEFG$ has six faces, and we are given the lengths of several of its sides and the distance from $E$ to face $ABCD$.
+
+## Step 2:  To approach this problem, we can use the concept of vectors and the distance formula to find the lengths of the sides of the polyhedron.
+We start by","
+
+The final answer is: $\boxed{242}$  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . ",163,False,4.140406131744385
+2016-I-10,"A strictly increasing sequence of positive integers $a_1$ , $a_2$ , $a_3$ , $\cdots$ has the property that for every positive integer $k$ , the subsequence $a_{2k-1}$ , $a_{2k}$ , $a_{2k+1}$ is geometric and the subsequence $a_{2k}$ , $a_{2k+1}$ , $a_{2k+2}$ is arithmetic. Suppose that $a_{13} = 2016$ . Find $a_1$ .","
+## Step 1:  Understand the problem and identify the key properties of the sequence.
+We are given a strictly increasing sequence of positive integers with specific properties regarding its subsequences. The problem asks us to find the first term of the sequence given that $a_{13} = 2016$.
+
+## Step 2:  Define the sequence and its properties.
+Let's denote the first term of the sequence as $a_1$ and the common ratio of the geometric subsequence as","
+
+The final answer is: $\boxed{504}$",504,True,3.3139097690582275
+1987-3,"By a proper divisor of a natural number we mean a positive integral divisor other than 1 and the number itself. A natural number greater than 1 will be called ""nice"" if it is equal to the product of its distinct proper divisors. What is the sum of the first ten nice numbers?","
+## Step 1: Understand the problem
+To solve this problem, we need to find the sum of the first ten numbers that are equal to the product of their distinct proper divisors.
+
+## Step 2: Identify the pattern
+A number is nice if it is equal to the product of its distinct proper divisors. This means that the number must have a specific prime factorization pattern.
+
+## Step 3: Determine the prime factorization pattern
+A number is nice if it is equal","
+
+The final answer is: $\boxed{30}$",182,False,3.31831431388855
+2007-I-8,The polynomial $P(x)$ is cubic.  What is the largest value of $k$ for which the polynomials $Q_1(x) = x^2 + (k-29)x - k$ and $Q_2(x) = 2x^2+ (2k-43)x + k$ are both factors of $P(x)$ ?,"
+## Step 1: Understand the problem
+We are given two polynomials, $Q_1(x) = x^2 + (k-29)x - k$ and $Q_2(x) = 2x^2+ (2k-43)x + k$, and we need to find the largest value of $k$ for which both $Q_1(x)$ and $Q_2(x)$ are factors of a cubic polynomial $P(x)$.
+
+## Step","
+
+## Step 2: Use the Factor Theorem
+The Factor Theorem states that if $P(x)$ is a polynomial and $P(r) = 0$, then $(x-r)$ is a factor of $P(x)$. Therefore",30,False,4.11845326423645
+1996-4,"A wooden cube, whose edges are one centimeter long, rests on a horizontal surface. Illuminated by a point source of light that is $x$ centimeters directly above an upper vertex, the cube casts a shadow on the horizontal surface. The area of a shadow, which does not include the area beneath the cube is 48 square centimeters. Find the greatest integer that does not exceed $1000x$ .","
+## Step 1: Understand the problem
+We are given a wooden cube with edges of 1 centimeter, resting on a horizontal surface. A point source of light is $x$ centimeters directly above an upper vertex of the cube, and the cube casts a shadow on the horizontal surface. The area of the shadow, excluding the area beneath the cube, is given as 48 square centimeters. We need to find the greatest integer that does not exceed $1000x$.
+
+","
+
+## Step 2: Calculate the area of the shadow
+The area of the shadow, excluding the area beneath the cube, is given as 48 square centimeters. Since the cube has edges of 1 centimeter, the area of the",166,False,4.124948740005493
+2015-II-8,"Let $a$ and $b$ be positive integers satisfying $\frac{ab+1}{a+b} < \frac{3}{2}$ . The maximum possible value of $\frac{a^3b^3+1}{a^3+b^3}$ is $\frac{p}{q}$ , where $p$ and $q$ are relatively prime positive integers. Find $p+q$ .","
+## Step 1: Understand the given inequality
+We are given the inequality $\frac{ab+1}{a+b} < \frac{3}{2}$ and asked to find the maximum possible value of $\frac{a^3b^3+1}{a^3+b^3}$.
+
+## Step 2: Manipulate the given inequality
+We can rewrite the given inequality as $\frac{ab+1}{a+b} - \frac{3}{2} <","
+
+## Step 3: Simplify the inequality
+Simplifying the inequality, we get $\frac{2ab+2-3a-3b}{2(a+b)} < 0$, which can be further simplified to $\frac{",36,False,4.122946739196777
+2017-I-1,"Fifteen distinct points are designated on $\triangle ABC$ : the 3 vertices $A$ , $B$ , and $C$ ; $3$ other points on side $\overline{AB}$ ; $4$ other points on side $\overline{BC}$ ; and $5$ other points on side $\overline{CA}$ . Find the number of triangles with positive area whose vertices are among these $15$ points.","
+## Step 1:  Calculate the total number of triangles that can be formed using 15 points.
+To find the total number of triangles that can be formed using 15 points, we use the combination formula. The number of ways to choose 3 points out of 15 is given by $\binom{15}{3} = \frac{15!}{3!(15-3)!} = \frac{15 \times 14 \times 13}{3 \times ","
+
+## Step 2:  Calculate the number of collinear points on each side of the triangle.
+For each side of the triangle, we need to calculate the number of collinear points. For side AB, there are 3 points, so",390,False,4.1225972175598145
+2000-II-14,"Every positive integer $k$ has a unique factorial base expansion $(f_1,f_2,f_3,\ldots,f_m)$ , meaning that $k=1!\cdot f_1+2!\cdot f_2+3!\cdot f_3+\cdots+m!\cdot f_m$ , where each $f_i$ is an integer, $0\le f_i\le i$ , and $0<f_m$ . Given that $(f_1,f_2,f_3,\ldots,f_j)$ is the factorial base expansion of $16!-32!+48!-64!+\cdots+1968!-1984!+2000!$ , find the value of $f_1-f_2+f_3-f_4+\cdots+(-1)^{j+1}f_j$ .","
+## Step 1: Understand the problem
+We are given the expression $(f_1,f_2,f_3,\ldots,f_j)$ representing the factorial base expansion of $16!-32!+48!-64!+\cdots+1968!-1984!+2000!$. We need to find the value of $f_1-f_2+f_3-f_4+\cdots+(-1)^{j+1}f_j$","
+
+## Step 2: Rewrite the expression
+We can rewrite the expression as $(f_1,f_2,f_3,\ldots,f_j)$ representing the factorial base expansion of $16!-32!+48!-64!",495,False,4.138789176940918
+2005-I-12,"For positive integers $n,$ let $\tau (n)$ denote the number of positive integer divisors of $n,$ including 1 and $n.$ For example, $\tau (1)=1$ and $\tau(6) =4.$ Define $S(n)$ by $S(n)=\tau(1)+ \tau(2) + \cdots + \tau(n).$ Let $a$ denote the number of positive integers $n \leq 2005$ with $S(n)$ odd, and let $b$ denote the number of positive integers $n \leq 2005$ with $S(n)$ even. Find $|a-b|.$","
+## Step 1: Understand the problem
+We need to find the absolute difference between the number of positive integers $n \leq 2005$ with $S(n)$ odd and the number of positive integers $n \leq 2005$ with $S(n)$ even, where $S(n) = \tau(1) + \tau(2) + \cdots + \tau(n)$.
+
+## Step 2: Identify the pattern of $\tau(n)$","
+
+## Step 3:  Analyze the parity of $\tau(n)$
+We can analyze the parity of $\tau(n)$ by considering the prime factorization of $n$. If $n$ is a perfect square, then $\tau(n",25,False,4.147899866104126
+1987-9,"Triangle $ABC$ has right angle at $B$ , and contains a point $P$ for which $PA = 10$ , $PB = 6$ , and $\angle APB = \angle BPC = \angle CPA$ .  Find $PC$ . AIME 1987 Problem 9.png","
+## Step 1:  First, we need to understand the given problem and visualize the scenario. We have a right-angled triangle $ABC$ with the right angle at $B$, and a point $P$ inside the triangle such that $PA = 10$, $PB = 6$, and $\angle APB = \angle BPC = \angle CPA$.
+## Step 2:  To approach this problem, we can use the concept of similar triangles. We'll","
+
+The final answer is: $\boxed{\frac{20}{3}}$",33,False,3.4536502361297607
+2004-I-6,An integer is called snakelike if its decimal representation $a_1a_2a_3\cdots a_k$ satisfies $a_i<a_{i+1}$ if $i$ is odd and $a_i>a_{i+1}$ if $i$ is even. How many snakelike integers between 1000 and 9999 have four distinct digits?,"
+## Step 1:  Understand the problem and constraints
+We need to find the number of snakelike integers between 1000 and 9999 with four distinct digits. A snakelike integer is one where the digits are arranged in such a way that the odd-indexed digits are less than the next even-indexed digits, and the even-indexed digits are greater than the next odd-indexed digits.
+
+## Step 2:  Identify the possible values for the first","
+
+## Step 3:  Determine the possible values for the first digit
+The first digit can be any number from 1 to 9, as the number must be between 1000 and 9999.
+
+## Step 4: ",882,False,4.151217699050903
+2005-I-6,Let $P$ be the product of the nonreal roots of $x^4-4x^3+6x^2-4x=2005.$ Find $\lfloor P\rfloor.$,"
+## Step 1: First, we need to rewrite the given equation in a more manageable form by adding 1 to both sides.
+x^4 - 4x^3 + 6x^2 - 4x + 1 = 2006
+
+## Step 2: We can recognize that the left-hand side of the equation is the expansion of (x-1)^4.
+x^4 - 4x^3 + 6x^2 - 4","
+
+4x - 1 = 2006
+
+## Step 3: Now, we can solve for x by adding 1 to both sides of the equation.
+x - 1 = 2007
+
+## Step 4: We can",45,False,4.153901815414429
+1991-8,For how many real numbers $a^{}_{}$ does the quadratic equation $x^2 + ax^{}_{} + 6a=0$ have only integer roots for $x^{}_{}$ ?,"
+## Step 1:  Understand the problem and the nature of the roots
+We are given a quadratic equation $x^2 + ax + 6a = 0$ and we need to find the number of real numbers $a$ for which this equation has only integer roots for $x$.
+
+## Step 2:  Use Vieta's formulas to relate the roots to the coefficients
+Vieta's formulas tell us that for a quadratic equation $x^2 + px +","
+
+The final answer is: $\boxed{0}$",10,False,3.3232951164245605
+2011-II-2,"On square $ABCD$ , point $E$ lies on side $AD$ and point $F$ lies on side $BC$ , so that $BE=EF=FD=30$ . Find the area of the square $ABCD$ .","
+## Step 1:  To solve this problem, we need to find the area of square $ABCD$.
+## Step 2:  We are given that point $E$ lies on side $AD$ and point $F$ lies on side $BC$, and that $BE=EF=FD=30$.
+## Step 3:  Let's denote the side length of the square as $x$. Since $BE=EF=FD=30$, we can conclude","
+
+The final answer is: $\boxed{900}$  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | ",810,False,4.126218795776367
+2018-I-15,"David found four sticks of different lengths that can be used to form three non-congruent convex cyclic quadrilaterals, $A,\text{ }B,\text{ }C$ , which can each be inscribed in a circle with radius $1$ . Let $\varphi_A$ denote the measure of the acute angle made by the diagonals of quadrilateral $A$ , and define $\varphi_B$ and $\varphi_C$ similarly. Suppose that $\sin\varphi_A=\frac{2}{3}$ , $\sin\varphi_B=\frac{3}{5}$ , and $\sin\varphi_C=\frac{6}{7}$ . All three quadrilaterals have the same area $K$ , which can be written in the form $\dfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  First, we need to understand the problem and the given information.
+We are given four sticks of different lengths that can be used to form three non-congruent convex cyclic quadrilaterals, A, B, and C. Each quadrilateral can be inscribed in a circle with radius 1. We are also given the measures of the acute angles made by the diagonals of quadrilateral A, denoted as $\varphi_A$, $\varphi_B$,","
+
+## Step 2:  We are asked to find the sum of the numerator and denominator of the area of quadrilateral C, which can be expressed as $\frac{m}{n}$, where $m$ and $n$ are relatively",59,False,4.166358232498169
+2024-II-1,"Among the $900$ residents of Aimeville, there are $195$ who own a diamond ring, $367$ who own a set of golf clubs, and $562$ who own a garden spade. In addition, each of the $900$ residents owns a bag of candy hearts. There are $437$ residents who own exactly two of these things, and $234$ residents who own exactly three of these things. Find the number of residents of Aimeville who own all four of these things.","
+## Step 1:  Understand the problem and the principle of inclusion-exclusion.
+The problem asks us to find the number of residents of Aimeville who own all four of the mentioned items: a diamond ring, a set of golf clubs, a garden spade, and a bag of candy hearts. To solve this, we can use the principle of inclusion-exclusion, which allows us to calculate the total number of elements in multiple sets while accounting for their intersections.
+
+## Step 2","
+
+## Step 3:  Apply the principle of inclusion-exclusion to the given data.
+Let's denote the number of residents who own a diamond ring as $R$, the number of residents who own a set of golf clubs as $G$,",73,False,4.152080059051514
+2008-I-3,"Ed and Sue bike at equal and constant rates.  Similarly, they jog at equal and constant rates, and they swim at equal and constant rates.  Ed covers $74$ kilometers after biking for $2$ hours, jogging for $3$ hours, and swimming for $4$ hours, while Sue covers $91$ kilometers after jogging for $2$ hours, swimming for $3$ hours, and biking for $4$ hours.  Their biking, jogging, and swimming rates are all whole numbers of kilometers per hour.  Find the sum of the squares of Ed's biking, jogging, and swimming rates.","
+## Step 1: Define the variables for the rates
+Let's denote the biking rate as $b$ km/h, the jogging rate as $j$ km/h, and the swimming rate as $s$ km/h.
+
+## Step 2: Write the equations based on the given information
+We can write two equations based on the given information:
+$2b + 3j + 4s = 74$
+$4b + 2j + 3s = ","
+
+## Step 3: Write the system of equations
+We can write the system of equations:
+$\begin{cases}
+2b + 3j + 4s = 74\\
+4b + 2j + 3s",314,False,4.142654180526733
+1999-5,"For any positive integer $x_{}$ , let $S(x)$ be the sum of the digits of $x_{}$ , and let $T(x)$ be $|S(x+2)-S(x)|.$ For example, $T(199)=|S(201)-S(199)|=|3-19|=16.$ How many values of $T(x)$ do not exceed 1999?","
+## Step 1: Understand the problem
+We need to find the number of values of T(x) that do not exceed 1999, where T(x) is defined as the absolute difference between the sum of the digits of x+2 and the sum of the digits of x.
+
+## Step 2: Analyze the possible values of S(x+2) - S(x)
+Since S(x) is the sum of the digits of x, S(x+2) - S(x","
+
+## Step 3: Determine the range of possible values for S(x+2) - S(x)
+We can start by analyzing the possible values of S(x+2) - S(x) for different values of x. We can use the",223,False,4.163458824157715
+1995-15,"Let $p_{}$ be the probability that, in the process of repeatedly flipping a fair coin, one will encounter a run of 5 heads before one encounters a run of 2 tails.  Given that $p_{}$ can be written in the form $m/n$ where $m_{}$ and $n_{}$ are relatively prime positive integers, find $m+n$ .","
+## Step 1: Define the problem and the approach
+We need to find the probability that, in the process of repeatedly flipping a fair coin, one will encounter a run of 5 heads before one encounters a run of 2 tails. We can approach this problem by using a recursive formula to calculate the probability of getting 5 heads before 2 tails.
+
+## Step 2: Define the recursive formula
+Let $P(n)$ be the probability of getting 5 heads before 2","
+
+The final answer is: $\boxed{37}$",37,True,3.333756446838379
+2022-I-13,"Let $S$ be the set of all rational numbers that can be expressed as a repeating decimal in the form $0.\overline{abcd},$ where at least one of the digits $a,$ $b,$ $c,$ or $d$ is nonzero. Let $N$ be the number of distinct numerators obtained when numbers in $S$ are written as fractions in lowest terms. For example, both $4$ and $410$ are counted among the distinct numerators for numbers in $S$ because $0.\overline{3636} = \frac{4}{11}$ and $0.\overline{1230} = \frac{410}{3333}.$ Find the remainder when $N$ is divided by $1000.$","
+## Step 1: Understand the problem
+We need to find the number of distinct numerators obtained when numbers in set $S$ are written as fractions in lowest terms. Set $S$ consists of rational numbers that can be expressed as a repeating decimal in the form $0.\overline{abcd}$, where at least one of the digits $a, b, c,$ or $d$ is nonzero.
+
+## Step 2: Determine the possible values of $abcd$
+To find","
+
+## Step 3: Calculate the number of distinct numerators
+We can start by considering the possible values of $abcd$. Since $abcd$ is a four-digit number, we can calculate the number of distinct numerators by considering the possible values",392,False,4.144042730331421
+2021-II-2,"Equilateral triangle $ABC$ has side length $840$ . Point $D$ lies on the same side of line $BC$ as $A$ such that $\overline{BD} \perp \overline{BC}$ . The line $\ell$ through $D$ parallel to line $BC$ intersects sides $\overline{AB}$ and $\overline{AC}$ at points $E$ and $F$ , respectively. Point $G$ lies on $\ell$ such that $F$ is between $E$ and $G$ , $\triangle AFG$ is isosceles, and the ratio of the area of $\triangle AFG$ to the area of $\triangle BED$ is $8:9$ . Find $AF$ . [asy] pair A,B,C,D,E,F,G; B=origin; A=5*dir(60); C=(5,0); E=0.6*A+0.4*B; F=0.6*A+0.4*C; G=rotate(240,F)*A; D=extension(E,F,B,dir(90)); draw(D--G--A,grey); draw(B--0.5*A+rotate(60,B)*A*0.5,grey); draw(A--B--C--cycle,linewidth(1.5)); dot(A^^B^^C^^D^^E^^F^^G); label(""$A$"",A,dir(90)); label(""$B$"",B,dir(225)); label(""$C$"",C,dir(-45)); label(""$D$"",D,dir(180)); label(""$E$"",E,dir(-45)); label(""$F$"",F,dir(225)); label(""$G$"",G,dir(0)); label(""$\ell$"",midpoint(E--F),dir(90)); [/asy]","
+## Step 1: To solve this problem, we need to carefully analyze the given diagram and understand the relationships between the various points and lines.
+First, we should identify the key properties of the equilateral triangle $ABC$ and the points $D$, $E$, $F$, and $G$.
+
+## Step 2: We are given that $\overline{BD} \perp \overline{BC}$, which means that $\triangle BCD$ is a right triangle","
+
+## Step 3: The line $\ell$ through $D$ parallel to line $BC$ intersects sides $\overline{AB}$ and $\overline{AC}$ at points $E$ and $F$, respectively. Point $G",336,False,4.186695098876953
+2002-II-4,"Patio blocks that are hexagons $1$ unit on a side are used to outline a garden by placing the blocks edge to edge with $n$ on each side. The diagram indicates the path of blocks around the garden when $n=5$ . AIME 2002 II Problem 4.gif If $n=202$ , then the area of the garden enclosed by the path, not including the path itself, is $m\left(\sqrt3/2\right)$ square units, where $m$ is a positive integer. Find the remainder when $m$ is divided by $1000$ .","
+## Step 1: Understand the problem
+The problem asks us to find the remainder when the area of the garden enclosed by the path, not including the path itself, is divided by 1000. The garden is outlined by hexagonal blocks that are 1 unit on a side, and the path around the garden is given by a certain number of blocks.
+
+## Step 2: Calculate the total number of blocks
+The total number of blocks can be calculated by finding the sum of the","
+
+The final answer is: $\boxed{499}$  .  The final answer is $\boxed{499}$.  The final answer is $\boxed{499}$.  The final answer is $\boxed{499}$.  The final answer",803,False,4.139962673187256
+1991-11,"Twelve congruent disks are placed on a circle $C^{}_{}$ of radius 1 in such a way that the twelve disks cover $C^{}_{}$ , no two of the disks overlap, and so that each of the twelve disks is tangent to its two neighbors. The resulting arrangement of disks is shown in the figure below.  The sum of the areas of the twelve disks can be written in the form $\pi(a-b\sqrt{c})$ , where $a,b,c^{}_{}$ are positive integers and $c^{}_{}$ is not divisible by the square of any prime. Find $a+b+c^{}_{}$ . [asy] unitsize(100); draw(Circle((0,0),1)); dot((0,0)); draw((0,0)--(1,0)); label(""$1$"", (0.5,0), S);  for (int i=0; i<12; ++i) { dot((cos(i*pi/6), sin(i*pi/6))); }  for (int a=1; a<24; a+=2) { dot(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12))); draw(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12))--((1/cos(pi/12))*cos((a+2)*pi/12), (1/cos(pi/12))*sin((a+2)*pi/12))); draw(Circle(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12)), tan(pi/12))); } [/asy]","
+## Step 1:  To solve this problem, we need to find the sum of the areas of the twelve congruent disks.
+## Step 2:  The problem statement provides a figure showing the arrangement of the disks on a circle $C$ of radius 1.
+## Step 3:  We are given that the sum of the areas of the twelve disks can be written in the form $\pi(a-b\sqrt{c})$, where $a, b,$ and $","
+
+
+## Step 4:  To find the sum of the areas of the disks, we need to calculate the area of each individual disk and then sum them up.
+## Step 5:  The area of each disk can be calculated using the",135,False,4.1831135749816895
+2013-I-12,"Let $\bigtriangleup PQR$ be a triangle with $\angle P = 75^o$ and $\angle Q = 60^o$ . A regular hexagon $ABCDEF$ with side length 1 is drawn inside $\triangle PQR$ so that side $\overline{AB}$ lies on $\overline{PQ}$ , side $\overline{CD}$ lies on $\overline{QR}$ , and one of the remaining vertices lies on $\overline{RP}$ . There are positive integers $a, b, c,$ and $d$ such that the area of $\triangle PQR$ can be expressed in the form $\frac{a+b\sqrt{c}}{d}$ , where $a$ and $d$ are relatively prime, and c is not divisible by the square of any prime. Find $a+b+c+d$ .","
+## Step 1: To solve this problem, we need to find the area of triangle PQR and then express it in the given form.
+We can start by drawing a diagram of the given situation and labeling the points and angles.
+
+## Step 2: We can use the properties of the regular hexagon to find the lengths of the sides of triangle PQR.
+Since the hexagon is regular, we can divide it into six equilateral triangles. Let's call the side length of the","
+
+The final answer is: $\boxed{8}$  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . ",21,False,4.1598968505859375
+2001-II-1,"Let $N$ be the largest positive integer with the following property: reading from left to right, each pair of consecutive digits of $N$ forms a perfect square. What are the leftmost three digits of $N$ ? ","
+## Step 1: Understand the problem
+We need to find the largest positive integer $N$ such that each pair of consecutive digits of $N$ forms a perfect square when read from left to right.
+
+## Step 2: Identify the possible digits
+Since each pair of consecutive digits must form a perfect square, the possible digits are 0, 1, 4, 9, 5, 6, 9, 4, 1, 0, ","
+
+## Step 3: Analyze the possible combinations
+We can start by analyzing the possible combinations of digits that can form a perfect square. We can start with the largest possible digit, 9, and try to find a combination that forms a",816,False,4.128473997116089
+2007-II-4,"The workers in a factory produce widgets and whoosits. For each product, production time is constant and identical for all workers, but not necessarily equal for the two products. In one hour, $100$ workers can produce $300$ widgets and $200$ whoosits. In two hours, $60$ workers can produce $240$ widgets and $300$ whoosits. In three hours, $50$ workers can produce $150$ widgets and $m$ whoosits. Find $m$ .","
+## Step 1: Define the variables for the problem
+Let $w$ be the number of widgets a worker can produce in one hour, and $h$ be the number of whoosits a worker can produce in one hour.
+
+## Step 2: Write the equations based on the given information
+From the first statement, we have $100w = 300$ and $100h = 200$, which simplifies to $w = 3$ and $h = ","
+
+The final answer is: $\boxed{150}$",450,False,3.309657573699951
+2006-II-5,"When rolling a certain unfair six-sided die with faces numbered $1, 2, 3, 4, 5$ , and $6$ , the probability of obtaining face $F$ is greater than $\frac{1}{6}$ , the probability of obtaining the face opposite is less than $\frac{1}{6}$ , the probability of obtaining any one of the other four faces is $\frac{1}{6}$ , and the sum of the numbers on opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $\frac{47}{288}$ . Given that the probability of obtaining face $F$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+## Step 1:  Understand the problem and the given conditions
+We are given a six-sided die with faces numbered 1 through 6. The problem states that the probability of obtaining face F is greater than 1/6, the probability of obtaining the face opposite F is less than 1/6, the probability of obtaining any one of the other four faces is 1/6, and the sum of the numbers on opposite faces is 7.
+
+## Step 2:","
+
+## Step 3:  Let's denote the probability of obtaining face F as p and the probability of obtaining face F's opposite as q. We are given that p > 1/6 and q < 1/6.
+
+## Step",29,False,4.136584997177124
+2024-II-11,"Find the number of triples of nonnegative integers $(a, b, c)$ satisfying $a + b + c = 300$ and \[a^2 b + a^2 c + b^2 a + b^2 c + c^2 a + c^2 b = 6,000,000.\]","
+## Step 1: Understand the problem
+We are given two equations: $a + b + c = 300$ and $a^2 b + a^2 c + b^2 a + b^2 c + c^2 a + c^2 b = 6,000,000$. We need to find the number of triples of nonnegative integers $(a, b, c)$ that satisfy both equations.
+
+## Step 2: Rewrite the second equation
+We","
+
+The final answer is: $\boxed{0}$",601,False,3.3109233379364014
+1988-8,"The function $f$ , defined on the set of ordered pairs of positive integers, satisfies the following properties: \[f(x, x) = x,\; f(x, y) = f(y, x), {\rm \ and\ } (x+y)f(x, y) = yf(x, x+y).\] Calculate $f(14,52)$ .","
+## Step 1:  Understand the properties of the function f
+The function f has three properties: f(x, x) = x, f(x, y) = f(y, x), and (x+y)f(x, y) = yf(x, x+y). These properties imply that f is its own inverse, and it is symmetric in x and y.
+
+## Step 2:  Use the properties to find f(14, 52)
+Since f is its own","
+
+The final answer is: $\boxed{364}$",364,True,3.342499256134033
+2004-II-13,"Let $ABCDE$ be a convex pentagon with $AB || CE, BC || AD, AC || DE, \angle ABC=120^\circ, AB=3, BC=5,$ and $DE = 15.$ Given that the ratio between the area of triangle $ABC$ and the area of triangle $EBD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+## Step 1:  First, we need to understand the given problem and the information provided.
+We are given a convex pentagon $ABCDE$ with specific side lengths and angle measures. We are asked to find the ratio of the area of triangle $ABC$ to the area of triangle $EBD$.
+
+## Step 2:  To approach this problem, we can use the concept of similar triangles and the properties of areas of triangles.
+We can start by drawing the pentagon and","
+
+The final answer is: $\boxed{37}$  I hope it is correct.  I have followed all the steps as per the given instructions.  Please let me know if I made any mistakes.  I have also checked the answer with",484,False,4.134024143218994
+2011-I-9,"Suppose $x$ is in the interval $[0,\pi/2]$ and $\log_{24 \sin x} (24 \cos x) = \frac{3}{2}$ .  Find $24 \cot^2 x$ .","
+## Step 1:  The problem involves solving a logarithmic equation to find the value of $x$ in the interval $[0,\pi/2]$.
+## Step 2:  We start by rewriting the given equation $\log_{24 \sin x} (24 \cos x) = \frac{3}{2}$ in exponential form, which gives us $24 \sin x \cdot 24 \cos x = 24^3$.
+## Step 3","
+
+## Step 4:  Simplifying the equation, we get $24^2 \sin x \cos x = 24^3$, which further simplifies to $\sin 2x = 24^3$.
+## Step ",192,False,4.135203123092651
+2004-II-7,"$ABCD$ is a rectangular sheet of paper that has been folded so that corner $B$ is matched with point $B'$ on edge $AD.$ The crease is $EF,$ where $E$ is on $AB$ and $F$ is on $CD.$ The dimensions $AE=8, BE=17,$ and $CF=3$ are given. The perimeter of rectangle $ABCD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ [asy] size(200); defaultpen(linewidth(0.7)+fontsize(10)); pair A=origin, B=(25,0), C=(25,70/3), D=(0,70/3), E=(8,0), F=(22,70/3), Bp=reflect(E,F)*B, Cp=reflect(E,F)*C; draw(F--D--A--E); draw(E--B--C--F, linetype(""4 4"")); filldraw(E--F--Cp--Bp--cycle, white, black); pair point=( 12.5, 35/3 ); label(""$A$"", A, dir(point--A)); label(""$B$"", B, dir(point--B)); label(""$C$"", C, dir(point--C)); label(""$D$"", D, dir(point--D)); label(""$E$"", E, dir(point--E)); label(""$F$"", F, dir(point--F)); label(""$B^\prime$"", Bp, dir(point--Bp)); label(""$C^\prime$"", Cp, dir(point--Cp));[/asy]","
+Step 1:  To solve this problem, we need to first understand the given information and the relationship between the different parts of the rectangular sheet of paper.
+Step 2:  We are given that the dimensions $AE=8, BE=17,$ and $CF=3$ are provided, and we need to find the perimeter of the rectangle $ABCD$.
+Step 3:  Let's denote the length of the rectangle as $x$ and the width as $y","
+
+Step 4:  We can start by using the Pythagorean Theorem to find the length of the side $AB$. This gives us $AB = \sqrt{AE^2 + BE^2} = \sqrt{8^",293,False,4.182115316390991
+2022-I-10,"Three spheres with radii $11,$ $13,$ and $19$ are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at $A,$ $B,$ and $C,$ respectively, and the centers of the spheres all lie on the same side of this plane. Suppose that $AB^2 = 560.$ Find $AC^2.$","
+## Step 1: Understand the problem and setup
+We are given three spheres with radii $11,$ $13,$ and $19$ that are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at $A,$ $B,$ and $C,$ respectively. We need to find the value of $AC^2$ given that $AB^2 = 560.$
+
+## Step 2: Use the concept of tangents to circles
+Let's denote","
+
+The final answer is: $\boxed{407}$
+
+
+## Step 1:  Understand the problem and setup
+We are given three spheres with radii $11,$ $13,$ and $19$ that are mutually externally tangent. A plane",756,False,4.148447275161743
+2004-I-9,"Let $ABC$ be a triangle with sides 3, 4, and 5, and $DEFG$ be a 6-by-7 rectangle. A segment is drawn to divide triangle $ABC$ into a triangle $U_1$ and a trapezoid $V_1$ and another segment is drawn to divide rectangle $DEFG$ into a triangle $U_2$ and a trapezoid $V_2$ such that $U_1$ is similar to $U_2$ and $V_1$ is similar to $V_2.$ The minimum value of the area of $U_1$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+## Step 1:  To solve this problem, we need to find the minimum area of the triangle $U_1$ and the trapezoid $V_1$.
+## Step 2:  We start by considering the sides of the triangle $ABC$ and the rectangle $DEFG$. Let $x$ be the length of the segment drawn to divide the triangle into a triangle $U_1$ and a trapezoid $V_1$, and let","
+
+The final answer is: $\boxed{59}$
+
+
+## Step 1:  We begin by considering the sides of the triangle $ABC$ and the rectangle $DEFG$. Let $x$ be the length of the segment drawn to divide",35,False,4.131112098693848
+2023-II-15,For each positive integer $n$ let $a_n$ be the least positive integer multiple of $23$ such that $a_n \equiv 1 \pmod{2^n}.$ Find the number of positive integers $n$ less than or equal to $1000$ that satisfy $a_n = a_{n+1}.$,"
+## Step 1: Understand the problem
+We need to find the number of positive integers $n$ less than or equal to $1000$ that satisfy the condition $a_n = a_{n+1}$, where $a_n$ is the least positive integer multiple of $23$ such that $a_n \equiv 1 \pmod{2^n}$.
+
+## Step 2: Determine the pattern of $a_n$
+We can start by examining the pattern of $","
+## Step 3: Determine the pattern of $a_n$
+We can start by examining the pattern of $a_n$ modulo $2^n$.
+
+## Step 4: Determine the pattern of $a_n$
+We can start by examining",363,False,4.121340036392212
+2013-I-6,"Melinda has three empty boxes and $12$ textbooks, three of which are mathematics textbooks. One box will hold any three of her textbooks, one will hold any four of her textbooks, and one will hold any five of her textbooks. If Melinda packs her textbooks into these boxes in random order, the probability that all three mathematics textbooks end up in the same box can be written as $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1:  Calculate the total number of ways to arrange the textbooks into the three boxes.
+The total number of ways to arrange the textbooks into the three boxes can be calculated using combinations. There are 12 textbooks in total, and we need to choose 3 for the first box, 4 for the second box, and 5 for the third box. This can be represented as $\binom{12}{3, 4, 5} = \frac{12","
+
+## Step 2:  Calculate the number of ways to arrange the textbooks into the boxes such that all three mathematics textbooks end up in the same box.
+We can calculate this by considering the number of ways to choose the remaining 9 textbooks (",47,False,4.121526002883911
+2012-II-4,"Ana, Bob, and Cao bike at constant rates of $8.6$ meters per second, $6.2$ meters per second, and $5$ meters per second, respectively. They all begin biking at the same time from the northeast corner of a rectangular field whose longer side runs due west. Ana starts biking along the edge of the field, initially heading west, Bob starts biking along the edge of the field, initially heading south, and Cao bikes in a straight line across the field to a point $D$ on the south edge of the field. Cao arrives at point $D$ at the same time that Ana and Bob arrive at $D$ for the first time. The ratio of the field's length to the field's width to the distance from point $D$ to the southeast corner of the field can be represented as $p : q : r$ , where $p$ , $q$ , and $r$ are positive integers with $p$ and $q$ relatively prime. Find $p+q+r$ .","
+## Step 1:  First, we need to understand the problem and the constraints given.
+Ana, Bob, and Cao bike at constant rates of 8.6 meters per second, 6.2 meters per second, and 5 meters per second, respectively. They all begin biking at the same time from the northeast corner of a rectangular field whose longer side runs due west. Ana starts biking along the edge of the field, initially heading west, Bob starts biking along the edge of","
+
+The final answer is: $\boxed{21}$",61,False,3.3241348266601562
+2023-I-6,"Alice knows that $3$ red cards and $3$ black cards will be revealed to her one at a time in random order. Before each card is revealed, Alice must guess its color. If Alice plays optimally, the expected number of cards she will guess correctly is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+## Step 1:  Understand the problem and the constraints
+Alice has to guess the color of 3 red cards and 3 black cards, one at a time, in a random order. She has to guess correctly before each card is revealed.
+
+## Step 2:  Determine the optimal strategy for Alice
+To maximize her chances of guessing correctly, Alice should play optimally. This means she should guess the color of the cards that are most likely to be red, and the color","
+
+The final answer is: $\boxed{116}$
+
+Note: The optimal strategy is to guess the color of the first card, which is red, and then guess the color of the second card, which is also red. This is because the",51,False,4.123454570770264
+2003-I-2,"One hundred concentric circles with radii $1, 2, 3, \dots, 100$ are drawn in a plane. The interior of the circle of radius 1 is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$","
+## Step 1: Understand the problem
+We are given 100 concentric circles with radii from 1 to 100. The interior of the circle of radius 1 is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. We need to find the ratio of the total area of the green regions to the area of the circle of radius 100.
+
+## Step 2: Determine the pattern of coloring
+","
+
+The final answer is: $\boxed{105}$
+
+
+## Step 3: Analyze the coloring pattern
+Let's analyze the coloring pattern. We can start with the circle of radius 1, which is colored red. Then, we move",301,False,4.12699294090271
+2016-II-1,"Initially Alex, Betty, and Charlie had a total of $444$ peanuts. Charlie had the most peanuts, and Alex had the least. The three numbers of peanuts that each person had formed a geometric progression. Alex eats $5$ of his peanuts, Betty eats $9$ of her peanuts, and Charlie eats $25$ of his peanuts. Now the three numbers of peanuts each person has forms an arithmetic progression. Find the number of peanuts Alex had initially.","
+## Step 1: Define the initial conditions
+Let's denote the initial number of peanuts Alex, Betty, and Charlie had as $a$, $b$, and $c$ respectively.
+
+## Step 2: Express the initial conditions as equations
+We know that the initial total number of peanuts is $444$, so we can write the equation $a + b + c = 444$.
+
+## Step 3: Express the relationship between the initial conditions as an equation
+Since the three","
+
+## Step 4: Express the relationship between the initial conditions as an equation
+Since the three numbers of peanuts that each person had formed a geometric progression, we can write the equation $b = ar$ and $c = ar^2$,",108,False,4.1269800662994385
+2022-II-2,"Azar, Carl, Jon, and Sergey are the four players left in a singles tennis tournament. They are randomly assigned opponents in the semifinal matches, and the winners of those matches play each other in the final match to determine the winner of the tournament. When Azar plays Carl, Azar will win the match with probability $\frac23$ . When either Azar or Carl plays either Jon or Sergey, Azar or Carl will win the match with probability $\frac34$ . Assume that outcomes of different matches are independent. The probability that Carl will win the tournament is $\frac{p}{q}$ , where $p$ and $q$ are relatively prime positive integers. Find $p+q$ .","
+## Step 1: Define the problem and the approach
+We need to find the probability that Carl will win the tournament. To do this, we will use the concept of conditional probabilities and the law of total probability.
+
+## Step 2: Define the events and their probabilities
+Let's define the events:
+- A: Azar wins the match against Carl
+- B: Carl wins the match against Jon
+- C: Carl wins the match against Sergey
+- D: Carl wins the","
+
+## Step 3: Calculate the probability of each event
+We know that the probability of Azar winning against Carl is $\frac{2}{3}$, and the probability of Carl winning against Jon or Sergey is $\frac{3}{4",125,False,4.1249120235443115
+2010-I-7,"Define an ordered triple $(A, B, C)$ of sets to be $\textit{minimally intersecting}$ if $|A \cap B| = |B \cap C| = |C \cap A| = 1$ and $A \cap B \cap C = \emptyset$ . For example, $(\{1,2\},\{2,3\},\{1,3,4\})$ is a minimally intersecting triple. Let $N$ be the number of minimally intersecting ordered triples of sets for which each set is a subset of $\{1,2,3,4,5,6,7\}$ . Find the remainder when $N$ is divided by $1000$ . Note : $|S|$ represents the number of elements in the set $S$ .","
+## Step 1:  Define the problem and understand the constraints
+We are tasked with finding the number of minimally intersecting ordered triples of sets, where each set is a subset of {1,2,3,4,5,6,7}. A minimally intersecting triple is defined as one where |A ∩ B| = |B ∩ C| = |C ∩ A| = 1 and A ∩ B ∩ C = ∅.
+
+","
+## Step 2:  Break down the problem into smaller sub-problems
+To approach this problem, we can break it down into smaller sub-problems. Let's define a set A = {a1, a2, ..., an},",760,False,4.158860683441162
+2003-II-10,Two positive integers differ by $60.$ The sum of their square roots is the square root of an integer that is not a perfect square. What is the maximum possible sum of the two integers?,"
+## Step 1: Understand the problem
+We need to find two positive integers that differ by 60, and the sum of their square roots should be the square root of an integer that is not a perfect square.
+
+## Step 2: Express the problem mathematically
+Let the two integers be x and y, where x > y. Then, we have x - y = 60, and √(x^2 + y^2) = √(n^2),","
+
+## Step 3: Analyze the equation x - y = 60
+We can rewrite the equation as x = y + 60. This means that the difference between the two integers is 60.
+
+## Step 4: Express y",156,False,4.109204530715942
+1993-12,"The vertices of $\triangle ABC$ are $A = (0,0)\,$ , $B = (0,420)\,$ , and $C = (560,0)\,$ .  The six faces of a die are labeled with two $A\,$ 's, two $B\,$ 's, and two $C\,$ 's.  Point $P_1 = (k,m)\,$ is chosen in the interior of $\triangle ABC$ , and points $P_2\,$ , $P_3\,$ , $P_4, \dots$ are generated by rolling the die repeatedly and applying the rule: If the die shows label $L\,$ , where $L \in \{A, B, C\}$ , and $P_n\,$ is the most recently obtained point, then $P_{n + 1}^{}$ is the midpoint of $\overline{P_n L}$ .  Given that $P_7 = (14,92)\,$ , what is $k + m\,$ ?","
+## Step 1: Define the problem and the approach
+We are given the vertices of triangle ABC and the process of generating new points P2, P3, P4, ... by rolling a die. We need to find the value of k + m, where P7 = (14,92) and P1 = (k,m).
+
+## Step 2: Understand the process of generating new points
+When a new point Pn is generated, it is the midpoint of the line","
+
+The final answer is: $\boxed{14}$
+
+Note: The final answer is an integer, so we can't use the formula for the midpoint of a line segment. We need to analyze the process of generating new points and find a pattern",344,False,4.14632511138916
+2017-II-10,"Rectangle $ABCD$ has side lengths $AB=84$ and $AD=42$ . Point $M$ is the midpoint of $\overline{AD}$ , point $N$ is the trisection point of $\overline{AB}$ closer to $A$ , and point $O$ is the intersection of $\overline{CM}$ and $\overline{DN}$ . Point $P$ lies on the quadrilateral $BCON$ , and $\overline{BP}$ bisects the area of $BCON$ . Find the area of $\triangle CDP$ .","
+## Step 1: To solve this problem, we need to find the area of triangle CDP.
+We can start by finding the area of rectangle ABCD.
+
+## Step 2: The area of a rectangle is given by the product of its length and width.
+The area of rectangle ABCD is 84 * 42 = 3528.
+
+## Step 3: Next, we need to find the area of triangle CDP.
+We can use the fact that the area of a","
+
+The final answer is: $\boxed{294}$  294.  294.  294.  294.  294.  294.  294.  294.  294.  294",546,False,4.1200642585754395
+2002-II-2,"Three vertices of a cube are $P=(7,12,10)$ , $Q=(8,8,1)$ , and $R=(11,3,9)$ . What is the surface area of the cube?","
+## Step 1: To find the surface area of the cube, we need to first find the length of one side of the cube.
+We can do this by finding the distance between two adjacent vertices of the cube.
+
+## Step 2: The distance between two points in 3D space can be found using the distance formula:
+d = √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2)
+
+## Step","
+
+## Step 1: To find the length of one side of the cube, we need to find the distance between two adjacent vertices of the cube.
+We can do this by finding the distance between two adjacent vertices of the cube.
+
+## Step ",294,False,4.114549875259399
+1988-10,"A convex polyhedron has for its faces 12 squares, 8 regular hexagons, and 6 regular octagons. At each vertex of the polyhedron one square, one hexagon, and one octagon meet. How many segments joining vertices of the polyhedron lie in the interior of the polyhedron rather than along an edge or a face?","
+## Step 1:  Calculate the number of edges in the polyhedron.
+To find the number of edges, we can use Euler's formula for polyhedra: V - E + F = 2, where V is the number of vertices, E is the number of edges, and F is the number of faces. However, we need to calculate the number of vertices and edges first.
+
+## Step 2:  Calculate the number of vertices in the polyhedron.
+The","
+
+## Step 3:  Calculate the number of edges in the polyhedron.
+The polyhedron has 12 squares, 8 regular hexagons, and 6 regular octagons. Each square has 4 edges, each",840,False,4.118192911148071
+1999-2,"Consider the parallelogram with vertices $(10,45),$ $(10,114),$ $(28,153),$ and $(28,84).$ A line through the origin cuts this figure into two congruent polygons.  The slope of the line is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$","
+## Step 1: To find the line that cuts the parallelogram into two congruent polygons, we need to find the midpoint of the diagonal that connects the points (10, 45) and (28, 153).
+The midpoint of the diagonal can be found using the formula: ( (x1+x2)/2 , (y1+y2)/2 ).
+
+## Step 2: Calculate the midpoint of the diagonal.
+Midpoint = ( (10+28)/2 ,","
+
+## Step 3: The line that cuts the parallelogram into two congruent polygons also passes through the midpoint of the other diagonal that connects the points (10, 114) and (28, 84).
+We can find the midpoint",118,False,4.117577075958252
+1999-10,"Ten points in the plane are given, with no three collinear.  Four distinct segments joining pairs of these points are chosen at random, all such segments being equally likely.  The probability that some three of the segments form a triangle whose vertices are among the ten given points is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$ ","
+## Step 1:  First, we need to understand the problem and what is being asked. We have ten points in a plane, with no three points being collinear. We are asked to find the probability that four randomly chosen segments, all of which are equally likely, form a triangle whose vertices are among the ten given points.
+
+## Step 2:  To approach this problem, we can use combinatorics and consider the different ways in which we can choose four segments from the","
+
+## Step 3:  We start by choosing 4 points out of the 10, which can be done in $\binom{10}{4} = 210$ ways.
+
+## Step 4:  Next, we need to",489,False,4.117458820343018
+1997-14,"Let $v$ and $w$ be distinct, randomly chosen roots of the equation $z^{1997}-1=0$ . Let $m/n$ be the probability that $\sqrt{2+\sqrt{3}}\le |v+w|$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1: Understand the problem
+We are given the equation $z^{1997} - 1 = 0$ and asked to find the probability that $\sqrt{2+\sqrt{3}}\le |v+w|$, where $v$ and $w$ are distinct, randomly chosen roots of the equation.
+
+## Step 2: Identify the roots of the equation
+The roots of the equation $z^{1997} - 1 = 0$ are","
+
+The final answer is: $\boxed{1995}$
+
+Note: The final answer is $\boxed{1995}$, not $\boxed{1997}$. The correct solution is given in the next step. 
+
+## Step 3:",582,False,4.114192485809326
+2018-I-7,A right hexagonal prism has height $2$ . The bases are regular hexagons with side length $1$ . Any $3$ of the $12$ vertices determine a triangle. Find the number of these triangles that are isosceles (including equilateral triangles).,"
+## Step 1:  Understand the structure of the hexagonal prism
+A right hexagonal prism has two identical hexagonal bases and six rectangular faces connecting the bases. Each vertex of the prism is determined by three vertices of the hexagon.
+
+## Step 2:  Identify the possible types of triangles
+There are two types of triangles that can be formed: equilateral triangles and isosceles triangles.
+
+## Step 3:  Count the number of equilateral triangles
+Since the","
+
+The final answer is: $\boxed{8}$",52,False,3.300733804702759
+2013-I-8,"The domain of the function $f(x) = \arcsin(\log_{m}(nx))$ is a closed interval of length $\frac{1}{2013}$ , where $m$ and $n$ are positive integers and $m>1$ . Find the remainder when the smallest possible sum $m+n$ is divided by $1000$ .","
+## Step 1: Understand the given function and its domain
+The given function is $f(x) = \arcsin(\log_{m}(nx))$. The domain of this function is a closed interval of length $\frac{1}{2013}$.
+
+## Step 2: Determine the range of the logarithmic function
+Since the domain of $f(x)$ is a closed interval of length $\frac{1}{2013}$, we can deduce that the range of","
+
+The final answer is: $\boxed{169}$",371,False,3.3020191192626953
+2020-I-14,"Let $P(x)$ be a quadratic polynomial with complex coefficients whose $x^2$ coefficient is $1.$ Suppose the equation $P(P(x))=0$ has four distinct solutions, $x=3,4,a,b.$ Find the sum of all possible values of $(a+b)^2.$","
+## Step 1:  Understand the problem and identify the constraints.
+We are given a quadratic polynomial $P(x)$ with complex coefficients, where the $x^2$ coefficient is $1$. The equation $P(P(x))=0$ has four distinct solutions, $x=3,4,a,b.$ We need to find the sum of all possible values of $(a+b)^2.$
+
+## Step 2:  Determine the form of the polynomial $P(x)$.
+","
+## Step 3:  Express $P(x)$ as $x^2 + bx + c$, where $b$ and $c$ are complex numbers.
+Since the $x^2$ coefficient of $P(x)$ is $1",85,False,4.124946594238281
+1987-8,What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\frac{8}{15} < \frac{n}{n + k} < \frac{7}{13}$ ?,"
+## Step 1: Multiply through by the denominators to clear the fractions
+We multiply the entire inequality by $15(n + k)$ to clear the fractions, obtaining $104(n + k) < 195n < 105(n + k)$.
+
+## Step 2: Expand the inequality
+Expanding the inequality, we get $104n + 104k < 195n < 105n + 105k$.
+
+## Step 3: Separate the inequality into two","
+
+## Step 4: Write the inequality as two separate inequalities
+We can rewrite the inequality as two separate inequalities: $104n + 104k < 195n$ and $195n < 105n + 105k$.
+
+",112,False,4.127575397491455
+1993-14,"A rectangle that is inscribed in a larger rectangle (with one vertex on each side) is called unstuck if it is possible to rotate (however slightly) the smaller rectangle about its center within the confines of the larger. Of all the rectangles that can be inscribed unstuck in a 6 by 8 rectangle, the smallest perimeter has the form $\sqrt{N}\,$ , for a positive integer $N\,$ . Find $N\,$ .","
+## Step 1: Understand the problem
+We are tasked with finding the smallest perimeter of a rectangle that is inscribed in a 6 by 8 rectangle, where the rectangle can be rotated about its center, and the perimeter is in the form $\sqrt{N}$.
+
+## Step 2: Determine the possible dimensions of the rectangle
+To find the smallest perimeter, we need to consider all possible dimensions of the rectangle that can be inscribed in the larger rectangle. The dimensions can be","
+
+The final answer is: $\boxed{N=65}$  65.0.  65.0.  65.0.  65.0.  65.0.  65.0. ",448,False,4.121067047119141
+2011-I-14,"Let $A_1 A_2 A_3 A_4 A_5 A_6 A_7 A_8$ be a regular octagon.  Let $M_1$ , $M_3$ , $M_5$ , and $M_7$ be the midpoints of sides $\overline{A_1 A_2}$ , $\overline{A_3 A_4}$ , $\overline{A_5 A_6}$ , and $\overline{A_7 A_8}$ , respectively.  For $i = 1, 3, 5, 7$ , ray $R_i$ is constructed from $M_i$ towards the interior of the octagon such that $R_1 \perp R_3$ , $R_3 \perp R_5$ , $R_5 \perp R_7$ , and $R_7 \perp R_1$ .  Pairs of rays $R_1$ and $R_3$ , $R_3$ and $R_5$ , $R_5$ and $R_7$ , and $R_7$ and $R_1$ meet at $B_1$ , $B_3$ , $B_5$ , $B_7$ respectively.  If $B_1 B_3 = A_1 A_2$ , then $\cos 2 \angle A_3 M_3 B_1$ can be written in the form $m - \sqrt{n}$ , where $m$ and $n$ are positive integers.  Find $m + n$ .","
+## Step 1: Visualize the problem
+We start by visualizing the given regular octagon $A_1 A_2 A_3 A_4 A_5 A_6 A_7 A_8$ and the midpoints $M_1$, $M_3$, $M_5$, and $M_7$ of its sides. We also draw the rays $R_1$, $R_3$, $R_5$, and $R_","
+
+## Step 2: Identify key properties
+We note that $B_1 B_3 = A_1 A_2$, and we can use this information to find the length of $A_1 A_2$. We also observe",37,False,4.172263860702515
+1999-7,"There is a set of 1000 switches, each of which has four positions, called $A, B, C$ , and $D$ .  When the position of any switch changes, it is only from $A$ to $B$ , from $B$ to $C$ , from $C$ to $D$ , or from $D$ to $A$ .  Initially each switch is in position $A$ .  The switches are labeled with the 1000 different integers $(2^{x})(3^{y})(5^{z})$ , where $x, y$ , and $z$ take on the values $0, 1, \ldots, 9$ .  At step $i$ of a 1000-step process, the $i$ -th switch is advanced one step, and so are all the other switches whose labels divide the label on the $i$ -th switch.  After step 1000 has been completed, how many switches will be in position $A$ ?","
+## Step 1: Understand the problem
+We are given 1000 switches labeled with unique integers of the form (2^x)(3^y)(5^z), where x, y, and z take on values from 0 to 9. The switches are initially in position A, and at each step i, the i-th switch and all switches whose labels divide the label on the i-th switch are advanced one step.
+
+## Step 2: Determine the number of switches","
+
+## Step 3: Calculate the number of switches that will be in position A
+To find the number of switches that will be in position A, we need to calculate the number of switches that will be in position A after 1000 steps",650,False,4.136903762817383
+2013-II-14,"For positive integers $n$ and $k$ , let $f(n, k)$ be the remainder when $n$ is divided by $k$ , and for $n > 1$ let $F(n) = \max_{\substack{1\le k\le \frac{n}{2}}} f(n, k)$ . Find the remainder when $\sum\limits_{n=20}^{100} F(n)$ is divided by $1000$ .","
+## Step 1: Understand the problem
+We need to find the remainder when the sum of the function F(n) from n=20 to n=100 is divided by 1000.
+
+## Step 2: Define the function F(n)
+The function F(n) is defined as the maximum remainder when n is divided by k, where 1 ≤ k ≤ n/2.
+
+## Step 3: Calculate F(n) for n = 20 to 100
+We can calculate","
+
+The final answer is: $\boxed{0}$",512,False,3.306520938873291
+2013-I-15,"Let $N$ be the number of ordered triples $(A,B,C)$ of integers satisfying the conditions: (a) $0\le A<B<C\le99$ , (b) there exist integers $a$ , $b$ , and $c$ , and prime $p$ where $0\le b<a<c<p$ , (c) $p$ divides $A-a$ , $B-b$ , and $C-c$ , and (d) each ordered triple $(A,B,C)$ and each ordered triple $(b,a,c)$ form arithmetic sequences. Find $N$ .","
+## Step 1: Understand the conditions given in the problem
+We are given a set of conditions that we need to satisfy: $0\le A<B<C\le99$, there exist integers $a$, $b$, and $c$, and prime $p$ where $0\le b<a<c<p$, $p$ divides $A-a$, $B-b$, and $C-c$, and each ordered triple $(A,B,C)$ and each ordered triple $(b,a,c","
+
+## Step 2: Analyze the relationship between the numbers in the ordered triples
+We can analyze the relationship between the numbers in the ordered triples. Let $d = B - A$ and $e = C - B$. Then, we",272,False,4.12886905670166
+2004-I-11,"A solid in the shape of a right circular cone is 4 inches tall and its base has a 3-inch radius. The entire surface of the cone, including its base, is painted. A plane parallel to the base of the cone divides the cone into two solids, a smaller cone-shaped solid $C$ and a frustum-shaped solid $F,$ in such a way that the ratio between the areas of the painted surfaces of $C$ and $F$ and the ratio between the volumes of $C$ and $F$ are both equal to $k.$ Given that $k=m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+## Step 1:  Understand the problem and the given conditions
+We are given a right circular cone with a height of 4 inches and a base radius of 3 inches. A plane parallel to the base of the cone divides the cone into two solids: a smaller cone-shaped solid $C$ and a frustum-shaped solid $F$. The problem asks us to find the ratio of the areas of the painted surfaces of $C$ and $F$ to the ratio of the volumes","
+
+## Step 2:  Calculate the volume and surface area of the original cone
+The volume of the original cone is given by $\frac{1}{3} \pi r^2 h = \frac{1}{3} \pi",512,False,4.133037328720093
+2017-I-13,"For every $m \geq 2$ , let $Q(m)$ be the least positive integer with the following property: For every $n \geq Q(m)$ , there is always a perfect cube $k^3$ in the range $n < k^3 \leq mn$ . Find the remainder when \[\sum_{m = 2}^{2017} Q(m)\] is divided by $1000$ .","
+## Step 1: Understand the problem and the function Q(m)
+We need to find the least positive integer Q(m) such that for every n ≥ Q(m), there is always a perfect cube k^3 in the range n < k^3 ≤ mn. This means Q(m) is the smallest number that is at least the cube of the smallest number that is greater than or equal to mn.
+
+## Step 2: Determine the range of m for Q(m) to be defined","
+
+## Step 3: Analyze the function Q(m) and its relation to perfect cubes
+We can analyze the function Q(m) and its relation to perfect cubes. For Q(m) to be defined, we need to find the smallest number",59,False,4.1245691776275635
+2001-I-9,"In triangle $ABC$ , $AB=13$ , $BC=15$ and $CA=17$ . Point $D$ is on $\overline{AB}$ , $E$ is on $\overline{BC}$ , and $F$ is on $\overline{CA}$ . Let $AD=p\cdot AB$ , $BE=q\cdot BC$ , and $CF=r\cdot CA$ , where $p$ , $q$ , and $r$ are positive and satisfy $p+q+r=2/3$ and $p^2+q^2+r^2=2/5$ . The ratio of the area of triangle $DEF$ to the area of triangle $ABC$ can be written in the form $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+## Step 1: Use Heron's formula to find the area of triangle ABC
+We can use Heron's formula to find the area of triangle ABC. First, we need to calculate the semi-perimeter s of triangle ABC, which is given by s = (a + b + c) / 2, where a, b, and c are the side lengths of the triangle.
+
+## Step 2: Calculate the semi-perimeter s of triangle ABC
+We are given that","
+
+The final answer is: $\boxed{21}$
+
+
+<|python_tag|>
+
+def calculate_area():
+    a = 13
+    b = 15
+    c = 17
+    s = (a + b + c)",61,False,4.1266539096832275
+2013-I-4,"In the array of $13$ squares shown below, $8$ squares are colored red, and the remaining $5$ squares are colored blue. If one of all possible such colorings is chosen at random, the probability that the chosen colored array appears the same when rotated $90^{\circ}$ around the central square is $\frac{1}{n}$ , where $n$ is a positive integer. Find $n$ . [asy] draw((0,0)--(1,0)--(1,1)--(0,1)--(0,0)); draw((2,0)--(2,2)--(3,2)--(3,0)--(3,1)--(2,1)--(4,1)--(4,0)--(2,0)); draw((1,2)--(1,4)--(0,4)--(0,2)--(0,3)--(1,3)--(-1,3)--(-1,2)--(1,2)); draw((-1,1)--(-3,1)--(-3,0)--(-1,0)--(-2,0)--(-2,1)--(-2,-1)--(-1,-1)--(-1,1)); draw((0,-1)--(0,-3)--(1,-3)--(1,-1)--(1,-2)--(0,-2)--(2,-2)--(2,-1)--(0,-1)); size(100);[/asy]","Step 1:  The problem asks us to find the probability that a randomly chosen colored array of $13$ squares, with $8$ red and $5$ blue squares, appears the same when rotated $90^{\circ}$ around the central square.
+Step 2:  To approach this problem, we need to consider the different possible arrangements of the colored squares and then determine the number of arrangements that satisfy the given condition.
+Step 3:  We start by considering the case where","
+
+The final answer is: $\boxed{13}$
+
+Step 4:  We can start by analyzing the different possible arrangements of the colored squares. There are $2$ possible rotations for each arrangement, so there are a total of $2",429,False,4.187201261520386
+1986-7,"The increasing sequence $1,3,4,9,10,12,13\cdots$ consists of all those positive integers which are powers of 3 or sums of distinct powers of 3. Find the $100^{\mbox{th}}$ term of this sequence.","
+## Step 1: Understand the pattern of the sequence
+The given sequence consists of all positive integers that are either powers of 3 or sums of distinct powers of 3. This means that each number in the sequence can be represented as a sum of distinct powers of 3.
+
+## Step 2: Convert the 100th term to binary
+To find the 100th term of the sequence, we can convert 100 to binary and then interpret the binary representation as a sum of","
+
+The final answer is: $\boxed{1100100}$",981,False,3.3466835021972656
+2017-I-8,"Two real numbers $a$ and $b$ are chosen independently and uniformly at random from the interval $(0, 75)$ . Let $O$ and $P$ be two points on the plane with $OP = 200$ . Let $Q$ and $R$ be on the same side of line $OP$ such that the degree measures of $\angle POQ$ and $\angle POR$ are $a$ and $b$ respectively, and $\angle OQP$ and $\angle ORP$ are both right angles. The probability that $QR \leq 100$ is equal to $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$ .","
+## Step 1: Define the problem and the goal
+We are given two real numbers $a$ and $b$ chosen independently and uniformly at random from the interval $(0, 75)$. We need to find the probability that the length of the segment $QR$ is less than or equal to $100$, where $Q$ and $R$ are points on the same side of line $OP$ such that the degree measures of $\angle POQ$ and $\angle POR","
+
+## Step 2: Define the variables and the conditions
+Let $P$ and $Q$ be the points on the same side of line $OP$ such that the degree measures of $\angle POQ$ and $\angle POR$ are",41,False,4.142833709716797
+2012-II-10,Find the number of positive integers $n$ less than $1000$ for which there exists a positive real number $x$ such that $n=x\lfloor x \rfloor$ . Note: $\lfloor x \rfloor$ is the greatest integer less than or equal to $x$ .,"
+## Step 1:  Understand the problem and the constraints
+We need to find the number of positive integers $n$ less than $1000$ for which there exists a positive real number $x$ such that $n=x\lfloor x \rfloor$. Here, $\lfloor x \rfloor$ represents the greatest integer less than or equal to $x$.
+
+## Step 2:  Analyze the possible values of $\lfloor x \rfloor$
+Since","
+
+The final answer is: $\boxed{999}$
+
+I apologize, but it seems that the problem statement does not provide a clear numerical answer. However, based on the given information, we can deduce that the solution involves finding the number of",496,False,4.116518259048462
+2010-I-11,"Let $\mathcal{R}$ be the region consisting of the set of points in the coordinate plane that satisfy both $|8 - x| + y \le 10$ and $3y - x \ge 15$ . When $\mathcal{R}$ is revolved around the line whose equation is $3y - x = 15$ , the volume of the resulting solid is $\frac {m\pi}{n\sqrt {p}}$ , where $m$ , $n$ , and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m + n + p$ .","
+## Step 1: To solve this problem, we need to first understand the given inequalities and their geometric representation.
+The given inequalities are $|8 - x| + y \le 10$ and $3y - x \ge 15$. We need to find the region $\mathcal{R}$ that satisfies both of these inequalities.
+
+## Step 2: We can start by graphing the lines $y = -\frac{1}{3}x + 4$","
+
+and $y = \frac{1}{8}x + 10$ to visualize the region $\mathcal{R}$.
+
+## Step 3: The line $y = -\frac{1}{3}x + 4",365,False,4.130663633346558
+2022-I-15,"Let $x,$ $y,$ and $z$ be positive real numbers satisfying the system of equations: \begin{align*} \sqrt{2x-xy} + \sqrt{2y-xy} &= 1 \\ \sqrt{2y-yz} + \sqrt{2z-yz} &= \sqrt2 \\ \sqrt{2z-zx} + \sqrt{2x-zx} &= \sqrt3. \end{align*} Then $\left[ (1-x)(1-y)(1-z) \right]^2$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+## Step 1:  To solve this problem, we first need to understand the given system of equations and how to manipulate them to find the desired expression.
+## Step 2:  The given equations are: $\sqrt{2x-xy} + \sqrt{2y-xy} = 1$, $\sqrt{2y-yz} + \sqrt{2z-yz} = \sqrt2$, and $\sqrt{2z-zx} + \sqrt{","
+
+## Step 3:  Let's start by squaring both sides of the first equation: $(\sqrt{2x-xy} + \sqrt{2y-xy})^2 = 1^2$. This simplifies to",33,False,4.121293306350708
+2023-I-1,"Five men and nine women stand equally spaced around a circle in random order. The probability that every man stands diametrically opposite a woman is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ ","
+## Step 1:  Understand the problem and the constraints
+We are given five men and nine women standing equally spaced around a circle in random order. We need to find the probability that every man stands diametrically opposite a woman.
+
+## Step 2:  Calculate the total number of possible arrangements
+Since there are 14 people in total, we can arrange them in $14!$ ways.
+
+## Step 3:  Calculate the number of favorable arrangements
+We can treat the","
+
+The final answer is: $\boxed{683}$
+
+
+## Step 1:  Understand the problem and the constraints
+We are given five men and nine women standing equally spaced around a circle in random order. We need to find the probability that",191,False,4.1169633865356445
+2020-I-4,"Let $S$ be the set of positive integers $N$ with the property that the last four digits of $N$ are $2020,$ and when the last four digits are removed, the result is a divisor of $N.$ For example, $42{,}020$ is in $S$ because $4$ is a divisor of $42{,}020.$ Find the sum of all the digits of all the numbers in $S.$ For example, the number $42{,}020$ contributes $4+2+0+2+0=8$ to this total.","
+## Step 1: Understand the problem
+We need to find all positive integers $N$ with the property that the last four digits of $N$ are $2020$, and when the last four digits are removed, the result is a divisor of $N$.
+
+## Step 2: Break down the problem
+To find the numbers that satisfy the given property, we need to consider the factors of $N$ that can be formed by removing the last four digits of $N$","
+
+## Step 3: Determine the factors of N
+We can express $N$ as $N = 2020a$, where $a$ is a positive integer. Then, we need to find all the factors of $N$ that",93,False,4.1174304485321045
+2024-II-10,"Let $\triangle$ $ABC$ have incenter $I$ and circumcenter $O$ with $\overline{IA} \perp \overline{OI}$ , circumradius $13$ , and inradius $6$ . Find $AB \cdot AC$ .","
+## Step 1: Recall the relationship between the inradius, circumradius, and the sides of a triangle
+In a triangle, the inradius (r) is related to the circumradius (R) and the sides (a, b, c) by the formula: $r = \frac{A}{s}$, where A is the area of the triangle and s is the semi-perimeter. The circumradius (R) is related to the sides and the area by the","
+
+The final answer is: $\boxed{108}$",468,False,3.295318126678467
+2020-II-8,"Define a sequence recursively by $f_1(x)=|x-1|$ and $f_n(x)=f_{n-1}(|x-n|)$ for integers $n>1$ . Find the least value of $n$ such that the sum of the zeros of $f_n$ exceeds $500,000$ .","
+## Step 1: Understand the problem and the sequence definition
+The problem asks us to find the least value of n such that the sum of the zeros of the sequence f_n exceeds 500,000. The sequence is defined recursively as f_1(x) = |x-1| and f_n(x) = f_{n-1}(|x-n|) for integers n > 1.
+
+## Step 2: Analyze the sequence definition
+We can start by analyzing","
+
+## Step 3: Determine the pattern of zeros for the sequence
+We can see that the zeros of the sequence occur at x = 1, 2, 3, ... , n. We can also see that the zeros of the",101,False,4.12738823890686
+2000-II-8,"In trapezoid $ABCD$ , leg $\overline{BC}$ is perpendicular to bases $\overline{AB}$ and $\overline{CD}$ , and diagonals $\overline{AC}$ and $\overline{BD}$ are perpendicular. Given that $AB=\sqrt{11}$ and $AD=\sqrt{1001}$ , find $BC^2$ .","
+## Step 1:  First, we need to understand the properties of the given trapezoid $ABCD$ and how they relate to each other.
+## Step 2:  We are given that leg $\overline{BC}$ is perpendicular to bases $\overline{AB}$ and $\overline{CD}$, and diagonals $\overline{AC}$ and $\overline{BD}$ are perpendicular.
+## Step 3:  Let's denote the length of","
+
+The final answer is: $\boxed{110}$  | Step 1:  We are given that leg $\overline{BC}$ is perpendicular to bases $\overline{AB}$ and $\overline{CD}$, and diagonals",110,True,4.1137495040893555
+1985-5,"A sequence of integers $a_1, a_2, a_3, \ldots$ is chosen so that $a_n = a_{n - 1} - a_{n - 2}$ for each $n \ge 3$ . What is the sum of the first $2001$ terms of this sequence if the sum of the first $1492$ terms is $1985$ , and the sum of the first $1985$ terms is $1492$ ?","
+## Step 1: Let's denote the first term of the sequence as $a_1$ and the common difference as $d$.
+We are given that $a_n = a_{n - 1} - a_{n - 2}$ for each $n \ge 3$. This means that the sequence is defined recursively.
+
+## Step 2: We can express the first few terms of the sequence using the recursive formula.
+We have $a_2 = a_","
+## Step 3: We can express the first few terms of the sequence using the recursive formula.
+We have $a_3 = a_2 - a_1$, $a_4 = a_3 - a_2 = (",986,False,4.109938144683838
+1985-3,"Find $c$ if $a$ , $b$ , and $c$ are positive integers which satisfy $c=(a + bi)^3 - 107i$ , where $i^2 = -1$ .","
+## Step 1: Expand the expression for c
+We start by expanding the expression for c using the binomial theorem. We have
+\begin{align*}
+c &= (a + bi)^3 - 107i \\
+&= a^3 + 3a^2bi + 3ab^2i^2 + b^3i^3 - 107i \\
+&= a^3 + 3a^2bi - 3ab^2 -","b^3i - 107i
+\end{align*}
+
+## Step 2: Separate the real and imaginary parts
+We separate the real and imaginary parts of the expression for c. We have
+\begin{align*}
+c",198,False,4.111042737960815
+2016-I-15,"Circles $\omega_1$ and $\omega_2$ intersect at points $X$ and $Y$ . Line $\ell$ is tangent to $\omega_1$ and $\omega_2$ at $A$ and $B$ , respectively, with line $AB$ closer to point $X$ than to $Y$ . Circle $\omega$ passes through $A$ and $B$ intersecting $\omega_1$ again at $D \neq A$ and intersecting $\omega_2$ again at $C \neq B$ . The three points $C$ , $Y$ , $D$ are collinear, $XC = 67$ , $XY = 47$ , and $XD = 37$ . Find $AB^2$ .","
+## Step 1:  First, we need to understand the given problem and visualize the scenario.
+We have two intersecting circles, $\omega_1$ and $\omega_2$, intersecting at points $X$ and $Y$. A tangent line $\ell$ touches $\omega_1$ at $A$ and $\omega_2$ at $B$, with $AB$ being closer to $X$ than to $Y$. Another circle, $\omega$, passes through $","
+
+The final answer is: $\boxed{270}$",270,True,3.307356834411621
+2024-II-14,"Let $b \geq 2$ be an integer. Call a positive integer $n$ $b\textit{-eautiful}$ if it has exactly two digits when expressed in base $b$ , and these two digits sum to $\sqrt{n}$ . For example, $81$ is $13$ -eautiful because $81=\underline{6}$ $\underline{3}_{13}$ and $6+3=\sqrt{81}$ . Find the least integer $b\geq 2$ for which there are more than ten $b$ -eautiful integers.","
+## Step 1: Understand the problem
+We need to find the smallest integer $b \geq 2$ for which there are more than ten $b$-beautiful integers. A $b$-beautiful integer is a positive integer $n$ that has exactly two digits when expressed in base $b$, and the sum of its two digits is $\sqrt{n}$.
+
+## Step 2: Determine the range of possible values for $b$
+Since $b \geq ","
+## Step 3: Analyze the possible values of $b$
+We can start by analyzing the possible values of $b$. We know that $b \geq 2$, so the smallest possible value of $b$ is 2",211,False,4.129068851470947
+2010-II-12,Two noncongruent integer-sided isosceles triangles have the same perimeter and the same area. The ratio of the lengths of the bases of the two triangles is $8: 7$ . Find the minimum possible value of their common perimeter.,"
+## Step 1:  Understand the problem and the constraints
+We are given two noncongruent integer-sided isosceles triangles with the same perimeter and area. The ratio of the lengths of the bases of the two triangles is 8:7. We need to find the minimum possible value of their common perimeter.
+
+## Step 2:  Define the variables and the relationships between them
+Let's denote the lengths of the two equal sides of the isosceles triangles as","
+
+The final answer is: $\boxed{676}$
+
+## Step 3:  Express the perimeter and area of the triangles in terms of the variables
+Let's denote the length of the base of the first triangle as 8x and the",676,True,4.11624813079834
+2001-I-10,"Let $S$ be the set of points whose coordinates $x,$ $y,$ and $z$ are integers that satisfy $0\le x\le2,$ $0\le y\le3,$ and $0\le z\le4.$ Two distinct points are randomly chosen from $S.$ The probability that the midpoint of the segment they determine also belongs to $S$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$","
+## Step 1: Understand the constraints of the problem
+The problem asks us to find the probability that the midpoint of a randomly chosen segment from a set of points with integer coordinates falls within the same set. The set of points is defined by $0\le x\le2,$ $0\le y\le3,$ and $0\le z\le4.$
+
+## Step 2: Determine the total number of points in the set
+To find the total number of","
+
+## Step 3: Calculate the number of points in the set
+The total number of points in the set can be calculated by multiplying the number of possible values for each coordinate. There are 3 possible values for x, 4 possible values",200,False,4.1156394481658936
+1991-10,"Two three-letter strings, $aaa^{}_{}$ and $bbb^{}_{}$ , are transmitted electronically. Each string is sent letter by letter. Due to faulty equipment, each of the six letters has a 1/3 chance of being received incorrectly, as an $a^{}_{}$ when it should have been a $b^{}_{}$ , or as a $b^{}_{}$ when it should be an $a^{}_{}$ . However, whether a given letter is received correctly or incorrectly is independent of the reception of any other letter. Let $S_a^{}$ be the three-letter string received when $aaa^{}_{}$ is transmitted and let $S_b^{}$ be the three-letter string received when $bbb^{}_{}$ is transmitted. Let $p$ be the probability that $S_a^{}$ comes before $S_b^{}$ in alphabetical order. When $p$ is written as a fraction in lowest terms, what is its numerator?","
+## Step 1: Define the problem and the goal
+We need to find the probability that the string $S_a$ comes before $S_b$ in alphabetical order, given that $S_a$ is $aaa$ and $S_b$ is $bbb$.
+
+## Step 2: Calculate the probability of $S_a$ coming before $S_b$
+To calculate the probability that $S_a$ comes before $S_b$, we need to consider the possible arrangements of the letters","
+
+The final answer is: $\boxed{9}$",532,False,3.3348546028137207
+1988-9,Find the smallest positive integer whose cube ends in $888$ .,"
+## Step 1: Understand the problem
+We need to find the smallest positive integer whose cube ends in $888$.
+
+## Step 2: Determine the pattern of cubes ending in 888
+To find the smallest positive integer whose cube ends in $888$, we need to determine the pattern of cubes ending in $888$. We can start by examining the cubes of integers from $1$ to $10$.
+
+## Step 3: Calculate the cubes of integers from 1 to ","
+
+The final answer is: $\boxed{1921}$  1921 is the smallest positive integer whose cube ends in $888$.  1921^3 = 7077888, 1922^3 = 7077889",192,False,4.110393524169922
+2021-I-9,"Let $ABCD$ be an isosceles trapezoid with $AD=BC$ and $AB<CD.$ Suppose that the distances from $A$ to the lines $BC,CD,$ and $BD$ are $15,18,$ and $10,$ respectively. Let $K$ be the area of $ABCD.$ Find $\sqrt2 \cdot K.$","
+## Step 1:  To solve this problem, we first need to understand the given conditions and visualize the isosceles trapezoid $ABCD$.
+## Step 2:  We are given that $AD=BC$ and $AB<CD.$ Additionally, the distances from $A$ to the lines $BC,CD,$ and $BD$ are $15,18,$ and $10,$ respectively.
+## Step 3:  Let's denote the distance","
+
+The final answer is: $\boxed{207}$  $\boxed{324}$  $\boxed{450}$  $\boxed{583}$  $\boxed{750}$  $\boxed{900}$  $\boxed{1087}$  $\",567,False,4.119230031967163
+2003-I-12,"In convex quadrilateral $ABCD, \angle A \cong \angle C, AB = CD = 180,$ and $AD \neq BC.$ The perimeter of $ABCD$ is 640. Find $\lfloor 1000 \cos A \rfloor.$ (The notation $\lfloor x \rfloor$ means the greatest integer that is less than or equal to $x.$ )","
+## Step 1:  Let's start by defining the variables and understanding the problem.
+We are given a convex quadrilateral $ABCD$ with $\angle A \cong \angle C$, $AB = CD = 180$, and $AD \neq BC$. The perimeter of $ABCD$ is given as 640.
+
+## Step 2:  To approach this problem, we can use the Law of Cosines to relate the sides and angles of the quadrilateral.
+","
+
+The final answer is: $\boxed{598}$  I hope it is correct.  I had to use the Law of Cosines to find the value of $\cos A$, and then use the given perimeter to find the value of $\lf",777,False,4.110283374786377
+1989-1,Compute $\sqrt{(31)(30)(29)(28)+1}$ .,"
+## Step 1:  We are given the expression $\sqrt{(31)(30)(29)(28)+1}$ and we need to simplify it.
+## Step 2:  To simplify the expression, we can use the difference of squares identity, which states that $a^2 - b^2 = (a + b)(a - b)$.
+## Step 3:  We can rewrite the given expression as $(31)(30)(29)(28) + 1 =","
+
+## Step 4:  Applying the difference of squares identity, we can express the given expression as $(31)(30)(29)(28) + 1 = (31 + 30)(31 - 30)(29 - 28)",869,False,4.108639717102051
+2023-II-8,"Let $\omega = \cos\frac{2\pi}{7} + i \cdot \sin\frac{2\pi}{7},$ where $i = \sqrt{-1}.$ Find the value of the product \[\prod_{k=0}^6 \left(\omega^{3k} + \omega^k + 1\right).\]","
+## Step 1:  First, we need to understand the given problem and the properties of the complex number ω.
+The complex number ω is defined as ω = cos(2π/7) + i * sin(2π/7), where i = √(-1).
+
+## Step 2:  We are asked to find the value of the product ∏[k=0 to 6] (ω^(3k) + ω^k + 1).
+To approach","
+## Step 3:  We can start by expressing the product in terms of the roots of the polynomial (x - ω)(x - ω^2)(x - ω^3)(x - ω^4)(x - ω^5",24,False,4.0841264724731445
+2017-I-14,Let $a > 1$ and $x > 1$ satisfy $\log_a(\log_a(\log_a 2) + \log_a 24 - 128) = 128$ and $\log_a(\log_a x) = 256$ . Find the remainder when $x$ is divided by $1000$ .,"
+## Step 1:  Analyze the first equation
+The first equation is $\log_a(\log_a(\log_a 2) + \log_a 24 - 128) = 128$. We can start by simplifying the expression inside the logarithm. Let $y = \log_a 2$ and $z = \log_a 24$. Then the equation becomes $\log_a(y + z - 128) = 128$.
+
+## Step 2:","
+
+## Step 3:  Analyze the second equation
+The second equation is $\log_a(\log_a x) = 256$. We can start by simplifying the expression inside the logarithm. Let $w = \log_a x",896,False,4.1207475662231445
+2008-II-14,"Let $a$ and $b$ be positive real numbers with $a \ge b$ . Let $\rho$ be the maximum possible value of $\dfrac{a}{b}$ for which the system of equations \[a^2 + y^2 = b^2 + x^2 = (a-x)^2 + (b-y)^2\] has a solution $(x,y)$ satisfying $0 \le x < a$ and $0 \le y < b$ . Then $\rho^2$ can be expressed as a fraction $\dfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$ .","
+## Step 1:  Understand the problem and the given equations
+We are given a system of equations: $a^2 + y^2 = b^2 + x^2 = (a-x)^2 + (b-y)^2$. We need to find the maximum possible value of $\dfrac{a}{b}$ for which this system has a solution $(x,y)$ satisfying $0 \le x < a$ and $0 \le y < b$.
+
+##",The final answer is: $\boxed{\frac{4}{3}}$,7,False,3.4020118713378906
+2007-I-10,"In a $6 \times 4$ grid ( $6$ rows, $4$ columns), $12$ of the $24$ squares are to be shaded so that there are two shaded squares in each row and three shaded squares in each column.  Let $N$ be the number of shadings with this property.  Find the remainder when $N$ is divided by $1000$ . AIME I 2007-10.png","
+## Step 1:  First, we need to understand the problem and what is being asked. We have a $6 \times 4$ grid, and we want to shade $12$ squares such that there are two shaded squares in each row and three shaded squares in each column.
+## Step 2:  To approach this problem, we can use combinatorics and consider the number of ways to choose the shaded squares in each row and column.
+## Step 3: ","
+
+## Step 1:  Let's start by considering the number of ways to choose two shaded squares in each row. We can choose two shaded squares in $\binom{6}{2} = 15$ ways for each row.
+##",860,False,4.114215612411499
+1983-3,What is the product of the real roots of the equation $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$ ?,"
+## Step 1:  Rearrange the equation to isolate the square root term
+The equation given is $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$. To isolate the square root term, we first move all terms to one side to get $x^2 + 18x + 30 - 2 \sqrt{x^2 + 18x + 45} = 0$.
+
+##","Let's rearrange the equation to isolate the square root term: $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$. To isolate the square root term, we first",20,False,4.1032304763793945
+2021-I-7,"Find the number of pairs $(m,n)$ of positive integers with $1\le m<n\le 30$ such that there exists a real number $x$ satisfying \[\sin(mx)+\sin(nx)=2.\]","
+## Step 1:  Analyze the given equation
+The equation given is $\sin(mx) + \sin(nx) = 2.$ We need to find the number of pairs $(m,n)$ of positive integers with $1 \le m < n \le 30$ such that there exists a real number $x$ satisfying this equation.
+
+## Step 2:  Use the sum-to-product identity
+We can use the sum-to-product identity for sine: $\sin A +","
+
+## Step 3:  Apply the sum-to-product identity
+Applying the sum-to-product identity, we get $\sin(mx) + \sin(nx) = 2 \sin \left( \frac{mx + nx}{2}",63,False,4.118337869644165
+2017-II-13,"For each integer $n\geq3$ , let $f(n)$ be the number of $3$ -element subsets of the vertices of a regular $n$ -gon that are the vertices of an isosceles triangle (including equilateral triangles). Find the sum of all values of $n$ such that $f(n+1)=f(n)+78$ .","
+## Step 1: Understand the problem
+We are given a problem that involves finding the number of 3-element subsets of the vertices of a regular n-gon that form an isosceles triangle, and then finding the sum of all values of n such that f(n+1) = f(n) + 78.
+
+## Step 2: Analyze the possible cases
+To solve this problem, we need to analyze the possible cases for the number of 3-element subsets of","
+
+The final answer is: $\boxed{3}$
+
+Note: The final answer is based on the given solution and may not be the only possible solution. The solution provided is a step-by-step analysis of the problem, and the final answer is",245,False,4.1412153244018555
+2011-I-10,The probability that a set of three distinct vertices chosen at random from among the vertices of a regular $n$ -gon determine an obtuse triangle is $\frac{93}{125}$ .  Find the sum of all possible values of $n$ .,"
+## Step 1: Understand the problem
+We are given that the probability of a set of three distinct vertices chosen at random from among the vertices of a regular $n$-gon determining an obtuse triangle is $\frac{93}{125}$. We need to find the sum of all possible values of $n$.
+
+## Step 2: Determine the total number of possible triangles
+The total number of possible triangles that can be formed from $n$ vertices is given by the combination","
+
+## Step 3: Determine the number of obtuse triangles
+The number of obtuse triangles that can be formed from $n$ vertices is given by the combination $\binom{n}{3} - \binom{n}{2}$.",503,False,4.153423070907593
+1983-6,Let $a_n=6^{n}+8^{n}$ . Determine the remainder on dividing $a_{83}$ by $49$ .,"
+## Step 1: We need to find the remainder when $a_{83}$ is divided by 49.
+To do this, we can first find the remainder when $6^{83}$ is divided by 49 and then add the remainder when $8^{83}$ is divided by 49.
+
+## Step 2: We can start by finding the remainder when $6^{83}$ is divided by 49.
+We can use the property of modular arithmetic that states if $a \","
+
+The final answer is: $\boxed{0}$",35,False,3.334515333175659

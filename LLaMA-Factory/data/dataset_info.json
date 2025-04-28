@@ -1,4 +1,12 @@
 {
+  "AIME_1983_2024_sft": {
+    "file_name": "pdsv2/sft/AIME_1983_2024_sft.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
   "pdsv2_multiscore_sft": {
     "file_name": "pdsv2/sft/pdsv2_multiscore_sft.json",
     "ranking": false,

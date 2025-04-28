@@ -50,34 +50,40 @@ class BaseGenerator:
             raise ValueError(f"Unsupported backend type: {backend_type}")
 
     def _init_transformers_backend(self, model_id, load_in_8bit, device_map, cache_dir):
-        """Initialize Hugging Face Transformers backend."""
+        """Initialize Hugging Face Transformers backend using guidance."""
         if self.verbose:
-            print(f"Loading {model_id} {'with 8-bit quantization' if load_in_8bit else ''}")
+            print(f"Loading {model_id} {'with 8-bit quantization' if load_in_8bit else ''} using guidance.models.Transformers")
 
-        bnb_config = BitsAndBytesConfig(
-            load_in_8bit=True,
-            llm_int8_threshold=6.0,
-            llm_int8_has_fp16_weight=False,
-            bnb_4bit_use_double_quant=False,
-        ) if load_in_8bit else None
-
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_id,
-            quantization_config=bnb_config,
+        # --- Corrected Guidance Initialization ---
+        # Pass the model_id string directly as the primary argument
+        # Pass loading configuration (like device_map, cache_dir, load_in_8bit)
+        # as keyword arguments to the guidance constructor.
+        # guidance.models.Transformers will handle calling transformers.from_pretrained internally.
+        self.guidance_model = models.Transformers(
+            model_id, # Pass the model identifier string here
             device_map=device_map,
             cache_dir=cache_dir,
-            trust_remote_code=True,
-            torch_dtype=torch.bfloat16,
-            attn_implementation="flash_attention_2",
-            use_cache=True
-        )
-        self.tokenizer = AutoTokenizer.from_pretrained(model_id, cache_dir=cache_dir)
-        self.guidance_model = models.Transformers(
-            model=self.model,
-            tokenizer=self.tokenizer,
+            load_in_8bit=load_in_8bit, # Pass 8-bit flag directly
+            # load_in_4bit=False, # Add if needed and supported
+            # quantization_config=None, # guidance handles this via load_in_8bit/4bit
             max_length=self.max_input_len,
-            echo=False
+            echo=False,
+            # Pass other relevant arguments from your original from_pretrained call
+            # if guidance's constructor supports them (check guidance docs for full list)
+            # torch_dtype=torch.bfloat16, # guidance often handles dtype automatically or via args
+            # attn_implementation="flash_attention_2", # Check if guidance passes this
+            # use_cache=True # Check if guidance passes this
         )
+        # self.model and self.tokenizer are now managed internally by self.guidance_model
+        # You might not need separate self.model and self.tokenizer attributes anymore,
+        # or access them via self.guidance_model.model and self.guidance_model.tokenizer
+        # if guidance exposes them this way.
+
+        # Remove the manual loading calls and separate self.model, self.tokenizer attributes:
+        # bnb_config = BitsAndBytesConfig(...) if load_in_8bit else None
+        # self.model = AutoModelForCausalLM.from_pretrained(...)
+        # self.tokenizer = AutoTokenizer.from_pretrained(...)
+
 
     def _init_openai_backend(self, model_id, base_url='https://api.openai.com/v1/'):
         """Initialize OpenAI backend."""

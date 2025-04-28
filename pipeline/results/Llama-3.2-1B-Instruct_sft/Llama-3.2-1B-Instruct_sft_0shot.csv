@@ -1,0 +1,1735 @@
+id,problem,solution,predicted_answer,answer,is_correct,time_taken
+2021-I-1,"Zou and Chou are practicing their $100$ -meter sprints by running $6$ races against each other. Zou wins the first race, and after that, the probability that one of them wins a race is $\frac23$ if they won the previous race but only $\frac13$ if they lost the previous race. The probability that Zou will win exactly $5$ of the $6$ races is $\frac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|","    
+
+753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|",97,False,3.971605062484741
+1987-14,Compute \[\frac{(10^4+324)(22^4+324)(34^4+324)(46^4+324)(58^4+324)}{(4^4+324)(16^4+324)(28^4+324)(40^4+324)(52^4+324)}.\],"
+58^4+324=58^4+324^2=58^4+324^2+324^2=58^4+324^2+324^2(58^2-324)=58^8+324^4+324^2(58^2-324)=58^8+324^4+324^2(58^4-324^2)=58^8+324^4+324^2(58^4-324","
+
+58^8+324^4+324^2(58^4-324)Final Answer: 58^8+324^4+324^2(58^4-324)Final Answer: 58^8+324",373,False,3.313041925430298
+2014-I-12,"Let $A=\{1,2,3,4\}$ , and $f$ and $g$ be randomly chosen (not necessarily distinct) functions from $A$ to $A$ . The probability that the range of $f$ and the range of $g$ are disjoint is $\tfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m$ .","
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","
+
+
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",453,False,3.2666373252868652
+2009-II-14,The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}$ for $n \geq 0$ . Find the greatest integer less than or equal to $a_{10}$ .,"
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","    
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",983,False,3.25754451751709
+2016-II-10,"Triangle $ABC$ is inscribed in circle $\omega$ . Points $P$ and $Q$ are on side $\overline{AB}$ with $AP<AQ$ . Rays $CP$ and $CQ$ meet $\omega$ again at $S$ and $T$ (other than $C$ ), respectively. If $AP=4,PQ=3,QB=6,BT=5,$ and $AS=7$ , then $ST=\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+105","
+
+125Positive Integers
+
+
+105",43,False,0.8218965530395508
+1990-7,"A triangle has vertices $P_{}^{}=(-8,5)$ , $Q_{}^{}=(-15,-19)$ , and $R_{}^{}=(1,-7)$ . The equation of the bisector of $\angle P$ can be written in the form $ax+2y+c=0_{}^{}$ . Find $a+c_{}^{}$ .","
+84","
+
+84",89,False,0.7817888259887695
+2008-II-1,"Let $N = 100^2 + 99^2 - 98^2 - 97^2 + 96^2 + \cdots + 4^2 + 3^2 - 2^2 - 1^2$ , where the additions and subtractions alternate in pairs. Find the remainder when $N$ is divided by $1000$ .","
+400^2 = 160000
+399^2 = 156601
+398^2 = 156504
+397^2 = 156449
+396^2 = 156484
+395^2 = 156449
+394^2 = 156504
+393^2 = 156601
+392^2 = 156484
+391^2 = 156449
+390^2 = 156484
+389^2 = 156449
+388^2","
+
+400
+
+<|reserved_special_token_225|>400<|reserved_special_token_226|>400<|reserved_special_token_227|>400<|reserved_special_token_228|>400<|reserved_special_token_229",100,False,3.2941200733184814
+1989-7,"If the integer $k^{}_{}$ is added to each of the numbers $36^{}_{}$ , $300^{}_{}$ , and $596^{}_{}$ , one obtains the squares of three consecutive terms of an arithmetic series. Find $k^{}_{}$ .","
+36 = 6^2
+300 = 100^2
+596 = 200^2
+
+596 - 36 = 560 = 49^2
+560 - 300 = 260 = 26^2
+260 - 596 = -336 = (-49)^2
+
+336 = 49^2
+336 - 260 = 76 = 26^2
+76 - 336 = -260 = (-49)^2
+
+336 = 49^2","
+
+336",925,False,2.4720096588134766
+2010-II-9,"Let $ABCDEF$ be a regular hexagon. Let $G$ , $H$ , $I$ , $J$ , $K$ , and $L$ be the midpoints of sides $AB$ , $BC$ , $CD$ , $DE$ , $EF$ , and $AF$ , respectively. The segments $\overline{AH}$ , $\overline{BI}$ , $\overline{CJ}$ , $\overline{DK}$ , $\overline{EL}$ , and $\overline{FG}$ bound a smaller regular hexagon. Let the ratio of the area of the smaller hexagon to the area of $ABCDEF$ be expressed as a fraction $\frac {m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m + n$ . ","
+147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|","
+
+147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|>147<|reserved_special_token_57|",11,False,3.275325298309326
+2004-I-15,"For all positive integers $x$ , let \[f(x)=\begin{cases}1 &\mbox{if }x = 1\\ \frac x{10} &\mbox{if }x\mbox{ is divisible by 10}\\ x+1 &\mbox{otherwise}\end{cases}\] and define a sequence as follows: $x_1=x$ and $x_{n+1}=f(x_n)$ for all positive integers $n$ . Let $d(x)$ be the smallest $n$ such that $x_n=1$ . (For example, $d(100)=3$ and $d(87)=7$ .) Let $m$ be the number of positive integers $x$ such that $d(x)=20$ . Find the sum of the distinct prime factors of $m$ .","
+40
+
+Prime factors: 2, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, ","
+
+40",511,False,2.4961459636688232
+2018-II-1,"Points $A$ , $B$ , and $C$ lie in that order along a straight path where the distance from $A$ to $C$ is $1800$ meters. Ina runs twice as fast as Eve, and Paul runs twice as fast as Ina. The three runners start running at the same time with Ina starting at $A$ and running toward $C$ , Paul starting at $B$ and running toward $C$ , and Eve starting at $C$ and running toward $A$ . When Paul meets Eve, he turns around and runs toward $A$ . Paul and Ina both arrive at $B$ at the same time. Find the number of meters from $A$ to $B$ .","
+480 ","
+
+480 meters from A to B. 
+
+Explanation:
+
+480 meters from A to B. 
+
+480 meters from A to B. 
+
+480 meters from A to B. 
+
+480 meters from A to B. 
+
+480 meters from A to B.",800,False,1.5240230560302734
+2007-II-12,"The increasing geometric sequence $x_{0},x_{1},x_{2},\ldots$ consists entirely of integral powers of $3.$ Given that $\sum_{n=0}^{7}\log_{3}(x_{n}) = 308$ and $56 \leq \log_{3}\left ( \sum_{n=0}^{7}x_{n}\right ) \leq 57,$ find $\log_{3}(x_{14}).$","
+840","
+
+840",91,False,0.7215578556060791
+2000-I-8,"A container in the shape of a right circular cone is 12 inches tall and its base has a 5-inch radius. The liquid that is sealed inside is 9 inches deep when the cone is held with its point down and its base horizontal. When the liquid is held with its point up and its base horizontal, the height of the liquid is $m - n\sqrt [3]{p},$ where $m,$ $n,$ and $p$ are positive integers and $p$ is not divisible by the cube of any prime number. Find $m + n + p$ .","
+243
+
+243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243 243","
+
+243<|python_tag|>243<|python_tag|>243<|python_tag|>243<|python_tag|>243<|python_tag|>243<|python_tag|>243<|python_tag|>",52,False,3.2779412269592285
+2007-I-14,"A sequence is defined over non-negative integral indexes in the following way: $a_{0}=a_{1}=3$ , $a_{n+1}a_{n-1}=a_{n}^{2}+2007$ . Find the greatest integer that does not exceed $\frac{a_{2006}^{2}+a_{2007}^{2}}{a_{2006}a_{2007}}$","
+147 ","
+
+147
+
+
+2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022",224,False,1.5191595554351807
+2000-I-12,"Given a function $f$ for which \[f(x) = f(398 - x) = f(2158 - x) = f(3214 - x)\] holds for all real $x,$ what is the largest number of different values that can appear in the list $f(0),f(1),f(2),\ldots,f(999)$ ?","
+125","
+
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",177,False,1.5378613471984863
+2001-I-11,"In a rectangular array of points, with 5 rows and $N$ columns, the points are numbered consecutively from left to right beginning with the top row.  Thus the top row is numbered 1 through $N,$ the second row is numbered $N + 1$ through $2N,$ and so forth.  Five points, $P_1, P_2, P_3, P_4,$ and $P_5,$ are selected so that each $P_i$ is in row $i.$ Let $x_i$ be the number associated with $P_i.$ Now renumber the array consecutively from top to bottom, beginning with the first column.  Let $y_i$ be the number associated with $P_i$ after the renumbering.  It is found that $x_1 = y_2,$ $x_2 = y_1,$ $x_3 = y_4,$ $x_4 = y_5,$ and $x_5 = y_3.$ Find the smallest possible value of $N.$","
+125
+
+Explanation:
+
+125 is the smallest possible value of N. This is because the smallest possible value of N is 5, and the smallest possible value of x_i is 1, and the smallest possible value of y_i is 125. Therefore, the smallest possible value of N is 125. This is because the smallest possible value of N is 5, and the smallest possible value of x_i is 1, and the smallest possible value of y_i is 125.","
+
+125<|reserved_special_token_125|>assistant<|reserved_special_token_36|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",149,False,3.292360782623291
+1995-8,"For how many ordered pairs of positive integers $(x,y),$ with $y<x\le 100,$ are both $\frac xy$ and $\frac{x+1}{y+1}$ integers?","
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|","
+
+
+
+
+125|<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125",85,False,3.260868787765503
+2007-II-9,"Rectangle $ABCD$ is given with $AB=63$ and $BC=448.$ Points $E$ and $F$ lie on $AD$ and $BC$ respectively, such that $AE=CF=84.$ The inscribed circle of triangle $BEF$ is tangent to $EF$ at point $P,$ and the inscribed circle of triangle $DEF$ is tangent to $EF$ at point $Q.$ Find $PQ.$","
+448^2 = 200896
+63^2 = 3969
+84^2 = 7056
+7056 + 3969 = 10925
+10925 + 200896 = 211921
+211921 + 3969 = 211936
+211936 + 7056 = 218992
+218992 + 448 = 219440
+219440 + 63 = 219503
+219503 + 84 = 219587
+219","
+
+21958<|reserved_special_token_109|>21958<|reserved_special_token_109|>21958<|reserved_special_token_109|>21958<|reserved_special_token_109|>21958<|reserved",259,False,3.2683258056640625
+2006-I-12,"Find the sum of the values of $x$ such that $\cos^3 3x+ \cos^3 5x = 8 \cos^3 4x \cos^3 x,$ where $x$ is measured in degrees and $100< x< 200.$","
+480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480","
+
+480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480<480",906,False,3.2551591396331787
+2018-II-2,"Let $a_{0} = 2$ , $a_{1} = 5$ , and $a_{2} = 8$ , and for $n > 2$ define $a_{n}$ recursively to be the remainder when $4(a_{n-1} + a_{n-2} + a_{n-3})$ is divided by $11$ . Find $a_{2018} \cdot a_{2020} \cdot a_{2022}$ .","
+80 ","
+
+80<|reserved_special_token_125|>80<|reserved_special_token_125|>80<|reserved_special_token_125|>80<|reserved_special_token_125|>80<|reserved_special_token_125|",112,False,1.55784273147583
+2015-II-2,"In a new school, $40$ percent of the students are freshmen, $30$ percent are sophomores, $20$ percent are juniors, and $10$ percent are seniors. All freshmen are required to take Latin, and $80$ percent of sophomores, $50$ percent of the juniors, and $20$ percent of the seniors elect to take Latin. The probability that a randomly chosen Latin student is a sophomore is $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+40 30 20 10
+80 50 20 10
+120 80 60 40
+160 120 100 80
+240 160 160 120
+320 240 240 160
+320 240 240 160
+320 240 240 160
+320 240 240 160
+320 240 240 160
+320 240 240 160
+320 240 240 160
+320 240","
+
+640 <|reserved_special_token_230|>640<|reserved_special_token_230|>640<|reserved_special_token_230|>640<|reserved_special_token_230|>640<|reserved_special_token_230|",25,False,3.269963502883911
+2003-II-4,"In a regular tetrahedron, the centers of the four faces are the vertices of a smaller tetrahedron. The ratio of the volume of the smaller tetrahedron to that of the larger is $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ . ","
+150 + 350 = 500","
+500<|reserved_special_token_230|>150<|reserved_special_token_230|>250<|reserved_special_token_230|>500<|reserved_special_token_230|>250<|reserved_special_token_230|",28,False,1.6350696086883545
+2005-I-2,"For each positive integer $k,$ let $S_k$ denote the increasing arithmetic sequence of integers whose first term is 1 and whose common difference is $k.$ For example, $S_3$ is the sequence $1,4,7,10,\ldots.$ For how many values of $k$ does $S_k$ contain the term 2005?","
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005
+125
+2005","
+
+125",12,False,2.478457450866699
+1985-2,"When a right triangle is rotated about one leg, the volume of the cone produced is $800\pi \;\textrm{cm}^3$ . When the triangle is rotated about the other leg, the volume of the cone produced is $1920\pi \;\textrm{cm}^3$ . What is the length (in cm) of the hypotenuse of the triangle?","
+480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|","   
+480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|>480<|reserved_special_token_57|",26,False,3.2630629539489746
+2006-II-13,How many integers $N$ less than 1000 can be written as the sum of $j$ consecutive positive odd integers from exactly 5 values of $j\ge 1$ ?,"
+125
+
+125 is the only number less than 1000 that can be written as the sum of j consecutive positive odd integers from exactly 5 values of j>=1. This is because the sum of j consecutive odd integers is always odd, and the only odd number less than 1000 that can be written as the sum of exactly 5 consecutive odd integers is 125. This is because 125 = 5*5*5*5*5. Therefore, the answer is","
+
+
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",15,False,3.2536964416503906
+2003-I-7,"Point $B$ is on $\overline{AC}$ with $AB = 9$ and $BC = 21.$ Point $D$ is not on $\overline{AC}$ so that $AD = CD,$ and $AD$ and $BD$ are integers. Let $s$ be the sum of all possible perimeters of $\triangle ACD.$ Find $s.$","
+945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|","
+
+945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|>945<|reserved_special_token_125|",380,False,3.266676425933838
+2013-II-1,"Suppose that the measurement of time during the day is converted to the metric system so that each day has $10$ metric hours, and each metric hour has $100$ metric minutes. Digital clocks would then be produced that would read $\text{9:99}$ just before midnight, $\text{0:00}$ at midnight, $\text{1:25}$ at the former $\text{3:00}$ AM, and $\text{7:50}$ at the former $\text{6:00}$ PM. After the conversion, a person who wanted to wake up at the equivalent of the former $\text{6:36}$ AM would set his new digital alarm clock for $\text{A:BC}$ , where $\text{A}$ , $\text{B}$ , and $\text{C}$ are digits. Find $100\text{A}+10\text{B}+\text{C}$ .","
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","
+
+384<|reserved_special_token_125|>144<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",275,False,3.282325029373169
+2019-I-1,Consider the integer \[N = 9 + 99 + 999 + 9999 + \cdots + \underbrace{99\ldots 99}_\text{321 digits}.\] Find the sum of the digits of $N$ .,"
+369","
+
+369<|reserved_special_token_125|>369<|reserved_special_token_125|>369<|reserved_special_token_125|>369<|reserved_special_token_125|>369<|reserved_special_token_125|",342,False,1.522265911102295
+2001-I-15,"The numbers 1, 2, 3, 4, 5, 6, 7, and 8 are randomly written on the faces of a regular octahedron so that each face contains a different number.  The probability that no two consecutive numbers, where 8 and 1 are considered to be consecutive, are written on faces that share an edge is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$","
+294
+
+Explanation:
+
+The octahedron has 8 faces, each with a different number from 1 to 8. There are 8! ways to arrange these numbers on the faces.
+
+However, we need to find the probability that no two consecutive numbers are written on faces that share an edge. To do this, we need to count the number of ways to arrange the numbers such that no two consecutive numbers share an edge.
+
+Let's consider the possible arrangements of the numbers on the","
+
+294<|reserved_special_token_181|>assistant<|reserved_special_token_180|>294<|reserved_special_token_181|>294<|reserved_special_token_182|>294<|reserved_special_token_183|",85,False,3.2760238647460938
+2005-I-5,"Robert has 4 indistinguishable gold coins and 4 indistinguishable silver coins. Each coin has an engraving of one face on one side, but not on the other. He wants to stack the eight coins on a table into a single stack so that no two adjacent coins are face to face. Find the number of possible distinguishable arrangements of the 8 coins.","
+384 <|reserved_special_token_125|> <|reserved_special_token_126|> <|reserved_special_token_127|> <|reserved_special_token_128|> <|reserved_special_token_129|> <|reserved_special_token_130|> <|reserved_special_token_131|> <|reserved_special_token_132|> <|reserved_special_token_133|> <|reserved_special_token_134|> <|reserved_special_token_135|","
+
+384|<|reserved_special_token_125|>384|<|reserved_special_token_126|>384|<|reserved_special_token_127|>384|<|reserved_special_token_128|>384|<|reserved",630,False,3.3197150230407715
+1987-10,"Al walks down to the bottom of an escalator that is moving up and he counts 150 steps. His friend, Bob, walks up to the top of the escalator and counts 75 steps. If Al's speed of walking (in steps per unit time) is three times Bob's walking speed, how many steps are visible on the escalator at a given time? (Assume that this value is constant.)","
+150 = 3 × 75 + 75
+150 = 150 + 75
+150 = 225
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+75 = 75
+","
+
+150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|",120,False,3.2766129970550537
+1985-11,"An ellipse has foci at $(9, 20)$ and $(49, 55)$ in the $xy$ -plane and is tangent to the $x$ -axis. What is the length of its major axis?","
+294","
+
+294",85,False,0.724541425704956
+2012-II-15,"Triangle $ABC$ is inscribed in circle $\omega$ with $AB=5$ , $BC=7$ , and $AC=3$ . The bisector of angle $A$ meets side $\overline{BC}$ at $D$ and circle $\omega$ at a second point $E$ . Let $\gamma$ be the circle with diameter $\overline{DE}$ . Circles $\omega$ and $\gamma$ meet at $E$ and a second point $F$ . Then $AF^2 = \frac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+294","
+
+294",919,False,0.7368032932281494
+2016-I-3,"A regular icosahedron is a $20$ -faced solid where each face is an equilateral triangle and five triangles meet at every vertex. The regular icosahedron shown below has one vertex at the top, one vertex at the bottom, an upper pentagon of five vertices all adjacent to the top vertex and all in the same horizontal plane, and a lower pentagon of five vertices all adjacent to the bottom vertex and all in another horizontal plane. Find the number of paths from the top vertex to the bottom vertex such that each part of a path goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated. [asy] size(3cm); pair A=(0.05,0),B=(-.9,-0.6),C=(0,-0.45),D=(.9,-0.6),E=(.55,-0.85),F=(-0.55,-0.85),G=B-(0,1.1),H=F-(0,0.6),I=E-(0,0.6),J=D-(0,1.1),K=C-(0,1.4),L=C+K-A; draw(A--B--F--E--D--A--E--A--F--A^^B--G--F--K--G--L--J--K--E--J--D--J--L--K); draw(B--C--D--C--A--C--H--I--C--H--G^^H--L--I--J^^I--D^^H--B,dashed); dot(A^^B^^C^^D^^E^^F^^G^^H^^I^^J^^K^^L);  [/asy]","
+840
+
+840 is the number of paths from the top vertex to the bottom vertex such that each part of a path goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated. This is derived from the fact that there are 840 different paths from the top vertex to the bottom vertex, each of which goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated. This is derived from the fact that there are","
+
+840paths from the top vertex to the bottom vertex, each of which goes downward or horizontally along an edge of the icosahedron, and no vertex is repeated. This is derived from the fact that there areFinal Answer:840paths",810,False,3.340101480484009
+2016-I-6,"In $\triangle ABC$ let $I$ be the center of the inscribed circle, and let the bisector of $\angle ACB$ intersect $\overline{AB}$ at $L$ . The line through $C$ and $L$ intersects the circumscribed circle of $\triangle ABC$ at the two points $C$ and $D$ . If $LI=2$ and $LD=3$ , then $IC= \frac{p}{q}$ , where $p$ and $q$ are relatively prime positive integers. Find $p+q$ .","
+81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|","
+
+
+
+81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|>81<|reserved_special_token_57|",13,False,3.2875242233276367
+2004-II-12,"Let $ABCD$ be an isosceles trapezoid, whose dimensions are $AB = 6, BC=5=DA,$ and $CD=4.$ Draw circles of radius 3 centered at $A$ and $B$ and circles of radius 2 centered at $C$ and $D.$ A circle contained within the trapezoid is tangent to all four of these circles. Its radius is $\frac{-k+m\sqrt{n}}p,$ where $k, m, n,$ and $p$ are positive integers, $n$ is not divisible by the square of any prime, and $k$ and $p$ are relatively prime. Find $k+m+n+p.$","
+72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|","
+
+
+
+72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|>72<|reserved_special_token_57|",134,False,3.31445050239563
+2007-I-11,"For each positive integer $p$ , let $b(p)$ denote the unique positive integer $k$ such that $|k-\sqrt{p}| < \frac{1}{2}$ .  For example, $b(6) = 2$ and $b(23) = 5$ .  If $S = \sum_{p=1}^{2007} b(p),$ find the remainder when $S$ is divided by 1000.","
+840 < 1000 < 8400
+
+840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840 840","
+
+840 <1000 <8400Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer:840Final Answer",955,False,3.2592718601226807
+2019-I-8,Let $x$ be a real number such that $\sin^{10}x+\cos^{10} x = \tfrac{11}{36}$ . Then $\sin^{12}x+\cos^{12} x = \tfrac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .,"
+441 + 36 = 477. 477 is the sum of the numerator and denominator of the fraction m/n. 477 = 11 * 43. 11 and 43 are relatively prime. Therefore, the answer is 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. 477. ","
+
+477<|reserved_special_token_125|>477<|reserved_special_token_125|>477<|reserved_special_token_125|>477<|reserved_special_token_125|>477<|reserved_special_token_125|",67,False,3.258937358856201
+1992-7,"Faces $ABC^{}_{}$ and $BCD^{}_{}$ of tetrahedron $ABCD^{}_{}$ meet at an angle of $30^\circ$ . The area of face $ABC^{}_{}$ is $120^{}_{}$ , the area of face $BCD^{}_{}$ is $80^{}_{}$ , and $BC=10^{}_{}$ . Find the volume of the tetrahedron.","
+480","
+
+480",320,False,0.7227113246917725
+1987-6,"Rectangle $ABCD$ is divided into four parts of equal area by five segments as shown in the figure, where $XY = YB + BC + CZ = ZW = WD + DA + AX$ , and $PQ$ is parallel to $AB$ .  Find the length of $AB$ (in cm) if $BC = 19$ cm and $PQ = 87$ cm. AIME 1987 Problem 6.png","
+58 cm<|reserved_special_token_57|>58 cm<|reserved_special_token_58|>58 cm<|reserved_special_token_59|>58 cm<|reserved_special_token_60|>58 cm<|reserved_special_token_61|>58 cm<|reserved_special_token_62|>58 cm<|reserved_special_token_63|>58 cm<|reserved_special_token_64|>58 cm<|reserved_special_token_65|>","    
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58 cm.  
+
+58",193,False,3.257634401321411
+2003-II-5,"A cylindrical log has diameter $12$ inches. A wedge is cut from the log by making two planar cuts that go entirely through the log. The first is perpendicular to the axis of the cylinder, and the plane of the second cut forms a $45^\circ$ angle with the plane of the first cut. The intersection of these two planes has exactly one point in common with the log. The number of cubic inches in the wedge can be expressed as $n\pi$ , where n is a positive integer. Find $n$ .","
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","   
+384<|reserved_special_token_125|>144<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",216,False,3.2738707065582275
+2003-II-6,"In triangle $ABC,$ $AB = 13,$ $BC = 14,$ $AC = 15,$ and point $G$ is the intersection of the medians. Points $A',$ $B',$ and $C',$ are the images of $A,$ $B,$ and $C,$ respectively, after a $180^\circ$ rotation about $G.$ What is the area of the union of the two regions enclosed by the triangles $ABC$ and $A'B'C'?$","
+945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|","
+
+945<|reserved_special_token_103|>945<|reserved_special_token_104|>945<|reserved_special_token_105|>945<|reserved_special_token_106|>945<|reserved_special_token_107|",112,False,3.301511287689209
+2011-II-8,"Let $z_1,z_2,z_3,\dots,z_{12}$ be the 12 zeroes of the polynomial $z^{12}-2^{36}$ . For each $j$ , let $w_j$ be one of $z_j$ or $i z_j$ . Then the maximum possible value of the real part of $\sum_{j=1}^{12} w_j$ can be written as $m+\sqrt{n}$ where $m$ and $n$ are positive integers. Find $m+n$ .","
+384","
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",784,False,1.5249123573303223
+2010-I-6,"Let $P(x)$ be a quadratic polynomial with real coefficients satisfying $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real  numbers $x$ , and suppose $P(11) = 181$ . Find $P(16)$ .","
+384<|reserved_special_token_109|>|<|reserved_special_token_110|>|<|reserved_special_token_111|>|<|reserved_special_token_112|>|<|reserved_special_token_113|>|<|reserved_special_token_114|>|<|reserved_special_token_115|>|<|reserved_special_token_116|>|<|reserved_special_token_117|>|<|reserved_special_token_118|>|<|reserved_special_token_119|","
+
+
+
+
+
+
+384|><|reserved_special_token_120|>384|><|reserved_special_token_121|>384|><|reserved_special_token_122|>384|><|reserved_special_token_123|>384",406,False,3.2594285011291504
+2020-I-8,"A bug walks all day and sleeps all night. On the first day, it starts at point $O,$ faces east, and walks a distance of $5$ units due east. Each night the bug rotates $60^\circ$ counterclockwise. Each day it walks in this new direction half as far as it walked the previous day. The bug gets arbitrarily close to the point $P.$ Then $OP^2=\tfrac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>126<|reserved_special_token_126|>126<|reserved_special_token_127|>126<|reserved_special_token_128|>126<|reserved_special_token_129|>126<|reserved_special_token_130|>126<|reserved_special_token_131|>126<|reserved_special_token_132|>126<|reserved_special_token_133|","
+
+126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126>126",103,False,3.2659075260162354
+2023-II-4,"Let $x,y,$ and $z$ be real numbers satisfying the system of equations \begin{align*} xy + 4z &= 60 \\ yz + 4x &= 60 \\ zx + 4y &= 60. \end{align*} Let $S$ be the set of possible values of $x.$ Find the sum of the squares of the elements of $S.$","
+480","
+
+480",273,False,0.7382936477661133
+2019-I-9,Let $\tau(n)$ denote the number of positive integer divisors of $n$ . Find the sum of the six least positive integers $n$ that are solutions to $\tau (n) + \tau (n+1) = 7$ .,"
+294
+294
+147
+147
+147
+147
+
+147+147+147+147+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147","
+
+147+147+147+147+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294
+147+147=294",540,False,3.269944667816162
+2022-II-15,"Two externally tangent circles $\omega_1$ and $\omega_2$ have centers $O_1$ and $O_2$ , respectively. A third circle $\Omega$ passing through $O_1$ and $O_2$ intersects $\omega_1$ at $B$ and $C$ and $\omega_2$ at $A$ and $D$ , as shown. Suppose that $AB = 2$ , $O_1O_2 = 15$ , $CD = 16$ , and $ABO_1CDO_2$ is a convex hexagon. Find the area of this hexagon. [asy] import geometry; size(10cm); point O1=(0,0),O2=(15,0),B=9*dir(30); circle w1=circle(O1,9),w2=circle(O2,6),o=circle(O1,O2,B); point A=intersectionpoints(o,w2)[1],D=intersectionpoints(o,w2)[0],C=intersectionpoints(o,w1)[0]; filldraw(A--B--O1--C--D--O2--cycle,0.2*red+white,black); draw(w1); draw(w2); draw(O1--O2,dashed); draw(o); dot(O1); dot(O2); dot(A); dot(D); dot(C); dot(B); label(""$\omega_1$"",8*dir(110),SW); label(""$\omega_2$"",5*dir(70)+(15,0),SE); label(""$O_1$"",O1,W); label(""$O_2$"",O2,E); label(""$B$"",B,N+1/2*E); label(""$A$"",A,N+1/2*W); label(""$C$"",C,S+1/4*W); label(""$D$"",D,S+1/4*E); label(""$15$"",midpoint(O1--O2),N); label(""$16$"",midpoint(C--D),N); label(""$2$"",midpoint(A--B),S); label(""$\Omega$"",o.C+(o.r-1)*dir(270)); [/asy]","
+840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|","
+
+
+
+
+
+
+840) <|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230|>840<|reserved_special_token_230",140,False,3.340949773788452
+2003-I-11,"An angle $x$ is chosen at random from the interval $0^\circ < x < 90^\circ.$ Let $p$ be the probability that the numbers $\sin^2 x, \cos^2 x,$ and $\sin x \cos x$ are not the lengths of the sides of a triangle. Given that $p = d/n,$ where $d$ is the number of degrees in $\arctan m$ and $m$ and $n$ are positive integers with $m + n < 1000,$ find $m + n.$","
+25 + 975 = 1000
+
+25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 ","
+
+25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25 975 = 1000 25",92,False,3.278061628341675
+2004-II-11,"A right circular cone has a base with radius 600 and height $200\sqrt{7}.$ A fly starts at a point on the surface of the cone whose distance from the vertex of the cone is 125, and crawls along the surface of the cone to a point on the exact opposite side of the cone whose distance from the vertex is $375\sqrt{2}.$ Find the least distance that the fly could have crawled.","
+125 + √(125^2 + (375√2)^2) = 125 + √125^2 + √(375^2 * 2) = 125 + 125 + √(375^2 * 2) = 250 + √(375^2 * 2) = 250 + 375√2 ≈ 250 + 650 ≈ 900 ≈ 900</|im_start> |<|im_end>|900</|im_end>","
+900</|im_end>| |",625,False,2.588059663772583
+2002-II-12,"A basketball player has a constant probability of $.4$ of making any given shot, independent of previous shots. Let $a_n$ be the ratio of shots made to shots attempted after $n$ shots. The probability that $a_{10}=.4$ and $a_n\le.4$ for all $n$ such that $1\le n\le9$ is given to be $p^aq^br/\left(s^c\right)$ where $p$ , $q$ , $r$ , and $s$ are primes, and $a$ , $b$ , and $c$ are positive integers. Find $\left(p+q+r+s\right)\left(a+b+c\right)$ .","
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","
+
+384<|reserved_special_token_125|>486<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",660,False,3.271653890609741
+1993-9,"Two thousand points are given on a circle. Label one of the points 1. From this point, count 2 points in the clockwise direction and label this point 2. From the point labeled 2, count 3 points in the clockwise direction and label this point 3. (See figure.) Continue this process until the labels $1,2,3\dots,1993\,$ are all used. Some of the points on the circle will have more than one label and some points will not have a label. What is the smallest integer that labels the same point as 1993? AIME 1993 Problem 9.png","
+1993
+
+Explanation:
+
+1993 points are used in the clockwise direction from 1 to 1993. The next point labeled would be 1994, which is used in the clockwise direction from 1994 to 3998. The next point labeled would be 3999, which is used in the clockwise direction from 3999 to 7998. The next point labeled would be 7999, which is used in the clockwise direction from 7999 to 15998","
+
+1993<|reserved_special_token_125|>1993<|reserved_special_token_125|>1993<|reserved_special_token_125|>1993<|reserved_special_token_125|>1993<|reserved",118,False,3.2844035625457764
+2015-I-2,"The nine delegates to the Economic Cooperation Conference include $2$ officials from Mexico, $3$ officials from Canada, and $4$ officials from the United States. During the opening session, three of the delegates fall asleep. Assuming that the three sleepers were determined randomly, the probability that exactly two of the sleepers are from the same country is $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+105<|reserved_special_token_102|>105<|reserved_special_token_103|>106<|reserved_special_token_104|>106<|reserved_special_token_105|>106<|reserved_special_token_106|>106<|reserved_special_token_107|>106<|reserved_special_token_108|>106<|reserved_special_token_109|>106<|reserved_special_token_110|>106<|reserved_special_token_111|","
+
+
+
+106<|reserved_special_token_111|>106<|reserved_special_token_112|>106<|reserved_special_token_113|>106<|reserved_special_token_114|>106<|reserved_special_token_115|",139,False,3.2669665813446045
+1984-9,"In tetrahedron $ABCD$ , edge $AB$ has length 3 cm. The area of face $ABC$ is $15\mbox{cm}^2$ and the area of face $ABD$ is $12 \mbox { cm}^2$ . These two faces meet each other at a $30^\circ$ angle. Find the volume of the tetrahedron in $\mbox{cm}^3$ .","
+540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540 cm^3. <|reserved_special_token_125|>540","
+
+
+540 cm^3. 540 cm^3. 540 cm^3. 540 cm^3. 540 cm^3. 540 cm^3. 540 cm^3. 540 cm^3. 540",20,False,3.3062801361083984
+2000-II-2,A point whose coordinates are both integers is called a lattice point.  How many lattice points lie on the hyperbola $x^2 - y^2 = 2000^2$ ?,"
+400400","
+
+200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200200",98,False,1.5355181694030762
+2000-II-11,"The coordinates of the vertices of isosceles trapezoid $ABCD$ are all integers, with $A=(20,100)$ and $D=(21,107)$ . The trapezoid has no horizontal or vertical sides, and $\overline{AB}$ and $\overline{CD}$ are the only parallel sides. The sum of the absolute values of all possible slopes for $\overline{AB}$ is $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+61 + 49 = 110 <|reserved_special_token_57|>110 <|reserved_special_token_58|>110 <|reserved_special_token_59|>110 <|reserved_special_token_60|>110 <|reserved_special_token_61|>110 <|reserved_special_token_62|>110 <|reserved_special_token_63|>110 <|reserved_special_token_64|>110 <|reserved_special_token_65|>110 <|","
+
+
+
+
+
+
+110|>user
+
+61 + 49 = 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 110 ",131,False,3.267061471939087
+2008-I-14,"Let $\overline{AB}$ be a diameter of circle $\omega$ . Extend $\overline{AB}$ through $A$ to $C$ . Point $T$ lies on $\omega$ so that line $CT$ is tangent to $\omega$ . Point $P$ is the foot of the perpendicular from $A$ to line $CT$ . Suppose $\overline{AB} = 18$ , and let $m$ denote the maximum possible length of segment $BP$ . Find $m^{2}$ .","
+288","
+
+144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|",432,False,1.5242037773132324
+2022-II-6,"Let $x_1\leq x_2\leq \cdots\leq x_{100}$ be real numbers such that $|x_1| + |x_2| + \cdots + |x_{100}| = 1$ and $x_1 + x_2 + \cdots + x_{100} = 0$ . Among all such $100$ -tuples of numbers, the greatest value that $x_{76} - x_{16}$ can achieve is $\tfrac mn$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+257 + 257 = 514
+
+257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257 + 257","
+
+514",841,False,2.4734604358673096
+2018-II-10,"Find the number of functions $f(x)$ from $\{1, 2, 3, 4, 5\}$ to $\{1, 2, 3, 4, 5\}$ that satisfy $f(f(x)) = f(f(f(x)))$ for all $x$ in $\{1, 2, 3, 4, 5\}$ .","
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|","    
+
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",756,False,3.2750279903411865
+2011-II-9,"Let $x_1$ , $x_2$ , $\dots$ , $x_6$ be nonnegative real numbers such that $x_1 + x_2 + x_3 + x_4 + x_5 + x_6 = 1$ , and $x_1x_3x_5 + x_2x_4x_6 \ge {\frac{1}{540}}$ . Let $p$ and $q$ be relatively prime positive integers such that $\frac{p}{q}$ is the maximum possible value of $x_1x_2x_3 + x_2x_3x_4 + x_3x_4x_5 + x_4x_5x_6 + x_5x_6x_1 + x_6x_1x_2$ . Find $p + q$ .","
+540 ","
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540
+
+
+540",559,False,1.5416617393493652
+2003-II-1,"The product $N$ of three positive integers is 6 times their sum, and one of the integers is the sum of the other two. Find the sum of all possible values of $N$ .","
+84
+84
+18
+
+Explanation:
+
+Let the three integers be x,y,z. Then we have the following equations:
+
+xy+xz+yz=6(x+y+z)
+x+y+z=6
+
+Substituting x+y+z=6 into the first equation, we get:
+
+xy+xz+yz=6(6)
+xy+xz+yz=36
+
+Now we have two equations:
+
+xy+xz+yz=36
+x+y+z=6
+
+Multiplying the second","
+
+84
+84
+18
+
+Explanation:
+
+Let the three integers be x,y,z. Then we have the following equations:
+
+xy+xz+yz=6(x+y+z)
+x+y+z=6
+
+Substituting x+y+z=6",336,False,3.2601194381713867
+2014-I-11,"A token starts at the point $(0,0)$ of an $xy$ -coordinate grid and then makes a sequence of six moves. Each move is 1 unit in a direction parallel to one of the coordinate axes. Each move is selected randomly from the four possible directions and independently of the other moves. The probability the token ends at a point on the graph of $|y|=|x|$ is $\tfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+61 + 61 + 61 = 183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>183 <|reserved_special_token_125|>","
+
+
+
+
+
+
+183  --> 61 + 61 + 61 = 183  --> 61 + 61 + 61 = 183  --> 61 + 61 + 61 = 183  --> 61 + 61 + ",391,False,3.2744321823120117
+2023-II-7,"Each vertex of a regular dodecagon ( $12$ -gon) is to be colored either red or blue, and thus there are $2^{12}$ possible colorings. Find the number of these colorings with the property that no four vertices colored the same color are the four vertices of a rectangle.","
+384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|>384 <|reserved_special_token_125|","
+
+384|<|reserved_special_token_125|>384|<|reserved_special_token_125|>384|<|reserved_special_token_125|>384|<|reserved_special_token_125|>384|<|reserved",928,False,3.2701382637023926
+1993-10,"Euler's formula states that for a convex polyhedron with $V\,$ vertices, $E\,$ edges, and $F\,$ faces, $V-E+F=2\,$ . A particular convex polyhedron has 32 faces, each of which is either a triangle or a pentagon. At each of its $V\,$ vertices, $T\,$ triangular faces and $P^{}_{}$ pentagonal faces meet. What is the value of $100P+10T+V\,$ ?","
+840","
+
+840
+
+150P+60T+32) 840) 150P+60T+32) 840) 150P+60T+32) 840) 150P+60T+32) 840)",250,False,1.5238518714904785
+1999-1,"Find the smallest prime that is the fifth term of an increasing arithmetic sequence, all four preceding terms also being prime. ","
+73 79 83 89 97
+
+73 + 106 = 179
+179 + 106 = 285
+285 + 106 = 391
+391 + 106 = 497
+497 + 106 = 603
+603 + 106 = 709
+709 + 106 = 815
+815 + 106 = 921
+921 + 106 = 1027
+1027 + 106 = 1133
+1133 + 106 =","
+
+1133
+
+Note: The sequence is increasing, and all four preceding terms are prime numbers. The fifth term is 1133. This is the smallest prime that is the fifth term of an increasing arithmetic sequence. 1133 is the smallest",29,False,3.262255907058716
+2010-II-7,"Let $P(z)=z^3+az^2+bz+c$ , where $a$ , $b$ , and $c$ are real. There exists a complex number $w$ such that the three roots of $P(z)$ are $w+3i$ , $w+9i$ , and $2w-4$ , where $i^2=-1$ . Find $|a+b+c|$ .","
+108","
+
+108",136,False,0.7605640888214111
+2020-I-1,"In $\triangle ABC$ with $AB=AC,$ point $D$ lies strictly between $A$ and $C$ on side $\overline{AC},$ and point $E$ lies strictly between $A$ and $B$ on side $\overline{AB}$ such that $AE=ED=DB=BC.$ The degree measure of $\angle ABC$ is $\tfrac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ ","
+61+61=122","
+
+122",547,False,0.8095693588256836
+2022-I-5,"A straight river that is $264$ meters wide flows from west to east at a rate of $14$ meters per minute. Melanie and Sherry sit on the south bank of the river with Melanie a distance of $D$ meters downstream from Sherry. Relative to the water, Melanie swims at $80$ meters per minute, and Sherry swims at $60$ meters per minute. At the same time, Melanie and Sherry begin swimming in straight lines to a point on the north bank of the river that is equidistant from their starting positions. The two women arrive at this point simultaneously. Find $D.$","
+480 <|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|","    
+
+480</|reserved_special_token_125|>--><|reserved_special_token_125|>480<|reserved_special_token_125|>-->480<|reserved_special_token_125|>480<|reserved_special_token_125",550,False,3.2805709838867188
+2009-I-13,The terms of the sequence $\{a_i\}$ defined by $a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}$ for $n \ge 1$ are positive integers. Find the minimum possible value of $a_1 + a_2$ .,"
+4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>4019 <|reserved_special_token_125|>","
+
+
+
+
+
+
+4019  --> 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019 4019",90,False,3.2862908840179443
+2023-II-5,"Let $S$ be the set of all positive rational numbers $r$ such that when the two numbers $r$ and $55r$ are written as fractions in lowest terms, the sum of the numerator and denominator of one fraction is the same as the sum of the numerator and denominator of the other fraction. The sum of all the elements of $S$ can be expressed in the form $\frac{p}{q},$ where $p$ and $q$ are relatively prime positive integers. Find $p+q.$","
+125
+
+55<|reserved_special_token_125|>55<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_","
+
+
+125|><|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_",719,False,3.2744140625
+1998-5,"Given that $A_k = \frac {k(k - 1)}2\cos\frac {k(k - 1)\pi}2,$ find $|A_{19} + A_{20} + \cdots + A_{98}|.$","
+149","
+
+149<|reserved_special_token_125|>149<|reserved_special_token_125|>149<|reserved_special_token_125|>149<|reserved_special_token_125|>149<|reserved_special_token_125|",40,False,1.524811029434204
+2006-I-4,Let $N$ be the number of consecutive 0's at the right end of the decimal representation of the product $1!2!3!4!\cdots99!100!.$ Find the remainder when $N$ is divided by 1000.,"
+753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|","    
+
+753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|>753<|reserved_special_token_225|",124,False,3.266435146331787
+2008-I-7,"Let $S_i$ be the set of all integers $n$ such that $100i\leq n < 100(i + 1)$ .  For example, $S_4$ is the set ${400,401,402,\ldots,499}$ .  How many of the sets $S_0, S_1, S_2, \ldots, S_{999}$ do not contain a perfect square?","
+2500
+
+Explanation:
+
+2500 is the number of integers between 0 and 999999 that are perfect squares. There are 150 squares less than 1000. Therefore, there are 2500 - 150 = 2350 integers between 0 and 999999 that are not perfect squares. Therefore, there are 2500 - 2350 = 250 sets that contain a perfect square. Therefore, there are 2500 - 250 = 2250 sets","
+
+2250<|reserved_special_token_225|>assistant<|reserved_special_token_36|>2250<|reserved_special_token_36|>2250<|reserved_special_token_36|>2250<|reserved_special",708,False,3.270923376083374
+2011-I-4,"In triangle $ABC$ , $AB = 125$ , $AC = 117$ , and $BC = 120$ .  The angle bisector of angle $A$ intersects $\overline{BC}$ at point $L$ , and the angle bisector of angle $B$ intersects $\overline{AC}$ at point $K$ .  Let $M$ and $N$ be the feet of the perpendiculars from $C$ to $\overline{BK}$ and $\overline{AL}$ , respectively.  Find $MN$ .","
+150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|","    
+
+150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|>150<|reserved_special_token_125|",56,False,3.278066873550415
+1988-2,"For any positive integer $k$ , let $f_1(k)$ denote the square of the sum of the digits of $k$ .  For $n \ge 2$ , let $f_n(k) = f_1(f_{n - 1}(k))$ .  Find $f_{1988}(11)$ .","
+63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|","    
+
+63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|>63<|reserved_special_token_125|",169,False,3.272214412689209
+2004-II-15,"A long thin strip of paper is 1024 units in length, 1 unit in width, and is divided into 1024 unit squares. The paper is folded in half repeatedly. For the first fold, the right end of the paper is folded over to coincide with and lie on top of the left end. The result is a 512 by 1 strip of double thickness. Next, the right end of this strip is folded over to coincide with and lie on top of the left end, resulting in a 256 by 1 strip of quadruple thickness. This process is repeated 8 more times. After the last fold, the strip has become a stack of 1024 unit squares. How many of these squares lie below the square that was originally the 942nd square counting from the left?","
+942
+
+Explanation:
+
+1024 squares are divided into 1024 squares of 1024 squares each. The paper is folded in half repeatedly, effectively doubling the number of squares in each strip. After 8 folds, the paper is a stack of 1024 squares. To find the number of squares that lie below the original square, we need to find the number of squares that lie below the square that was originally the 942nd square counting from the left. This is equivalent to finding","
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942
+
+Explanation:
+
+942",593,False,3.2828528881073
+1986-1,What is the sum of the solutions to the equation $\sqrt[4]{x} = \frac{12}{7 - \sqrt[4]{x}}$ ?,"
+384","
+
+384",337,False,0.7199723720550537
+1996-10,Find the smallest positive integer solution to $\tan{19x^{\circ}}=\dfrac{\cos{96^{\circ}}+\sin{96^{\circ}}}{\cos{96^{\circ}}-\sin{96^{\circ}}}$ .,"
+189","
+
+189",159,False,0.7248983383178711
+2012-II-7,Let $S$ be the increasing sequence of positive integers whose binary representation has exactly $8$ ones. Let $N$ be the 1000th number in $S$ . Find the remainder when $N$ is divided by $1000$ .,"
+448
+
+448 is the remainder when N is divided by 1000. 
+
+448 is the 1000th number in the sequence of positive integers whose binary representation has exactly 8 ones. 
+
+448 is the 1000th number in the sequence of positive integers whose binary representation has exactly 8 ones. 
+
+448 is the 1000th number in the sequence of positive integers whose binary representation has exactly 8 ones. 
+
+448 is the 1000th number in the sequence","
+
+448
+
+448 is the remainder when N is divided by 1000. 
+
+448 is the 1000th number in the sequence of positive integers whose binary representation has exactly 8 ones. 
+
+448 is the 1000th number in",32,False,3.3071882724761963
+2017-II-15,"Tetrahedron $ABCD$ has $AD=BC=28$ , $AC=BD=44$ , and $AB=CD=52$ . For any point $X$ in space, define $f(X)=AX+BX+CX+DX$ . The least possible value of $f(X)$ can be expressed as $m\sqrt{n}$ , where $m$ and $n$ are positive integers, and $n$ is not divisible by the square of any prime. Find $m+n$ .","
+448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|","
+
+
+448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|>448<|reserved_special_token_125|",682,False,3.2638654708862305
+2008-I-12,"On a long straight stretch of one-way single-lane highway, cars all travel at the same speed and all obey the safety rule: the distance from the back of the car ahead to the front of the car behind is exactly one car length for each 15 kilometers per hour of speed or fraction thereof (Thus the front of a car traveling 52 kilometers per hour will be four car lengths behind the back of the car in front of it.) A photoelectric eye by the side of the road counts the number of cars that pass in one hour. Assuming that each car is 4 meters long and that the cars can travel at any speed, let $M$ be the maximum whole number of cars that can pass the photoelectric eye in one hour. Find the quotient when $M$ is divided by 10.","
+840
+
+840 is the maximum whole number of cars that can pass the photoelectric eye in one hour. This is achieved when the speed is exactly 52 kilometers per hour. At this speed, the cars will be 4 meters apart, and the time it takes to pass the photoelectric eye will be 15 minutes, which is 0.25 hours. Therefore, the number of cars that can pass the photoelectric eye in one hour is 840. The quotient when M is divided","
+
+840",375,False,2.480097532272339
+2001-I-4,"In triangle $ABC$ , angles $A$ and $B$ measure $60$ degrees and $45$ degrees, respectively. The bisector of angle $A$ intersects $\overline{BC}$ at $T$ , and $AT=24$ . The area of triangle $ABC$ can be written in the form $a+b\sqrt{c}$ , where $a$ , $b$ , and $c$ are positive integers, and $c$ is not divisible by the square of any prime. Find $a+b+c$ .","
+840","
+
+840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|",291,False,1.5218045711517334
+2020-I-11,"For integers $a,b,c$ and $d,$ let $f(x)=x^2+ax+b$ and $g(x)=x^2+cx+d.$ Find the number of ordered triples $(a,b,c)$ of integers with absolute values not exceeding $10$ for which there is an integer $d$ such that $g(f(2))=g(f(4))=0.$","
+384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|>384<|reserved_special_token_57|","
+
+384<|reserved_special_token_57|>1440<|reserved_special_token_58|>384<|reserved_special_token_59|>384<|reserved_special_token_60|>384<|reserved_special_token_61",510,False,3.271003484725952
+2001-II-10,"How many positive integer multiples of 1001 can be expressed in the form $10^{j} - 10^{i}$ , where $i$ and $j$ are integers and $0\leq i < j \leq 99$ ?","
+109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|>109 <|reserved_special_token_125|","
+
+109|>user
+109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 109 ",784,False,3.2607250213623047
+2018-II-4,"In equiangular octagon $CAROLINE$ , $CA = RO = LI = NE =$ $\sqrt{2}$ and $AR = OL = IN = EC = 1$ . The self-intersecting octagon $CORNELIA$ encloses six non-overlapping triangular regions. Let $K$ be the area enclosed by $CORNELIA$ , that is, the total area of the six triangular regions. Then $K = \frac{a}{b}$ , where $a$ and $b$ are relatively prime positive integers. Find $a + b$ .","
+341<|reserved_special_token_109|>341<|reserved_special_token_110|>341<|reserved_special_token_111|>341<|reserved_special_token_112|>341<|reserved_special_token_113|>341<|reserved_special_token_114|>341<|reserved_special_token_115|>341<|reserved_special_token_116|>341<|reserved_special_token_117|>341<|reserved_special_token_118|","
+
+
+
+
+
+
+341|<|reserved_special_token_118|>341<|reserved_special_token_118|>341<|reserved_special_token_118|>341<|reserved_special_token_118|>341<|reserved_special_token_118",23,False,3.2648746967315674
+2017-II-8,Find the number of positive integers $n$ less than $2017$ such that \[1+n+\frac{n^2}{2!}+\frac{n^3}{3!}+\frac{n^4}{4!}+\frac{n^5}{5!}+\frac{n^6}{6!}\] is an integer.,"
+735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|","
+
+735)  
+
+735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token_125|>735<|reserved_special_token",134,False,3.278761386871338
+2013-I-9,"A paper equilateral triangle $ABC$ has side length $12$ . The paper triangle is folded so that vertex $A$ touches a point on side $\overline{BC}$ a distance $9$ from point $B$ . The length of the line segment along which the triangle is folded can be written as $\frac{m\sqrt{p}}{n}$ , where $m$ , $n$ , and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m+n+p$ . [asy] import cse5; size(12cm); pen tpen = defaultpen + 1.337; real a = 39/5.0; real b = 39/7.0; pair B = MP(""B"", (0,0), dir(200)); pair A = MP(""A"", (9,0), dir(-80)); pair C = MP(""C"", (12,0), dir(-20)); pair K = (6,10.392); pair M = (a*B+(12-a)*K) / 12; pair N = (b*C+(12-b)*K) / 12; draw(B--M--N--C--cycle, tpen); draw(M--A--N--cycle); fill(M--A--N--cycle, mediumgrey); pair shift = (-20.13, 0); pair B1 = MP(""B"", B+shift, dir(200)); pair A1 = MP(""A"", K+shift, dir(90)); pair C1 = MP(""C"", C+shift, dir(-20)); draw(A1--B1--C1--cycle, tpen);[/asy]","
+396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|","
+
+
+396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|>396<|reserved_special_token_57|",113,False,3.3240854740142822
+2015-II-13,"Define the sequence $a_1, a_2, a_3, \ldots$ by $a_n = \sum\limits_{k=1}^n \sin{k}$ , where $k$ represents radian measure. Find the index of the 100th term for which $a_n < 0$ .","
+360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|","
+
+360|<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125|>360<|reserved_special_token_125",628,False,3.2553279399871826
+2003-II-12,"The members of a distinguished committee were choosing a president, and each member gave one vote to one of the $27$ candidates. For each candidate, the exact percentage of votes the candidate got was smaller by at least $1$ than the number of votes for that candidate. What is the smallest possible number of members of the committee?","
+27
+
+Explanation:
+
+27 is the smallest number that can be expressed as the sum of smaller integers. This is because 27 = 10 + 10 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 27. Therefore, the smallest possible number of members of the committee is 27. This is because 27 is the smallest number that can be expressed as the sum of smaller integers. This is because 27","
+
+27<|reserved_special_token_125|>assistant<|reserved_special_token_36|>27<|reserved_special_token_125|>27<|reserved_special_token_36|>27<|reserved_special_token_125|",134,False,3.333409070968628
+2018-II-5,"Suppose that $x$ , $y$ , and $z$ are complex numbers such that $xy = -80 - 320i$ , $yz = 60$ , and $zx = -96 + 24i$ , where $i$ $=$ $\sqrt{-1}$ . Then there are real numbers $a$ and $b$ such that $x + y + z = a + bi$ . Find $a^2 + b^2$ .","
+320^2 + 320^2 = 128000 + 320^2 = 128000 + 102400 = 230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->","
+
+230400</|im_end>-->230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->230400</|im_end>-->230400</|im_start>-->230",74,False,3.258164167404175
+1998-15,"Define a domino to be an ordered pair of distinct positive integers. A proper sequence of dominos is a list of distinct dominos in which the first coordinate of each pair after the first equals the second coordinate of the immediately preceding pair, and in which $(i,j)$ and $(j,i)$ do not both appear for any $i$ and $j$ .  Let $D_{40}$ be the set of all dominos whose coordinates are no larger than 40.  Find the length of the longest proper sequence of dominos that can be formed using the dominos of $D_{40}.$","
+40^2 = 1600
+39^2 = 1521
+1520 = 1520
+1520 + 39 = 1569
+1569 + 1520 = 3089
+3089 + 1520 = 5119
+5119 + 1520 = 6649
+6649 + 1520 = 8169
+8169 + 1520 = 9699
+9699 + 1520 = 11269
+","
+
+11269<|reserved_special_token_109|>11269<|reserved_special_token_110|>11269<|reserved_special_token_111|>11269<|reserved_special_token_112|>11269<|reserved",761,False,3.28654146194458
+2022-II-10,Find the remainder when \[\binom{\binom{3}{2}}{2} + \binom{\binom{4}{2}}{2} + \dots +  \binom{\binom{40}{2}}{2}\] is divided by $1000$ .,"
+720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|","
+
+720<|reserved_special_token_125|>728<|reserved_special_token_125|>728<|reserved_special_token_125|>728<|reserved_special_token_125|>728<|reserved_special_token_125|",4,False,3.2631380558013916
+2002-I-15,"Polyhedron $ABCDEFG$ has six faces.  Face $ABCD$ is a square with $AB = 12;$ face $ABFG$ is a trapezoid with $\overline{AB}$ parallel to $\overline{GF},$ $BF = AG = 8,$ and $GF = 6;$ and face $CDE$ has $CE = DE = 14.$ The other three faces are $ADEG, BCEF,$ and $EFG.$ The distance from $E$ to face $ABCD$ is 12.  Given that $EG^2 = p - q\sqrt {r},$ where $p, q,$ and $r$ are positive integers and $r$ is not divisible by the square of any prime, find $p + q + r.$","
+144 ","
+
+144 <|reserved_special_token_125|>user
+144 <|reserved_special_token_125|>assistant
+
+144 <|reserved_special_token_125|>assistant
+144 <|reserved_special_token_125|>assistant
+144",163,False,1.5293567180633545
+2016-I-10,"A strictly increasing sequence of positive integers $a_1$ , $a_2$ , $a_3$ , $\cdots$ has the property that for every positive integer $k$ , the subsequence $a_{2k-1}$ , $a_{2k}$ , $a_{2k+1}$ is geometric and the subsequence $a_{2k}$ , $a_{2k+1}$ , $a_{2k+2}$ is arithmetic. Suppose that $a_{13} = 2016$ . Find $a_1$ .","
+384","
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",504,False,1.525240421295166
+1987-3,"By a proper divisor of a natural number we mean a positive integral divisor other than 1 and the number itself. A natural number greater than 1 will be called ""nice"" if it is equal to the product of its distinct proper divisors. What is the sum of the first ten nice numbers?","
+125 + 216 + 343 + 504 + 729 + 1008 + 1337 + 1764 + 2197 + 2745 = 10649
+
+10649 is the sum of the first ten nice numbers. 
+
+Note: A nice number is a number that is equal to the product of its distinct proper divisors. For example, 6 is a nice number because its proper divisors are 1, 2, and 3, and ","
+
+125 + 216 + 343 + 504 + 729 + 1008 + 1337 + 1764 + 2197 + 2745 = 10649
+
+10649 is the sum of the first ten nice numbers",182,False,3.2652039527893066
+2007-I-8,The polynomial $P(x)$ is cubic.  What is the largest value of $k$ for which the polynomials $Q_1(x) = x^2 + (k-29)x - k$ and $Q_2(x) = 2x^2+ (2k-43)x + k$ are both factors of $P(x)$ ?,"
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|","
+
+
+
+
+125|<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125",30,False,3.2666876316070557
+1996-4,"A wooden cube, whose edges are one centimeter long, rests on a horizontal surface. Illuminated by a point source of light that is $x$ centimeters directly above an upper vertex, the cube casts a shadow on the horizontal surface. The area of a shadow, which does not include the area beneath the cube is 48 square centimeters. Find the greatest integer that does not exceed $1000x$ .","
+384 < 1000x <= 3840 < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840x < 3840","
+
+3840x <3840x <3840x <3840x <3840x <3840x <3840x <3840x <3840x <3840x <3840x <3840x <384",166,False,3.2731409072875977
+2015-II-8,"Let $a$ and $b$ be positive integers satisfying $\frac{ab+1}{a+b} < \frac{3}{2}$ . The maximum possible value of $\frac{a^3b^3+1}{a^3+b^3}$ is $\frac{p}{q}$ , where $p$ and $q$ are relatively prime positive integers. Find $p+q$ .","
+81 + 49 = 130
+
+81 + 49 = 130
+
+130 + 81 = 211
+
+211 + 81 = 292
+
+292 + 81 = 373
+
+373 + 81 = 454
+
+454 + 81 = 535
+
+535 + 81 = 616
+
+616 + 81 = 697
+
+697 + 81 = 778
+
+778 + 81 = 859
+
+859 + 81 = 940
+
+940 + ","
+
+130 + 211 = 341
+
+341 + 292 = 633
+
+633 + 373 = 1006
+
+1006 + 454 = 1450
+
+1450 + 454 = 1904
+
+1904 + ",36,False,3.261678457260132
+2017-I-1,"Fifteen distinct points are designated on $\triangle ABC$ : the 3 vertices $A$ , $B$ , and $C$ ; $3$ other points on side $\overline{AB}$ ; $4$ other points on side $\overline{BC}$ ; and $5$ other points on side $\overline{CA}$ . Find the number of triangles with positive area whose vertices are among these $15$ points.","
+840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|","
+
+
+
+
+
+
+840|<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125",390,False,3.2639873027801514
+2000-II-14,"Every positive integer $k$ has a unique factorial base expansion $(f_1,f_2,f_3,\ldots,f_m)$ , meaning that $k=1!\cdot f_1+2!\cdot f_2+3!\cdot f_3+\cdots+m!\cdot f_m$ , where each $f_i$ is an integer, $0\le f_i\le i$ , and $0<f_m$ . Given that $(f_1,f_2,f_3,\ldots,f_j)$ is the factorial base expansion of $16!-32!+48!-64!+\cdots+1968!-1984!+2000!$ , find the value of $f_1-f_2+f_3-f_4+\cdots+(-1)^{j+1}f_j$ .","
+768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|","
+
+768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|>768<|reserved_special_token_125|",495,False,3.318959951400757
+2005-I-12,"For positive integers $n,$ let $\tau (n)$ denote the number of positive integer divisors of $n,$ including 1 and $n.$ For example, $\tau (1)=1$ and $\tau(6) =4.$ Define $S(n)$ by $S(n)=\tau(1)+ \tau(2) + \cdots + \tau(n).$ Let $a$ denote the number of positive integers $n \leq 2005$ with $S(n)$ odd, and let $b$ denote the number of positive integers $n \leq 2005$ with $S(n)$ even. Find $|a-b|.$","
+735","
+
+735",25,False,0.7347567081451416
+1987-9,"Triangle $ABC$ has right angle at $B$ , and contains a point $P$ for which $PA = 10$ , $PB = 6$ , and $\angle APB = \angle BPC = \angle CPA$ .  Find $PC$ . AIME 1987 Problem 9.png","
+480","
+
+480<|python_tag|>def findPC():
+    return 480
+
+print(findPC())<|python_tag|>480<|python_tag|>def findPC():
+    import math
+    return math.sqrt(64000)
+
+",33,False,1.5228137969970703
+2004-I-6,An integer is called snakelike if its decimal representation $a_1a_2a_3\cdots a_k$ satisfies $a_i<a_{i+1}$ if $i$ is odd and $a_i>a_{i+1}$ if $i$ is even. How many snakelike integers between 1000 and 9999 have four distinct digits?,"
+384
+
+Explanation:
+
+384 is a snakelike integer because it has four distinct digits and the digits are in the correct order. There are 9 choices for the first digit (1-9), 8 choices for the second digit (0-9 excluding the first digit), 7 choices for the third digit (0-9 excluding the first two digits), and 6 choices for the fourth digit (0-9 excluding the first three digits). Therefore, there are 9*","
+
+384 snakelike integers between 1000 and 9999. This is the answer because there are no other possible combinations of four distinct digits that satisfy the conditions of the problem. Therefore, the answer is 384. This is the",882,False,3.2727110385894775
+2005-I-6,Let $P$ be the product of the nonreal roots of $x^4-4x^3+6x^2-4x=2005.$ Find $\lfloor P\rfloor.$,"
+125 ","
+
+125",45,False,0.72817063331604
+1991-8,For how many real numbers $a^{}_{}$ does the quadratic equation $x^2 + ax^{}_{} + 6a=0$ have only integer roots for $x^{}_{}$ ?,"
+720","
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144
+
+
+720
+
+
+144",10,False,1.5200128555297852
+2011-II-2,"On square $ABCD$ , point $E$ lies on side $AD$ and point $F$ lies on side $BC$ , so that $BE=EF=FD=30$ . Find the area of the square $ABCD$ .","
+450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|","   
+450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|>450<|reserved_special_token_125|",810,False,3.264626979827881
+2018-I-15,"David found four sticks of different lengths that can be used to form three non-congruent convex cyclic quadrilaterals, $A,\text{ }B,\text{ }C$ , which can each be inscribed in a circle with radius $1$ . Let $\varphi_A$ denote the measure of the acute angle made by the diagonals of quadrilateral $A$ , and define $\varphi_B$ and $\varphi_C$ similarly. Suppose that $\sin\varphi_A=\frac{2}{3}$ , $\sin\varphi_B=\frac{3}{5}$ , and $\sin\varphi_C=\frac{6}{7}$ . All three quadrilaterals have the same area $K$ , which can be written in the form $\dfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+294","
+
+294<|reserved_special_token_125|>assistant<|reserved_special_token_121|>294<|reserved_special_token_125|>294<|reserved_special_token_125|>294<|reserved_special_token_125|",59,False,1.5380759239196777
+2024-II-1,"Among the $900$ residents of Aimeville, there are $195$ who own a diamond ring, $367$ who own a set of golf clubs, and $562$ who own a garden spade. In addition, each of the $900$ residents owns a bag of candy hearts. There are $437$ residents who own exactly two of these things, and $234$ residents who own exactly three of these things. Find the number of residents of Aimeville who own all four of these things.","
+840
+
+Explanation:
+
+195 + 367 + 562 = 1174
+1174 - 437 = 737
+737 - 234 = 503
+503 - 503 = 0
+
+503 is the number of residents who own all four things. Therefore, the answer is 503. 
+
+840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_125|>840<|reserved_special_token_","
+
+
+
+
+
+
+840|><|reserved_special_token_Final Answer:840|>840<|reserved_special_token_Final Answer:840|>840<|reserved_special_token_Final Answer:840|>840<|reserved_special_token_Final Answer:840|",73,False,3.271578073501587
+2008-I-3,"Ed and Sue bike at equal and constant rates.  Similarly, they jog at equal and constant rates, and they swim at equal and constant rates.  Ed covers $74$ kilometers after biking for $2$ hours, jogging for $3$ hours, and swimming for $4$ hours, while Sue covers $91$ kilometers after jogging for $2$ hours, swimming for $3$ hours, and biking for $4$ hours.  Their biking, jogging, and swimming rates are all whole numbers of kilometers per hour.  Find the sum of the squares of Ed's biking, jogging, and swimming rates.","
+384
+
+384 = 74 + 3 + 4 = 91 + 2 + 4 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384 = 384","
+
+384<|reserved_special_token_125|>user
+384 is not the correct answer. I'll try again.
+
+384 = 74 + 3 + 4 = 91 + 2 + 4 = 384 = 384",314,False,3.270883083343506
+1999-5,"For any positive integer $x_{}$ , let $S(x)$ be the sum of the digits of $x_{}$ , and let $T(x)$ be $|S(x+2)-S(x)|.$ For example, $T(199)=|S(201)-S(199)|=|3-19|=16.$ How many values of $T(x)$ do not exceed 1999?","
+150
+
+<|reserved_special_token_125|>150<|reserved_special_token_126|>150<|reserved_special_token_127|>150<|reserved_special_token_128|>150<|reserved_special_token_129|>150<|reserved_special_token_130|>150<|reserved_special_token_131|>150<|reserved_special_token_132|>150<|reserved_special_token_133|>150<|reserved_special_token_134","
+
+
+
+
+150|>150<|reserved_special_token_134>150<|reserved_special_token_135|>150<|reserved_special_token_136|>150<|reserved_special_token_137|>150<|reserved_special_token_",223,False,3.2595372200012207
+1995-15,"Let $p_{}$ be the probability that, in the process of repeatedly flipping a fair coin, one will encounter a run of 5 heads before one encounters a run of 2 tails.  Given that $p_{}$ can be written in the form $m/n$ where $m_{}$ and $n_{}$ are relatively prime positive integers, find $m+n$ .","
+125","
+
+125",37,False,0.723578929901123
+2022-I-13,"Let $S$ be the set of all rational numbers that can be expressed as a repeating decimal in the form $0.\overline{abcd},$ where at least one of the digits $a,$ $b,$ $c,$ or $d$ is nonzero. Let $N$ be the number of distinct numerators obtained when numbers in $S$ are written as fractions in lowest terms. For example, both $4$ and $410$ are counted among the distinct numerators for numbers in $S$ because $0.\overline{3636} = \frac{4}{11}$ and $0.\overline{1230} = \frac{410}{3333}.$ Find the remainder when $N$ is divided by $1000.$","
+753
+
+Explanation:
+
+753 is the remainder when N is divided by 1000. To find N, we need to find the number of distinct numerators obtained when numbers in S are written as fractions in lowest terms. We can do this by counting the number of distinct numerators obtained when numbers in S are written as fractions in lowest terms. We can do this by counting the number of distinct numerators obtained when numbers in S are written as fractions in lowest terms. We can do this by","
+
+753
+
+Explanation:
+
+753 is the remainder when N is divided by 1000. To find N, we need to find the number of distinct numerators obtained when numbers in S are written as fractions in lowest terms. We can do this by",392,False,3.2754321098327637
+2021-II-2,"Equilateral triangle $ABC$ has side length $840$ . Point $D$ lies on the same side of line $BC$ as $A$ such that $\overline{BD} \perp \overline{BC}$ . The line $\ell$ through $D$ parallel to line $BC$ intersects sides $\overline{AB}$ and $\overline{AC}$ at points $E$ and $F$ , respectively. Point $G$ lies on $\ell$ such that $F$ is between $E$ and $G$ , $\triangle AFG$ is isosceles, and the ratio of the area of $\triangle AFG$ to the area of $\triangle BED$ is $8:9$ . Find $AF$ . [asy] pair A,B,C,D,E,F,G; B=origin; A=5*dir(60); C=(5,0); E=0.6*A+0.4*B; F=0.6*A+0.4*C; G=rotate(240,F)*A; D=extension(E,F,B,dir(90)); draw(D--G--A,grey); draw(B--0.5*A+rotate(60,B)*A*0.5,grey); draw(A--B--C--cycle,linewidth(1.5)); dot(A^^B^^C^^D^^E^^F^^G); label(""$A$"",A,dir(90)); label(""$B$"",B,dir(225)); label(""$C$"",C,dir(-45)); label(""$D$"",D,dir(180)); label(""$E$"",E,dir(-45)); label(""$F$"",F,dir(225)); label(""$G$"",G,dir(0)); label(""$\ell$"",midpoint(E--F),dir(90)); [/asy]","
+840","
+
+840[/im_end][/im_start][/user][/im_end][/user][/im_start] [/answer] [/user] [/im_end] [/user] [/im_start] [/answer] [/user] [/im_end",336,False,1.582564115524292
+2002-II-4,"Patio blocks that are hexagons $1$ unit on a side are used to outline a garden by placing the blocks edge to edge with $n$ on each side. The diagram indicates the path of blocks around the garden when $n=5$ . AIME 2002 II Problem 4.gif If $n=202$ , then the area of the garden enclosed by the path, not including the path itself, is $m\left(\sqrt3/2\right)$ square units, where $m$ is a positive integer. Find the remainder when $m$ is divided by $1000$ .","
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|","    
+
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",803,False,3.3032078742980957
+1991-11,"Twelve congruent disks are placed on a circle $C^{}_{}$ of radius 1 in such a way that the twelve disks cover $C^{}_{}$ , no two of the disks overlap, and so that each of the twelve disks is tangent to its two neighbors. The resulting arrangement of disks is shown in the figure below.  The sum of the areas of the twelve disks can be written in the form $\pi(a-b\sqrt{c})$ , where $a,b,c^{}_{}$ are positive integers and $c^{}_{}$ is not divisible by the square of any prime. Find $a+b+c^{}_{}$ . [asy] unitsize(100); draw(Circle((0,0),1)); dot((0,0)); draw((0,0)--(1,0)); label(""$1$"", (0.5,0), S);  for (int i=0; i<12; ++i) { dot((cos(i*pi/6), sin(i*pi/6))); }  for (int a=1; a<24; a+=2) { dot(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12))); draw(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12))--((1/cos(pi/12))*cos((a+2)*pi/12), (1/cos(pi/12))*sin((a+2)*pi/12))); draw(Circle(((1/cos(pi/12))*cos(a*pi/12), (1/cos(pi/12))*sin(a*pi/12)), tan(pi/12))); } [/asy]","
+144","
+
+144",135,False,0.7768213748931885
+2013-I-12,"Let $\bigtriangleup PQR$ be a triangle with $\angle P = 75^o$ and $\angle Q = 60^o$ . A regular hexagon $ABCDEF$ with side length 1 is drawn inside $\triangle PQR$ so that side $\overline{AB}$ lies on $\overline{PQ}$ , side $\overline{CD}$ lies on $\overline{QR}$ , and one of the remaining vertices lies on $\overline{RP}$ . There are positive integers $a, b, c,$ and $d$ such that the area of $\triangle PQR$ can be expressed in the form $\frac{a+b\sqrt{c}}{d}$ , where $a$ and $d$ are relatively prime, and c is not divisible by the square of any prime. Find $a+b+c+d$ .","
+125<|reserved_special_token_109|>125<|reserved_special_token_110|>125<|reserved_special_token_111|>125<|reserved_special_token_112|>125<|reserved_special_token_113|>125<|reserved_special_token_114|>125<|reserved_special_token_115|>125<|reserved_special_token_116|>125<|reserved_special_token_117|>125<|reserved_special_token_118|","
+
+
+
+
+125<|reserved_special_token_118|>125<|reserved_special_token_118|>125<|reserved_special_token_118|>125<|reserved_special_token_118|>125<|reserved_special_token_118|",21,False,3.2870755195617676
+2001-II-1,"Let $N$ be the largest positive integer with the following property: reading from left to right, each pair of consecutive digits of $N$ forms a perfect square. What are the leftmost three digits of $N$ ? ","
+384
+
+Explanation:
+
+384 is the largest number that reads from left to right as a perfect square. The digits of 384 are 3, 8, and 4, which are squares of 9, 4, and 2 respectively. Therefore, the leftmost three digits of 384 are 384. 
+
+384 is the largest number that reads from left to right as a perfect square. The digits of 384 are 3, 8, and 4, which","
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",816,False,3.288529396057129
+2007-II-4,"The workers in a factory produce widgets and whoosits. For each product, production time is constant and identical for all workers, but not necessarily equal for the two products. In one hour, $100$ workers can produce $300$ widgets and $200$ whoosits. In two hours, $60$ workers can produce $240$ widgets and $300$ whoosits. In three hours, $50$ workers can produce $150$ widgets and $m$ whoosits. Find $m$ .","
+150
+
+Explanation:
+
+100 workers can produce 300 widgets and 200 whoosits in one hour.
+60 workers can produce 240 widgets and 300 whoosits in two hours.
+50 workers can produce 150 widgets and x whoosits in three hours.
+
+150 widgets = 50 workers * 3 hours
+150 widgets = 150 workers * 2 hours
+150 widgets = 100 workers * 1.5 hours
+
+150 widgets = 300 whoosits / ","
+
+150 widgets = 300 whoosits / 2 hours * 50 workers * 3 hours
+150 widgets = 300 whoosits / 2 hours * 50 workers * 1.5 hours
+150 widgets = 300",450,False,3.2647924423217773
+2006-II-5,"When rolling a certain unfair six-sided die with faces numbered $1, 2, 3, 4, 5$ , and $6$ , the probability of obtaining face $F$ is greater than $\frac{1}{6}$ , the probability of obtaining the face opposite is less than $\frac{1}{6}$ , the probability of obtaining any one of the other four faces is $\frac{1}{6}$ , and the sum of the numbers on opposite faces is 7. When two such dice are rolled, the probability of obtaining a sum of 7 is $\frac{47}{288}$ . Given that the probability of obtaining face $F$ is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+147
+
+47+148=195
+47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148=47+148","
+
+47+148=195<|reserved_special_token_125|>assistant<|reserved_special_token_114|>195<|reserved_special_token_125|>195<|reserved_special_token_125|>195<|reserved_special",29,False,3.2700741291046143
+2024-II-11,"Find the number of triples of nonnegative integers $(a, b, c)$ satisfying $a + b + c = 300$ and \[a^2 b + a^2 c + b^2 a + b^2 c + c^2 a + c^2 b = 6,000,000.\]","
+60000000
+
+Explanation:
+
+60000000 = 2^8 * 3^2 * 5^3
+
+60000000 = 300 * 2000 * 6000
+
+60000000 = 300 * 2000 * 6000 = 300 * 2000 * 6000 = 300 * 2000 * 6000 = 300 * 2000 * 6000 = 300 * 2000 * 6000 =","
+
+60000000
+
+Note: This is a brute-force solution. It is not efficient for large inputs. There are more efficient solutions using number theory. For example, we can use the fact that the sum of cubes is equal to the product of",601,False,3.2709739208221436
+1988-8,"The function $f$ , defined on the set of ordered pairs of positive integers, satisfies the following properties: \[f(x, x) = x,\; f(x, y) = f(y, x), {\rm \ and\ } (x+y)f(x, y) = yf(x, x+y).\] Calculate $f(14,52)$ .","
+840<|reserved_special_token_125|>840<|reserved_special_token_126|>840<|reserved_special_token_127|>840<|reserved_special_token_128|>840<|reserved_special_token_129|>840<|reserved_special_token_130|>840<|reserved_special_token_131|>840<|reserved_special_token_132|>840<|reserved_special_token_133|>840<|reserved_special_token_134|","    
+
+840<|reserved_special_token_135|>840<|reserved_special_token_136|>840<|reserved_special_token_137|>840<|reserved_special_token_138|>840<|reserved_special_token_139|",364,False,3.2669763565063477
+2004-II-13,"Let $ABCDE$ be a convex pentagon with $AB || CE, BC || AD, AC || DE, \angle ABC=120^\circ, AB=3, BC=5,$ and $DE = 15.$ Given that the ratio between the area of triangle $ABC$ and the area of triangle $EBD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|>945<|reserved_special_token_102|","
+
+945<|reserved_special_token_103|>945<|reserved_special_token_104|>945<|reserved_special_token_105|>945<|reserved_special_token_106|>945<|reserved_special_token_107|",484,False,3.2732913494110107
+2011-I-9,"Suppose $x$ is in the interval $[0,\pi/2]$ and $\log_{24 \sin x} (24 \cos x) = \frac{3}{2}$ .  Find $24 \cot^2 x$ .","
+384","
+
+384",192,False,0.7276816368103027
+2004-II-7,"$ABCD$ is a rectangular sheet of paper that has been folded so that corner $B$ is matched with point $B'$ on edge $AD.$ The crease is $EF,$ where $E$ is on $AB$ and $F$ is on $CD.$ The dimensions $AE=8, BE=17,$ and $CF=3$ are given. The perimeter of rectangle $ABCD$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ [asy] size(200); defaultpen(linewidth(0.7)+fontsize(10)); pair A=origin, B=(25,0), C=(25,70/3), D=(0,70/3), E=(8,0), F=(22,70/3), Bp=reflect(E,F)*B, Cp=reflect(E,F)*C; draw(F--D--A--E); draw(E--B--C--F, linetype(""4 4"")); filldraw(E--F--Cp--Bp--cycle, white, black); pair point=( 12.5, 35/3 ); label(""$A$"", A, dir(point--A)); label(""$B$"", B, dir(point--B)); label(""$C$"", C, dir(point--C)); label(""$D$"", D, dir(point--D)); label(""$E$"", E, dir(point--E)); label(""$F$"", F, dir(point--F)); label(""$B^\prime$"", Bp, dir(point--Bp)); label(""$C^\prime$"", Cp, dir(point--Cp));[/asy]","
+294","
+
+294<|reserved_special_token_57|>294<|reserved_special_token_57|>294<|reserved_special_token_57|>294<|reserved_special_token_57|>294<|reserved_special_token_57|",293,False,1.5762715339660645
+2022-I-10,"Three spheres with radii $11,$ $13,$ and $19$ are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at $A,$ $B,$ and $C,$ respectively, and the centers of the spheres all lie on the same side of this plane. Suppose that $AB^2 = 560.$ Find $AC^2.$","
+294
+
+560 = AB^2 = AC^2 + BC^2 + CA^2 = (AC^2 + BC^2 + BA^2) - 2AB^2 = (AC^2 + BC^2 + BA^2) - 2(19^2) = (AC^2 + BC^2 + BA^2) - 2(361) = (AC^2 + BC^2 + BA^2) - 722 =","
+
+294",756,False,2.467390775680542
+2004-I-9,"Let $ABC$ be a triangle with sides 3, 4, and 5, and $DEFG$ be a 6-by-7 rectangle. A segment is drawn to divide triangle $ABC$ into a triangle $U_1$ and a trapezoid $V_1$ and another segment is drawn to divide rectangle $DEFG$ into a triangle $U_2$ and a trapezoid $V_2$ such that $U_1$ is similar to $U_2$ and $V_1$ is similar to $V_2.$ The minimum value of the area of $U_1$ can be written in the form $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|","
+
+
+
+
+145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|",35,False,3.2760634422302246
+2023-II-15,For each positive integer $n$ let $a_n$ be the least positive integer multiple of $23$ such that $a_n \equiv 1 \pmod{2^n}.$ Find the number of positive integers $n$ less than or equal to $1000$ that satisfy $a_n = a_{n+1}.$,"
+23
+
+23 47 79 107 139 167 199 221 243 265 287 311 343 367 401 433 467 499 531 563 597 631 665 697 731 763 797 831 865 899 931 965 997
+
+997 1029 1053 1067 1079 1093 1107 1119 1139 1153 1167","
+
+23<|reserved_special_token_230|>23<|reserved_special_token_230|>23<|reserved_special_token_230|>23<|reserved_special_token_230|>23<|reserved_special_token_230|",363,False,3.31057071685791
+2013-I-6,"Melinda has three empty boxes and $12$ textbooks, three of which are mathematics textbooks. One box will hold any three of her textbooks, one will hold any four of her textbooks, and one will hold any five of her textbooks. If Melinda packs her textbooks into these boxes in random order, the probability that all three mathematics textbooks end up in the same box can be written as $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+441 + 47 = 488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|reserved_special_token_57|>488 <|","   
+488|<|reserved_special_token_125|>488 488 488 488 488 488 488 488 488 488 488 488 488 488 488 488 488 488 488 ",47,False,3.3003358840942383
+2012-II-4,"Ana, Bob, and Cao bike at constant rates of $8.6$ meters per second, $6.2$ meters per second, and $5$ meters per second, respectively. They all begin biking at the same time from the northeast corner of a rectangular field whose longer side runs due west. Ana starts biking along the edge of the field, initially heading west, Bob starts biking along the edge of the field, initially heading south, and Cao bikes in a straight line across the field to a point $D$ on the south edge of the field. Cao arrives at point $D$ at the same time that Ana and Bob arrive at $D$ for the first time. The ratio of the field's length to the field's width to the distance from point $D$ to the southeast corner of the field can be represented as $p : q : r$ , where $p$ , $q$ , and $r$ are positive integers with $p$ and $q$ relatively prime. Find $p+q+r$ .","
+480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|","
+
+480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|>480<|reserved_special_token_125|",61,False,3.296847343444824
+2023-I-6,"Alice knows that $3$ red cards and $3$ black cards will be revealed to her one at a time in random order. Before each card is revealed, Alice must guess its color. If Alice plays optimally, the expected number of cards she will guess correctly is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+63 + 11 = 74
+
+74 < |<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|","
+
+
+
+
+
+
+74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74<|<im_end>|>74<|<im_start>|>74",51,False,3.2713711261749268
+2003-I-2,"One hundred concentric circles with radii $1, 2, 3, \dots, 100$ are drawn in a plane. The interior of the circle of radius 1 is colored red, and each region bounded by consecutive circles is colored either red or green, with no two adjacent regions the same color. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as $m/n,$ where $m$ and $n$ are relatively prime positive integers. Find $m + n.$","
+257
+
+Explanation:
+
+257 is the number of regions bounded by consecutive circles. The ratio of the total area of the green regions to the area of the circle of radius 100 can be expressed as m/n, where m and n are relatively prime positive integers. The total area of the green regions is equal to the number of regions bounded by consecutive circles minus the number of regions bounded by consecutive circles that are colored red. The number of regions bounded by consecutive circles that are colored red is equal to","
+
+257<|reserved_special_token_225|>257<|reserved_special_token_225|>257<|reserved_special_token_225|>257<|reserved_special_token_225|>257<|reserved_special_token_225|",301,False,3.2821459770202637
+2016-II-1,"Initially Alex, Betty, and Charlie had a total of $444$ peanuts. Charlie had the most peanuts, and Alex had the least. The three numbers of peanuts that each person had formed a geometric progression. Alex eats $5$ of his peanuts, Betty eats $9$ of her peanuts, and Charlie eats $25$ of his peanuts. Now the three numbers of peanuts each person has forms an arithmetic progression. Find the number of peanuts Alex had initially.","
+144
+
+Explanation:
+
+144 peanuts Alex had initially. The peanuts that Betty and Charlie had initially were 144, 144/16 = 9, and 9/4 = 2.5 respectively. After eating 5, 9, and 25 peanuts respectively, Betty and Charlie had 144 - 5 = 139, 139 - 9 = 130, and 130 - 25 = 105 peanuts respectively. The peanuts that Betty and Charlie had initially formed","
+
+144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_126|>144<|reserved_special_token_127|>144<|reserved_special_token_128|",108,False,3.2825722694396973
+2010-I-7,"Define an ordered triple $(A, B, C)$ of sets to be $\textit{minimally intersecting}$ if $|A \cap B| = |B \cap C| = |C \cap A| = 1$ and $A \cap B \cap C = \emptyset$ . For example, $(\{1,2\},\{2,3\},\{1,3,4\})$ is a minimally intersecting triple. Let $N$ be the number of minimally intersecting ordered triples of sets for which each set is a subset of $\{1,2,3,4,5,6,7\}$ . Find the remainder when $N$ is divided by $1000$ . Note : $|S|$ represents the number of elements in the set $S$ .","
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|","
+
+384<|reserved_special_token_125|>398<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",760,False,3.2911345958709717
+2003-II-10,Two positive integers differ by $60.$ The sum of their square roots is the square root of an integer that is not a perfect square. What is the maximum possible sum of the two integers?,"
+840
+
+840 is the maximum possible sum of two integers that differ by 60 and whose square roots are not perfect squares. This is because the difference between the square roots of 840 and 780 is 60, and the sum of their square roots is √840 + √780 = √840 + √(840-60) = √840 + √780 = √840 + √780 = √840 + √780 = √840 + √780 = √840 + √780 = √","
+
+840.840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840840",156,False,3.2604033946990967
+1993-12,"The vertices of $\triangle ABC$ are $A = (0,0)\,$ , $B = (0,420)\,$ , and $C = (560,0)\,$ .  The six faces of a die are labeled with two $A\,$ 's, two $B\,$ 's, and two $C\,$ 's.  Point $P_1 = (k,m)\,$ is chosen in the interior of $\triangle ABC$ , and points $P_2\,$ , $P_3\,$ , $P_4, \dots$ are generated by rolling the die repeatedly and applying the rule: If the die shows label $L\,$ , where $L \in \{A, B, C\}$ , and $P_n\,$ is the most recently obtained point, then $P_{n + 1}^{}$ is the midpoint of $\overline{P_n L}$ .  Given that $P_7 = (14,92)\,$ , what is $k + m\,$ ?","
+84","
+
+84",344,False,0.7490901947021484
+2017-II-10,"Rectangle $ABCD$ has side lengths $AB=84$ and $AD=42$ . Point $M$ is the midpoint of $\overline{AD}$ , point $N$ is the trisection point of $\overline{AB}$ closer to $A$ , and point $O$ is the intersection of $\overline{CM}$ and $\overline{DN}$ . Point $P$ lies on the quadrilateral $BCON$ , and $\overline{BP}$ bisects the area of $BCON$ . Find the area of $\triangle CDP$ .","
+840","
+
+840<|python_tag|>python
+840<|python_tag|>840<|python_tag|>840<|python_tag|>840<|python_tag|>840<|python_tag|>840<|python_tag",546,False,1.5274980068206787
+2002-II-2,"Three vertices of a cube are $P=(7,12,10)$ , $Q=(8,8,1)$ , and $R=(11,3,9)$ . What is the surface area of the cube?","
+294","
+
+Surface Area = 294",294,True,0.8347821235656738
+1988-10,"A convex polyhedron has for its faces 12 squares, 8 regular hexagons, and 6 regular octagons. At each vertex of the polyhedron one square, one hexagon, and one octagon meet. How many segments joining vertices of the polyhedron lie in the interior of the polyhedron rather than along an edge or a face?","
+840
+
+Explanation:
+
+840 is the number of segments joining vertices of the polyhedron that lie in the interior of the polyhedron rather than along an edge or a face. This is calculated by subtracting the number of edges and the number of faces from the total number of vertices. The total number of vertices is 12 + 8 + 6 = 26. The number of edges is 12 + 8 + 6 = 26. The number of faces is ","
+
+840. This is calculated by multiplying the number of squares, hexagons, and octagons by 2 and subtracting the number of edges and faces. The number of edges is 12 + 8 + 6 = 26",840,True,3.2786548137664795
+1999-2,"Consider the parallelogram with vertices $(10,45),$ $(10,114),$ $(28,153),$ and $(28,84).$ A line through the origin cuts this figure into two congruent polygons.  The slope of the line is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$","
+145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|","
+
+
+
+
+145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|>145<|reserved_special_token_57|",118,False,3.281931161880493
+1999-10,"Ten points in the plane are given, with no three collinear.  Four distinct segments joining pairs of these points are chosen at random, all such segments being equally likely.  The probability that some three of the segments form a triangle whose vertices are among the ten given points is $m/n,$ where $m_{}$ and $n_{}$ are relatively prime positive integers.  Find $m+n.$ ","
+245 + 47 = 292
+
+292 < |m+n| < 794
+
+292 < m+n < 794
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292","
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292 + 47 = 339
+
+292",489,False,3.2625834941864014
+1997-14,"Let $v$ and $w$ be distinct, randomly chosen roots of the equation $z^{1997}-1=0$ . Let $m/n$ be the probability that $\sqrt{2+\sqrt{3}}\le |v+w|$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+399<|reserved_special_token_109|>399<|reserved_special_token_109|>400<|reserved_special_token_109|>399<|reserved_special_token_109|>400<|reserved_special_token_109|>401<|reserved_special_token_109|>400<|reserved_special_token_109|>401<|reserved_special_token_109|>400<|reserved_special_token_109|>401<|reserved_special_token_109|","
+
+
+
+
+
+
+400|>399<|reserved_special_token_109|>399<|reserved_special_token_109|>400<|reserved_special_token_109|>399<|reserved_special_token_109|>400<|reserved_special_token",582,False,3.2713894844055176
+2018-I-7,A right hexagonal prism has height $2$ . The bases are regular hexagons with side length $1$ . Any $3$ of the $12$ vertices determine a triangle. Find the number of these triangles that are isosceles (including equilateral triangles).,"
+720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|","
+
+720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|>720<|reserved_special_token_125|",52,False,3.2637648582458496
+2013-I-8,"The domain of the function $f(x) = \arcsin(\log_{m}(nx))$ is a closed interval of length $\frac{1}{2013}$ , where $m$ and $n$ are positive integers and $m>1$ . Find the remainder when the smallest possible sum $m+n$ is divided by $1000$ .","
+125 + 592 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717 mod 1000 = 717
+
+717","
+
+717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717Final Answer:717",371,False,3.271336793899536
+2020-I-14,"Let $P(x)$ be a quadratic polynomial with complex coefficients whose $x^2$ coefficient is $1.$ Suppose the equation $P(P(x))=0$ has four distinct solutions, $x=3,4,a,b.$ Find the sum of all possible values of $(a+b)^2.$","
+63","
+
+576Sum of all possible values of (a+b)^2. 
+
+576",85,False,0.9943039417266846
+2021-II-6,"For any finite set $S$ , let $|S|$ denote the number of elements in $S$ . Find the number of ordered pairs $(A,B)$ such that $A$ and $B$ are (not necessarily distinct) subsets of $\{1,2,3,4,5\}$ that satisfy \[|A| \cdot |B| = |A \cap B| \cdot |A \cup B|\]","
+125","
+
+125",454,False,0.7282214164733887
+1987-8,What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\frac{8}{15} < \frac{n}{n + k} < \frac{7}{13}$ ?,"
+125","
+
+125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|>125<|reserved_special_token_125|",112,False,1.5155248641967773
+1993-14,"A rectangle that is inscribed in a larger rectangle (with one vertex on each side) is called unstuck if it is possible to rotate (however slightly) the smaller rectangle about its center within the confines of the larger. Of all the rectangles that can be inscribed unstuck in a 6 by 8 rectangle, the smallest perimeter has the form $\sqrt{N}\,$ , for a positive integer $N\,$ . Find $N\,$ .","
+294 ","
+
+294<|reserved_special_token_125|>294<|reserved_special_token_125|>294<|reserved_special_token_125|>294<|reserved_special_token_125|>294<|reserved_special_token_125|",448,False,1.5232727527618408
+2011-I-14,"Let $A_1 A_2 A_3 A_4 A_5 A_6 A_7 A_8$ be a regular octagon.  Let $M_1$ , $M_3$ , $M_5$ , and $M_7$ be the midpoints of sides $\overline{A_1 A_2}$ , $\overline{A_3 A_4}$ , $\overline{A_5 A_6}$ , and $\overline{A_7 A_8}$ , respectively.  For $i = 1, 3, 5, 7$ , ray $R_i$ is constructed from $M_i$ towards the interior of the octagon such that $R_1 \perp R_3$ , $R_3 \perp R_5$ , $R_5 \perp R_7$ , and $R_7 \perp R_1$ .  Pairs of rays $R_1$ and $R_3$ , $R_3$ and $R_5$ , $R_5$ and $R_7$ , and $R_7$ and $R_1$ meet at $B_1$ , $B_3$ , $B_5$ , $B_7$ respectively.  If $B_1 B_3 = A_1 A_2$ , then $\cos 2 \angle A_3 M_3 B_1$ can be written in the form $m - \sqrt{n}$ , where $m$ and $n$ are positive integers.  Find $m + n$ .","
+729","
+
+729",37,False,0.7714715003967285
+1999-7,"There is a set of 1000 switches, each of which has four positions, called $A, B, C$ , and $D$ .  When the position of any switch changes, it is only from $A$ to $B$ , from $B$ to $C$ , from $C$ to $D$ , or from $D$ to $A$ .  Initially each switch is in position $A$ .  The switches are labeled with the 1000 different integers $(2^{x})(3^{y})(5^{z})$ , where $x, y$ , and $z$ take on the values $0, 1, \ldots, 9$ .  At step $i$ of a 1000-step process, the $i$ -th switch is advanced one step, and so are all the other switches whose labels divide the label on the $i$ -th switch.  After step 1000 has been completed, how many switches will be in position $A$ ?","
+600
+
+Explanation:
+
+There are 1000 switches, each of which has four positions, called A, B, C, and D. When the position of any switch changes, it is only from A to B, from B to C, from C to D, or from D to A. Initially each switch is in position A. The switches are labeled with the 1000 different integers (2^x)(3^y)(5^z), where x, y, and z","
+
+600
+
+Explanation:
+
+600 is the number of switches that will be in position A after 1000 steps. This is because each switch will be advanced one step, and all the switches whose labels divide the label on the switch being advanced will be",650,False,3.290257453918457
+2013-II-14,"For positive integers $n$ and $k$ , let $f(n, k)$ be the remainder when $n$ is divided by $k$ , and for $n > 1$ let $F(n) = \max_{\substack{1\le k\le \frac{n}{2}}} f(n, k)$ . Find the remainder when $\sum\limits_{n=20}^{100} F(n)$ is divided by $1000$ .","
+753 ","
+
+753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|",512,False,1.5199916362762451
+2013-I-15,"Let $N$ be the number of ordered triples $(A,B,C)$ of integers satisfying the conditions: (a) $0\le A<B<C\le99$ , (b) there exist integers $a$ , $b$ , and $c$ , and prime $p$ where $0\le b<a<c<p$ , (c) $p$ divides $A-a$ , $B-b$ , and $C-c$ , and (d) each ordered triple $(A,B,C)$ and each ordered triple $(b,a,c)$ form arithmetic sequences. Find $N$ .","
+147
+
+Explanation:
+
+147 is the number of ordered triples (A,B,C) of integers satisfying the conditions. This can be proved by using the following steps:
+
+Step 1: 147 = 3 × 49
+
+Step 2: 147 = 3 × 49
+
+Step 3: 147 = 3 × 49
+
+Step 4: 147 = 3 × 49
+
+Step 5: 147 = 3 × 49
+
+Step ","
+
+147
+
+Explanation:
+
+147 is the number of ordered triples (A,B,C) of integers satisfying the conditions. This can be proved by using the following steps:
+
+Step 1: 147 = 3 × 49
+
+Step 2:",272,False,3.3166298866271973
+2004-I-11,"A solid in the shape of a right circular cone is 4 inches tall and its base has a 3-inch radius. The entire surface of the cone, including its base, is painted. A plane parallel to the base of the cone divides the cone into two solids, a smaller cone-shaped solid $C$ and a frustum-shaped solid $F,$ in such a way that the ratio between the areas of the painted surfaces of $C$ and $F$ and the ratio between the volumes of $C$ and $F$ are both equal to $k.$ Given that $k=m/n,$ where $m$ and $n$ are relatively prime positive integers, find $m+n.$","
+125<|reserved_special_token_102|>125<|reserved_special_token_103|>125<|reserved_special_token_104|>125<|reserved_special_token_105|>125<|reserved_special_token_106|>125<|reserved_special_token_107|>125<|reserved_special_token_108|>125<|reserved_special_token_109|>125<|reserved_special_token_110|>125<|reserved_special_token_111|","
+
+
+
+
+125<|reserved_special_token_111|>125<|reserved_special_token_111|>125<|reserved_special_token_111|>125<|reserved_special_token_111|>125<|reserved_special_token_111|",512,False,3.277721881866455
+2017-I-13,"For every $m \geq 2$ , let $Q(m)$ be the least positive integer with the following property: For every $n \geq Q(m)$ , there is always a perfect cube $k^3$ in the range $n < k^3 \leq mn$ . Find the remainder when \[\sum_{m = 2}^{2017} Q(m)\] is divided by $1000$ .","
+753 ","
+
+753
+
+
+753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_125|>753<|reserved_special_token_",59,False,1.5211272239685059
+2001-I-9,"In triangle $ABC$ , $AB=13$ , $BC=15$ and $CA=17$ . Point $D$ is on $\overline{AB}$ , $E$ is on $\overline{BC}$ , and $F$ is on $\overline{CA}$ . Let $AD=p\cdot AB$ , $BE=q\cdot BC$ , and $CF=r\cdot CA$ , where $p$ , $q$ , and $r$ are positive and satisfy $p+q+r=2/3$ and $p^2+q^2+r^2=2/5$ . The ratio of the area of triangle $DEF$ to the area of triangle $ABC$ can be written in the form $m/n$ , where $m$ and $n$ are relatively prime positive integers. Find $m+n$ .","
+945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|","
+
+945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|>945<|reserved_special_token_109|",61,False,3.2801880836486816
+2013-I-4,"In the array of $13$ squares shown below, $8$ squares are colored red, and the remaining $5$ squares are colored blue. If one of all possible such colorings is chosen at random, the probability that the chosen colored array appears the same when rotated $90^{\circ}$ around the central square is $\frac{1}{n}$ , where $n$ is a positive integer. Find $n$ . [asy] draw((0,0)--(1,0)--(1,1)--(0,1)--(0,0)); draw((2,0)--(2,2)--(3,2)--(3,0)--(3,1)--(2,1)--(4,1)--(4,0)--(2,0)); draw((1,2)--(1,4)--(0,4)--(0,2)--(0,3)--(1,3)--(-1,3)--(-1,2)--(1,2)); draw((-1,1)--(-3,1)--(-3,0)--(-1,0)--(-2,0)--(-2,1)--(-2,-1)--(-1,-1)--(-1,1)); draw((0,-1)--(0,-3)--(1,-3)--(1,-1)--(1,-2)--(0,-2)--(2,-2)--(2,-1)--(0,-1)); size(100);[/asy]","
+63[/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start][/size][/im_end][/im_start","
+
+63[/size][/im_end][/size][/im_end][/size][/im_start][/size][/im_end][/size][/im_start][/size][/im_end][/size][/im_start]",429,False,3.3333559036254883
+1986-7,"The increasing sequence $1,3,4,9,10,12,13\cdots$ consists of all those positive integers which are powers of 3 or sums of distinct powers of 3. Find the $100^{\mbox{th}}$ term of this sequence.","
+693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|","
+
+693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|>693<|reserved_special_token_125|",981,False,3.258207321166992
+2017-I-8,"Two real numbers $a$ and $b$ are chosen independently and uniformly at random from the interval $(0, 75)$ . Let $O$ and $P$ be two points on the plane with $OP = 200$ . Let $Q$ and $R$ be on the same side of line $OP$ such that the degree measures of $\angle POQ$ and $\angle POR$ are $a$ and $b$ respectively, and $\angle OQP$ and $\angle ORP$ are both right angles. The probability that $QR \leq 100$ is equal to $\frac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$ .","
+150 + 75 = 225
+
+150 + 75 + 150 = 375
+
+375 + 150 = 525
+
+525 + 75 = 600
+
+600 + 150 = 750
+
+750 + 150 = 900
+
+900 + 75 = 975
+
+975 + 150 = 1125
+
+1125 + 75 = 1200
+
+1200 + 150 = 1350
+
+1350 + 75 = 1425
+
+142","
+
+150 + 75 = 225
+
+150 + 75 + 150 = 375
+
+375 + 150 = 525
+
+525 + 75 = 600
+
+600 + 150 = 750
+
+750 + 75 = ",41,False,3.2732837200164795
+2012-II-10,Find the number of positive integers $n$ less than $1000$ for which there exists a positive real number $x$ such that $n=x\lfloor x \rfloor$ . Note: $\lfloor x \rfloor$ is the greatest integer less than or equal to $x$ .,"
+125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174","
+
+549",496,False,2.4692983627319336
+2010-I-11,"Let $\mathcal{R}$ be the region consisting of the set of points in the coordinate plane that satisfy both $|8 - x| + y \le 10$ and $3y - x \ge 15$ . When $\mathcal{R}$ is revolved around the line whose equation is $3y - x = 15$ , the volume of the resulting solid is $\frac {m\pi}{n\sqrt {p}}$ , where $m$ , $n$ , and $p$ are positive integers, $m$ and $n$ are relatively prime, and $p$ is not divisible by the square of any prime. Find $m + n + p$ .","
+480","
+
+480<|reserved_special_token_125|>user
+480<|reserved_special_token_125|>assistant
+
+480<|reserved_special_token_125|>assistant
+480<|reserved_special_token_125|>assistant
+480",365,False,1.5270991325378418
+2022-I-15,"Let $x,$ $y,$ and $z$ be positive real numbers satisfying the system of equations: \begin{align*} \sqrt{2x-xy} + \sqrt{2y-xy} &= 1 \\ \sqrt{2y-yz} + \sqrt{2z-yz} &= \sqrt2 \\ \sqrt{2z-zx} + \sqrt{2x-zx} &= \sqrt3. \end{align*} Then $\left[ (1-x)(1-y)(1-z) \right]^2$ can be written as $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+49 + 49 + 49 = 147. Therefore, m = 147 and n = 49. The answer is 196. ","
+
+
+
+
+
+
+147 + 49 = 196. Final Answer: 196. Final Answer: 196. Final Answer: 196. Final Answer: 196. Final Answer: 196. Final Answer: 196. Final Answer: 196",33,False,2.060537815093994
+2023-I-1,"Five men and nine women stand equally spaced around a circle in random order. The probability that every man stands diametrically opposite a woman is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$ ","
+145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|>145 <|reserved_special_token_125|","
+
+145|>user
+145 + 145 = 290 145 + 145 =290 290 +290 =580 580 +580 =580 580 580 580 580 580 580 580 580 580",191,False,3.2566585540771484
+2020-I-4,"Let $S$ be the set of positive integers $N$ with the property that the last four digits of $N$ are $2020,$ and when the last four digits are removed, the result is a divisor of $N.$ For example, $42{,}020$ is in $S$ because $4$ is a divisor of $42{,}020.$ Find the sum of all the digits of all the numbers in $S.$ For example, the number $42{,}020$ contributes $4+2+0+2+0=8$ to this total.","
+40
+
+40 contributes 4 to the total. 
+
+420 contributes 4+2+0=6 to the total. 
+
+420 contributes 4 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840","
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8 to the total. 
+
+840 contributes 8",93,False,3.3165574073791504
+2024-II-10,"Let $\triangle$ $ABC$ have incenter $I$ and circumcenter $O$ with $\overline{IA} \perp \overline{OI}$ , circumradius $13$ , and inradius $6$ . Find $AB \cdot AC$ .","
+441<|reserved_special_token_125|>144<|reserved_special_token_125|>441<|reserved_special_token_125|>144<|reserved_special_token_125|>441<|reserved_special_token_125|>144<|reserved_special_token_125|>441<|reserved_special_token_125|>144<|reserved_special_token_125|>441<|reserved_special_token_125|>144<|reserved_special_token_125|","
+
+144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|>144<|reserved_special_token_125|",468,False,3.2621374130249023
+2020-II-8,"Define a sequence recursively by $f_1(x)=|x-1|$ and $f_n(x)=f_{n-1}(|x-n|)$ for integers $n>1$ . Find the least value of $n$ such that the sum of the zeros of $f_n$ exceeds $500,000$ .","
+125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000","
+
+
+125000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",101,False,3.2697741985321045
+2000-II-8,"In trapezoid $ABCD$ , leg $\overline{BC}$ is perpendicular to bases $\overline{AB}$ and $\overline{CD}$ , and diagonals $\overline{AC}$ and $\overline{BD}$ are perpendicular. Given that $AB=\sqrt{11}$ and $AD=\sqrt{1001}$ , find $BC^2$ .","
+110","
+
+110<|reserved_special_token_125|>110<|reserved_special_token_125|>110<|reserved_special_token_125|>110<|reserved_special_token_125|>110<|reserved_special_token_125|",110,True,1.530179500579834
+1985-5,"A sequence of integers $a_1, a_2, a_3, \ldots$ is chosen so that $a_n = a_{n - 1} - a_{n - 2}$ for each $n \ge 3$ . What is the sum of the first $2001$ terms of this sequence if the sum of the first $1492$ terms is $1985$ , and the sum of the first $1985$ terms is $1492$ ?","
+1492 + 1985 = 3477
+
+1492 + 1985 - 2001 = 1985
+
+1492 + 1985 - 2001 = 1985
+
+1492 + 1985 - 2001 = 1985
+
+1492 + 1985 - 2001 = 1985
+
+1492 + 1985 - 2001 = 1985
+
+1492 + 1985 - 2001 = 198","
+
+198",986,False,2.4729926586151123
+1985-3,"Find $c$ if $a$ , $b$ , and $c$ are positive integers which satisfy $c=(a + bi)^3 - 107i$ , where $i^2 = -1$ .","
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = 107 * 1
+107 = ","
+
+107 ",198,False,2.468139410018921
+2016-I-15,"Circles $\omega_1$ and $\omega_2$ intersect at points $X$ and $Y$ . Line $\ell$ is tangent to $\omega_1$ and $\omega_2$ at $A$ and $B$ , respectively, with line $AB$ closer to point $X$ than to $Y$ . Circle $\omega$ passes through $A$ and $B$ intersecting $\omega_1$ again at $D \neq A$ and intersecting $\omega_2$ again at $C \neq B$ . The three points $C$ , $Y$ , $D$ are collinear, $XC = 67$ , $XY = 47$ , and $XD = 37$ . Find $AB^2$ .","
+729
+
+729 is the square of 27. Therefore, AB^2 = 729. 
+
+729","
+
+729<|reserved_special_token_125|>user
+729 is the square of 27. Therefore, AB^2 = 729. 
+
+729<|reserved_special_token_125|>assistant
+729<|reserved_special_token_",270,False,1.9107229709625244
+2024-II-14,"Let $b \geq 2$ be an integer. Call a positive integer $n$ $b\textit{-eautiful}$ if it has exactly two digits when expressed in base $b$ , and these two digits sum to $\sqrt{n}$ . For example, $81$ is $13$ -eautiful because $81=\underline{6}$ $\underline{3}_{13}$ and $6+3=\sqrt{81}$ . Find the least integer $b\geq 2$ for which there are more than ten $b$ -eautiful integers.","
+81 = 6 + 6 = 13
+81 = 8 + 9 = 17
+81 = 9 + 9 = 18
+81 = 10 + 11 = 19
+81 = 11 + 11 = 22
+81 = 12 + 12 = 24
+81 = 13 + 13 = 26
+81 = 14 + 16 = 30
+81 = 15 + 16 = 31
+","
+
+81 = 16 + 65 = 81
+81 = 17 + 64 = 81
+81 = 18 + 63 = 81
+81 = 19 + 62 = 81
+81 = 20 +",211,False,3.282771110534668
+2010-II-12,Two noncongruent integer-sided isosceles triangles have the same perimeter and the same area. The ratio of the lengths of the bases of the two triangles is $8: 7$ . Find the minimum possible value of their common perimeter.,"
+384
+
+Explanation:
+
+384 is the minimum perimeter that satisfies the conditions of the problem. To achieve this, we need to find two integer-sided isosceles triangles with the same perimeter and area. We can achieve this by using two isosceles triangles with base lengths of 8 and 7, respectively. The perimeter of each triangle is 384, and the area is 384/384 = 1. This satisfies the conditions of the problem. The minimum perimeter is achieved when","
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",676,False,3.283600091934204
+2001-I-10,"Let $S$ be the set of points whose coordinates $x,$ $y,$ and $z$ are integers that satisfy $0\le x\le2,$ $0\le y\le3,$ and $0\le z\le4.$ Two distinct points are randomly chosen from $S.$ The probability that the midpoint of the segment they determine also belongs to $S$ is $m/n,$ where $m$ and $n$ are relatively prime positive integers.  Find $m + n.$","
+147","
+
+147
+
+<|reserved_special_token_125|>assistant
+
+147<|reserved_special_token_125|>147<|reserved_special_token_125|>147<|reserved_special_token_125|>147<|reserved_special_token",200,False,1.522021770477295
+1991-10,"Two three-letter strings, $aaa^{}_{}$ and $bbb^{}_{}$ , are transmitted electronically. Each string is sent letter by letter. Due to faulty equipment, each of the six letters has a 1/3 chance of being received incorrectly, as an $a^{}_{}$ when it should have been a $b^{}_{}$ , or as a $b^{}_{}$ when it should be an $a^{}_{}$ . However, whether a given letter is received correctly or incorrectly is independent of the reception of any other letter. Let $S_a^{}$ be the three-letter string received when $aaa^{}_{}$ is transmitted and let $S_b^{}$ be the three-letter string received when $bbb^{}_{}$ is transmitted. Let $p$ be the probability that $S_a^{}$ comes before $S_b^{}$ in alphabetical order. When $p$ is written as a fraction in lowest terms, what is its numerator?","
+63 ","
+
+63
+
+
+<|python_tag|>from fractions import Fraction
+
+def solve():
+    p = Fraction(1, 3) * Fraction(1, 3) * Fraction(1, 3) * Fraction(1, 3",532,False,1.543025016784668
+1988-9,Find the smallest positive integer whose cube ends in $888$ .,"
+888 = 2^3 * 3^2 * 37
+
+888 = 2^3 * 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 = 37^3
+
+888 =","
+
+37^3
+
+37^3 =37^3
+
+37^3 =37^3
+
+37^3 =37^3
+
+37^3 =37^3
+
+37^3 =37^3
+
+37^3 =37",192,False,3.2613253593444824
+2021-I-9,"Let $ABCD$ be an isosceles trapezoid with $AD=BC$ and $AB<CD.$ Suppose that the distances from $A$ to the lines $BC,CD,$ and $BD$ are $15,18,$ and $10,$ respectively. Let $K$ be the area of $ABCD.$ Find $\sqrt2 \cdot K.$","
+540<|reserved_special_token_57|>540<|reserved_special_token_57|>540<|reserved_special_token_58|>540<|reserved_special_token_59|>540<|reserved_special_token_60|>540<|reserved_special_token_61|>540<|reserved_special_token_62|>540<|reserved_special_token_63|>540<|reserved_special_token_64|>540<|reserved_special_token_65|","
+
+
+540*sqrt(2)-->540*sqrt(2)-->540*sqrt(2)-->540*sqrt(2)-->540*sqrt(2)-->540*sqrt(2)-->540*sqrt(2)-->",567,False,3.302715539932251
+2003-I-12,"In convex quadrilateral $ABCD, \angle A \cong \angle C, AB = CD = 180,$ and $AD \neq BC.$ The perimeter of $ABCD$ is 640. Find $\lfloor 1000 \cos A \rfloor.$ (The notation $\lfloor x \rfloor$ means the greatest integer that is less than or equal to $x.$ )","
+480 ","
+
+480 <|reserved_special_token_125|>user
+480 <|reserved_special_token_125|>assistant
+
+480 <|reserved_special_token_125|>assistant
+480 <|reserved_special_token_125|>assistant
+480",777,False,1.5229558944702148
+1989-1,Compute $\sqrt{(31)(30)(29)(28)+1}$ .,"
+589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|","
+
+589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|>589<|reserved_special_token_57|",869,False,3.2624893188476562
+2023-II-8,"Let $\omega = \cos\frac{2\pi}{7} + i \cdot \sin\frac{2\pi}{7},$ where $i = \sqrt{-1}.$ Find the value of the product \[\prod_{k=0}^6 \left(\omega^{3k} + \omega^k + 1\right).\]","
+399","
+
+399",24,False,0.7262835502624512
+2017-I-14,Let $a > 1$ and $x > 1$ satisfy $\log_a(\log_a(\log_a 2) + \log_a 24 - 128) = 128$ and $\log_a(\log_a x) = 256$ . Find the remainder when $x$ is divided by $1000$ .,"
+384 ","
+
+384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|>384<|reserved_special_token_125|",896,False,1.527174949645996
+2008-II-14,"Let $a$ and $b$ be positive real numbers with $a \ge b$ . Let $\rho$ be the maximum possible value of $\dfrac{a}{b}$ for which the system of equations \[a^2 + y^2 = b^2 + x^2 = (a-x)^2 + (b-y)^2\] has a solution $(x,y)$ satisfying $0 \le x < a$ and $0 \le y < b$ . Then $\rho^2$ can be expressed as a fraction $\dfrac{m}{n}$ , where $m$ and $n$ are relatively prime positive integers. Find $m + n$ .","
+384</|im_start>|</|im_end>|</|im_start>|</|im_end>|</|im_start>|384</|im_end>|</|im_start>|</|im_end>|</|im_start>|</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end>|</|im","
+
+
+
+
+
+
+384</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end>|</|im_start>|384</|im_end",7,False,3.283700942993164
+2007-I-10,"In a $6 \times 4$ grid ( $6$ rows, $4$ columns), $12$ of the $24$ squares are to be shaded so that there are two shaded squares in each row and three shaded squares in each column.  Let $N$ be the number of shadings with this property.  Find the remainder when $N$ is divided by $1000$ . AIME I 2007-10.png","
+840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|","    
+
+840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|>840<|reserved_special_token_193|",860,False,3.2689554691314697
+1983-3,What is the product of the real roots of the equation $x^2 + 18x + 30 = 2 \sqrt{x^2 + 18x + 45}$ ?,"
+480","
+
+480",20,False,0.71687912940979
+2021-I-7,"Find the number of pairs $(m,n)$ of positive integers with $1\le m<n\le 30$ such that there exists a real number $x$ satisfying \[\sin(mx)+\sin(nx)=2.\]","
+150","
+
+150",63,False,0.7208020687103271
+2017-II-13,"For each integer $n\geq3$ , let $f(n)$ be the number of $3$ -element subsets of the vertices of a regular $n$ -gon that are the vertices of an isosceles triangle (including equilateral triangles). Find the sum of all values of $n$ such that $f(n+1)=f(n)+78$ .","
+78 = f(3) + 78 = f(4) + 78 = f(5) + 78 = f(6) + 78 = f(7) + 78 = f(8) + 78 = f(9) + 78 = f(10) + 78 = f(11) + 78 = f(12) + 78 = f(13) + 78 = f(14) + 78 = f","
+
+78 + f(15) + f(16) + f(17) + f(18) + f(19) + f(20) + f(21) + f(22) + f(23) + f(",245,False,3.2801477909088135
+2011-I-10,The probability that a set of three distinct vertices chosen at random from among the vertices of a regular $n$ -gon determine an obtuse triangle is $\frac{93}{125}$ .  Find the sum of all possible values of $n$ .,"
+93 + 125 = 218
+
+218 = 93 + 125
+218 = 125 + 93
+218 = 125 + 93 + 94
+218 = 125 + 93 + 94 + 81
+218 = 125 + 93 + 94 + 81 + 52
+218 = 125 + 93 + 94 + 81 + 52 + 65
+218 = 125 + 93 + 94 + 81","
+
+218 + 125 + 93 = 446
+446 = 125 + 93 + 218 + 125 + 93 + 52 + 65 + 52 + 81 + 52 + 81 + 65 +",503,False,3.2599868774414062
+1983-6,Let $a_n=6^{n}+8^{n}$ . Determine the remainder on dividing $a_{83}$ by $49$ .,"
+49(6^2+8^2)=49(36+64)=49(100)=4900
+
+4900 ≡ 35 ≡ 35 (mod 49) ","
+
+4900 35 35 (mod 49) Final Answer: 35 Final Answer: 35 Final Answer: 35 Final Answer: 35 Final Answer: 35 Final Answer: 35 Final Answer: 35 Final Answer:",35,False,2.219573736190796

@@ -1,0 +1,14 @@
+### model
+model_name_or_path: meta-llama/Llama-3.2-1B-Instruct
+adapter_name_or_path: 
+  ./temp/Llama-3.2-1B-Instruct/AIME_1983_2024_sft/sft/train/Llama-3.2-1B-Instruct_sft
+cache_dir: /data2/.shared_models
+template: llama3
+trust_remote_code: true
+
+### export
+export_dir: 
+  ./temp/Llama-3.2-1B-Instruct/AIME_1983_2024_sft/sft/export/Llama-3.2-1B-Instruct_sft
+export_size: 1
+export_device: cpu
+export_legacy_format: false
