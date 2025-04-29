@@ -1,3 +1,5 @@
+# Run: python -m dataset.formatters.format_aime_sft
+
 import json
 import pandas as pd
 from datasets import load_from_disk
