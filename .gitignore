@@ -175,3 +175,5 @@ LLaMA-Factory/saves/*
 
 # training checkpoints
 models/*
+
+cache/*

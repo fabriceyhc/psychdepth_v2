@@ -4,7 +4,8 @@ import pandas as pd
 from typing import Dict
 import guidance
 from guidance import models, gen, select, user, system, assistant
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
+from .utils.math import compute_score
 import argparse
 
 from evaluate.annotators._base import BaseDatasetProcessor
@@ -14,7 +15,8 @@ class AIMEProcessor(BaseDatasetProcessor):
     
     def load_dataset(self) -> pd.DataFrame:
         # dataset = load_dataset("HuggingFaceH4/aime_2024", split="train").to_pandas()
-        dataset = pd.read_csv("./dataset/data/AIME_Dataset_1983_2024_test.csv")
+        # dataset = pd.read_csv("./dataset/data/AIME_Dataset_1983_2024_test.csv")[:100]
+        dataset = load_from_disk("./data/open-r1/OpenR1-Math-220k/amc_aime")["test"].to_pandas()
         return dataset
 
     def _is_processed(self, row: Dict, existing: pd.DataFrame) -> bool:
@@ -23,32 +25,57 @@ class AIMEProcessor(BaseDatasetProcessor):
             return (existing["id"] == row["id"]).any()
         return False
 
+    # def grade_answer(self, predicted_answer, ground_truth) -> bool:
+    #     """Grade the predicted answer"""
+    #     return int(predicted_answer) == int(ground_truth)
     def grade_answer(self, predicted_answer, ground_truth) -> bool:
         """Grade the predicted answer"""
-        return int(predicted_answer) == int(ground_truth)
+        return compute_score(predicted_answer, ground_truth)
 
     def process_entry(self, row: Dict) -> Dict:
+
+        # # 1. Collect answer
+        # start_time = time.time()
+        # output = self.model + self.annotation_prompt(
+        #     problem=row['problem']
+        # )
+        # time_taken = time.time() - start_time
+        
+        # # 2. Extract answer using regex
+        # match = re.search(r'\d+', output['answer'])
+        # extracted_answer = match.group(0) if match else ""
+
+        # # 3. Grade answer using the extracted answer
+        # is_correct = self.grade_answer(extracted_answer, row['answer'])
 
         # 1. Collect answer
         start_time = time.time()
         output = self.model + self.annotation_prompt(
-            problem=row['Question']
+            problem=row['problem']
         )
         time_taken = time.time() - start_time
+        # Extract answer after "Final Answer" text
+        raw_answer = output['answer']
         
-        # 2. Extract answer using regex
-        match = re.search(r'\d+', output['answer'])
-        extracted_answer = match.group(0) if match else ""
+        # Handle different formats using split/partition
+        answer = raw_answer.partition('Final Answer:')[-1]  # Get text after last occurrence
+        answer = answer.split('\n')[0].strip()  # Take first line/segment
+        answer = answer.replace('**', '').replace('__', '')  # Remove markdown formatting
 
-        # 3. Grade answer using the extracted answer
-        is_correct = self.grade_answer(extracted_answer, row['Answer'])
+        print(answer)
+        
+        output.set('answer', answer)
+        # ['answer'] = answer
+
+        # 2. Grade answer
+        is_correct = self.grade_answer(output['answer'], row["answer"])
 
         return {
-            "id": row['ID'],
-            "problem": row['Question'],
+            "id": row['uuid'],
+            "problem": row['problem'],
             "solution": output['solution'],
             "predicted_answer": output['answer'],
-            "answer": row['Answer'],
+            "answer": row['answer'],
             "is_correct": is_correct,
             "time_taken": time_taken
         }
@@ -56,14 +83,15 @@ class AIMEProcessor(BaseDatasetProcessor):
     @guidance(dedent=True)
     def annotation_prompt(self, lm, problem: str):
         with user():
-            lm += f"""Solve this problem step-by-step. Your answer should be numerical with one, two, or three digits. 
+            lm += f"""Please reason step by step, and put your final answer within \\boxed{{}}. 
             
             Problem: {problem}
             """
             
         with assistant():
             lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=1000)}"
-            lm += f"Final Answer:\n{gen(name='answer', stop=self.STOP_STRINGS, max_tokens=50)}"
+            # lm += f"Final Answer:\n{gen(name='answer', stop=self.STOP_STRINGS, max_tokens=50)}"
+            lm += f"Final Answer:\n{gen(name='answer', max_tokens=50, stop=self.STOP_STRINGS)}"
         return lm
     
 

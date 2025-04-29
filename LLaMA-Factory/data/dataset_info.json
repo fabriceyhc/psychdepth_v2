@@ -1,4 +1,12 @@
 {
+  "amc_aime_sft": {
+    "file_name": "aime/sft/amc_aime_sft.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
   "AIME_1983_2024_sft": {
     "file_name": "pdsv2/sft/AIME_1983_2024_sft.json",
     "ranking": false,
