@@ -1,6 +1,14 @@
 {
-  "amc_aime_sft": {
-    "file_name": "aime/sft/amc_aime_sft.json",
+  "amc_aime_sft_ai_cot_solution": {
+    "file_name": "aime/sft/amc_aime_sft_ai_cot_solution.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "amc_aime_sft_human_solution": {
+    "file_name": "aime/sft/amc_aime_sft_human_solution.json",
     "ranking": false,
     "formatting": "sharegpt",
     "columns": {

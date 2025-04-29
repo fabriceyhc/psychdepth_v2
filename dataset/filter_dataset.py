@@ -272,12 +272,10 @@ def main():
             print(f"\nSaving final dataset(s) to: {args.output_dir} with max shard size {max_shard_size_str}")
             try:
                 os.makedirs(args.output_dir, exist_ok=True)
-                # *** MODIFICATION HERE ***
                 final_output_datasetdict.save_to_disk(
                     args.output_dir,
                     max_shard_size=max_shard_size_str # Control shard size
                 )
-                # *************************
                 print("Dataset(s) saved successfully.")
                 print(f"  Check '{args.output_dir}' for dataset files (multiple .arrow files per split expected).")
             except Exception as e:
