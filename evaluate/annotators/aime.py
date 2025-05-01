@@ -5,7 +5,7 @@ from typing import Dict
 import guidance
 from guidance import models, gen, select, user, system, assistant
 from datasets import load_dataset, load_from_disk
-from .utils.math import compute_score
+from .utils.math_util import compute_score
 import argparse
 
 from evaluate.annotators._base import BaseDatasetProcessor
