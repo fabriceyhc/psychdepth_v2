@@ -84,8 +84,12 @@ class BaseDatasetProcessor(ABC):
     def _get_save_path(self) -> str:
         """Generate save path from config"""
         base = self.config['save_dir']
-        model_name = os.path.basename(self.config['model']['path']).replace('.gguf', '')
-        return f"{base}/{model_name}_{self.config['shots']}shot.csv"
+        name = self.config.get('save_name')
+        if name is not None:
+            return os.path.join(base, name)
+        else:
+            model_name = os.path.basename(self.config['model']['path']).replace('.gguf', '')
+            return f"{base}/{model_name}_{self.config['shots']}shot.csv"
     
     @abstractmethod
     def _is_processed(self, row: Dict, existing: pd.DataFrame) -> bool:

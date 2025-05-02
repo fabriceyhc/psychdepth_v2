@@ -1,0 +1,128 @@
+import time
+import pandas as pd
+from typing import List, Dict
+import guidance
+from guidance import models, gen, select, user, system, assistant
+from datasets import load_dataset
+from .utils.math_util import compute_score
+import argparse
+
+from evaluate.annotators._base import BaseDatasetProcessor
+
+class GSM8kProcessor(BaseDatasetProcessor):
+    """Processor for MATH-500 dataset"""
+    
+    def load_dataset(self) -> pd.DataFrame:
+        dataset = pd.read_csv("./evaluate/problem_sets/gsm8k_test.csv")
+        print(dataset)
+        return dataset
+
+    def _is_processed(self, row: Dict, existing: pd.DataFrame) -> bool:
+        """Check if row already exists in saved results"""
+        if 'id' in row and 'id' in existing.columns:
+            return (existing["id"] == row["id"]).any()
+        return False
+
+    def grade_answer(self, predicted_answer, ground_truth) -> bool:
+        """Grade the predicted answer"""
+        # TODO: Implement Latex equivalence checking
+        # return int(predicted_answer) == ground_truth
+        return compute_score(predicted_answer, ground_truth)
+
+    def process_entry(self, row: Dict) -> Dict:
+
+        # 1. Collect answer
+        start_time = time.time()
+        output = self.model + self.annotation_prompt(
+            problem=row['problem']
+        )
+        print("now the problem is", row['problem'])
+        time_taken = time.time() - start_time
+        # Extract answer after "Final Answer" text
+        raw_answer = output['answer']
+        # Handle different formats using split/partition
+        # answer = raw_answer.partition('Final Answer:')[-1]  
+        answer = raw_answer.strip()
+        answer = answer.replace('**', '').replace('__', '').rstrip('|.').strip()
+        answer = answer.replace('I hope it is correct', '')
+        answer = answer.removeprefix("The final answer is").lstrip(':').rstrip('.| ').strip()
+        if '$\boxed' in answer:
+            answer = answer.removeprefix('$\boxed{').removesuffix('}$')
+        elif '$\\boxed' in answer:
+            answer = answer.removeprefix('$\\boxed{').removesuffix('}$')
+        try:
+            answer = int(answer)
+        except:
+            pass
+        
+        
+        output.set('answer', answer)
+
+        # 2. Grade answer
+        is_correct = 1 if str(answer) == str(row["answer"]) else 0
+
+        return {
+            "unique_id": row['unique_id'],
+            "problem": row['problem'],
+            "solution": output['solution'],
+            "predicted_answer": answer,
+            "raw_pred": raw_answer,
+            "answer": row['answer'],
+            "is_correct": is_correct,
+            "time_taken": time_taken
+        }
+    
+    @guidance(dedent=True)
+    def annotation_prompt(self, lm, problem: str):
+        # with system():
+        #     lm += f"You are an expert mathematician specializing in {subject} problems (difficulty: {level})"
+        with user():
+            lm += f"""Solve this problem step-by-step. Your answer should be numerical with one, two, or three digits. 
+            
+            Problem: {problem}
+            """
+            
+        with assistant():
+            lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=1000)}"
+            lm += f"Final Answer:\n{gen(name='answer', max_tokens=100, stop=self.STOP_STRINGS)}"
+        return lm
+
+def main(args):
+    # Initialize the MATH500Processor with the provided configuration
+    config = {
+        "model": {
+            "type": args.type,
+            "path": args.base_model,
+            "cache_dir": args.cache_dir
+        },
+        "save_dir": args.save_dir,
+        "save_name": args.save_name,
+        "shots": args.shots
+    }
+    
+    math_processor = GSM8kProcessor(config)
+    math_results = math_processor.run()
+
+    # Compute accuracy
+    accuracy = math_results['is_correct'].mean() * 100
+    print(f"Accuracy: {accuracy:.2f}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run GSM8k evaluation")
+    parser.add_argument("--base_model", required=True,
+                        help="Base model identifier or path")
+    parser.add_argument("--cache_dir", default='/data2/.shared_models',
+                        help="Directory for storing base models")
+    parser.add_argument("--type", default="transformers",
+                        choices=["transformers", "llama.cpp"],
+                        help="Model type (transformers or llama.cpp)")
+    parser.add_argument("--save_dir", default="./evaluate/results/gsm8k",
+                        help="Directory for saving results")
+    parser.add_argument("--shots", type=int, default=0,
+                        help="Number of shots for zero-shot evaluation")
+    parser.add_argument("--save_name", default=None,
+                        help="Name of the output csv")
+    args = parser.parse_args()
+    main(args)
+    # CUDA_VISIBLE_DEVICES=2 python -m evaluate.annotators.gsm8k
