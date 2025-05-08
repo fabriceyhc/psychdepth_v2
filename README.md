@@ -22,7 +22,9 @@ pip install -e ".[torch,metrics]"
 ```
 Since the json files created for the codeforces dataset were huge (>500 MG), I uploaded the codeforces_ai_cots.json and codeforces_human_cots.json here:
 
-[Google Drive Link](https://drive.google.com/drive/folders/1L7ns3li3sPiw8sIbHe9r9MZKq2sTp1XR?usp=sharing)
+[Google_Drive_Link](https://drive.google.com/drive/folders/1L7ns3li3sPiw8sIbHe9r9MZKq2sTp1XR?usp=sharing)
+<a href="https://drive.google.com/drive/folders/1L7ns3li3sPiw8sIbHe9r9MZKq2sTp1XR?usp=sharing">Google Drive Link</a>
+
 
 ```
 
