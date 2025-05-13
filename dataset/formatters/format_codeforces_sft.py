@@ -18,6 +18,16 @@ conda activate pds
 pip install datasets
 """
 
+# codeforces columns
+"""
+Index(['id', 'aliases', 'contest_id', 'contest_name', 'contest_type',
+       'contest_start', 'contest_start_year', 'index', 'time_limit',
+       'memory_limit', 'title', 'description', 'input_format', 'output_format',
+       'examples', 'note', 'editorial', 'prompt', 'generation',
+       'finish_reason', 'api_metadata', 'interaction_format', 'messages'],
+      dtype='object')
+"""
+
 #ds = load_dataset("open-r1/codeforces-cots", name="solutions", split="train")
 # ds = ds.shuffle(seed=42)       
 # train_valtest = ds.train_test_split(test_size=0.20, seed=42)  # 80 % train
