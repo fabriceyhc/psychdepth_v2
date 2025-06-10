@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "OpenMath-Nemotron-14B",
+        "base_model_evaluated": "Qwen2.5-14B",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "nvidia/OpenMath-Nemotron-14B",
+        "evaluation_directory": "./pipeline/results/Qwen2.5-14B_OpenMath-Nemotron-14B_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-05-09 23:29:00"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Qwen2.5-14B",
+            "math_evaluation": {
+                "raw_data_file": "Qwen2.5-14B_0shot.csv",
+                "accuracy": 24.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Qwen2.5-14B_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.42,
+                    "emotion_provoking_score": 3.2,
+                    "empathy_score": 3.31,
+                    "engagement_score": 3.39,
+                    "narrative_complexity_score": 3.03,
+                    "human_likeness_score": 3.38
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "OpenMath-Nemotron-14B",
+            "math_evaluation": {
+                "raw_data_file": "OpenMath-Nemotron-14B_0shot.csv",
+                "accuracy": 19.19,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "OpenMath-Nemotron-14B_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.05,
+                    "emotion_provoking_score": 3.91,
+                    "empathy_score": 3.75,
+                    "engagement_score": 4.14,
+                    "narrative_complexity_score": 4.03,
+                    "human_likeness_score": 3.83
+                },
+                "error": null
+            }
+        }
+    }
+}

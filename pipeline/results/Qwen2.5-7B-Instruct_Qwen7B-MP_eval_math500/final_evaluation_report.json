@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Qwen7B-MP",
+        "base_model_evaluated": "Qwen2.5-7B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "ZMC2019/Qwen7B-MP",
+        "evaluation_directory": "./pipeline/results/Qwen2.5-7B-Instruct_Qwen7B-MP_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-06-03 15:50:45"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Qwen2.5-7B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Qwen2.5-7B-Instruct_0shot.csv",
+                "accuracy": 62.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Qwen2.5-7B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.51,
+                    "emotion_provoking_score": 4.27,
+                    "empathy_score": 4.49,
+                    "engagement_score": 4.56,
+                    "narrative_complexity_score": 4.42,
+                    "human_likeness_score": 4.58
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Qwen7B-MP",
+            "math_evaluation": {
+                "raw_data_file": "Qwen7B-MP_0shot.csv",
+                "accuracy": 58.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Qwen7B-MP_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.22,
+                    "emotion_provoking_score": 4.09,
+                    "empathy_score": 4.07,
+                    "engagement_score": 4.39,
+                    "narrative_complexity_score": 4.17,
+                    "human_likeness_score": 4.29
+                },
+                "error": null
+            }
+        }
+    }
+}

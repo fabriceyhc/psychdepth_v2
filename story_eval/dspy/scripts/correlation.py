@@ -9,7 +9,7 @@ if __name__ == "__main__":
         "emotion_provoking_score", "narrative_complexity_score", "human_likeness_score"
     ]
     # load the single score testset
-    single_score_df = pd.read_csv("./data/stories_w_human_annotations_singlescore_test.csv")
+    single_score_df = pd.read_csv("./data/singlescore/stories_w_human_annotations_singlescore_test.csv")
     single_score_df = single_score_df[["story_id", "participant_id", "pds_component", "score"]]
     single_score_df = single_score_df.pivot_table(
         index=["story_id", "participant_id"],
@@ -26,14 +26,14 @@ if __name__ == "__main__":
     # Aggregate human scores by story_id (taking the mean across participants)
     single_score_df = single_score_df.groupby("story_id")[numeric_columns].mean().reset_index()
     # load the multi score testset
-    multiscore_df = pd.read_csv("./data/stories_w_human_annotations_multiscore_test.csv")
+    multiscore_df = pd.read_csv("./data/multiscore/stories_w_human_annotations_multiscore_test.csv")
     multiscore_df[numeric_columns] = multiscore_df[numeric_columns].apply(pd.to_numeric, errors="coerce")
     # Aggregate human scores by story_id (taking the mean across participants)
     multiscore_df = multiscore_df.groupby("story_id")[numeric_columns].mean().reset_index()
 
     # Load annotations
     all_summary = {}
-    for file in os.listdir("./story_eval/dspy/dspy_annotations/"):
+    for file in os.listdir("./story_eval/dspy/dspy_annotations/llama-3.1-8B_persona"):
         # Compute correlations for singlescore annotations
         if "DepthS" in file or "DepthSE" in file or "DepthES" in file:
             print(f"result for {file}")
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         # Compute annotations for multiscore annotations
         else:
             print(f"result for {file}")
-            rating_df = pd.read_csv("./story_eval/dspy/dspy_annotations/"+file)
+            rating_df = pd.read_csv("./story_eval/dspy/dspy_annotations/llama-3.1-8B_persona/"+file)
             # Merge AI and human annotations on story_id
             merged_df = pd.merge(rating_df, multiscore_df, on="story_id", suffixes=("_ai", "_human"))
             # Compute Spearman correlation for each score type
@@ -89,5 +89,5 @@ if __name__ == "__main__":
             output["average"] = total / 5   
             # print(output)
             all_summary[file] = output
-    with open("./story_eval/dspy/dspy_correlation_summary.json", "w") as f:
+    with open("./story_eval/dspy/dspy_correlation_summary_participant.json", "w") as f:
         json.dump(all_summary, f, indent=4)

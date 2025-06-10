@@ -323,6 +323,33 @@
         },
         "average": 0.4948935969973819
     },
+    "meta-llama_Llama-3.1-8B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_kmean-demos=5__participant=7.csv": {
+        "authenticity_score": {
+            "correlation": 0.1578361574764487,
+            "p_value": 0.12257637936016794
+        },
+        "empathy_score": {
+            "correlation": 0.4968959490221545,
+            "p_value": 2.255691574741713e-07
+        },
+        "engagement_score": {
+            "correlation": 0.1827386380860596,
+            "p_value": 0.07320456874864614
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.3363049047066114,
+            "p_value": 0.0007573118242231074
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.5154656911515416,
+            "p_value": 6.561153333174745e-08
+        },
+        "human_likeness_score": {
+            "correlation": 0.0691873475708574,
+            "p_value": 0.5006990203995918
+        },
+        "average": 0.33784826808856316
+    },
     "deepseek-ai_DeepSeek-R1-Distill-Llama-70B_predictions_MIPROv2_Predict-PsychDepthAssessment_Baseline.csv": {
         "authenticity_score": {
             "correlation": 0.4920923697699817,
@@ -701,6 +728,33 @@
         },
         "average": 0.5788827935204962
     },
+    "meta-llama_Llama-3.1-8B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_kmean-demos=5__participant=6.csv": {
+        "authenticity_score": {
+            "correlation": 0.11477242386663951,
+            "p_value": 0.262957896597998
+        },
+        "empathy_score": {
+            "correlation": 0.41280239372872957,
+            "p_value": 2.6467043956800384e-05
+        },
+        "engagement_score": {
+            "correlation": 0.16597480397057737,
+            "p_value": 0.10421337280114233
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.49156176196102175,
+            "p_value": 3.173569111071371e-07
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.39727683211267567,
+            "p_value": 5.598285987898366e-05
+        },
+        "human_likeness_score": {
+            "correlation": -0.07959127732796485,
+            "p_value": 0.43836819797214344
+        },
+        "average": 0.31647764312792875
+    },
     "meta-llama_Llama-3.1-70B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=5_persona.csv": {
         "authenticity_score": {
             "correlation": 0.5881952544064412,
@@ -998,6 +1052,33 @@
         },
         "average": 0.4277354458303142
     },
+    "meta-llama_Llama-3.1-8B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_kmean-demos=5__participant=2.csv": {
+        "authenticity_score": {
+            "correlation": 0.2453950212819449,
+            "p_value": 0.015405785168516274
+        },
+        "empathy_score": {
+            "correlation": 0.4622152897767141,
+            "p_value": 1.878694869527218e-06
+        },
+        "engagement_score": {
+            "correlation": 0.24662228211427606,
+            "p_value": 0.014883540461018759
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.3801256186987254,
+            "p_value": 0.00012279569023814288
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.47343868327700095,
+            "p_value": 9.703680262249018e-07
+        },
+        "human_likeness_score": {
+            "correlation": 0.066202416264791,
+            "p_value": 0.5193984239730145
+        },
+        "average": 0.36155937902973234
+    },
     "deepseek-ai_DeepSeek-R1-Distill-Llama-8B_predictions_MIPROv2_ChainOfThought-DepthS_Baseline.csv": {
         "authenticity_score": {
             "correlation": 0.20090045735313386,
@@ -1214,6 +1295,33 @@
         },
         "average": 0.3853619584742881
     },
+    "meta-llama_Llama-3.1-8B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_kmean-demos=5__participant=4.csv": {
+        "authenticity_score": {
+            "correlation": 0.23981642242295254,
+            "p_value": 0.017984597634394008
+        },
+        "empathy_score": {
+            "correlation": 0.49788701834115007,
+            "p_value": 2.115697895850094e-07
+        },
+        "engagement_score": {
+            "correlation": 0.2510014945478568,
+            "p_value": 0.013143122090875321
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.48830256585076104,
+            "p_value": 3.8986108158484573e-07
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.5292978655798144,
+            "p_value": 2.4900732278682588e-08
+        },
+        "human_likeness_score": {
+            "correlation": 0.1603741719707268,
+            "p_value": 0.11660095536113772
+        },
+        "average": 0.40126107334850697
+    },
     "deepseek-ai_DeepSeek-R1-Distill-Llama-8B_predictions_MIPROv2_Predict-DepthSE_demos=5_round2.csv": {
         "authenticity_score": {
             "correlation": 0.3373065243632002,
@@ -1240,6 +1348,60 @@
             "p_value": 0.5694302466544714
         },
         "average": 0.2861568452802066
+    },
+    "meta-llama_Llama-3.1-8B-Instruct_predictions_MIPROv2_Predict-PsychDepthAssessment_kmean-demos=5__participant=3.csv": {
+        "authenticity_score": {
+            "correlation": 0.05738377264419499,
+            "p_value": 0.5766406491620846
+        },
+        "empathy_score": {
+            "correlation": 0.4748438528259063,
+            "p_value": 8.918485144399598e-07
+        },
+        "engagement_score": {
+            "correlation": 0.17361770033981638,
+            "p_value": 0.08899729616494191
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.24576578534428,
+            "p_value": 0.0152463633802214
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.4452899270963863,
+            "p_value": 4.872400371489596e-06
+        },
+        "human_likeness_score": {
+            "correlation": 0.043691279029433754,
+            "p_value": 0.6708849111571686
+        },
+        "average": 0.2793802076501168
+    },
+    "aggregated_participant.csv": {
+        "authenticity_score": {
+            "correlation": 0.2609491623928561,
+            "p_value": 0.009833557206443222
+        },
+        "empathy_score": {
+            "correlation": 0.513817215927638,
+            "p_value": 7.343251585569142e-08
+        },
+        "engagement_score": {
+            "correlation": 0.31317173491030537,
+            "p_value": 0.0017879664753138289
+        },
+        "emotion_provoking_score": {
+            "correlation": 0.48071406835187586,
+            "p_value": 6.243465439404443e-07
+        },
+        "narrative_complexity_score": {
+            "correlation": 0.5350294046366619,
+            "p_value": 1.6454148557187227e-08
+        },
+        "human_likeness_score": {
+            "correlation": 0.08898957248133377,
+            "p_value": 0.38604877672942506
+        },
+        "average": 0.4207363172438674
     },
     "meta-llama_Llama-3.1-70B-Instruct_predictions_MIPROv2_ChainOfThought-PsychDepthAssessment_handpicked-demos=15_persona.csv": {
         "authenticity_score": {

@@ -1,0 +1,40 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Reasoning-Llama-3.1-CoT-RE1-NMT",
+        "base_model_evaluated": "Llama-3.1-8B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "EpistemeAI/Reasoning-Llama-3.1-CoT-RE1-NMT",
+        "evaluation_directory": "./pipeline/results/Llama-3.1-8B-Instruct_Reasoning-Llama-3.1-CoT-RE1-NMT_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-06-03 22:15:29"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Llama-3.1-8B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_0shot.csv",
+                "accuracy": 55.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_stories_scored.csv",
+                "mean_scores": {},
+                "error": "Results file not found."
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Reasoning-Llama-3.1-CoT-RE1-NMT",
+            "math_evaluation": {
+                "raw_data_file": "Reasoning-Llama-3.1-CoT-RE1-NMT_0shot.csv",
+                "accuracy": 27.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Reasoning-Llama-3.1-CoT-RE1-NMT_stories_scored.csv",
+                "mean_scores": {},
+                "error": "Results file not found."
+            }
+        }
+    }
+}

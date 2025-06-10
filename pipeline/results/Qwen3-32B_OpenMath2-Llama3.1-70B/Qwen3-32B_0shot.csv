@@ -1,0 +1,904 @@
+id,problem,solution,predicted_answer,answer,is_correct,time_taken
+66e5a225-df5d-5287-a4b5-80454b52c961,"An equilateral triangle is originally painted black.  Each time the triangle is changed, the middle fourth of each black triangle turns white.  After five changes, what fractional part of the original area of the black triangle remains black?
+
+$\text{(A)}\ \frac{1}{1024} \qquad \text{(B)}\ \frac{15}{64} \qquad \text{(C)}\ \frac{243}{1024} \qquad \text{(D)}\ \frac{1}{4} \qquad \text{(E)}\ \frac{81}{256}$","
+Okay, let me try to figure out this problem. So, we start with an equilateral triangle that's entirely black. Each time we make a change, the middle fourth of each black triangle turns white. We need to find out what fraction of the original area remains black after five changes. The answer choices are given, so maybe I can figure out a pattern or something.
+
+First, let me visualize what's happening. The original triangle is black. When we do the first change, we take the middle fourth and make it white. Wait, the middle fourth... Hmm, how does that work? If it's an equilateral triangle, maybe they're dividing each side into fourths? Or maybe dividing the area into fourths? The problem says ""the middle fourth of each black triangle turns white."" So, maybe each black triangle is divided into four smaller triangles, and the middle one is painted white? That seems plausible.
+
+Let me think. If you divide an equilateral triangle into four smaller congruent equilateral triangles, you would divide each side into two equal parts and connect those points. Wait, dividing each side into two parts gives you four small triangles, each similar to the original. But each of those small triangles would have 1/4 of the area of the original? Wait, no. If you divide a triangle into four smaller ones by connecting midpoints, each small triangle has 1/4 the area? Wait, actually, the area scales with the square of the side length. If each side is half the original, then the area is (1/2)^2 = 1/4. So yes, each small triangle has 1/4 of the area. But when you connect the midpoints, you actually get four smaller triangles of equal area. So, if you take the middle one and paint it white, then after the first change, 3/4 of the original area remains black. Because you took away 1/4.
+
+But let me confirm. Suppose original area is 1. After first change, we remove 1/4, so remaining black area is 3/4. Then, each subsequent change, we look at each black triangle and remove the middle fourth of each. So, each time, for every black triangle, we're removing 1/4 of its area, turning it white. But how does this process work over multiple iterations?
+
+Wait, maybe it's similar to the Sierpinski triangle? But instead of removing the middle triangle each time, maybe it's a different fraction. Let me think recursively. Let's denote that after n changes, the remaining black area is A_n. Initially, A_0 = 1 (the whole triangle is black). After the first change, A_1 = A_0 - (1/4)*A_0 = (3/4)*A_0 = 3/4.
+
+But then, for the second change, we have to consider that each black region is now the three smaller triangles from the first step. Each of those is 1/4 of the original area, but there are three of them. So, when we perform the second change, we look at each black triangle (there are three of them now) and remove the middle fourth of each. So, for each of those three triangles, we remove 1/4 of their area. Therefore, the total area removed in the second change is 3*(1/4)*(1/4) = 3*(1/16). Therefore, A_2 = A_1 - 3*(1/16) = 3/4 - 3/16 = 12/16 - 3/16 = 9/16.
+
+Wait, but maybe there's a pattern here. Let me check. Alternatively, maybe each time the remaining black area is multiplied by 3/4? But in the first step, 1*(3/4) = 3/4. If we multiply by 3/4 again, we would get 9/16, which matches. Then third time, 9/16 * 3/4 = 27/64. Let me verify by calculating manually.
+
+After the second change, we had 9/16. For the third change, each black triangle is now... How many triangles do we have? After first change: 3 triangles. After second change: each of those 3 triangles had their middle fourth removed, so each becomes 3 smaller triangles? Wait, no. Wait, when you remove the middle fourth of a triangle, you divide it into four smaller triangles and remove the middle one. Therefore, each black triangle is replaced by 3 black triangles each of 1/4 the area of the original triangle. Therefore, the number of black triangles is multiplied by 3 each","
+time, and the area is multiplied by 3/4 each time. Therefore, the area",\frac{243}{1024},0.0,216.23960280418396
+07ee9447-4d3b-5402-a889-92b1c6820225,"In rectangle $ABCD$, $AB = 12$ and $BC = 10$.  Points $E$ and $F$ lie inside rectangle $ABCD$ so that $BE = 9$, $DF = 8$, $\overline{BE} \parallel \overline{DF}$, $\overline{EF} \parallel \overline{AB}$, and line $BE$ intersects segment $\overline{AD}$.  The length $EF$ can be expressed in the form $m \sqrt{n} - p$, where $m$, $n$, and $p$ are positive integers and $n$ is not divisible by the square of any prime.  Find $m + n + p$.","
+We are given a rectangle $ABCD$ with $AB = 12$ and $BC = 10$. Points $E$ and $F$ lie inside the rectangle such that:
+
+- $BE = 9$
+- $DF = 8$
+- $\overline{BE} \parallel \overline{DF}$
+- $\overline{EF} \parallel \overline{AB}$
+- Line $BE$ intersects segment $\overline{AD}$
+
+We are to find the length of $EF$ in the form $m\sqrt{n} - p$, and compute $m + n + p$.
+
+---
+
+### Step 1: Coordinate Setup
+
+Let’s place the rectangle in the coordinate plane:
+
+- Let $A = (0, 0)$
+- $B = (12, 0)$
+- $C = (12, 10)$
+- $D = (0, 10)$
+
+Now, we are told that line $BE$ intersects segment $\overline{AD}$, which is the vertical segment from $(0, 0)$ to $(0, 10)$. So, the line $BE$ must intersect the left side of the rectangle at some point on $\overline{AD}$.
+
+Let’s define the coordinates of $E$ and $F$.
+
+---
+
+### Step 2: Let’s define the coordinates of $E$
+
+Let’s suppose that line $BE$ intersects $\overline{AD}$ at point $P = (0, y)$, for some $y$ between 0 and 10.
+
+Then, since $B = (12, 0)$ and $P = (0, y)$, the vector $\vec{BP} = (-12, y)$, and the direction vector of line $BE$ is the same as $\vec{BP}$.
+
+Let’s suppose that $E$ lies on this line at a distance of 9 from $B$. So, we can write:
+
+$$
+E = B + \frac{9}{|\vec{BP}|} \cdot \vec{BP}
+$$
+
+First, compute $|\vec{BP}| = \sqrt{(-12)^2 + y^2} = \sqrt{144 + y^2}$
+
+Then:
+
+$$
+E = (12, 0) + \frac{9}{\sqrt{144 + y^2}} \cdot (-12, y)
+$$
+
+$$
+E = \left(12 - \frac{108}{\sqrt{144 + y^2}}, \frac{9y}{\sqrt{144 + y^2}} \right)
+$$
+
+---
+
+### Step 3: Define the coordinates of $F$
+
+We are told that $\overline{DF} \parallel \overline{BE}$, and $DF = 8$. So, the direction vector of $\overline{DF}$ is the same as $\overline{BE}$, which is the same as $\vec{BP} = (-12, y)$.
+
+Let’s suppose that $F$ lies on the line through $D = (0, 10)$ in the direction of $\vec{BP}$, at a distance of 8 from $D$.
+
+So:
+
+$$
+F = D + \frac{8}{|\vec{BP}|} \cdot \vec{BP}
+$$
+
+$$
+F = (0, 10) + \frac{8}{\sqrt{144 + y^2}} \cdot (-12, y)
+$$
+
+$$
+F = \left( -\frac{96}{\sqrt{144 + y^2}}, 10 + \frac{8y}{\sqrt{144 + y^2}} \right)
+$$
+
+---
+
+### Step 4: Use the fact that $\overline{EF} \parallel \overline{AB}$
+
+Since $\overline{EF} \parallel \overline{AB}$, and $\overline{AB}$ is horizontal, the y-coordinates of $E$ and $F$ must be equal.
+
+So:
+
+$$
+\frac{9y}{\sqrt{144 + y^2}} = 10 + \frac{8y}{\sqrt{144 + y^2}}
+$$
+
+Subtract $\frac{8y}{\sqrt{144 + y^2}}$ from both sides:
+
+$$
+\frac{y}{\sqrt{144 + y^2}} = 10
+$$
+
+Multiply both sides by $\sqrt{144 + y^2}$:
+
+$$
+y = 10\sqrt{14","
+$$
+\boxed{17}
+$$
+
+Okay, let's solve this problem step by",36,0.0,215.2160882949829
+d34b4813-16cf-5c47-960e-8c5f9f696cd5,"There are $100$ players in a single tennis tournament. The tournament is single elimination, meaning that a player who loses a match is eliminated. In the first round, the strongest $28$ players are given a bye, and the remaining $72$ players are paired off to play. After each round, the remaining players play in the next round. The match continues until only one player remains unbeaten. The total number of matches played is
+$\qquad\textbf{(A) } \text{a prime number}$
+$\qquad\textbf{(B) } \text{divisible by 2}$
+$\qquad\textbf{(C) } \text{divisible by 5}$
+$\qquad\textbf{(D) } \text{divisible by 7}$
+$\qquad\textbf{(E) } \text{divisible by 11}$","
+Okay, let's see. There's a tennis tournament with 100 players, single elimination. The first round has 28 players getting a bye, so they don't play. The rest, which would be 100 - 28 = 72 players, are paired off. Each match, the loser is eliminated. Then, after each round, the remaining players play until there's one left. The question is asking for the total number of matches played, and which of the given options (A to E) it fits into.
+
+First, I remember that in a single elimination tournament, each match results in one loss. Since every player except the champion has exactly one loss, the total number of matches should be equal to the total number of players minus one. Wait, is that right? Let me think. If there's one champion, then 99 players are eliminated, each eliminated by one loss. Therefore, there must be 99 matches. But wait, does the bye affect this?
+
+Hold on, maybe that logic is too simplistic. Let me check. Suppose there are N players. In a single elimination tournament, normally, you need N - 1 matches to determine a winner because each match eliminates one person, and you need to eliminate N - 1 people. But here, there are byes in the first round. But does that affect the total number of matches? Because regardless of byes, each loss still eliminates a player. So regardless of how the tournament is structured, the total number of matches should still be 100 - 1 = 99. But then why does the problem give all the details about the first round? Maybe there's something wrong with my reasoning.
+
+Wait, let me test this with a smaller number. Suppose there are 2 players. Then, one match is played. 2 - 1 = 1. Correct. If there are 4 players. First round: two matches, then the winners play in the final. Total matches: 3, which is 4 - 1. If there's a bye, say 3 players. Wait, but with single elimination, odd numbers can be tricky. Let me think. Suppose there are 3 players. One gets a bye, and the other two play. The winner plays against the bye player. Total matches: 2, which is 3 - 1. So yes, even with a bye, the total number of matches is still number of players minus one. Therefore, regardless of byes, the total number of matches in a single elimination tournament is always N - 1. Therefore, in this case, 100 - 1 = 99 matches. Therefore, the answer is 99.
+
+But let me check again. Let's think about how the tournament progresses. First round: 72 players, which is 36 matches. The 36 winners plus the 28 players with a bye, so 36 + 28 = 64 players. Then next round: 64 players. That's a power of two. So 32 matches, 32 winners. Then 16 matches, 8 matches, 4, 2, 1. So total matches: first round 36, then 32 + 16 + 8 + 4 + 2 + 1. Wait, let's add them up.
+
+First round: 36 matches. Then 32, 16, 8, 4, 2, 1. Let's compute total matches:
+
+Starting from 64 players:
+
+Round 1 (after the first round with byes): 32 matches (64 players → 32 winners)
+
+Then 16 matches (32 → 16)
+
+Then 8 matches (16 → 8)
+
+Then 4 matches (8 → 4)
+
+Then 2 matches (4 → 2)
+
+Then 1 match (2 → 1)
+
+So total matches after the first round: 32 + 16 + 8 + 4 + 2 + 1 = 63 matches. Then add the first round's 36 matches. Total matches: 36 + 63 = 99. Yep, same as before. So total matches is 99. Therefore, the answer is 99.
+
+Now, the options are:
+
+A) prime number
+
+B) divisible by 2
+
+C) divisible by 5
+
+D) divisible by 7
+
+E) divisible by 11
+
+So 99. Let's check if 99 is prime. Well, 99 is 9*11, so it's not prime. So A is out. Divisible by 2? ","
+Is 99 even? No. So B is out. Divisible by 5?",99,0.0,216.34332013130188
+6799814f-33c7-5dc6-9b7f-4d437e51a0e0,"The measures (in degrees) of the interior angles of a convex hexagon form an arithmetic sequence of integers. Let $m$ be the measure of the largest interior angle of the hexagon. The largest possible value of $m$, in degrees, is
+(A) 165  (B) 167 (C) 170 (D) 175 (E) 179","
+Okay, so I need to find the largest possible measure of the largest interior angle in a convex hexagon where the angles form an arithmetic sequence of integers. The answer choices are given, so maybe I can use those to check my work, but I should try to solve it step by step.
+
+First, let me recall some basics about convex hexagons. A convex hexagon has all interior angles less than 180 degrees. The sum of the interior angles of an n-sided polygon is given by the formula (n-2)*180 degrees. For a hexagon, that would be (6-2)*180 = 4*180 = 720 degrees. So the sum of all six angles is 720 degrees.
+
+Now, the problem says the angles form an arithmetic sequence. An arithmetic sequence is a sequence where each term after the first is obtained by adding a common difference. Let me denote the angles as a, a + d, a + 2d, a + 3d, a + 4d, a + 5d, where a is the measure of the smallest angle and d is the common difference. Since we want the largest angle, which is a + 5d, to be as large as possible, we need to maximize a + 5d.
+
+But there are constraints. First, all angles must be less than 180 degrees because it's a convex hexagon. Also, all angles must be positive, but since it's convex, they are already between 0 and 180. Also, the common difference d must be an integer because the problem states that the measures are integers forming an arithmetic sequence.
+
+So let me write down the sum of the angles:
+
+Sum = a + (a + d) + (a + 2d) + (a + 3d) + (a + 4d) + (a + 5d) = 6a + (0+1+2+3+4+5)d = 6a + 15d.
+
+We know this sum must equal 720 degrees. Therefore:
+
+6a + 15d = 720.
+
+Simplify this equation. Let me divide both sides by 3:
+
+2a + 5d = 240.
+
+So, 2a = 240 - 5d => a = (240 - 5d)/2.
+
+Since all angles must be positive integers and less than 180, let's consider the constraints.
+
+First, each angle must be less than 180. The largest angle is a + 5d. Therefore:
+
+a + 5d < 180.
+
+But since a = (240 - 5d)/2, substituting:
+
+(240 - 5d)/2 + 5d < 180.
+
+Let me compute that:
+
+Multiply through by 2 to eliminate denominator:
+
+240 - 5d + 10d < 360
+
+240 + 5d < 360
+
+5d < 120
+
+d < 24.
+
+So the common difference d must be less than 24. Also, since d is an integer, the maximum possible integer value for d is 23. However, we also need to make sure that all angles are positive. Let's check the smallest angle, which is a = (240 - 5d)/2. Since angles must be positive:
+
+(240 - 5d)/2 > 0 => 240 - 5d > 0 => 5d < 240 => d < 48. But since we already have d < 24 from the previous constraint, this is automatically satisfied. However, we also need to ensure that each term in the sequence is positive. But since the sequence is increasing (assuming d is positive; if d is negative, the sequence would be decreasing, but since we want the largest angle to be maximum, probably d is positive). Wait, but maybe d could be negative? However, if d is negative, then the largest angle would be the first term, which would be a. But since we want to maximize the largest angle, which in that case would be a, but if d is negative, then the other angles would be smaller. However, since we want to maximize the largest angle, it's better to have d positive so that the largest angle is a + 5d. Therefore, we can assume d is a positive integer.
+
+Therefore, d is a positive integer less than 24. So d can be from 1 to 23. However, we also need to ensure that all angles are integers. Since","
+Wait, the problem says the measures form an arithmetic sequence of integers. So each term must be",175,0.0,213.841867685318
+194cbe28-8374-5d7e-89f8-629f165c0d8f,"If $\frac{a}{10^x-1}+\frac{b}{10^x+2}=\frac{2 \cdot 10^x+3}{(10^x-1)(10^x+2)}$ is an identity for positive rational values of $x$, then the value of $a-b$ is:
+$\textbf{(A)}\ \frac{4}{3} \qquad \textbf{(B)}\ \frac{5}{3} \qquad \textbf{(C)}\ 2 \qquad \textbf{(D)}\ \frac{11}{4} \qquad \textbf{(E)}\ 3$","
+Okay, so I need to solve this equation where a fraction with a and b equals another fraction, and it's supposed to be an identity for positive rational x. The question is asking for the value of a - b. Let me start by writing down the equation again to make sure I have it right:
+
+(a)/(10^x - 1) + (b)/(10^x + 2) = (2*10^x + 3)/[(10^x - 1)(10^x + 2)]
+
+Hmm, since it's an identity, this should hold true for all positive rational x. That means I can probably manipulate the left side to combine the fractions and then set the numerators equal since the denominators would be the same. Let me try that.
+
+First, find a common denominator for the left side. The denominators are (10^x - 1) and (10^x + 2), so the common denominator would be their product, which is exactly the denominator on the right side. Perfect. So combining the fractions:
+
+[a*(10^x + 2) + b*(10^x - 1)] / [(10^x - 1)(10^x + 2)] = (2*10^x + 3)/[(10^x - 1)(10^x + 2)]
+
+Since the denominators are equal, the numerators must be equal. Therefore:
+
+a*(10^x + 2) + b*(10^x - 1) = 2*10^x + 3
+
+Now, let me expand the left side:
+
+a*10^x + 2a + b*10^x - b = 2*10^x + 3
+
+Combine like terms. The terms with 10^x are (a + b)10^x, and the constant terms are (2a - b). So:
+
+(a + b)10^x + (2a - b) = 2*10^x + 3
+
+Since this is an identity, the coefficients of corresponding powers of 10^x must be equal. That gives me a system of equations:
+
+1. Coefficient of 10^x: a + b = 2
+2. Constant term: 2a - b = 3
+
+Now I need to solve this system for a and b. Let me write them again:
+
+Equation 1: a + b = 2
+
+Equation 2: 2a - b = 3
+
+I can solve this using substitution or elimination. Let me try elimination. If I add Equation 1 and Equation 2 together, the b terms will cancel:
+
+Adding Equation 1 + Equation 2:
+
+(a + b) + (2a - b) = 2 + 3
+
+Simplify:
+
+a + b + 2a - b = 5 => 3a = 5 => a = 5/3
+
+Now that I have a, I can plug it back into Equation 1 to find b:
+
+5/3 + b = 2 => b = 2 - 5/3 = 1/3
+
+So a is 5/3 and b is 1/3. The question asks for a - b:
+
+a - b = 5/3 - 1/3 = 4/3
+
+Wait, but let me check my work to make sure I didn't make any mistakes. Let me verify by plugging a and b back into the original equation.
+
+Original equation after combining numerators:
+
+Left side numerator: a*(10^x + 2) + b*(10^x - 1)
+
+Plugging in a = 5/3 and b = 1/3:
+
+(5/3)(10^x + 2) + (1/3)(10^x - 1) = (5/3*10^x + 10/3) + (1/3*10^x - 1/3) = (5/3 + 1/3)10^x + (10/3 - 1/3) = 6/3*10^x + 9/3 = 2*10^x + 3, which matches the right side numerator. Perfect, that checks out.
+
+Therefore, a - b is indeed 5/3 - 1/3 = 4/3. Looking at the answer choices, option A is 4/3. So the answer should be A.
+
+But let me double-check my equations again. The system was:
+
+a + b = 2
+
+2a -","\boxed{\frac{4}{3}}
+</think>
+
+To solve the equation:
+
+$$
+\frac",\frac{4}{3},1.0,215.53921389579773
+9c14b2f2-dc62-50b3-ade5-e35fcd5e911b,The sequence $(a_n)$ satisfies $a_0=0$ and $a_{n + 1} = \frac85a_n + \frac65\sqrt {4^n - a_n^2}$ for $n\geq 0$. Find the greatest integer less than or equal to $a_{10}$.,"
+We are given a recursive sequence:
+
+$$
+a_0 = 0, \quad a_{n+1} = \frac{8}{5}a_n + \frac{6}{5}\sqrt{4^n - a_n^2}
+$$
+
+We are to find the greatest integer less than or equal to $ a_{10} $, i.e., $ \lfloor a_{10} \rfloor $.
+
+---
+
+### Step 1: Try to find a pattern or closed-form expression
+
+Let’s compute the first few terms to see if we can spot a pattern.
+
+#### Compute $ a_0 $:
+
+$$
+a_0 = 0
+$$
+
+#### Compute $ a_1 $:
+
+$$
+a_1 = \frac{8}{5}a_0 + \frac{6}{5}\sqrt{4^0 - a_0^2} = \frac{8}{5}(0) + \frac{6}{5}\sqrt{1 - 0} = \frac{6}{5}
+$$
+
+#### Compute $ a_2 $:
+
+$$
+a_2 = \frac{8}{5}a_1 + \frac{6}{5}\sqrt{4^1 - a_1^2}
+$$
+
+We already have $ a_1 = \frac{6}{5} $, so:
+
+$$
+a_2 = \frac{8}{5} \cdot \frac{6}{5} + \frac{6}{5} \cdot \sqrt{4 - \left(\frac{6}{5}\right)^2}
+$$
+
+$$
+= \frac{48}{25} + \frac{6}{5} \cdot \sqrt{4 - \frac{36}{25}} = \frac{48}{25} + \frac{6}{5} \cdot \sqrt{\frac{100 - 36}{25}} = \frac{48}{25} + \frac{6}{5} \cdot \sqrt{\frac{64}{25}}
+$$
+
+$$
+= \frac{48}{25} + \frac{6}{5} \cdot \frac{8}{5} = \frac{48}{25} + \frac{48}{25} = \frac{96}{25}
+$$
+
+#### Compute $ a_3 $:
+
+$$
+a_3 = \frac{8}{5}a_2 + \frac{6}{5}\sqrt{4^2 - a_2^2}
+$$
+
+We have $ a_2 = \frac{96}{25} $, so:
+
+$$
+a_3 = \frac{8}{5} \cdot \frac{96}{25} + \frac{6}{5} \cdot \sqrt{16 - \left(\frac{96}{25}\right)^2}
+$$
+
+$$
+= \frac{768}{125} + \frac{6}{5} \cdot \sqrt{16 - \frac{9216}{625}} = \frac{768}{125} + \frac{6}{5} \cdot \sqrt{\frac{10000 - 9216}{625}} = \frac{768}{125} + \frac{6}{5} \cdot \sqrt{\frac{784}{625}}
+$$
+
+$$
+= \frac{768}{125} + \frac{6}{5} \cdot \frac{28}{25} = \frac{768}{125} + \frac{168}{125} = \frac{936}{125}
+$$
+
+So far, we have:
+
+- $ a_0 = 0 $
+- $ a_1 = \frac{6}{5} $
+- $ a_2 = \frac{96}{25} $
+- $ a_3 = \frac{936}{125} $
+
+Let’s try to see if there is a pattern.
+
+---
+
+### Step 2: Try to find a closed-form expression
+
+Let’s look at the values:
+
+- $ a_0 = 0 $
+- $ a_1 = \frac{6}{5} $
+- $ a_2 = \frac{96}{25} $
+- $ a_3 = \frac{936}{125} $
+
+Let’s write them in decimal form:
+
+- $ a_0 = 0 $
+- $ a_1 = 1.2","$$
+\boxed{1023}
+$$
+</think>
+
+$$
+\boxed{1",983,0.0,214.01687836647034
+164deb66-0342-59b1-beee-90b632692cbb,"Five men and nine women stand equally spaced around a circle in random order. The probability that every man stands diametrically opposite a woman is $\frac{m}{n},$ where $m$ and $n$ are relatively prime positive integers. Find $m+n.$","
+We are given 5 men and 9 women standing equally spaced around a circle in random order. We are to find the probability that **every man stands diametrically opposite a woman**, and express the probability as a reduced fraction $\frac{m}{n}$, then find $m+n$.
+
+---
+
+### Step 1: Total number of people and positions
+
+There are $5 + 9 = 14$ people in total. Since they are equally spaced around a circle, the circle has 14 positions.
+
+Each person has a **diametrically opposite** position. Since the circle has an even number of positions (14), each position has a unique diametrically opposite position.
+
+So, the 14 positions can be grouped into 7 **diametrically opposite pairs**.
+
+---
+
+### Step 2: Total number of arrangements
+
+We are to count the number of **arrangements** of 5 men and 9 women in the 14 positions.
+
+Since the people are distinguishable (they are in random order), the total number of arrangements is:
+
+$$
+\text{Total arrangements} = \binom{14}{5}
+$$
+
+This is the number of ways to choose 5 positions for the men (the rest will be women).
+
+---
+
+### Step 3: Favorable arrangements (every man opposite a woman)
+
+We now count the number of arrangements where **every man is diametrically opposite a woman**.
+
+Let’s denote the 7 diametrically opposite pairs as $P_1, P_2, \dots, P_7$. Each pair consists of two positions that are opposite each other.
+
+We want to assign the 5 men to 5 of these 7 pairs, such that **in each of these 5 pairs, one position is a man and the other is a woman**.
+
+So, for each of the 5 chosen pairs, we must assign the man to one of the two positions in the pair, and the woman to the other.
+
+Let’s proceed step by step.
+
+---
+
+### Step 4: Choose 5 pairs to place the men
+
+We must choose 5 out of the 7 diametrically opposite pairs to place the men. The number of ways to choose 5 pairs is:
+
+$$
+\binom{7}{5}
+$$
+
+---
+
+### Step 5: Assign men and women to the 5 chosen pairs
+
+For each of the 5 chosen pairs, we must assign the man to one of the two positions in the pair, and the woman to the other. For each pair, there are 2 ways to do this.
+
+So, for 5 pairs, the number of ways is:
+
+$$
+2^5
+$$
+
+---
+
+### Step 6: Assign the remaining 2 pairs to be all women
+
+The remaining 2 pairs must be assigned to be **all women**. That is, both positions in each of these 2 pairs must be women.
+
+So, we are assigning 5 men and 9 women to the 14 positions, with the constraint that:
+
+- 5 men are placed in 5 different diametrically opposite pairs, with each man opposite a woman.
+- The remaining 2 pairs are all women.
+
+Let’s now count the number of such arrangements.
+
+---
+
+### Step 7: Total number of favorable arrangements
+
+We now compute the total number of favorable arrangements:
+
+- Choose 5 out of 7 pairs to place the men: $\binom{7}{5}$
+- For each of these 5 pairs, assign the man to one of the two positions: $2^5$
+- The remaining 2 pairs are all women: 1 way to assign (since both positions in each pair are women)
+
+So, the total number of favorable arrangements is:
+
+$$
+\binom{7}{5} \cdot 2^5
+$$
+
+---
+
+### Step 8: Compute the probability
+
+The probability is the ratio of favorable arrangements to total arrangements:
+
+$$
+\text{Probability} = \frac{\binom{7}{5} \cdot 2^5}{\binom{14}{5}}
+$$
+
+Now compute the values:
+
+- $\binom{7}{5} = \binom{7}{2} = 21$
+- $2^5 = 32$
+- $\binom{14}{5} = \frac{14 \cdot 13 \cdot 12 \cdot 11 \cdot 10}{5 \cdot 4 \cdot 3 \cdot 2 \cdot 1} = 2002$
+
+So:
+
+$$
+\text{Probability} = \frac{21 \cdot 32}{2002} = \frac{672}{2002}
+$$
+
+","
+$$
+\boxed{\frac{672}{2002}}
+$$
+
+Now",191,0.0,213.34797167778015
+87b9983c-393e-53fc-b3ef-af216ba05503,"For $x$ real, the inequality $1\le |x-2|\le 7$ is equivalent to
+$\textbf{(A) }x\le 1\text{ or }x\ge 3\qquad \textbf{(B) }1\le x\le 3\qquad \textbf{(C) }-5\le x\le 9\qquad \\ \textbf{(D) }-5\le x\le 1\text{ or }3\le x\le 9\qquad  \textbf{(E) }-6\le x\le 1\text{ or }3\le x\le 10$","
+Okay, let's see. I need to solve the inequality 1 ≤ |x - 2| ≤ 7 for real numbers x. And then figure out which of the given options it's equivalent to. Alright, let's start by recalling how to handle compound inequalities involving absolute values.
+
+First, the inequality given is a compound one: it's saying that the absolute value of (x - 2) is between 1 and 7, inclusive. So, 1 ≤ |x - 2| ≤ 7. I remember that absolute value inequalities can be broken down into separate inequalities. Let me recall the general approach.
+
+For an absolute value expression |A| ≤ B, it translates to -B ≤ A ≤ B. But here, we have a compound inequality where the absolute value is between two numbers. So maybe I need to split this into two parts: first, |x - 2| ≥ 1 and |x - 2| ≤ 7. Then solve each separately and find the intersection of the solutions?
+
+Wait, but the original inequality is 1 ≤ |x - 2| ≤ 7. So that's combining both |x - 2| ≥ 1 and |x - 2| ≤ 7. Therefore, the solution set will be the values of x that satisfy both inequalities simultaneously. So I need to solve each part and then find their intersection.
+
+Let me start with the first part: |x - 2| ≥ 1.
+
+Breaking that down, |x - 2| ≥ 1 means that x - 2 ≥ 1 or x - 2 ≤ -1. Solving these:
+
+For x - 2 ≥ 1: add 2 to both sides, x ≥ 3.
+
+For x - 2 ≤ -1: add 2 to both sides, x ≤ 1.
+
+So the solution to |x - 2| ≥ 1 is x ≤ 1 or x ≥ 3.
+
+Now the second part: |x - 2| ≤ 7.
+
+This translates to -7 ≤ x - 2 ≤ 7. Adding 2 to all parts: -7 + 2 ≤ x ≤ 7 + 2 → -5 ≤ x ≤ 9.
+
+So the solution to |x - 2| ≤ 7 is -5 ≤ x ≤ 9.
+
+Now, the original inequality requires both conditions to hold: x must satisfy both |x - 2| ≥ 1 and |x - 2| ≤ 7. Therefore, we need the intersection of the two solutions.
+
+So, the first solution is x ≤ 1 or x ≥ 3. The second solution is -5 ≤ x ≤ 9. The intersection would be the overlap between these.
+
+Let me visualize this. For the first part, x ≤ 1 combined with -5 ≤ x ≤ 9. The overlap here is -5 ≤ x ≤ 1. Similarly, for the second part of the first solution, x ≥ 3 combined with -5 ≤ x ≤ 9. The overlap here is 3 ≤ x ≤ 9. Therefore, combining these two overlaps, the entire solution set is -5 ≤ x ≤ 1 or 3 ≤ x ≤ 9.
+
+Looking at the answer choices, let me check the options:
+
+Option D says: -5 ≤ x ≤ 1 or 3 ≤ x ≤ 9. That seems to match exactly what I just found.
+
+Let me double-check my steps to make sure I didn't make a mistake.
+
+Starting with 1 ≤ |x - 2| ≤ 7. Breaking into two inequalities:
+
+1 ≤ |x - 2| and |x - 2| ≤ 7.
+
+For 1 ≤ |x - 2|, yes, that's equivalent to x - 2 ≥ 1 or x - 2 ≤ -1, leading to x ≥ 3 or x ≤ 1. Correct.
+
+For |x - 2| ≤ 7, solving gives -7 ≤ x - 2 ≤ 7, adding 2 gives -5 ≤ x ≤ 9. Correct.
+
+Intersection of (x ≤ 1 or x ≥ 3) with (-5 ≤ x ≤ 9) is indeed (-5 ≤ x ≤ 1) or (3 ≤ x ≤ 9). So that's option D.
+
+Let me check the other options to make sure none of them could be correct.
+
+Option A: x ≤ 1 or x ≥ 3. But this doesn't consider the upper and lower bounds from the second inequality. For example, x ≥ 3 is correct but only up to 9. Similarly, x ≤ 1 is correct but only down to -5. So A is too broad; it doesn't restrict x to be ≥ -5 or ≤ 9. So A is incorrect","</think>
+
+To solve the inequality  
+$$
+1 \leq |x - 2| \",D,0.0,215.75487875938416
+dce50621-61cc-5ed1-92c7-57652f899d2e,"Professor Gamble buys a lottery ticket, which requires that he pick six different integers from $1$ through $46$, inclusive. He chooses his numbers so that the sum of the base-ten [logarithms](https://artofproblemsolving.com/wiki/index.php/Logarithm) of his six numbers is an [integer](https://artofproblemsolving.com/wiki/index.php/Integer). It so happens that the integers on the winning ticket have the same property— the sum of the base-ten logarithms is an integer. What is the [probability](https://artofproblemsolving.com/wiki/index.php/Probability) that Professor Gamble holds the winning ticket?
+$\textbf {(A)}\ 1/5 \qquad \textbf {(B)}\ 1/4 \qquad \textbf {(C)}\ 1/3 \qquad \textbf {(D)}\ 1/2 \qquad \textbf {(E)}\ 1$","
+Okay, let's try to figure out this probability problem. So, Professor Gamble buys a lottery ticket where he picks six different integers from 1 through 46. The key thing here is that he chooses his numbers such that the sum of the base-ten logarithms of his six numbers is an integer. Also, the winning ticket has the same property. We need to find the probability that Professor Gamble holds the winning ticket. The answer choices are given, so maybe we need to figure out how many such valid tickets there are and then take the reciprocal of that number for the probability?
+
+First, let me recall that the sum of logarithms is the logarithm of the product. So, if the sum of log₁₀ of each number is an integer, that means log₁₀(n₁) + log₁₀(n₂) + ... + log₁₀(n₆) is an integer. Which simplifies to log₁₀(n₁n₂...n₆) being an integer. Therefore, the product of the six numbers must be a power of 10. Since 10 is 2*5, the product must be 10^k for some integer k. Therefore, n₁n₂n₃n₄n₅n₆ = 10^k = 2^k * 5^k.
+
+So, the product of the six numbers must be a power of 10. Therefore, each number must be composed only of the primes 2 and 5. Because if there's any other prime factor in any of the numbers, then the product would have that prime factor as well, which isn't allowed since 10^k only has 2 and 5. Therefore, all six numbers must be numbers from 1 to 46 that are only divisible by 2 and 5. Let me list all such numbers.
+
+First, numbers from 1 to 46. Let's think about numbers that are made up of 2s and 5s. These are numbers of the form 2^a * 5^b where a and b are non-negative integers, and the number is between 1 and 46 inclusive.
+
+Let me list them:
+
+Start with 1: 2^0 * 5^0 = 1.
+
+Then powers of 2: 2, 4, 8, 16, 32. Next would be 64, which is over 46.
+
+Powers of 5: 5, 25. Next is 125, which is too big.
+
+Now combinations of 2s and 5s:
+
+2*5=10, 4*5=20, 8*5=40, 16*5=80 (too big). Then 2*25=50 (too big). 4*25=100 (too big). Similarly, 5*5=25 already listed. 2*2*5=20 already listed. Let me check if there are others.
+
+Also, 1*2=2 already listed. 1*5=5 already listed. 1*10=10 already listed. So maybe all numbers are combinations of 2^a *5^b where a and b are non-negative integers. Let me list all such numbers up to 46:
+
+1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40.
+
+Let me check each:
+
+1: yes.
+
+2: yes.
+
+4: yes.
+
+5: yes.
+
+8: yes.
+
+10: 2*5.
+
+16: 2^4.
+
+20: 4*5.
+
+25: 5^2.
+
+32: 2^5.
+
+40: 8*5.
+
+Is there another? Let's see:
+
+What about 2*25=50, which is over 46. 5*5=25 already there. 2^3*5=40, which is there. 2^2*5^2= 4*25=100, too big. 2^4*5=16*5=80, too big. 5^3=125, too big. 1* anything else? 1* anything else would be same as the others. So total numbers are 1, 2, 4, 5, 8, 10, 16, 20, 25, 32, 40. Let me count them: 1,2,4,","
+Okay, so there are 11 numbers in total between 1 and 46 that",\frac{1}{4},0.0,219.30363512039185
+9e0d8083-e798-5bdb-b63f-04efc52b6477,Let $x$ be a real number such that $\sin^{10}x+\cos^{10} x = \tfrac{11}{36}$. Then $\sin^{12}x+\cos^{12} x = \tfrac{m}{n}$ where $m$ and $n$ are relatively prime positive integers. Find $m+n$.,"
+We are given:
+
+$$
+\sin^{10}x + \cos^{10}x = \frac{11}{36}
+$$
+
+We are to find:
+
+$$
+\sin^{12}x + \cos^{12}x = \frac{m}{n}
+$$
+
+and compute $ m + n $, where $ m $ and $ n $ are relatively prime positive integers.
+
+---
+
+### Step 1: Use identities to simplify
+
+Let’s define:
+
+- $ a = \sin^2 x $
+- $ b = \cos^2 x $
+
+We know that:
+
+$$
+a + b = 1
+$$
+
+We are given:
+
+$$
+a^5 + b^5 = \frac{11}{36}
+$$
+
+We are to find:
+
+$$
+a^6 + b^6
+$$
+
+---
+
+### Step 2: Use identities for powers
+
+We can use the identity:
+
+$$
+a^5 + b^5 = (a + b)^5 - 5ab(a + b)^3 + 5a^2b^2(a + b)
+$$
+
+Since $ a + b = 1 $, this simplifies to:
+
+$$
+a^5 + b^5 = 1 - 5ab + 5a^2b^2
+$$
+
+Set this equal to $ \frac{11}{36} $:
+
+$$
+1 - 5ab + 5a^2b^2 = \frac{11}{36}
+$$
+
+Subtract 1 from both sides:
+
+$$
+-5ab + 5a^2b^2 = \frac{11}{36} - 1 = -\frac{25}{36}
+$$
+
+Divide both sides by 5:
+
+$$
+-ab + a^2b^2 = -\frac{5}{36}
+$$
+
+Let’s denote $ ab = t $. Then:
+
+$$
+-t + t^2 = -\frac{5}{36}
+$$
+
+Rewriting:
+
+$$
+t^2 - t + \frac{5}{36} = 0
+$$
+
+Multiply through by 36 to eliminate the fraction:
+
+$$
+36t^2 - 36t + 5 = 0
+$$
+
+Solve this quadratic:
+
+$$
+t = \frac{36 \pm \sqrt{(-36)^2 - 4 \cdot 36 \cdot 5}}{2 \cdot 36}
+= \frac{36 \pm \sqrt{1296 - 720}}{72}
+= \frac{36 \pm \sqrt{576}}{72}
+= \frac{36 \pm 24}{72}
+$$
+
+So:
+
+- $ t = \frac{36 + 24}{72} = \frac{60}{72} = \frac{5}{6} $
+- $ t = \frac{36 - 24}{72} = \frac{12}{72} = \frac{1}{6} $
+
+So $ ab = \frac{1}{6} $ or $ ab = \frac{5}{6} $
+
+But since $ a + b = 1 $, and $ ab = \frac{1}{6} $, the quadratic equation for $ a $ and $ b $ is:
+
+$$
+x^2 - x + \frac{1}{6} = 0
+$$
+
+This has real roots, so $ ab = \frac{1}{6} $ is valid.
+
+If $ ab = \frac{5}{6} $, then the quadratic would be:
+
+$$
+x^2 - x + \frac{5}{6} = 0
+$$
+
+Discriminant:
+
+$$
+1 - 4 \cdot \frac{5}{6} = 1 - \frac{20}{6} = -\frac{14}{6} < 0
+$$
+
+So this has no real roots. Therefore, $ ab = \frac{1}{6} $
+
+---
+
+### Step 3: Compute $ a^6 + b^6 $
+
+We use the identity:
+
+$$
+a^6 + b^6 = (a^2 + b^2)^3 - 3a^2b^2(a^2 + b^2)
+$$
+
+We already know:
+
+- $ a + b = 1 $
+- $ ab = \frac{1}{6} $
+
+So:
+
+$$
+a^2 + b^2 = (a + b)^2 - 2ab = 1 - 2 \cdot \frac{1}{6} =","</think>
+
+$$
+\boxed{13}$$
+
+### Step 3: Compute $ a",67,0.0,213.9675521850586
+cc7efac6-433c-5dd1-b95b-b1a8b5c20f5d,"Seven cookies of radius $1$ inch are cut from a circle of cookie dough, as shown. Neighboring cookies are tangent, and all except the center cookie are tangent to the edge of the dough. The leftover scrap is reshaped to form another cookie of the same thickness. What is the radius in inches of the scrap cookie?
+[asy] draw(circle((0,0),3)); draw(circle((0,0),1)); draw(circle((1,sqrt(3)),1)); draw(circle((-1,sqrt(3)),1));  draw(circle((-1,-sqrt(3)),1)); draw(circle((1,-sqrt(3)),1));  draw(circle((2,0),1)); draw(circle((-2,0),1)); [/asy]
+$\textbf{(A) } \sqrt{2} \qquad \textbf{(B) } 1.5 \qquad \textbf{(C) } \sqrt{\pi} \qquad \textbf{(D) } \sqrt{2\pi} \qquad \textbf{(E) } \pi$","
+Okay, let's try to figure out this cookie problem. So, there's a big circle of cookie dough, and they've cut out seven cookies, each with radius 1 inch. The cookies are arranged such that one is in the center, and the other six are around it, all touching each other and the edge of the dough. Then, the leftover scrap is reshaped into another cookie, and we need to find the radius of that scrap cookie. The answer choices are given, so maybe I can work through the problem step by step.
+
+First, I need to visualize the setup. There's a large circle (the dough) with seven smaller circles (cookies) inside. The central cookie is tangent to all six surrounding cookies, and each of those six is also tangent to the edge of the dough. Since all the cookies have radius 1 inch, the centers of the surrounding cookies must be 2 inches apart from each other because each has a radius of 1, so the distance between centers for tangent circles is the sum of their radii, which is 1 + 1 = 2 inches.
+
+Now, the big circle's radius isn't given directly, so I need to figure that out. Let me think. The six outer cookies are arranged around the central one. If I imagine connecting the centers of the surrounding cookies, they should form a regular hexagon around the central cookie. The distance from the center of the big dough circle to the center of any outer cookie would be the distance from the center to a vertex of the hexagon. Since each outer cookie is tangent to the central cookie, the distance between their centers is 1 + 1 = 2 inches. Therefore, the radius of the hexagon (distance from center to a vertex) is 2 inches.
+
+But then, the big dough circle's radius isn't just 2 inches because the outer cookies are also tangent to the edge of the dough. So, from the center of the dough to the edge of one of the outer cookies would be the distance from the dough's center to the outer cookie's center plus the radius of the outer cookie. The distance from the dough's center to the outer cookie's center is 2 inches (as established from the hexagon), and then adding the radius of the outer cookie (1 inch) gives a total radius for the dough circle of 2 + 1 = 3 inches. Let me confirm that.
+
+Yes, if the centers of the outer cookies are 2 inches from the center of the dough, and each outer cookie has a radius of 1 inch, then the dough circle must have a radius of 2 + 1 = 3 inches to be tangent to those outer cookies. So the big circle has radius 3 inches.
+
+Now, the area of the dough circle is π*(3)^2 = 9π square inches. The seven cookies that are cut out each have area π*(1)^2 = π, so seven cookies would have a total area of 7π. Therefore, the leftover scrap area is 9π - 7π = 2π square inches.
+
+The problem says the scrap is reshaped into another cookie of the same thickness. Assuming that the thickness is uniform and the same as the original cookies, the volume of dough would be proportional to the area (since thickness is same). Therefore, the area of the new scrap cookie is 2π. Since the area of a circle is πr², we can set πr² = 2π, which simplifies to r² = 2, so r = √2 inches. Therefore, the radius of the scrap cookie is √2 inches, which is option A.
+
+Wait, let me check again. The area of the original dough is 9π, subtract 7π for the seven cookies, leaving 2π. Then, forming another cookie with area 2π. Since area is πr², solving πr² = 2π gives r² = 2, so r is √2. That seems straightforward. Let me check if there's something I missed.
+
+Is there any chance that the big circle's radius is different? Let me think again about how the big circle's radius is determined. The six outer cookies are arranged around the central one. The centers of the outer cookies form a regular hexagon around the center. The distance from the center of the dough to any outer cookie's center is equal to twice the radius of the small cookies, which is 2 inches. Then, since the outer cookies are tangent to the dough's edge, the radius of the dough is 2 + 1 = 3 inches. That seems correct.
+
+Alternatively, maybe there's a different way to calculate the radius of the big circle? For example, considering the distance between two adjacent outer cookies? Well, the distance between centers of two adjacent outer cookies","</think>
+
+The problem involves a large circular dough from which seven smaller cookies of radius 1 inch are",\sqrt2,0.0,218.29866981506348
+e838e73a-f3a6-5064-895a-5d640efd3db5,"Let $x$ be a real number such that $\sec x - \tan x = 2$. Then $\sec x + \tan x =$
+$\textbf{(A)}\ 0.1 \qquad  \textbf{(B)}\ 0.2 \qquad  \textbf{(C)}\ 0.3 \qquad  \textbf{(D)}\ 0.4 \qquad  \textbf{(E)}\ 0.5$","
+Okay, so I need to solve this trigonometry problem where sec x minus tan x equals 2, and then find out what sec x plus tan x is. The options are given as A to E with decimal numbers. Let me think about how to approach this.
+
+First, I remember that sec x is 1 over cos x, and tan x is sin x over cos x. Maybe I can write everything in terms of sine and cosine to make it easier? Let me try that.
+
+So, sec x - tan x = 2 translates to (1/cos x) - (sin x / cos x) = 2. Combining those terms gives (1 - sin x)/cos x = 2. Hmm, not sure if that helps yet. Maybe there's another identity I can use here?
+
+Wait, there's an identity involving sec^2 x and tan^2 x. Let me recall... Oh right, sec^2 x - tan^2 x = 1. That's a fundamental identity. Maybe I can use that here. Since they gave me sec x - tan x, and I need to find sec x + tan x, perhaps multiplying them together would use that identity?
+
+Let me try multiplying (sec x - tan x) by (sec x + tan x). That should equal sec^2 x - tan^2 x, which is 1. So if I let A = sec x - tan x = 2, and B = sec x + tan x, which is what I need to find, then A * B = 1. Therefore, 2 * B = 1, so B = 1/2. Wait, 1/2 is 0.5, which is option E. But let me check if that makes sense.
+
+Hold on, let me verify my steps again. The identity is definitely sec^2 x - tan^2 x = 1. And (sec x - tan x)(sec x + tan x) is indeed sec^2 x - tan^2 x, so that equals 1. Given that sec x - tan x is 2, then multiplying by sec x + tan x gives 1. Therefore, sec x + tan x must be 1 divided by 2, which is 0.5. So the answer is E, 0.5. But let me check if there's any mistake here.
+
+Alternatively, maybe I can solve for sec x and tan x individually. Let me try that approach to confirm. Let me denote s = sec x and t = tan x. Then according to the problem, s - t = 2. And we also know from the identity that s^2 - t^2 = 1. Since s^2 - t^2 factors into (s - t)(s + t) = 1. Since s - t is 2, then 2*(s + t) = 1, so s + t = 1/2. Yep, same result. So that seems consistent. Therefore, the answer is 0.5, which is option E.
+
+But let me check if there's any possible mistake here. For example, could there be another solution? Suppose s - t = 2 and s + t = 1/2. Let me solve these equations. Adding them together: 2s = 2 + 1/2 = 5/2, so s = 5/4. Then t = s - 2 = 5/4 - 8/4 = -3/4. So sec x is 5/4 and tan x is -3/4. Let me check if these satisfy the original identity. sec^2 x - tan^2 x should be (25/16) - (9/16) = 16/16 = 1. Correct. Also, sec x - tan x is 5/4 - (-3/4) = 8/4 = 2. Which matches the given condition. So that's correct. Therefore, sec x + tan x is 5/4 + (-3/4) = 2/4 = 1/2 = 0.5. So yes, that's correct. Therefore, the answer is E.
+
+But wait, the options are given as A) 0.1, B) 0.2, C) 0.3, D) 0.4, E) 0.5. So E is 0.5, which is 1/2. So that's correct. Therefore, the answer is E. I think that's solid. I don't see any mistakes in my reasoning. Both methods confirm that the answer is 0.5. So I think that's the right choice.
+</think>
+
+To solve the problem","
+We are given the equation:
+
+$$
+\sec x - \tan x = 2
+",0.5,0.0,214.07200407981873
+7daeb317-0a8b-581f-955e-53f8e6e10684,"The point $O$ is the center of the circle circumscribed about $\triangle ABC,$ with $\angle BOC=120^\circ$ and $\angle AOB=140^\circ,$ as shown. What is the degree measure of $\angle ABC?$
+$\textbf{(A) } 35 \qquad\textbf{(B) } 40 \qquad\textbf{(C) } 45 \qquad\textbf{(D) } 50 \qquad\textbf{(E) } 60$","
+Okay, let me try to figure out this geometry problem. So, we have triangle ABC with O as the circumcenter. That means O is the center of the circle that passes through all three vertices of the triangle. The problem gives us two angles at the center: angle BOC is 120 degrees, and angle AOB is 140 degrees. We need to find the measure of angle ABC in the triangle.
+
+First, let me recall some properties about circumcenters and central angles. The circumcenter is the intersection of the perpendicular bisectors of the sides of the triangle. Also, the central angles (angles formed at the center of the circle by two radii) are related to the inscribed angles (angles formed on the circumference) in the triangle. Specifically, the measure of an inscribed angle is half the measure of the central angle that subtends the same arc.
+
+But wait, let me make sure. If I have a central angle subtended by arc BC, that would be angle BOC. The inscribed angle subtended by the same arc BC would be angle BAC, right? Because angle at A subtended by BC. Similarly, angle ABC would be subtended by arc AC. Hmm, maybe I need to think more carefully.
+
+Let me draw a rough sketch mentally. Let me imagine triangle ABC with circumcenter O. The central angles given are angle AOB = 140°, angle BOC = 120°, so maybe I can find the third central angle, angle AOC?
+
+Since the sum of the central angles around point O should be 360°, right? Because they make a full circle. So angle AOB + angle BOC + angle AOC = 360°. Let me check that. Yes, since O is the center, those three angles should add up to 360 degrees.
+
+So if angle AOB is 140°, angle BOC is 120°, then angle AOC would be 360 - 140 - 120 = 100°, right? 140 + 120 is 260, so 360 - 260 is 100. So angle AOC is 100 degrees.
+
+Now, how does this help me find angle ABC? Let me recall that the inscribed angle theorem states that an angle subtended at the circumference is half the measure of the central angle subtended by the same arc. So angle ABC is an inscribed angle. Let me figure out which arc it subtends.
+
+Angle ABC is at vertex B, so it's between points A and C. Therefore, angle ABC subtends arc AC. The central angle subtended by arc AC is angle AOC, which we found to be 100 degrees. Therefore, angle ABC should be half of that, so 50 degrees? Wait, but let me confirm.
+
+Wait, no. Wait, angle ABC is at point B, so it's formed by chords AB and BC. Therefore, angle ABC subtends arc AC. Therefore, the measure of angle ABC is half the measure of the arc AC that it subtends. Since arc AC is opposite angle B. Therefore, if arc AC is 100 degrees, then angle ABC is half of that, which is 50 degrees. So that would be answer D, 50 degrees. But let me check again because sometimes there can be confusion about which arc it is.
+
+Alternatively, maybe I need to check the other arcs. Let me verify all the arcs. Since angle AOB is 140°, that subtends arc AB. Therefore, arc AB is 140°, arc BC is subtended by angle BOC, which is 120°, so arc BC is 120°, and arc AC is 100°, as we found. Therefore, angle ABC is an inscribed angle subtending arc AC. Therefore, it's half of 100°, which is 50°, so answer D. But let me check again.
+
+Alternatively, maybe angle ABC subtends another arc? Wait, angle at B, between AB and BC. So, inscribed angle at B, so the arc it subtends is the arc that's opposite to it, which is arc AC. Yes, that's correct. So the measure of angle ABC is half the measure of arc AC. Therefore, arc AC is 100°, so angle ABC is 50°, so answer D.
+
+But let me check if there's another way to approach this, just to make sure. Let me think about the triangle. Since O is the circumcenter, OA, OB, and OC are all radii of the","
+\boxed{D} the circle, so they are equal in length. Therefore, triangles A",50,0.0,214.91855835914612
+41e3cd6d-e23d-5ecf-9084-121fe9e18d7f,"An automobile travels $a/6$ feet in $r$ seconds. If this rate is maintained for $3$ minutes, how many yards does it travel in $3$ minutes?
+$\textbf{(A)}\ \frac{a}{1080r}\qquad \textbf{(B)}\ \frac{30r}{a}\qquad \textbf{(C)}\ \frac{30a}{r}\qquad \textbf{(D)}\ \frac{10r}{a}\qquad \textbf{(E)}\ \frac{10a}{r}$","
+Okay, let's see. The problem says an automobile travels a/6 feet in r seconds. And we need to find out how many yards it travels in 3 minutes if it maintains that rate. The answer choices are given, so I need to figure out which one is correct.
+
+First, let me make sure I understand the problem. The car's speed is given as a distance over time, specifically (a/6) feet per r seconds. We need to find the distance traveled in 3 minutes, but the answer needs to be in yards. So, I need to convert the time to seconds or minutes? Wait, the rate is given in seconds, so maybe convert 3 minutes to seconds to match the units. Also, convert feet to yards at the end since the answer is in yards.
+
+Let me start by converting 3 minutes to seconds. Since 1 minute is 60 seconds, 3 minutes is 3*60 = 180 seconds. Got that. So the total time we're considering is 180 seconds.
+
+Now, the car is traveling at a rate of (a/6) feet per r seconds. So, how do I find the distance traveled in 180 seconds? Well, first, maybe find the speed in feet per second, then multiply by total time to get total distance in feet, then convert to yards.
+
+Let me try that approach. The rate is (a/6) feet per r seconds. So, to get feet per second, divide the distance by the time. That would be (a/6) divided by r, which is (a)/(6r) feet per second. So speed = (a)/(6r) ft/s.
+
+Then, total distance in feet would be speed multiplied by total time. Total time is 180 seconds. So distance = (a/(6r)) * 180. Let me compute that. 180 divided by 6 is 30, so this simplifies to (a * 30)/r feet. So that's 30a/r feet.
+
+But the question asks for yards. Since 1 yard is 3 feet, we need to convert feet to yards by dividing by 3. So 30a/r feet divided by 3 is 10a/r yards. Therefore, the answer should be 10a over r, which is option E.
+
+Wait, let me check the answer choices again. Option E is 10a/r. So that's what I got. Let me verify my steps again to make sure I didn't make a mistake.
+
+First, converting 3 minutes to seconds: 3*60=180. Correct. Then, rate is (a/6)/r feet per second. Yes, because if it goes a/6 feet in r seconds, then per second it's (a/6)/r. Then multiply by total time (180 seconds) gives total distance in feet: (a/6r)*180 = (a*180)/(6r) = (a*30)/r. Then convert feet to yards: divide by 3. 30/3 is 10, so 10a/r yards. Yep, that seems right.
+
+Let me check if there's another way to approach this. Maybe find how many r-second intervals are in 180 seconds, then multiply by the distance per interval. So number of intervals is 180/r. Each interval, the car travels a/6 feet. So total distance is (180/r)*(a/6) feet. Which is (180a)/(6r) = 30a/r feet. Then divide by 3 to get yards: 10a/r. Same result. So that confirms it.
+
+Looking at the answer choices, option E is 10a/r. So the correct answer is E. Let me check if I considered all unit conversions correctly. The problem says the answer should be in yards. Original distance is in feet, so dividing by 3 is necessary. Yes, 3 feet in a yard. So yes, 30a/r feet is 10a/r yards. All steps check out. I think that's correct.
+</think>
+
+To determine how many **yards** the automobile travels in **3 minutes**, we begin by analyzing the given rate and converting all units appropriately.
+
+---
+
+### Step 1: Convert Time to Seconds
+
+The rate is given in **seconds**, so we convert the total time of **3 minutes** into seconds:
+
+$$
+3 \text{ minutes} = 3 \times 60 = 180 \text{ seconds}
+$$
+
+---
+
+### Step 2: Determine the Speed in Feet per Second
+
+","$$
+\boxed{\frac{10a}{r}}
+$$
+
+---
+
+### Step 3",\frac{10a}{r},1.0,215.21291518211365

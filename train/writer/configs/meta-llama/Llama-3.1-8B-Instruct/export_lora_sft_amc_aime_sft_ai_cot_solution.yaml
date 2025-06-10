@@ -1,0 +1,14 @@
+### model
+model_name_or_path: meta-llama/Llama-3.1-8B-Instruct
+adapter_name_or_path: 
+  ./models/Llama-3.1-8B-Instruct/amc_aime_sft_ai_cot_solution/sft/train/Llama-3.1-8B-Instruct_sft
+cache_dir: /data2/.shared_models
+template: llama3
+trust_remote_code: true
+
+### export
+export_dir: 
+  ./models/Llama-3.1-8B-Instruct/amc_aime_sft_ai_cot_solution/sft/export/Llama-3.1-8B-Instruct_sft
+export_size: 1
+export_device: cpu
+export_legacy_format: false

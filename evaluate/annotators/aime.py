@@ -8,7 +8,7 @@ from datasets import load_dataset, load_from_disk
 from .utils.math_util import compute_score
 import argparse
 
-from evaluate.annotators._base import BaseDatasetProcessor
+from psychdepth_v2.evaluate.annotators._base_old import BaseDatasetProcessor
 
 class AIMEProcessor(BaseDatasetProcessor):
     """Processor for AIME dataset"""
@@ -83,7 +83,7 @@ class AIMEProcessor(BaseDatasetProcessor):
     @guidance(dedent=True)
     def annotation_prompt(self, lm, problem: str):
         with user():
-            lm += f"""Please reason step by step, and put your final answer within \\boxed{{}}. 
+            lm += f"""Please reason step by step, and put your final answer within \\boxed{{}}. Only output the exact content of the decision of it's a Multiple Choice question, not the letter. 
             
             Problem: {problem}
             """
@@ -91,7 +91,7 @@ class AIMEProcessor(BaseDatasetProcessor):
         with assistant():
             lm += f"Step-by-step Solution:\n{gen(name='solution', stop=self.STOP_STRINGS, max_tokens=1000)}"
             # lm += f"Final Answer:\n{gen(name='answer', stop=self.STOP_STRINGS, max_tokens=50)}"
-            lm += f"Final Answer:\n{gen(name='answer', max_tokens=50, stop=self.STOP_STRINGS)}"
+            lm += f"Final Answer:\n{gen(name='answer', max_tokens=20, stop=self.STOP_STRINGS)}"
         return lm
     
 

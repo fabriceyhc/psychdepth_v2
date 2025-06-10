@@ -168,7 +168,7 @@ def main(args):
     # Determine the specific directory for evaluation results based on whether training happens
     if args.stage:
         # Training stage specified, evaluation results go into a stage-specific subdir
-        eval_save_dir = base_results_dir + "_" + args.stage
+        eval_save_dir = base_results_dir + "_" + args.stage + "_" + os.path.basename(args.datasets) + "_eval_" + os.path.basename(args.eval_dataset)
 
         post_train_base_dir = os.path.join("./models", os.path.basename(args.base_model), args.datasets.replace(',', '_'), args.stage)
 
@@ -180,7 +180,7 @@ def main(args):
 
     else:
         # No training stage specified, evaluating the fine-tuned model
-        eval_save_dir = base_results_dir + "_" + os.path.basename(args.fine_tuned_model)
+        eval_save_dir = base_results_dir + "_" + os.path.basename(args.fine_tuned_model) + "_eval_" + os.path.basename(args.eval_dataset)
         trained_model_path = args.fine_tuned_model  # Evaluate the provided fine_tuned_model
 
     # Ensure output directories exist
@@ -215,15 +215,16 @@ def main(args):
         '-m', math_eval_module, 
         "--base_model", args.base_model,
         "--cache_dir", args.cache_dir,
-        "--type", args.type,
+        "--type", args.backend_type,
         "--save_dir", eval_save_dir, 
         "--shots", str(shots) 
     ]
     # if not run_command(math_evaluation_command_base, env=my_env):
     #     print(f"\n{args.eval_dataset} evaluation (base model) failed. Exiting.")
     #     sys.exit(1)
-    math_evaluation_script_base_output_csv = os.path.join(eval_save_dir, f"{os.path.basename(args.base_model)}_{shots}shot.csv")
 
+    math_evaluation_script_base_output_csv = os.path.join(eval_save_dir, f"{os.path.basename(args.base_model)}_{shots}shot.csv")
+    temparature = 1.0
     print("\n--- Generating Stories (Base Model) ---")
     story_gen_module = "dataset.generate_stories"
     story_generation_base_output_file = f"{os.path.basename(args.base_model)}_stories.csv"
@@ -232,9 +233,10 @@ def main(args):
         sys.executable,
         '-m', story_gen_module,
         "--model_id", args.base_model,
-        "--backend_type", args.type,
+        "--backend_type", args.backend_type,
         "--output_dir", eval_save_dir,
-        "--output_csv", story_generation_base_output_file
+        "--output_csv", story_generation_base_output_file,
+        "--default_temperature", str(temparature)
     ]
     # if not run_command(story_generation_command_base, env=my_env):
     #     print("\nStory generation (base model) failed. Exiting.")
@@ -291,7 +293,7 @@ def main(args):
         '-m', math_eval_module,
         "--base_model", trained_model_path,
         "--cache_dir", args.cache_dir,
-        "--type", args.type,
+        "--type", args.backend_type,
         "--save_dir", eval_save_dir,
         "--shots", str(shots)
     ]
@@ -306,10 +308,11 @@ def main(args):
     story_generation_command_post = [
         sys.executable,
         '-m', story_gen_module,  
-        "--model_id", trained_model_path, 
-        "--backend_type", args.type,
+        "--llamacpp_model_path", trained_model_path, 
+        "--backend_type", args.backend_type,
         "--output_dir", eval_save_dir, 
-        "--output_csv", story_generation_post_output_file 
+        "--output_csv", story_generation_post_output_file ,
+        "--default_temperature", str(temparature)
     ]
     if not run_command(story_generation_command_post, env=my_env):
         print("\nStory generation (post-training/fine-tuned) failed. Exiting.")
@@ -418,7 +421,7 @@ if __name__ == "__main__":
         help="Dataset identifier for evaluation."
     )
     parser.add_argument(
-        "--type",
+        "--backend_type",
         default="transformers",
         choices=["transformers", "llama.cpp"],
         help="Model type (transformers or llama.cpp)."
