@@ -62,7 +62,7 @@ def main(args):
                 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
                 result_row = {
                     'premise_id': premise_row['premise_id'],
-                    'story_id': story_id,
+                    'story_id': f"{premise_row['premise_id']}_{story_id}",
                     'text': None,
                     'backend': backend_type,
                     'model': model_name,
