@@ -8,8 +8,10 @@ data = []
 metrics = ["empathy", "emotion_provoking", 'narrative_complexity',"engagement",  "human_likeness", "authenticity"]
 metrics = [i + '_score' for i in metrics]
 models = ['llama_base', 'gsm8k-kto', 'openr1-dpo', 'ultrainteract-dpo', 'shuffled']
+models = ['baseline', 'ground_truth_answer', 'shuffled']
 for i in models:
-    df = pd.read_csv(f"guidance_evaled/guidance_evaled_{i}.csv")
+    # df = pd.read_csv(f"guidance_evaled/guidance_evaled_{i}.csv")
+    df = pd.read_csv(f"dataset/data/gsm8k/stories_{i}.csv")
     for col in metrics:
         data.append({
             "model": i,
@@ -42,7 +44,7 @@ plt.title("Average Scores by Metric and Model", fontsize=14)
 plt.ylabel("Metric")
 plt.xlabel("Model")
 plt.tight_layout()
-plt.show()
+# plt.show()
 plt.savefig("comparison.png")
 
 """

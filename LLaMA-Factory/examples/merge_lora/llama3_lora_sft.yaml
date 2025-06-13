@@ -1,13 +1,13 @@
 ### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
 
 ### model
-model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-adapter_name_or_path: saves/llama3-8b/lora/sft
+model_name_or_path: /data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b #/data2/.shared_models/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+adapter_name_or_path: /data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/llama3-8b/lora/sft/shuf-0531/checkpoint-1000 #/data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/llama3-8b/lora/sft/ans-0531/checkpoint-600 #/data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/qwen2.5-7b/lora/gsm8k_answer/checkpoint-300
 template: llama3
 trust_remote_code: true
 
 ### export
-export_dir: output/llama3_lora_sft
+export_dir: saves/llama3-8b/merged/shuf-0531
 export_size: 5
 export_device: cpu
 export_legacy_format: false

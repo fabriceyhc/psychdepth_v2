@@ -172,6 +172,7 @@ cython_debug/
 
 # LLaMA-Factory checkpoints
 LLaMA-Factory/saves/*
+LLaMA-Factory/data/large_file
 
 # training checkpoints
 models/*

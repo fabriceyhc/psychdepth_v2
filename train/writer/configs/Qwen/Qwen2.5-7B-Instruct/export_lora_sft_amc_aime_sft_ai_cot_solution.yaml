@@ -1,0 +1,14 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+adapter_name_or_path: 
+  ./models/Qwen2.5-7B-Instruct/amc_aime_sft_ai_cot_solution/sft/train/Qwen2.5-7B-Instruct_sft
+cache_dir: /data2/.shared_models
+template: llama3
+trust_remote_code: true
+
+### export
+export_dir: 
+  ./models/Qwen2.5-7B-Instruct/amc_aime_sft_ai_cot_solution/sft/export/Qwen2.5-7B-Instruct_sft
+export_size: 1
+export_device: cpu
+export_legacy_format: false

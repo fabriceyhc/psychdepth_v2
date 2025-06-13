@@ -18,7 +18,6 @@ def load_and_recreate_strategy(strategy_file):
     persona = parts[-1]
 
     if persona == "persona.json":
-        print("yess")
         if module_type == "Predict":
             program_instance = MultiPersonaModule(dspy.Predict(PDSMultiScore), DEFAULT_PERSONAS)
         elif module_type == "ChainOfThought":

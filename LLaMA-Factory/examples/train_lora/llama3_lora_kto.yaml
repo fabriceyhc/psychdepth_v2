@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+model_name_or_path: /data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b
 trust_remote_code: true
 
 ### method
@@ -11,18 +11,18 @@ lora_target: all
 pref_beta: 0.1
 
 ### dataset
-dataset: kto_en_demo
+dataset: gsm8k_kto
 template: llama3
 cutoff_len: 2048
-max_samples: 1000
+max_samples: 3000
 overwrite_cache: true
 preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
-output_dir: saves/llama3-8b/lora/kto
+output_dir: saves/llama3-8b/lora/kto_gsm8k
 logging_steps: 10
-save_steps: 500
+save_steps: 200
 plot_loss: true
 overwrite_output_dir: true
 report_to: none  # choices: [none, wandb, tensorboard, swanlab, mlflow]
@@ -31,14 +31,16 @@ report_to: none  # choices: [none, wandb, tensorboard, swanlab, mlflow]
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 8
 learning_rate: 5.0e-6
-num_train_epochs: 3.0
+num_train_epochs: 10.0
 lr_scheduler_type: cosine
+weight_decay: 0.01
 warmup_ratio: 0.1
 bf16: true
 ddp_timeout: 180000000
 
 ### eval
 # val_size: 0.1
-# per_device_eval_batch_size: 1
-# eval_strategy: steps
-# eval_steps: 500
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 100
+eval_dataset: gsm8k_kto_eval

@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Llama-3.1-Nemotron-Nano-8B-v1",
+        "base_model_evaluated": "Llama-3.1-8B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "nvidia/Llama-3.1-Nemotron-Nano-8B-v1",
+        "evaluation_directory": "./pipeline/results/Llama-3.1-8B-Instruct_Llama-3.1-Nemotron-Nano-8B-v1_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-06-04 09:52:43"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Llama-3.1-8B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_0shot.csv",
+                "accuracy": 35.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.33,
+                    "emotion_provoking_score": 3.99,
+                    "empathy_score": 4.04,
+                    "engagement_score": 4.53,
+                    "narrative_complexity_score": 4.44,
+                    "human_likeness_score": 4.21
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Llama-3.1-Nemotron-Nano-8B-v1",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-Nemotron-Nano-8B-v1_0shot.csv",
+                "accuracy": 61.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-Nemotron-Nano-8B-v1_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.91,
+                    "emotion_provoking_score": 3.65,
+                    "empathy_score": 3.59,
+                    "engagement_score": 4.05,
+                    "narrative_complexity_score": 3.91,
+                    "human_likeness_score": 3.82
+                },
+                "error": null
+            }
+        }
+    }
+}

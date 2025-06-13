@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Phi-4-mini-reasoning",
+        "base_model_evaluated": "Phi-4-mini-instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "microsoft/Phi-4-mini-reasoning",
+        "evaluation_directory": "./pipeline/results/Phi-4-mini-instruct_Phi-4-mini-reasoning_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-05-30 15:31:23"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Phi-4-mini-instruct",
+            "math_evaluation": {
+                "raw_data_file": "Phi-4-mini-instruct_0shot.csv",
+                "accuracy": 57.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Phi-4-mini-instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.1,
+                    "emotion_provoking_score": 4.0,
+                    "empathy_score": 4.0,
+                    "engagement_score": 4.21,
+                    "narrative_complexity_score": 4.08,
+                    "human_likeness_score": 4.07
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Phi-4-mini-reasoning",
+            "math_evaluation": {
+                "raw_data_file": "Phi-4-mini-reasoning_0shot.csv",
+                "accuracy": 51.02,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Phi-4-mini-reasoning_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.06,
+                    "emotion_provoking_score": 3.97,
+                    "empathy_score": 3.92,
+                    "engagement_score": 4.15,
+                    "narrative_complexity_score": 3.82,
+                    "human_likeness_score": 4.0
+                },
+                "error": null
+            }
+        }
+    }
+}

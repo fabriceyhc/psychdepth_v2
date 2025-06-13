@@ -103,6 +103,14 @@ def main(args):
                                 best_word_count = word_count
                                 success = True
                                 break
+                            elif best_story != None and len(best_story.split()) > 0:
+                                if word_count < len(best_story.split()) and word_count != 0:
+                                    best_story = story_text
+                                    best_generation_time = generation_time
+                                    best_word_count = word_count
+                                    error_msg = f"Attempt {attempt+1}: Word count {word_count} not within range"
+                                    print(error_msg)
+                                    error_msgs.append(error_msg)
                             else:
                                 best_story = story_text
                                 best_generation_time = generation_time
@@ -110,10 +118,6 @@ def main(args):
                                 error_msg = f"Attempt {attempt+1}: Word count {word_count} not within range"
                                 print(error_msg)
                                 error_msgs.append(error_msg)
-                        else:
-                            error_msg = f"Attempt {attempt+1}: Empty response"
-                            print(error_msg)
-                            error_msgs.append(error_msg)
 
                     except Exception as e:
                         error_msg = f"Attempt {attempt+1} error: {str(e)}"
@@ -186,7 +190,7 @@ if __name__ == "__main__":
     
     # Model configuration arguments
     parser.add_argument('--backend_type', type=str, required=True,
-                      choices=['openai', 'transformers', 'llamacpp'],
+                      choices=['openai', 'transformers', 'llama.cpp'],
                       help='Backend type for model inference')
     parser.add_argument('--model_id', type=str,
                       help='Model identifier (for OpenAI/Transformers backends)')
@@ -206,7 +210,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Validation
-    if args.backend_type == 'llamacpp' and not args.llamacpp_model_path:
+    if args.backend_type == 'llama.cpp' and not args.llamacpp_model_path:
         raise ValueError("--llamacpp_model_path is required for LlamaCpp backend")
     
     if args.backend_type == 'openai' and not args.model_id:

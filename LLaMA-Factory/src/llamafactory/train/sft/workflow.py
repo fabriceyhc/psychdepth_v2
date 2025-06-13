@@ -45,6 +45,11 @@ def run_sft(
     generating_args: "GeneratingArguments",
     callbacks: Optional[list["TrainerCallback"]] = None,
 ):
+    print(model_args)
+    print(data_args)
+    print(training_args)
+    print(finetuning_args)
+    print(generating_args)
     tokenizer_module = load_tokenizer(model_args)
     tokenizer = tokenizer_module["tokenizer"]
     template = get_template_and_fix_tokenizer(tokenizer, data_args)

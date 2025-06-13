@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Llama-3.1-8B-Instruct_sft",
+        "base_model_evaluated": "Llama-3.1-8B-Instruct",
+        "stage_trained": "sft",
+        "fine_tuned_model_used_if_no_training": null,
+        "evaluation_directory": "./pipeline/results/Llama-3.1-8B-Instruct_sft_amc_aime_sft_ai_cot_solution",
+        "evaluation_dataset": "math500",
+        "training_datasets": "amc_aime_sft_ai_cot_solution",
+        "report_generated_time": "2025-04-29 22:37:09"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Llama-3.1-8B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_0shot.csv",
+                "accuracy": 57.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.14,
+                    "emotion_provoking_score": 3.95,
+                    "empathy_score": 3.88,
+                    "engagement_score": 4.41,
+                    "narrative_complexity_score": 4.13,
+                    "human_likeness_score": 4.19
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Llama-3.1-8B-Instruct_sft",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_sft_0shot.csv",
+                "accuracy": 50.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_sft_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.34,
+                    "emotion_provoking_score": 4.05,
+                    "empathy_score": 4.14,
+                    "engagement_score": 4.54,
+                    "narrative_complexity_score": 4.27,
+                    "human_likeness_score": 4.34
+                },
+                "error": null
+            }
+        }
+    }
+}

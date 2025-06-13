@@ -13,3 +13,4 @@ sgl-kernel
 sglang[all]>=0.4.3.post2
 ruamel.yaml
 deepspeed
+torchao=0.10.0

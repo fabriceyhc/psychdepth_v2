@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Deductive-Reasoning-Qwen-32B",
+        "base_model_evaluated": "Qwen2.5-32B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "OpenPipe/Deductive-Reasoning-Qwen-32B",
+        "evaluation_directory": "./pipeline/results/Qwen2.5-32B-Instruct_Deductive-Reasoning-Qwen-32B_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-05-09 00:59:33"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Qwen2.5-32B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Qwen2.5-32B-Instruct_0shot.csv",
+                "accuracy": 66.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Qwen2.5-32B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.76,
+                    "emotion_provoking_score": 4.68,
+                    "empathy_score": 4.67,
+                    "engagement_score": 4.79,
+                    "narrative_complexity_score": 4.65,
+                    "human_likeness_score": 4.68
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Deductive-Reasoning-Qwen-32B",
+            "math_evaluation": {
+                "raw_data_file": "Deductive-Reasoning-Qwen-32B_0shot.csv",
+                "accuracy": 71.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Deductive-Reasoning-Qwen-32B_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.83,
+                    "emotion_provoking_score": 3.56,
+                    "empathy_score": 3.57,
+                    "engagement_score": 3.99,
+                    "narrative_complexity_score": 3.85,
+                    "human_likeness_score": 3.73
+                },
+                "error": null
+            }
+        }
+    }
+}

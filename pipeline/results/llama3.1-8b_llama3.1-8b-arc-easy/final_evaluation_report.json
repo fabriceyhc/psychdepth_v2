@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "llama3.1-8b-arc-easy",
+        "base_model_evaluated": "llama3.1-8b",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "/data2/yihewang/psychdepth_v2/models/model/arc_easy_sft/sft/export/llama3.1-8b-arc-easy",
+        "evaluation_directory": "./pipeline/results/llama3.1-8b_llama3.1-8b-arc-easy",
+        "evaluation_dataset": "gsm8k",
+        "training_datasets": null,
+        "report_generated_time": "2025-05-02 14:11:04"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "llama3.1-8b",
+            "math_evaluation": {
+                "raw_data_file": "llama3.1-8b_0shot.csv",
+                "accuracy": 78.15,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "llama3.1-8b_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.25,
+                    "emotion_provoking_score": 4.04,
+                    "empathy_score": 4.12,
+                    "engagement_score": 4.43,
+                    "narrative_complexity_score": 4.16,
+                    "human_likeness_score": 4.27
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "llama3.1-8b-arc-easy",
+            "math_evaluation": {
+                "raw_data_file": "llama3.1-8b-arc-easy_0shot.csv",
+                "accuracy": 76.27,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "llama3.1-8b-arc-easy_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.99,
+                    "emotion_provoking_score": 3.83,
+                    "empathy_score": 3.83,
+                    "engagement_score": 4.28,
+                    "narrative_complexity_score": 3.87,
+                    "human_likeness_score": 4.1
+                },
+                "error": null
+            }
+        }
+    }
+}

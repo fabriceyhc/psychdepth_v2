@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "Phi-4-reasoning",
+        "base_model_evaluated": "phi-4",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "microsoft/Phi-4-reasoning",
+        "evaluation_directory": "./pipeline/results/phi-4_Phi-4-reasoning_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-05-30 02:45:35"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "phi-4",
+            "math_evaluation": {
+                "raw_data_file": "phi-4_0shot.csv",
+                "accuracy": 64.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "phi-4_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.55,
+                    "emotion_provoking_score": 4.45,
+                    "empathy_score": 4.53,
+                    "engagement_score": 4.68,
+                    "narrative_complexity_score": 4.41,
+                    "human_likeness_score": 4.57
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "Phi-4-reasoning",
+            "math_evaluation": {
+                "raw_data_file": "Phi-4-reasoning_0shot.csv",
+                "accuracy": 74.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Phi-4-reasoning_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 3.76,
+                    "emotion_provoking_score": 3.61,
+                    "empathy_score": 3.62,
+                    "engagement_score": 3.89,
+                    "narrative_complexity_score": 3.67,
+                    "human_likeness_score": 3.8
+                },
+                "error": null
+            }
+        }
+    }
+}

@@ -68,9 +68,12 @@ for ind in l:
         Only respond with the story.
         """
             prompt = format_prompt(premise)
+            prompt = format_prompt(input("Prompt: ").strip())
             for i in range(story_num):
                 output = pipe(prompt)[0]['generated_text']
                 response = output.split("<|eot_id|>")[-1].strip().split("<|end_header_id|>")[-1].strip()
+                print(response)
+                break
                 data.append({
                     'premise_id': index,
                     'premise': row['premise'],

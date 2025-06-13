@@ -1,0 +1,793 @@
+unique_id,problem,solution,predicted_answer,raw_pred,answer,is_correct,time_taken
+gsm8k_0,"Benny saw a 10-foot shark with x 6-inch remoras attached to it. What percentage of the shark's body length is the combined length of the remoras?
+If we know the answer of the above question is 10, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and what is being asked. We are given that a 10-foot shark has x 6-inch remoras attached to it, and we want to find the percentage of the shark's body length that is the combined length of the remoras.
+Step 2:  We know that the length of the shark is 10 feet, and we need to convert this to inches to match the units of the remoras. Since 1 foot is equal to 12 inches, the length of the shark in inches is $10 \times 12 = 120$ inches.
+Step 3:  The combined length of the remoras is given by $6x$ inches, where $x$ is the number of remoras.
+Step 4:  We are told that the percentage of the shark's body length that is the combined length of the remoras is 10%. This can be expressed as the equation $\frac{6x}{120} = \frac{10}{100}$.
+Step 5:  To solve for $x$, we can first simplify the equation by multiplying both sides by 120 to get rid of the denominator. This gives us $6x = 12$.
+Step 6:  Now, we can solve for $x$ by dividing both sides of the equation by 6, which gives us $x = 2$.
+Step 7:  Therefore, the value of the unknown variable $x$ is 2.
+
+The final answer is: $\boxed{2}$",2,"
+
+The final answer is: $\boxed{2}$|",2,1,20.485493898391724
+gsm8k_1,"Cars have lined up on the motorway. Some of the cars drive through in the first 15 minutes of the traffic jam, then x more cars drive through in the remaining 15 minutes of the jam. 5 cars from the line take an exit so they don't have to drive through the traffic jam. If there were originally 30 cars on the motorway, how many cars drove through the traffic jam in the first 15 minutes?
+If we know the answer of the above question is 5, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and the question being asked.
+Step 2:  We are told that there were originally 30 cars on the motorway, and some of them drove through in the first 15 minutes of the traffic jam, while x more cars drove through in the remaining 15 minutes.
+Step 3:  However, 5 cars from the line took an exit, so they didn't have to drive through the traffic jam.
+Step 4:  We are asked to find out how many cars drove through the traffic jam in the first 15 minutes.
+Step 5:  Let's denote the number of cars that drove through in the first 15 minutes as y. Then, the number of cars that drove through in the remaining 15 minutes is x.
+Step 6:  Since there were originally 30 cars, and 5 took an exit, the total number of cars that drove through the traffic jam is 30 - 5 = 25.
+Step 7:  We are given that the number of cars that drove through in the first 15 minutes is 5, so y = 5.
+Step 8:  Now, we need to find the value of x, which is the number of cars that drove through in the remaining 15 minutes.
+Step 9:  We know that the total number of cars that drove through the traffic jam is 25, and y = 5, so x = 25 - 5 = 20.
+Step 10:  Therefore, the value of the unknown variable x is 20.
+
+The final answer is: $\boxed{20}$",20,"
+
+The final answer is: $\boxed{20}$ ",20,1,20.686991453170776
+gsm8k_2,"A herd consists of camels and dromedaries. There are x heads and 304 bumps. How many dromedaries are there if camels have two humps each and dromedaries have one hump each?
+If we know the answer of the above question is 56, what is the value of unknown variable x?","Step 1: Let's denote the number of camels as C and the number of dromedaries as D. We are given that there are x heads in total, which means x = C + D.
+Step 2: We are also given that there are 304 bumps in total. Since camels have two humps each and dromedaries have one hump each, we can write the equation 2C + D = 304.
+Step 3: We are told that the number of dromedaries is 56, so D = 56.
+Step 4: Now we can substitute D = 56 into the equation 2C + D = 304 to solve for C. This gives us 2C + 56 = 304.
+Step 5: Subtracting 56 from both sides of the equation gives us 2C = 248.
+Step 6: Dividing both sides of the equation by 2 gives us C = 124.
+Step 7: Now that we know C = 124, we can substitute this value into the equation x = C + D to solve for x. This gives us x = 124 + 56.
+Step 8: Evaluating the expression 124 + 56 gives us x = 180.
+
+The final answer is: $\boxed{180}$",180,"
+
+The final answer is: $\boxed{180}$ ",180,1,16.72679829597473
+gsm8k_3,"Tim spends x hours each day at work answering phones.  It takes him 15 minutes to deal with a call.  How many calls does he deal with during his 5 day work week?
+If we know the answer of the above question is 120, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first determine the total number of minutes Tim spends at work in a 5-day week.
+Step 2:  We are given that it takes Tim 15 minutes to deal with a call, and we know that he deals with 120 calls during his 5-day work week.
+Step 3:  Therefore, the total number of minutes he spends at work is 120 calls * 15 minutes/call = 1800 minutes.
+Step 4:  Since there are 5 days in a work week, we can calculate the total number of minutes he spends at work per day by dividing the total minutes by 5: 1800 minutes / 5 days = 360 minutes/day.
+Step 5:  Now, we need to find the value of x, which is the number of hours Tim spends at work each day.
+Step 6:  To do this, we can convert the total minutes per day to hours by dividing by 60 (since there are 60 minutes in an hour): 360 minutes / 60 = 6 hours.
+Step 7:  Therefore, the value of the unknown variable x is 6.
+
+The final answer is: $\boxed{6}$",6,"
+
+
+
+
+
+
+The final answer is: $\boxed{6}$ ",6,1,15.687384366989136
+gsm8k_4,"Rani is obsessed with sports cars. She wonders what the faster car ever made can go so she looks it up. What she finds out is that the fastest car was 1.25 times faster than the 2nd fastest car. The 2nd fastest car was 5 times faster than the average car. The average car can go x Miles per hour. How fast does the faster car go?
+If we know the answer of the above question is 750, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationships between the speeds of the fastest car, the second-fastest car, and the average car.
+Step 2:  We are given that the fastest car is 1.25 times faster than the second-fastest car. This can be expressed as: Fastest car speed = 1.25 * Second-fastest car speed.
+Step 3:  Additionally, we know that the second-fastest car is 5 times faster than the average car. This can be expressed as: Second-fastest car speed = 5 * Average car speed.
+Step 4:  We are also given that the fastest car speed is 750 miles per hour.
+Step 5:  Using the given information, we can set up an equation to solve for the average car speed (x).
+Step 6:  From the given information, we have: Fastest car speed = 1.25 * Second-fastest car speed = 750.
+Step 7:  We can use this equation to find the speed of the second-fastest car: Second-fastest car speed = 750 / 1.25 = 600.
+Step 8:  Now that we have the speed of the second-fastest car, we can use the relationship between the second-fastest car and the average car to find the average car speed (x): Second-fastest car speed = 5 * Average car speed.
+Step 9:  Substituting the value of the second-fastest car speed, we get: 600 = 5 * x.
+Step 10:  Solving for x, we get: x = 600 / 5 = 120.
+Step 11:  Therefore, the value of the unknown variable x is 120.
+
+The final answer is: $\boxed{120}$",120,"
+
+The final answer is: $\boxed{120}$ ",120,1,22.584470748901367
+gsm8k_5,"Luke ate 2 hot dogs. Thomas ate x times more hot dogs than Luke. John ate half the amount Thomas ate. How many more hot dogs did John eat than Luke?
+If we know the answer of the above question is 1, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationships between the number of hot dogs eaten by Luke, Thomas, and John.
+Step 2:  We are given that Luke ate 2 hot dogs. Thomas ate x times more hot dogs than Luke, which means Thomas ate 2x hot dogs.
+Step 3:  John ate half the amount Thomas ate, so John ate (1/2) * 2x = x hot dogs.
+Step 4:  We are asked to find how many more hot dogs John ate than Luke, which is the difference between the number of hot dogs John ate and the number of hot dogs Luke ate.
+Step 5:  This can be calculated as x - 2, where x is the number of hot dogs Thomas ate and 2 is the number of hot dogs Luke ate.
+Step 6:  We are given that the difference between the number of hot dogs John ate and the number of hot dogs Luke ate is 1.
+Step 7:  Therefore, we can set up the equation x - 2 = 1 to solve for the value of x.
+Step 8:  Solving for x, we get x = 3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$",3,1,15.947815895080566
+gsm8k_6,"There are twice as many boys as girls at Dr. Wertz's school. If there are x girls and 5 students to every teacher, There are 36 teachers. What is the value of unknown variable x?","Step 1:  To solve this problem, we need to understand the given information and set up an equation to find the value of the unknown variable x.
+Step 2:  We are told that there are twice as many boys as girls at Dr. Wertz's school. This means that if there are x girls, then there are 2x boys.
+Step 3:  Additionally, we know that there are 5 students to every teacher, and there are 36 teachers. This implies that the total number of students is 5 times the number of teachers, which equals 5 * 36 = 180 students.
+Step 4:  Since the total number of students is the sum of the number of boys and girls, we can set up the equation x + 2x = 180, where x represents the number of girls and 2x represents the number of boys.
+Step 5:  Combining like terms, we get 3x = 180.
+Step 6:  To solve for x, we divide both sides of the equation by 3, giving us x = 180 / 3 = 60.
+Step 7:  Therefore, the value of the unknown variable x is 60.
+
+The final answer is: $\boxed{60}$",60,"
+
+The final answer is: $\boxed{60}$",60,1,15.955208539962769
+gsm8k_7,"Rose is out picking flowers for a vase she wants to fill.  She starts off by picking 3 flowers with x petals each.  She then picks 4 flowers with 6 petals each.  She then adds another 5 flowers with 4 petals each.  Lastly she picks 6 flowers with 7 petals each.  As she's carrying these flowers over to fill the vase, she drops 1 of each and the wind blows them away.  She puts the remaining flowers in the vase.  How many petals in total are on the flowers in the vase?
+If we know the answer of the above question is 79, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to calculate the total number of petals in the vase after Rose drops one of each type of flower.
+Step 2:  First, let's calculate the total number of petals from each type of flower before any are dropped. For the first type of flower, there are 3 flowers with x petals each, so the total number of petals from this type is 3x.
+Step 3:  For the second type of flower, there are 4 flowers with 6 petals each, so the total number of petals from this type is 4 * 6 = 24.
+Step 4:  For the third type of flower, there are 5 flowers with 4 petals each, so the total number of petals from this type is 5 * 4 = 20.
+Step 5:  For the fourth type of flower, there are 6 flowers with 7 petals each, so the total number of petals from this type is 6 * 7 = 42.
+Step 6:  Now, let's calculate the total number of petals before any are dropped. This is the sum of the petals from each type of flower: 3x + 24 + 20 + 42 = 3x + 86.
+Step 7:  Since Rose drops one of each type of flower, we need to subtract 1 from the total number of petals for each type of flower. This gives us: (3x - 1) + (24 - 1) + (20 - 1) + (42 - 1) = 3x + 86 - 4.
+Step 8:  We are given that the total number of petals in the vase is 79. So, we can set up the equation: 3x + 82 = 79.
+Step 9:  To solve for x, we need to isolate x on one side of the equation. We can do this by subtracting 82 from both sides of the equation: 3x = 79 - 82.
+Step 10:  Simplifying the right-hand side of the equation, we get: 3x = -3.
+Step 11:  To solve for x, we need to divide both sides of the equation by 3: x = -3 / 3.
+Step 12:  Simplifying the right-hand side of the equation, we get: x = -1.
+
+The final answer is: $\boxed{1}$",1,"
+
+The final answer is: $\boxed{1}$|",5,0,30.649179220199585
+gsm8k_8,"There are 50 deer in a field.  50 percent of them are bucks.  20 percent of the bucks are 8 points.  How many x point bucks are there?
+If we know the answer of the above question is 5, what is the value of unknown variable x?","Step 1:  First, let's calculate the number of bucks in the field. Since 50 percent of the deer are bucks, we can find this by multiplying the total number of deer by 0.5.
+Step 2:  So, the number of bucks is 50 * 0.5 = 25.
+Step 3:  Next, we need to find out how many of these bucks are 8 points. Given that 20 percent of the bucks are 8 points, we can calculate this by multiplying the number of bucks by 0.2.
+Step 4:  Therefore, the number of 8 point bucks is 25 * 0.2 = 5.
+Step 5:  Now, we are told that the answer to the question of how many x point bucks there are is 5. This means that the number of x point bucks is also 5.
+Step 6:  Since we already know that there are 5 bucks that are 8 points, we can conclude that the x point bucks are actually the 8 point bucks.
+Step 7:  Therefore, the value of the unknown variable x is 8.
+
+The final answer is: $\boxed{8}$",8,"
+
+
+
+
+
+
+The final answer is: $\boxed{8}$ ",8,1,15.333306312561035
+gsm8k_9,"Martha is knitting winter wear for her x grandchildren. They're triplets, so they're all the same size. She wants to make a hat, scarf, sweater, mittens, and socks for each of them. It takes 2 skeins of wool to make a hat, 4 for a scarf, 12 for a sweater, 1 for a pair of mittens, and 2 for a pair of socks. How many skeins of wool will she need to buy?
+If we know the answer of the above question is 63, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first determine the total number of skeins of wool Martha needs to buy for all her grandchildren.
+Step 2:  Let's denote the number of skeins needed for each grandchild as S. We know that it takes 2 skeins for a hat, 4 for a scarf, 12 for a sweater, 1 for a pair of mittens, and 2 for a pair of socks.
+Step 3:  Therefore, the total number of skeins needed for each grandchild is S = 2 + 4 + 12 + 1 + 2 = 21.
+Step 4:  Now, we are given that Martha has x grandchildren and she needs to buy a total of 63 skeins of wool.
+Step 5:  Since each grandchild requires 21 skeins, the total number of skeins needed for x grandchildren is 21x.
+Step 6:  We are told that the total number of skeins needed is 63, so we can set up the equation 21x = 63 to find the value of x.
+Step 7:  Solving for x, we get x = 63 / 21 = 3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$|",3,1,16.422701120376587
+gsm8k_10,"It's April, and Mrs. Rylan has been busy on her farm planting different types of vegetables for the season. She has bought 20 packets of tomato seeds and x packets of celery seeds to plant. If a packet of tomato seeds costs $40 and a packet of celery seeds costs $30, She used 3200 money to buy the seeds. What is the value of unknown variable x?","To find the value of x, we need to set up an equation based on the given information.
+
+Let's denote the cost of a packet of tomato seeds as T and the cost of a packet of celery seeds as C. We know that T = $40 and C = $30.
+
+We also know that Mrs. Rylan bought 20 packets of tomato seeds and x packets of celery seeds, and she used a total of $3200.
+
+We can set up the equation as follows:
+
+20T + xC = 3200
+
+Substituting the values of T and C, we get:
+
+20(40) + x(30) = 3200
+
+Simplifying the equation, we get:
+
+800 + 30x = 3200
+
+Subtracting 800 from both sides, we get:
+
+30x = 2400
+
+Dividing both sides by 30, we get:
+
+x = 80
+
+Therefore, the value of the unknown variable x is 80.
+
+The final answer is: $\boxed{80}$",80,"
+
+The final answer is: $\boxed{80}$|",80,1,13.309892654418945
+gsm8k_11,"Mary has x sheep. She gets 1 kg of milk from half of them and 2 kg of milk from the other half every day. How much milk does she collect every day?
+If we know the answer of the above question is 45, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationship between the number of sheep Mary has and the amount of milk she collects every day.
+Step 2:  We are given that Mary gets 1 kg of milk from half of her sheep and 2 kg of milk from the other half every day.
+Step 3:  Let's assume that Mary has x sheep. Then, half of them would be x/2, and the other half would also be x/2.
+Step 4:  The amount of milk she collects from half of the sheep is 1 kg * (x/2) = x/2 kg.
+Step 5:  The amount of milk she collects from the other half of the sheep is 2 kg * (x/2) = x kg.
+Step 6:  Therefore, the total amount of milk she collects every day is the sum of the milk from both halves, which is (x/2) + x = 3x/2 kg.
+Step 7:  We are given that the total amount of milk she collects every day is 45 kg.
+Step 8:  So, we can set up the equation 3x/2 = 45 to find the value of x.
+Step 9:  To solve for x, we can multiply both sides of the equation by 2/3 to isolate x.
+Step 10:  This gives us x = 45 * (2/3) = 30.
+Step 11:  Therefore, the value of the unknown variable x is 30.
+
+The final answer is: $\boxed{30}$",30,"
+
+The final answer is: $\boxed{30}$ ",30,1,20.129636526107788
+gsm8k_12,"Jeans makeup artist charges her $250 an hour.  She requires very expensive makeup for a movie she is in and it takes x hours to do each day and she needs it done 4 times a week.  The movie takes 5 weeks to finish.  After the movie is done the makeup artist gives Jean a 10% discount because of the amount of work done.  How much did Jean pay?
+If we know the answer of the above question is 27000, what is the value of unknown variable x?","Step 1:  First, let's break down the problem and understand what we're trying to find. The makeup artist charges $250 an hour and needs to do the makeup 4 times a week for 5 weeks. After the movie is done, she gives Jean a 10% discount.
+Step 2:  We know that the total amount Jean paid is $27,000. We need to find the value of x, which is the number of hours it takes to do the makeup each day.
+Step 3:  To find the total amount Jean paid, we need to calculate the total hours worked and then multiply it by the hourly rate.
+Step 4:  The makeup artist works 4 times a week for 5 weeks, so the total number of days she works is 4 * 5 = 20 days.
+Step 5:  Since she works x hours each day, the total hours worked is 20 * x.
+Step 6:  The total amount Jean paid is the total hours worked multiplied by the hourly rate, which is $250. So, the equation becomes: 20 * x * 250 = 27000.
+Step 7:  Now, we can solve for x by dividing both sides of the equation by 20 * 250.
+Step 8:  x = 27000 / (20 * 250)
+Step 9:  x = 27000 / 5000
+Step 10:  x = 5.4
+
+The final answer is: $\boxed{5.4}$",5.4,"
+
+The final answer is: $\boxed{5.4}$|",6,0,19.36883234977722
+gsm8k_13,"Joe has $x to buy an outfit for his new field trip. There is a 30% off sale at the clothing store. The shirt he picks out has a price of $25. He also picks out a pair of shorts for $35. Assuming that sales tax is included, how much money will Joe have left after the purchase?
+If we know the answer of the above question is 8, what is the value of unknown variable x?","Step 1:  First, let's calculate the total cost of the outfit before the discount. The shirt costs $25 and the shorts cost $35, so the total cost is $25 + $35 = $60.
+Step 2:  Since there is a 30% off sale, we need to calculate the discount amount. The discount is 30% of the total cost, which is 0.3 * $60 = $18.
+Step 3:  After the discount, the total cost of the outfit is $60 - $18 = $42.
+Step 4:  Now, we need to find out how much money Joe has left after the purchase. We are given that the answer is $8, so we can set up an equation to represent the situation: x - $42 = $8, where x is the initial amount of money Joe has.
+Step 5:  To solve for x, we need to isolate the variable x. We can do this by adding $42 to both sides of the equation: x = $8 + $42.
+Step 6:  Therefore, the value of the unknown variable x is $50.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$ ",50,1,15.263396978378296
+gsm8k_14,"John has 3 boxes.  Each box is 5 inches by 6 inches by x inches.  The walls are 1 inch thick.  What is the total inner volume of all 3 boxes?
+If we know the answer of the above question is 72, what is the value of unknown variable x?","Step 1:  To find the total inner volume of all 3 boxes, we first need to calculate the inner volume of one box and then multiply it by 3.
+Step 2:  The inner dimensions of each box are (5-2) inches by (6-2) inches by (x-2) inches, since the walls are 1 inch thick.
+Step 3:  Therefore, the inner volume of one box is (5-2) * (6-2) * (x-2) = 3 * 4 * (x-2) = 12 * (x-2).
+Step 4:  Now, we multiply the inner volume of one box by 3 to get the total inner volume of all 3 boxes: 3 * 12 * (x-2) = 36 * (x-2).
+Step 5:  We are given that the total inner volume of all 3 boxes is 72. So, we can set up the equation 36 * (x-2) = 72.
+Step 6:  To solve for x, we divide both sides of the equation by 36: (x-2) = 72 / 36 = 2.
+Step 7:  Now, we add 2 to both sides of the equation to isolate x: x = 2 + 2 = 4.
+
+The final answer is: $\boxed{4}$",4,"
+
+The final answer is: $\boxed{4}$",4,1,17.962430000305176
+gsm8k_15,"Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes x minutes. Then Carla has to restart the download from the beginning. It takes 160 to download the file. What is the value of unknown variable x?","Step 1:  First, let's understand the problem. Carla is downloading a 200 GB file at a normal rate of 2 GB/minute. However, 40% of the way through the download, Windows forces a restart, which takes x minutes. After the restart, Carla has to restart the download from the beginning.
+Step 2:  We need to find the value of x, which is the time taken for the restart.
+Step 3:  To solve this problem, we can start by calculating the time taken to download the file normally without any interruptions.
+Step 4:  The normal download time can be calculated as the total size of the file (200 GB) divided by the normal download rate (2 GB/minute), which gives us 100 minutes.
+Step 5:  However, since Carla has to restart the download from the beginning after the restart, the total time taken to download the file is 160 minutes.
+Step 6:  We can set up an equation to represent the situation. Let's denote the time taken to download the first 40% of the file as t1, and the time taken to download the remaining 60% of the file as t2.
+Step 7:  We know that t1 + t2 = 160 minutes, and t1 = 0.4 * 100 = 40 minutes (since 40% of 100 minutes is 40 minutes).
+Step 8:  We can substitute t1 = 40 minutes into the equation t1 + t2 = 160 minutes to find t2, which gives us t2 = 120 minutes.
+Step 9:  Now, we need to find the value of x, which is the time taken for the restart. We know that the restart occurs 40% of the way through the download, which is 40 minutes.
+Step 10:  Therefore, the value of x is 40 minutes.
+
+The final answer is: $\boxed{40}$",40,"
+
+The final answer is: $\boxed{40}$|",20,0,24.08533263206482
+gsm8k_16,"In a set of magicians cards, there are 15 red cards, and x% more green cards. Yellow cards are as many, as the sum of red and green cards. How many cards of all mentioned colors are there?
+If we know the answer of the above question is 78, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and the relationships between the number of red, green, and yellow cards.
+Step 2:  We are told that there are 15 red cards, and the number of green cards is x% more than the number of red cards. This means the number of green cards can be represented as 15 + (x/100) * 15.
+Step 3:  The number of yellow cards is stated to be equal to the sum of the number of red and green cards, which can be expressed as 15 + (15 + (x/100) * 15).
+Step 4:  We are also given that the total number of cards of all mentioned colors is 78.
+Step 5:  To find the value of x, we can set up an equation based on the given information. The total number of cards is the sum of the number of red, green, and yellow cards, which can be represented as 15 + (15 + (x/100) * 15) + (15 + (15 + (x/100) * 15)).
+Step 6:  We know that this total is equal to 78, so we can set up the equation 15 + (15 + (x/100) * 15) + (15 + (15 + (x/100) * 15)) = 78.
+Step 7:  Simplifying this equation will allow us to solve for the value of x.
+Step 8:  First, we can combine like terms to get 15 + 15 + (x/100) * 15 + 15 + (15 + (x/100) * 15) = 78.
+Step 9:  This simplifies to 45 + (x/100) * 15 + (15 + (x/100) * 15) = 78.
+Step 10:  Further simplifying, we get 45 + (x/100) * 15 + (15 + (x/100) * 15) = 78.
+Step 11:  Combining like terms again, we have 45 + (x/100) * 15 + (x/100) * 15 + 15 = 78.
+Step 12:  This simplifies to 60 + (2x/100) * 15 = 78.
+Step 13:  Subtracting 60 from both sides gives us (2x/100) * 15 = 18.
+Step 14:  Multiplying both sides by 100/2 to isolate x gives us x = 60.
+Step 15:  Therefore, the value of the unknown variable x is 60.
+
+The final answer is: $\boxed{60}$",60,"
+
+The final answer is $\boxed{60}$. ",60,1,34.17886686325073
+gsm8k_17,"Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is x% as fast as she can run. If she can skip at 3 miles per hour, how many miles can she travel in six hours if she spends one-third of the time running and two-thirds of the time walking?
+If we know the answer of the above question is 18, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and the relationships between Dana's walking, running, and skipping speeds.
+Step 2:  We are told that Dana can run at a speed four times faster than she can walk. Let's denote her walking speed as $w$. Therefore, her running speed is $4w$.
+Step 3:  Additionally, we know that she can skip at a speed that is $x\%$ as fast as she can run. Given that she can skip at 3 miles per hour, we can express this as $3 = \frac{x}{100} \cdot 4w$.
+Step 4:  We are also given that she can travel a certain distance in six hours, spending one-third of the time running and two-thirds of the time walking.
+Step 5:  To find the total distance she can travel in six hours, we need to calculate the distance covered while walking and running, and then add them together.
+Step 6:  The distance covered while walking is given by $2 \cdot \frac{6}{3} \cdot w = 4w$, and the distance covered while running is given by $\frac{1}{3} \cdot 6 \cdot 4w = 8w$.
+Step 7:  Therefore, the total distance covered in six hours is $4w + 8w = 12w$.
+Step 8:  We are given that the total distance covered is 18 miles, so we can set up the equation $12w = 18$ to solve for $w$.
+Step 9:  Solving for $w$, we find that $w = \frac{18}{12} = \frac{3}{2}$.
+Step 10:  Now that we have the value of $w$, we can substitute it into the equation $3 = \frac{x}{100} \cdot 4w$ to solve for $x$.
+Step 11:  Substituting $w = \frac{3}{2}$ into the equation, we get $3 = \frac{x}{100} \cdot 4 \cdot \frac{3}{2}$.
+Step 12:  Simplifying this equation, we find that $3 = \frac{6x}{100}$.
+Step 13:  Solving for $x$, we get $x = \frac{3 \cdot 100}{6} = 50$.
+Step 14:  Therefore, the value of the unknown variable $x$ is $\boxed{50}$.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$ ",50,1,32.20992970466614
+gsm8k_18,"Prince is a butcher. He sells 15kg of meat every hour he works, and he works x hours a day. His friend Bill gives him a bull that weighs 750kg. It will take Prince 5 days to sell the meat from Bill's bull. What is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and what is being asked. Prince sells 15kg of meat every hour he works, and he works x hours a day. His friend Bill gives him a bull that weighs 750kg, and it will take Prince 5 days to sell the meat from Bill's bull.
+Step 2:  We are asked to find the value of the unknown variable x, which represents the number of hours Prince works each day.
+Step 3:  First, we need to calculate the total amount of meat sold from the bull in 5 days. Since Prince sells 15kg of meat every hour, in 5 days, he will sell 15 * 5 * x = 75x kg of meat.
+Step 4:  We know that the bull weighs 750kg, so the total amount of meat sold from the bull in 5 days should be equal to its weight, which is 750kg.
+Step 5:  Therefore, we can set up the equation 75x = 750 to find the value of x.
+Step 6:  Solving for x, we get x = 750 / 75 = 10.
+
+The final answer is: $\boxed{10}$",10,"
+
+The final answer is: $\boxed{10}$|",10,1,15.986605644226074
+gsm8k_19,"There are 6 students playing tennis and twice that number playing volleyball. There are x boys and 22 girls playing soccer. If each student only participates in one group, how many students are there in total?
+If we know the answer of the above question is 56, what is the value of unknown variable x?","Step 1:  First, let's identify the number of students playing tennis and volleyball. We are given that there are 6 students playing tennis and twice that number playing volleyball, which means there are 6 * 2 = 12 students playing volleyball.
+Step 2:  Next, we need to find the total number of students playing tennis and volleyball. This can be calculated by adding the number of students playing tennis and volleyball, which gives us 6 + 12 = 18.
+Step 3:  Now, we are given that there are x boys and 22 girls playing soccer. To find the total number of students playing soccer, we need to add x and 22.
+Step 4:  We are also given that the total number of students in all three groups is 56. This means that the sum of the students playing tennis and volleyball, the students playing soccer, and the students playing soccer should equal 56.
+Step 5:  Therefore, we can set up the equation 18 + x + 22 = 56 to represent the total number of students in all three groups.
+Step 6:  Solving for x, we get x = 56 - 18 - 22 = 16.
+
+The final answer is: $\boxed{16}$",16,"
+
+The final answer is: $\boxed{16}$",16,1,16.020735502243042
+gsm8k_20,"Ricardo grows tomatoes and eggplants in his garden. Each tomato plant yields 22 tomatoes while each plant of eggplant yields 4 eggplants. He planted 5 tomato plants and x plants of eggplant. How many fruits can Ricardo get from his plants?
+If we know the answer of the above question is 142, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationship between the number of plants and the total number of fruits.
+Step 2:  Ricardo has 5 tomato plants, and each tomato plant yields 22 tomatoes. So, the total number of tomatoes from the tomato plants is 5 * 22 = 110.
+Step 3:  Let's assume the number of eggplant plants is x. Each eggplant plant yields 4 eggplants, so the total number of eggplants from the eggplant plants is 4x.
+Step 4:  The total number of fruits Ricardo can get from his plants is the sum of the total number of tomatoes and the total number of eggplants, which is 110 + 4x.
+Step 5:  We are given that the total number of fruits is 142. Therefore, we can set up the equation 110 + 4x = 142 to solve for x.
+Step 6:  To solve for x, we need to isolate x on one side of the equation. We can do this by subtracting 110 from both sides of the equation, which gives us 4x = 32.
+Step 7:  Finally, we can solve for x by dividing both sides of the equation by 4, which gives us x = 8.
+
+The final answer is: $\boxed{8}$",8,"
+
+The final answer is: $\boxed{8}$ ",8,1,17.252511501312256
+gsm8k_21,"Jo has been making face masks. She can make x small masks with 2 yards of material and 3 large masks with 2.25 yards of material. How much material would she need to make 20 small and 8 large masks for her class?
+If we know the answer of the above question is 16, what is the value of unknown variable x?","To solve this problem, we need to find the amount of material needed to make 20 small and 8 large masks. We are given that Jo can make x small masks with 2 yards of material and 3 large masks with 2.25 yards of material.
+
+First, let's find the amount of material needed to make 20 small masks. Since x small masks require 2 yards of material, 20 small masks will require 20 * (2 / x) yards of material.
+
+Next, let's find the amount of material needed to make 8 large masks. Since 3 large masks require 2.25 yards of material, 8 large masks will require 8 * (2.25 / 3) yards of material.
+
+Now, we can add the amount of material needed to make 20 small masks and 8 large masks to find the total amount of material needed.
+
+Total material needed = 20 * (2 / x) + 8 * (2.25 / 3)
+
+We are given that the total amount of material needed is 16 yards. So, we can set up the equation:
+
+20 * (2 / x) + 8 * (2.25 / 3) = 16
+
+To solve for x, we can start by simplifying the equation:
+
+40/x + 6 = 16
+
+Next, we can subtract 6 from both sides of the equation:
+
+40/x = 10
+
+Now, we can multiply both sides of the equation by x to get rid of the fraction:
+
+40 = 10x
+
+Finally, we can divide both sides of the equation by 10 to solve for x:
+
+x = 4
+
+The final answer is: $\boxed{4}$",4,"
+
+The final answer is: $\boxed{4}$ ",4,1,21.05806541442871
+gsm8k_22,"Brian's friend Bobby has 5 fewer than 3 times as many video games as Brian does.  If Brian has 20 video games but lost x right before the comparison was made, how many does Bobby have?
+If we know the answer of the above question is 40, what is the value of unknown variable x?","Step 1:  First, let's understand the problem. Brian has 20 video games, but he lost some before the comparison. We need to find out how many video games Bobby has.
+Step 2:  We are given that Bobby has 5 fewer than 3 times as many video games as Brian does. This means if Brian has B video games, Bobby has 3B - 5 video games.
+Step 3:  Since Brian has 20 video games, we can calculate how many Bobby has by substituting B = 20 into the equation 3B - 5.
+Step 4:  So, Bobby has 3 * 20 - 5 = 60 - 5 = 55 video games.
+Step 5:  However, we are told that Bobby actually has 40 video games, not 55. This means that Brian must have lost some video games before the comparison.
+Step 6:  Let's denote the number of video games Brian lost as x. Then, Brian has 20 - x video games.
+Step 7:  We know that Bobby has 3 times as many video games as Brian does, minus 5. So, we can set up the equation 3(20 - x) - 5 = 40 to find the value of x.
+Step 8:  Solving the equation, we get 60 - 3x - 5 = 40, which simplifies to 55 - 3x = 40.
+Step 9:  Subtracting 55 from both sides, we get -3x = -15.
+Step 10:  Dividing both sides by -3, we find that x = 5.
+
+The final answer is: $\boxed{5}$",5,"
+
+The final answer is: $\boxed{5}$|",5,1,21.5297372341156
+gsm8k_23,"The temperature was 2 degrees Celsius. It dropped 8 degrees Celsius overnight and then increased x degrees Celsius in the morning. What was the temperature, in degrees Celsius, The temperature in the morning is -3 degrees. What is the value of unknown variable x?","Step 1:  The problem states that the initial temperature was 2 degrees Celsius. It then dropped by 8 degrees Celsius overnight, resulting in a temperature of -6 degrees Celsius.
+Step 2:  In the morning, the temperature increased by x degrees Celsius, and we are given that the final temperature is -3 degrees Celsius.
+Step 3:  To find the value of x, we can use the information provided to set up an equation. The equation would be -6 + x = -3, where -6 represents the temperature after the drop and -3 represents the final temperature after the increase.
+Step 4:  Solving for x, we get x = -3 + 6, which simplifies to x = 3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$|",3,1,10.616014003753662
+gsm8k_24,"John buys twice as many red ties as blue ties.  The red ties cost x% more than blue ties.  He spent $200 on blue ties that cost $40 each. How much did he spend on ties?
+If we know the answer of the above question is 800, what is the value of unknown variable x?","Step 1:  First, let's understand the problem. John buys twice as many red ties as blue ties, and the red ties cost x% more than the blue ties. We are given that he spent $200 on blue ties that cost $40 each.
+Step 2:  We know that the number of blue ties is 200 / 40 = 5. Since John buys twice as many red ties as blue ties, the number of red ties is 5 * 2 = 10.
+Step 3:  Let's assume the cost of each blue tie is $40. Then, the cost of each red tie is $40 + (x/100) * 40.
+Step 4:  We are given that the total amount spent on ties is $800. So, the total cost of blue ties is $200, and the total cost of red ties is $800 - $200 = $600.
+Step 5:  The total cost of red ties is 10 * ($40 + (x/100) * 40) = $600.
+Step 6:  Simplifying the equation, we get 10 * (40 + 0.4x) = 600.
+Step 7:  Expanding the equation, we get 400 + 4x = 600.
+Step 8:  Subtracting 400 from both sides, we get 4x = 200.
+Step 9:  Dividing both sides by 4, we get x = 50.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$|",50,1,19.514403104782104
+gsm8k_25,"An eraser costs $2 and a pencil costs $3. How much do 6 erasers and x pencils cost?
+If we know the answer of the above question is 36, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first calculate the total cost of 6 erasers and x pencils.
+Step 2:  The cost of 6 erasers is 6 * $2 = $12.
+Step 3:  Let's assume the total cost of 6 erasers and x pencils is $36.
+Step 4:  The cost of x pencils is $36 - $12 = $24.
+Step 5:  Since each pencil costs $3, we can find the value of x by dividing the total cost of pencils by the cost of one pencil.
+Step 6:  Therefore, x = $24 / $3 = 8.
+
+The final answer is: $\boxed{8}$",8,"
+
+
+
+
+
+
+The final answer is: $\boxed{8}$ ",8,1,10.022774457931519
+gsm8k_26,"Kim has started his own housekeeping business and is calculating how much profit he will make from his clients. He already has x clients, but is talking to another 5 potential clients and feels confident enough to include them in his calculations. Each client’s home will need 2 bottles of bleach and a pack of cloths to clean. Bottles of bleach will cost $2 each and packs of cloths will cost $5 each. These are his only expenses. He calculates that his total income each week will be $92. Profit is the difference between total income and total expenses, so how much profit, in dollars, will Lucas make each week?
+If we know the answer of the above question is 20, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first calculate the total expenses for each client, which includes the cost of bleach and cloths.
+Step 2:  Each client requires 2 bottles of bleach at $2 each and 1 pack of cloths at $5. So, the total expense for each client is 2 * $2 + $5 = $9.
+Step 3:  Given that Kim has x clients and is also considering 5 potential clients, the total number of clients is x + 5.
+Step 4:  The total income from all clients is $92 per week.
+Step 5:  The profit is the difference between the total income and the total expenses. So, the profit can be calculated as: Profit = Total Income - Total Expenses.
+Step 6:  We are given that the profit is $20. Therefore, we can set up the equation: $92 - (x + 5) * $9 = $20.
+Step 7:  Now, we can solve for x by rearranging the equation: (x + 5) * $9 = $92 - $20, which simplifies to (x + 5) * $9 = $72.
+Step 8:  Dividing both sides by $9 gives us x + 5 = $8.
+Step 9:  Finally, solving for x, we get x = $8 - 5 = $3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$|",3,1,19.22152543067932
+gsm8k_27,"Parker chews 4 pieces of gum a day.  A pack of gum has 15 pieces of chewing gum per pack.  How many packs of gum will he need to last him x days?
+If we know the answer of the above question is 8, what is the value of unknown variable x?","Step 1:  To find out how many packs of gum Parker will need to last him x days, we first need to determine how many pieces of gum he will need for x days.
+Step 2:  Since Parker chews 4 pieces of gum a day, the total number of pieces he will need for x days is 4 * x.
+Step 3:  A pack of gum has 15 pieces of chewing gum per pack. Therefore, to find out how many packs Parker will need, we divide the total number of pieces he needs by the number of pieces in a pack, which is 15.
+Step 4:  This gives us the equation: (4 * x) / 15 = number of packs.
+Step 5:  We are given that the number of packs Parker will need is 8. So, we can set up the equation as (4 * x) / 15 = 8.
+Step 6:  To solve for x, we can multiply both sides of the equation by 15 to get rid of the fraction, which gives us 4 * x = 8 * 15.
+Step 7:  Simplifying the right-hand side of the equation, we get 4 * x = 120.
+Step 8:  To isolate x, we divide both sides of the equation by 4, which gives us x = 120 / 4.
+Step 9:  Solving for x, we get x = 30.
+
+The final answer is: $\boxed{30}$",30,"
+
+
+
+
+
+
+The final answer is $\boxed{30}$. ",30,1,19.116964101791382
+gsm8k_28,"Mike bought 5 face masks while Johnny bought x more than thrice as many as Mike. How many face masks did Johnny buy?
+If we know the answer of the above question is 17, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationship between the number of face masks Mike and Johnny bought.
+Step 2:  We are given that Mike bought 5 face masks, and Johnny bought x more than thrice as many as Mike.
+Step 3:  Let's represent the number of face masks Johnny bought as ""J"". We can express this relationship as J = 3 * 5 + x, where 3 * 5 represents thrice as many as Mike bought, and x is the additional number of face masks Johnny bought.
+Step 4:  We are also given that the number of face masks Johnny bought is 17. So, we can set up the equation 3 * 5 + x = 17 to find the value of x.
+Step 5:  Solving for x, we get x = 17 - 3 * 5 = 17 - 15 = 2.
+Step 6:  Therefore, the value of the unknown variable x is 2.
+
+The final answer is: $\boxed{2}$",2,"
+
+The final answer is: $\boxed{2}$",2,1,13.922269821166992
+gsm8k_29,"Farmer Brown has x animals on his farm, all either chickens or cows. He has twice as many chickens as cows. How many legs do the animals have, all together?
+If we know the answer of the above question is 160, what is the value of unknown variable x?","Step 1: Let's denote the number of cows as C and the number of chickens as H. We know that H = 2C.
+
+Step 2: The total number of animals on the farm is x, which means that C + H = x.
+
+Step 3: Since we know that H = 2C, we can substitute this into the equation from step 2 to get C + 2C = x, which simplifies to 3C = x.
+
+Step 4: We also know that the total number of legs is 160. Since cows have 4 legs and chickens have 2 legs, we can write the equation 4C + 2H = 160.
+
+Step 5: Again, we can substitute H = 2C into the equation from step 4 to get 4C + 2(2C) = 160, which simplifies to 4C + 4C = 160, and further simplifies to 8C = 160.
+
+Step 6: Solving the equation 8C = 160 for C, we get C = 160 / 8 = 20.
+
+Step 7: Now that we know C = 20, we can substitute this back into the equation 3C = x from step 3 to solve for x. This gives us 3(20) = x, which simplifies to 60 = x.
+
+The final answer is: $\boxed{60}$",60,"
+
+The final answer is: $\boxed{60}$",60,1,18.264887809753418
+gsm8k_30,"To participate in the local community tree-planting campaign, Mr. Julius planted twenty trees of White Oak and twice as many Lodgepole Pine as White Oak on his first day. On the second day, he planted x more White Oak trees and 1/4 more Lodgepole Pine trees than he planted on the first day. Calculate the total number of trees planted by Mr. Julius in the two days.
+If we know the answer of the above question is 140, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the number of trees Mr. Julius planted on each day and then calculate the total number of trees planted over the two days.
+Step 2:  On the first day, Mr. Julius planted 20 White Oak trees and twice as many Lodgepole Pine trees, which is 2 * 20 = 40 Lodgepole Pine trees.
+Step 3:  Therefore, the total number of trees planted on the first day is 20 + 40 = 60 trees.
+Step 4:  On the second day, he planted x more White Oak trees than on the first day, so the number of White Oak trees planted on the second day is 20 + x.
+Step 5:  Additionally, he planted 1/4 more Lodgepole Pine trees than on the first day, which is 1/4 * 40 = 10 more Lodgepole Pine trees. So, the total number of Lodgepole Pine trees planted on the second day is 40 + 10 = 50.
+Step 6:  Therefore, the total number of trees planted on the second day is (20 + x) + 50 = 70 + x.
+Step 7:  The total number of trees planted over the two days is the sum of the trees planted on each day, which is 60 + (70 + x) = 130 + x.
+Step 8:  We are given that the total number of trees planted over the two days is 140, so we can set up the equation 130 + x = 140 to solve for x.
+Step 9:  Solving for x, we get x = 140 - 130 = 10.
+
+The final answer is: $\boxed{10}$",10,"
+
+The final answer is: $\boxed{10}$ ",10,1,21.937771558761597
+gsm8k_31,"Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $x for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay?
+If we know the answer of the above question is 1430, what is the value of unknown variable x?","Step 1:  To find the value of the unknown variable x, we need to understand the sequence of payments Janet made for the brooch.
+Step 2:  First, Janet paid $500 for the material to make the brooch.
+Step 3:  Then, she paid another $x for the jeweler to construct it.
+Step 4:  After that, she paid 10% of the total amount she paid for the brooch to get it insured.
+Step 5:  We are given that the total amount Janet paid for the brooch is $1430.
+Step 6:  We can represent the total amount Janet paid as the sum of the cost of the material, the cost of the jeweler, and the insurance cost.
+Step 7:  This can be expressed as the equation: 500 + x + 0.1(x + 500) = 1430.
+Step 8:  To solve for x, we need to isolate the variable x in the equation.
+Step 9:  First, we simplify the equation by distributing the 0.1 to the terms inside the parentheses: 500 + x + 0.1x + 50 = 1430.
+Step 10:  Combining like terms, we get: 550 + 1.1x = 1430.
+Step 11:  Next, we isolate the term with x by subtracting 550 from both sides of the equation: 1.1x = 880.
+Step 12:  Finally, we solve for x by dividing both sides of the equation by 1.1: x = 800.
+Step 13:  Therefore, the value of the unknown variable x is 800.
+
+The final answer is: $\boxed{800}$",800,"
+
+The final answer is: $\boxed{800}$ ",800,1,21.914244413375854
+gsm8k_32,"Twenty kids went out on a school trip. In one of the several activities they participated in, they were divided into two equal groups of girls and boys and then went out for a scavenger hunt of seashells. The boys went out for the search and brought back 60 shells each. If the girls brought an amount equal to the number of shells brought by the boys plus x times as many seashells as the boys, how many seashells were brought by each girl?
+If we know the answer of the above question is 300, what is the value of unknown variable x?","Step 1:  First, let's understand the problem. We have 20 kids, divided into two equal groups of girls and boys. Each boy brings back 60 shells, and the girls bring back an amount equal to the number of shells brought by the boys plus x times as many seashells as the boys.
+Step 2:  We are given that the number of seashells brought by each girl is 300. We need to find the value of the unknown variable x.
+Step 3:  To solve this, we can start by finding the total number of seashells brought by the boys. Since there are 10 boys and each brings back 60 shells, the total number of shells brought by the boys is 10 * 60 = 600.
+Step 4:  Now, we know that the girls brought 300 shells each, and there are 10 girls. So, the total number of shells brought by the girls is 10 * 300 = 3000.
+Step 5:  We are also given that the girls brought an amount equal to the number of shells brought by the boys plus x times as many seashells as the boys. This can be represented as 3000 = 600 + 60x.
+Step 6:  To find the value of x, we can solve the equation 3000 = 600 + 60x for x.
+Step 7:  Subtracting 600 from both sides of the equation gives us 2400 = 60x.
+Step 8:  Dividing both sides by 60 gives us x = 40.
+Step 9:  Therefore, the value of the unknown variable x is 40.
+
+The final answer is: $\boxed{40}$",40,"
+
+The final answer is: $\boxed{40}$|",4,0,21.725805521011353
+gsm8k_33,"To have the car for the weekend, Wilson's report card needs to show that he received 80 or higher in his math class.  His math grade is calculated by the average of 5 test scores.  On those tests, he received: 65, 94, x, 86 and 74.  What is his current math grade?
+If we know the answer of the above question is 80, what is the value of unknown variable x?","Step 1:  To find Wilson's current math grade, we need to calculate the average of his 5 test scores.
+Step 2:  We are given 4 out of the 5 test scores: 65, 94, 86, and 74. The fifth test score is unknown and represented by the variable x.
+Step 3:  The average of the 5 test scores can be calculated by adding all the scores and then dividing by the total number of scores, which is 5 in this case.
+Step 4:  We know that Wilson's math grade needs to be 80 or higher to have the car for the weekend.
+Step 5:  Given that the average of the 5 test scores is 80, we can set up an equation to represent this situation: (65 + 94 + x + 86 + 74) / 5 = 80.
+Step 6:  To solve for x, we can start by multiplying both sides of the equation by 5 to eliminate the fraction. This gives us: 65 + 94 + x + 86 + 74 = 80 * 5.
+Step 7:  Simplifying the right-hand side of the equation, we get: 65 + 94 + x + 86 + 74 = 400.
+Step 8:  Next, we can combine the constants on the left-hand side of the equation: 319 + x = 400.
+Step 9:  To isolate x, we can subtract 319 from both sides of the equation, which gives us: x = 400 - 319.
+Step 10:  Solving for x, we find that x = 81.
+
+The final answer is: $\boxed{81}$",81,"
+
+The final answer is: $\boxed{81}$ ",81,1,21.67099666595459
+gsm8k_34,"There are x books in a small library. Half of them are written in English, and 10% in German. All others are written in Spanish. There are 20 Spanish books. What is the value of unknown variable x?","Step 1:  To solve this problem, we need to understand the given information and use it to find the value of the unknown variable x.
+Step 2:  We are told that half of the books in the library are written in English, and 10% are written in German. This means that the remaining books are written in Spanish.
+Step 3:  We are also given that there are 20 Spanish books in the library.
+Step 4:  Let's denote the total number of books in the library as x. Since half of the books are written in English, the number of English books is x/2.
+Step 5:  Similarly, 10% of the books are written in German, which is 0.1x.
+Step 6:  The remaining books are written in Spanish, and we know that there are 20 of them.
+Step 7:  We can express the total number of books in the library as the sum of the number of English, German, and Spanish books: x = (x/2) + 0.1x + 20.
+Step 8:  To find the value of x, we need to solve this equation.
+Step 9:  First, let's simplify the equation by combining like terms: x = 0.5x + 0.1x + 20.
+Step 10:  Combining the x terms, we get: x = 0.6x + 20.
+Step 11:  To isolate x, we need to get all the x terms on one side of the equation. We can do this by subtracting 0.6x from both sides: x - 0.6x = 20.
+Step 12:  Simplifying the left side of the equation, we get: 0.4x = 20.
+Step 13:  To solve for x, we need to divide both sides of the equation by 0.4: x = 20 / 0.4.
+Step 14:  Calculating the value of x, we get: x = 50.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$|",50,1,26.370330572128296
+gsm8k_35,"A tomato vendor decides to switch who he buys his tomatoes for.  He sells x tomatoes a day.  He used to buy them for $.5 each but he gets a new vendor who sells them for $.4 each.  How much money does he save a week?
+If we know the answer of the above question is 350, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first calculate the amount of money the vendor saves per day by buying tomatoes from the new vendor.
+Step 2:  The vendor sells x tomatoes a day and used to buy them for $.5 each, but now he buys them for $.4 each.
+Step 3:  So, the amount of money he saves per day is the difference between the cost of buying x tomatoes at $.5 each and the cost of buying x tomatoes at $.4 each.
+Step 4:  This can be calculated as (x * $.5) - (x * $.4) = $.1x.
+Step 5:  Now, we need to find out how much money he saves in a week. Since there are 7 days in a week, we multiply the daily savings by 7.
+Step 6:  Therefore, the weekly savings is $.1x * 7 = $.7x.
+Step 7:  We are given that the weekly savings is $350, so we can set up the equation $.7x = $350 to solve for x.
+Step 8:  To find the value of x, we divide both sides of the equation by $.7, giving us x = $350 / $.7.
+Step 9:  Solving this, we get x = 500.
+
+The final answer is: $\boxed{500}$",500,"
+
+
+
+
+
+
+The final answer is: $\boxed{500}$ ",500,1,17.451485633850098
+gsm8k_36,"After transferring to a new school, Amy made 20 more friends than Lily. If Lily made x friends, how many friends do Lily and Amy have together?
+If we know the answer of the above question is 120, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the relationship between the number of friends Lily and Amy have.
+Step 2:  We are given that Amy made 20 more friends than Lily. If Lily made x friends, then Amy made x + 20 friends.
+Step 3:  The problem asks us to find the total number of friends Lily and Amy have together, which is the sum of the number of friends they each have.
+Step 4:  Therefore, the total number of friends they have together is x + (x + 20).
+Step 5:  We are also given that the total number of friends they have together is 120.
+Step 6:  So, we can set up the equation x + (x + 20) = 120 to represent this situation.
+Step 7:  To solve for x, we can combine like terms and isolate the variable x.
+Step 8:  Combining like terms, we get 2x + 20 = 120.
+Step 9:  Subtracting 20 from both sides of the equation, we get 2x = 100.
+Step 10:  Dividing both sides of the equation by 2, we find that x = 50.
+Step 11:  Therefore, the value of the unknown variable x is 50.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$",50,1,17.50205945968628
+gsm8k_37,"John buys 10 bottles of scotch for a total cost of $600.  He also buys twice as many bottles of cognac that cost x% more per bottle.  How much does he spend on everything?
+If we know the answer of the above question is 2400, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and what is being asked. John buys 10 bottles of scotch for a total cost of $600. He also buys twice as many bottles of cognac, which cost x% more per bottle.
+Step 2:  Let's denote the cost of a bottle of scotch as 's'. Therefore, the total cost of 10 bottles of scotch is 10s = $600.
+Step 3:  From this, we can calculate the cost of a single bottle of scotch, which is s = $600 / 10 = $60.
+Step 4:  Now, we know that John buys twice as many bottles of cognac as scotch, so he buys 20 bottles of cognac.
+Step 5:  The cost of a bottle of cognac is x% more than the cost of a bottle of scotch. Therefore, the cost of a bottle of cognac is (1 + x/100)s.
+Step 6:  The total cost of 20 bottles of cognac is 20(1 + x/100)s.
+Step 7:  We are given that the total cost of both scotch and cognac is $2400. Therefore, we can set up the equation 10s + 20(1 + x/100)s = 2400.
+Step 8:  Substituting the value of s, we get 10(60) + 20(1 + x/100)(60) = 2400.
+Step 9:  Simplifying this equation, we get 600 + 1200 + 12x = 2400.
+Step 10:  Combining like terms, we get 1800 + 12x = 2400.
+Step 11:  Subtracting 1800 from both sides, we get 12x = 600.
+Step 12:  Dividing both sides by 12, we get x = 50.
+Step 13:  Therefore, the value of the unknown variable x is 50.
+
+The final answer is: $\boxed{50}$",50,"
+
+
+
+
+
+
+The final answer is: $\boxed{50}$ |",50,1,26.60587477684021
+gsm8k_38,"A family of parents and a child go to the cinema. The cost of an adult ticket is $12 and a child ticket is $8. Then they buy 2 popcorns for $x each. How many dollars do they pay in total?
+If we know the answer of the above question is 38, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to calculate the total cost of the tickets and the popcorns.
+Step 2:  First, let's calculate the cost of the adult and child tickets. The cost of an adult ticket is $12 and a child ticket is $8. Since there are 2 adults and 1 child, the total cost of the tickets is (2 * 12) + 8 = 32 dollars.
+Step 3:  Next, we need to calculate the cost of the popcorns. They buy 2 popcorns for $x each, so the total cost of the popcorns is 2 * x.
+Step 4:  The total cost is the sum of the cost of the tickets and the cost of the popcorns, which is 32 + 2x.
+Step 5:  We are given that the total cost is $38. So, we can set up the equation 32 + 2x = 38 to solve for x.
+Step 6:  To solve for x, we need to isolate x on one side of the equation. We can do this by subtracting 32 from both sides of the equation, which gives us 2x = 6.
+Step 7:  Finally, we can solve for x by dividing both sides of the equation by 2, which gives us x = 3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$ ",3,1,18.2196683883667
+gsm8k_39,"While at the dollar store, Sloane counts x customers entering the store. The next day, she counts 50 more customers than the first day. If the total number of customers by the third day was 500, how many customers did she count on the third day?
+If we know the answer of the above question is 250, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and then use it to find the value of the unknown variable x.
+Step 2:  We are told that Sloane counts x customers entering the store on the first day. On the second day, she counts 50 more customers than the first day, which means she counts x + 50 customers.
+Step 3:  By the third day, the total number of customers is 500. This means that the sum of the customers counted on the first day, the second day, and the third day is 500.
+Step 4:  We can represent this information in the form of an equation: x + (x + 50) + (x + 100) = 500.
+Step 5:  Simplifying this equation, we get 3x + 150 = 500.
+Step 6:  To solve for x, we need to isolate the variable x. We can do this by subtracting 150 from both sides of the equation, which gives us 3x = 350.
+Step 7:  Finally, we can find the value of x by dividing both sides of the equation by 3, which gives us x = 116.67.
+Step 8:  However, since the number of customers must be a whole number, we can round x to the nearest whole number. In this case, x is approximately equal to 117.
+Step 9:  Now that we have the value of x, we can find the number of customers counted on the third day. We know that the total number of customers by the third day was 500, and we also know that the number of customers counted on the third day is 250.
+Step 10:  Therefore, the value of the unknown variable x is 117.
+
+The final answer is: $\boxed{117}$",117,"
+
+The final answer is: $\boxed{117}$ ",100,0,23.203692197799683
+gsm8k_40,"A tank of water has a depth of 17 feet on Monday. On Tuesday, the tank had 7 feet more water. On Wednesday, the depth of the water is x thirds of what it was on Tuesday. The tank's water depth on Wednesday is 16. What is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and then use it to find the value of the unknown variable x.
+Step 2:  On Monday, the tank has a depth of 17 feet. On Tuesday, the tank has 7 feet more water, so the depth of the water on Tuesday is 17 + 7 = 24 feet.
+Step 3:  On Wednesday, the depth of the water is x thirds of what it was on Tuesday. This means that the depth of the water on Wednesday is (x/3) * 24 feet.
+Step 4:  We are given that the tank's water depth on Wednesday is 16 feet. So, we can set up the equation (x/3) * 24 = 16 to find the value of x.
+Step 5:  To solve for x, we can start by multiplying both sides of the equation by 3 to get rid of the fraction. This gives us x * 24 = 48.
+Step 6:  Next, we can divide both sides of the equation by 24 to isolate x. This gives us x = 48 / 24.
+Step 7:  Simplifying the fraction, we get x = 2.
+Step 8:  Therefore, the value of the unknown variable x is 2.
+
+The final answer is: $\boxed{2}$",2,"
+
+The final answer is: $\boxed{2}$|",2,1,17.67765474319458
+gsm8k_41,"The Ben and Aggie Burrito Shop makes x chimichangas on Tuesdays, 125 chimichangas on Wednesdays and twice as many on Friday. They make 500 chimichangas on those three days. What is the value of unknown variable x?","To solve this problem, we need to set up an equation based on the information given. Let's denote the number of chimichangas made on Tuesday as x.
+
+We know that on Wednesday, they make 125 chimichangas, and on Friday, they make twice as many as on Wednesday, which is 2 * 125 = 250 chimichangas.
+
+The total number of chimichangas made on these three days is 500. Therefore, we can set up the following equation:
+
+x + 125 + 250 = 500
+
+Combine the constants on the left-hand side of the equation:
+
+x + 375 = 500
+
+Subtract 375 from both sides of the equation to isolate x:
+
+x = 500 - 375
+
+x = 125
+
+The final answer is: $\boxed{125}$",125,"
+
+The final answer is: $\boxed{125}$|",125,1,11.104013681411743
+gsm8k_42,"Two sisters, Elizabeth and Margareth, bought beads. Elizabeth bought x pack of red and 2 packs of clear beads, while Margareth bought 3 packs of blue and 4 packs of red beads. How many more beads do one sister have than the other, if each pack of beads contains 20 pieces of beads?
+If we know the answer of the above question is 80, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first calculate the total number of beads each sister has.
+Step 2:  Elizabeth bought x packs of red beads and 2 packs of clear beads. Since each pack contains 20 pieces of beads, Elizabeth has a total of 20x + 40 beads.
+Step 3:  Margareth bought 3 packs of blue beads and 4 packs of red beads. Therefore, she has a total of 60 + 80 = 140 beads.
+Step 4:  We are given that the difference in the number of beads between the two sisters is 80. This means that Elizabeth has 80 more beads than Margareth.
+Step 5:  We can set up an equation to represent this situation: 20x + 40 - 140 = 80.
+Step 6:  Simplifying the equation, we get 20x - 100 = 80.
+Step 7:  Adding 100 to both sides of the equation, we get 20x = 180.
+Step 8:  Dividing both sides by 20, we find that x = 9.
+
+The final answer is: $\boxed{9}$",9,"
+
+The final answer is: $\boxed{9}$",1,0,15.245200395584106
+gsm8k_43,Mark works at his job for 8 hours a day for x days a week.  He used to make $10 an hour but they raised his pay by $2 per hour. He makes 480 dollars a week. What is the value of unknown variable x?,"Step 1:  To solve this problem, we need to first understand the given information and what we are asked to find.
+Step 2:  Mark works for 8 hours a day for x days a week. This means he works a total of 8x hours in a week.
+Step 3:  Initially, Mark made $10 an hour, but his pay was raised by $2 per hour, making his new hourly wage $12.
+Step 4:  We are given that Mark makes $480 a week.
+Step 5:  We can use the formula: Total amount earned = Hourly wage * Total hours worked to find the total hours worked in a week.
+Step 6:  So, the total hours worked in a week is 480 / 12 = 40 hours.
+Step 7:  Since Mark works 8 hours a day, the number of days he works in a week can be found by dividing the total hours worked by the hours worked per day, which is 40 / 8 = 5.
+Step 8:  Therefore, the value of the unknown variable x is 5.
+
+The final answer is: $\boxed{5}$",5,"
+
+The final answer is: $\boxed{5}$|",5,1,15.015126705169678
+gsm8k_44,"Sally buys one small pizza at $x and one family-size pizza that costs 3 times as much as the small pizza. How much does she spend in all?
+If we know the answer of the above question is 32, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and what is being asked. Sally buys one small pizza at a price of $x and one family-size pizza that costs 3 times as much as the small pizza.
+Step 2:  We are asked to find the total amount Sally spends on both pizzas.
+Step 3:  The cost of the small pizza is given as $x, and the cost of the family-size pizza is 3 times the cost of the small pizza, which is $3x.
+Step 4:  To find the total amount spent, we need to add the cost of the small pizza and the cost of the family-size pizza, which gives us $x + $3x = $4x.
+Step 5:  We are given that the total amount spent is $32, so we can set up the equation $4x = $32 to find the value of x.
+Step 6:  To solve for x, we divide both sides of the equation by 4, which gives us x = $32 / 4 = $8.
+Step 7:  Therefore, the value of the unknown variable x is $8.
+
+The final answer is: $\boxed{8}$",8,"
+
+
+
+
+
+
+The final answer is: $\boxed{8}$ ",8,1,15.692999601364136
+gsm8k_45,"Ali has four $10 bills and x $20 bills that he saved after working for Mr. James on his farm. Ali gives her sister half of the total money he has and uses 3/5 of the remaining amount of money to buy dinner. Calculate the amount of money he has after buying the dinner.
+If we know the answer of the above question is 32, what is the value of unknown variable x?","Step 1:  First, let's understand the problem. Ali has four $10 bills and x $20 bills. He gives his sister half of the total money he has and then uses 3/5 of the remaining amount to buy dinner.
+Step 2:  We are given that the amount of money Ali has after buying dinner is $32.
+Step 3:  To solve for x, we need to work backwards from the final amount of money Ali has after buying dinner.
+Step 4:  Let's denote the total amount of money Ali has initially as M. After giving his sister half of the money, he has M/2 left.
+Step 5:  Then, he uses 3/5 of the remaining amount to buy dinner, which means he has 2/5 of the remaining amount left, or (2/5)*(M/2) = M/5.
+Step 6:  We are given that M/5 = 32. To find M, we multiply both sides by 5, which gives us M = 160.
+Step 7:  Now, we know that Ali has 4 $10 bills and x $20 bills, so the total amount of money he has initially is 4*10 + 20x = 40 + 20x.
+Step 8:  Since we found that M = 160, we can set up the equation 40 + 20x = 160 to solve for x.
+Step 9:  Subtracting 40 from both sides gives us 20x = 120.
+Step 10:  Dividing both sides by 20 gives us x = 6.
+Step 11:  Therefore, the value of the unknown variable x is 6.
+
+The final answer is: $\boxed{6}$",6,"
+
+The final answer is $\boxed{6}$. ",6,1,22.130237579345703
+gsm8k_46,"Jake is walking through the Museum of Entomology. He sees 80 spiders with 8 legs each, 90 insects with 6 legs each, and 3 rare mutant invertebrates with x legs each. Jake sees a total of 1210 legs. What is the value of unknown variable x?","Step 1:  To solve this problem, we need to first understand the given information and what is being asked. Jake sees a total of 80 spiders with 8 legs each, 90 insects with 6 legs each, and 3 rare mutant invertebrates with an unknown number of legs, denoted as x.
+Step 2:  We are given that the total number of legs Jake sees is 1210. We can use this information to set up an equation and solve for the value of x.
+Step 3:  The total number of legs from the spiders can be calculated by multiplying the number of spiders by the number of legs each spider has, which gives us 80 * 8 = 640 legs.
+Step 4:  Similarly, the total number of legs from the insects can be calculated by multiplying the number of insects by the number of legs each insect has, which gives us 90 * 6 = 540 legs.
+Step 5:  Now, we can set up an equation to represent the total number of legs Jake sees. The equation is 640 + 540 + 3x = 1210, where 3x represents the total number of legs from the 3 rare mutant invertebrates.
+Step 6:  To solve for x, we need to isolate the variable x on one side of the equation. We can do this by subtracting 640 and 540 from both sides of the equation, which gives us 3x = 1210 - 640 - 540.
+Step 7:  Simplifying the right-hand side of the equation, we get 3x = 30.
+Step 8:  To find the value of x, we need to divide both sides of the equation by 3, which gives us x = 30 / 3.
+Step 9:  Therefore, the value of the unknown variable x is 10.
+
+The final answer is: $\boxed{10}$",10,"
+
+The final answer is: $\boxed{10}$",10,1,23.846649885177612
+gsm8k_47,"Theo bought a pen for $2 and a piece of paper that cost $1 less than three times the price of the pen. She gave the cashier x. What is the amount of change Theo received?
+If we know the answer of the above question is 3, what is the value of unknown variable x?","Step 1:  First, let's understand the problem. Theo bought a pen for $2 and a piece of paper that cost $1 less than three times the price of the pen. We need to find the amount of change she received after giving the cashier x.
+Step 2:  To find the cost of the paper, we calculate three times the price of the pen, which is 3 * 2 = 6. Then, we subtract $1 from this amount to get the cost of the paper, which is 6 - 1 = 5.
+Step 3:  Now, we know that the total cost of the pen and the paper is $2 + $5 = $7.
+Step 4:  Since the problem states that the amount of change Theo received is $3, we can set up an equation to represent this situation. The equation would be x - 7 = 3, where x is the amount given to the cashier.
+Step 5:  Solving for x, we add 7 to both sides of the equation, which gives us x = 10.
+Step 6:  Therefore, the value of the unknown variable x is 10.
+
+The final answer is: $\boxed{10}$",10,"
+
+The final answer is: $\boxed{10}$",10,1,15.64554500579834
+gsm8k_48,"John is very tired. He decides to take a nap, but he wants to finish his homework first. If John has 20 minutes of math homework, 40 minutes of reading homework, and 20 minutes of history homework and x hours before he has to eat dinner, how many minutes does John have to nap?
+If we know the answer of the above question is 100, what is the value of unknown variable x?","To find the value of x, we need to first calculate the total time John has to finish his homework. 
+
+The total time for homework is 20 minutes (math) + 40 minutes (reading) + 20 minutes (history) = 80 minutes.
+
+Since John has x hours before he has to eat dinner, we need to convert x hours to minutes. There are 60 minutes in an hour, so x hours is equal to 60x minutes.
+
+We are given that John has 100 minutes to nap. This means that the total time available to John (x hours) minus the time spent on homework (80 minutes) is equal to the time available for a nap (100 minutes).
+
+So, we can set up the equation: 60x - 80 = 100.
+
+To solve for x, we can add 80 to both sides of the equation: 60x = 180.
+
+Next, we can divide both sides of the equation by 60 to solve for x: x = 180 / 60.
+
+x = 3.
+
+The final answer is: $\boxed{3}$",3,"
+
+The final answer is: $\boxed{3}$ ",3,1,14.073615550994873
+gsm8k_49,"Ben has 4 tubes of blue paint and 3 tubes of yellow paint. Jasper has x% as many tubes of blue paint as Ben, and three times as many tubes of yellow paint as Ben. How many tubes of paint does Jasper have?
+If we know the answer of the above question is 11, what is the value of unknown variable x?","Step 1:  First, let's understand the given information. Ben has 4 tubes of blue paint and 3 tubes of yellow paint. Jasper has x% as many tubes of blue paint as Ben and three times as many tubes of yellow paint as Ben.
+Step 2:  We are asked to find the total number of tubes of paint Jasper has and then determine the value of the unknown variable x.
+Step 3:  To start, we need to calculate the total number of tubes of paint Jasper has. Jasper has x% as many tubes of blue paint as Ben, which means he has (x/100) * 4 tubes of blue paint. Additionally, Jasper has three times as many tubes of yellow paint as Ben, which is 3 * 3 = 9 tubes of yellow paint.
+Step 4:  Therefore, the total number of tubes of paint Jasper has is (x/100) * 4 + 9.
+Step 5:  We are given that the total number of tubes of paint Jasper has is 11. So, we can set up the equation (x/100) * 4 + 9 = 11 to solve for x.
+Step 6:  Solving for x, we get (x/100) * 4 = 11 - 9, which simplifies to (x/100) * 4 = 2.
+Step 7:  Multiplying both sides by 100/4, we get x = (2 * 100) / 4 = 50.
+Step 8:  Therefore, the value of the unknown variable x is 50.
+
+The final answer is: $\boxed{50}$",50,"
+
+The final answer is: $\boxed{50}$ ",50,1,20.748266458511353
+gsm8k_50,"Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was x miles before the end of the trip. How many miles did he travel between his first and second stops?
+If we know the answer of the above question is 25, what is the value of unknown variable x?","Step 1:  To solve this problem, we need to understand the given information and the question being asked. Henry made two stops during his 60-mile bike trip. The first stop was after 20 miles, and the second stop was x miles before the end of the trip.
+Step 2:  We are asked to find the distance Henry traveled between his first and second stops. Let's denote this distance as d.
+Step 3:  We know that the total distance of the trip is 60 miles, and the first stop was after 20 miles. This means that the distance between the first and second stops is the difference between the total distance and the distance traveled before the first stop, which is 60 - 20 = 40 miles.
+Step 4:  However, we are given that the distance between the first and second stops is 25 miles. This means that the distance traveled before the second stop is 40 - 25 = 15 miles.
+Step 5:  Since the second stop was x miles before the end of the trip, the distance traveled before the second stop is 60 - x miles.
+Step 6:  Equating the two expressions for the distance traveled before the second stop, we get 60 - x = 15.
+Step 7:  Solving for x, we find that x = 60 - 15 = 45.
+
+The final answer is: $\boxed{45}$",45,"
+
+
+
+
+
+
+The final answer is: $\boxed{45}$ ",15,0,17.861734867095947

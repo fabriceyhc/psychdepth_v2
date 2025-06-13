@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "OpenMath2-Llama3.1-8B",
+        "base_model_evaluated": "Llama-3.1-8B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "nvidia/OpenMath2-Llama3.1-8B",
+        "evaluation_directory": "./pipeline/results/Llama-3.1-8B-Instruct_OpenMath2-Llama3.1-8B_eval_math500",
+        "evaluation_dataset": "math500",
+        "training_datasets": null,
+        "report_generated_time": "2025-06-04 00:58:40"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Llama-3.1-8B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_0shot.csv",
+                "accuracy": 55.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Llama-3.1-8B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.28,
+                    "emotion_provoking_score": 4.02,
+                    "empathy_score": 4.03,
+                    "engagement_score": 4.53,
+                    "narrative_complexity_score": 4.43,
+                    "human_likeness_score": 4.33
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "OpenMath2-Llama3.1-8B",
+            "math_evaluation": {
+                "raw_data_file": "OpenMath2-Llama3.1-8B_0shot.csv",
+                "accuracy": 59.0,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "OpenMath2-Llama3.1-8B_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 4.06,
+                    "emotion_provoking_score": 3.91,
+                    "empathy_score": 3.88,
+                    "engagement_score": 4.26,
+                    "narrative_complexity_score": 4.06,
+                    "human_likeness_score": 4.01
+                },
+                "error": null
+            }
+        }
+    }
+}
