@@ -414,7 +414,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--eval_dataset",
         required=True,
-        choices=["aime", "math500"],
+        choices=["aime", "math500", "gsm8k"],
         help="Dataset identifier for evaluation."
     )
     parser.add_argument(
