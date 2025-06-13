@@ -1,4 +1,37 @@
-{ "gsm8k_shuffled": {
+{
+  "codeforces_ai_cots_solution": {
+    "file_name": "codeforces/sft/codeforces_ai_cots.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "codeforces_human_cots_solution": {
+    "file_name": "codeforces/sft/codeforces_human_cots.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "amc_aime_sft_ai_cot_solution": {
+    "file_name": "aime/sft/amc_aime_sft_ai_cot_solution.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "amc_aime_sft_human_solution": {
+    "file_name": "aime/sft/amc_aime_sft_human_solution.json",
+    "ranking": false,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    }
+  },
+  "gsm8k_shuffled": {
     "file_name": "sft_gsm8k_shuffled_answer.json"
   },
   "gsm8k_kto": {

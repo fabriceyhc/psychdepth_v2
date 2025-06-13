@@ -219,9 +219,9 @@ def main(args):
         "--save_dir", eval_save_dir, 
         "--shots", str(shots) 
     ]
-    if not run_command(math_evaluation_command_base, env=my_env):
-        print(f"\n{args.eval_dataset} evaluation (base model) failed. Exiting.")
-        sys.exit(1)
+    # if not run_command(math_evaluation_command_base, env=my_env):
+    #     print(f"\n{args.eval_dataset} evaluation (base model) failed. Exiting.")
+    #     sys.exit(1)
     math_evaluation_script_base_output_csv = os.path.join(eval_save_dir, f"{os.path.basename(args.base_model)}_{shots}shot.csv")
 
     print("\n--- Generating Stories (Base Model) ---")
@@ -236,9 +236,9 @@ def main(args):
         "--output_dir", eval_save_dir,
         "--output_csv", story_generation_base_output_file
     ]
-    if not run_command(story_generation_command_base, env=my_env):
-        print("\nStory generation (base model) failed. Exiting.")
-        sys.exit(1)
+    # if not run_command(story_generation_command_base, env=my_env):
+    #     print("\nStory generation (base model) failed. Exiting.")
+    #     sys.exit(1)
 
     print("\n--- Evaluating Generated Stories (Base Model) ---")
     story_eval_module = "story_eval.dspy.multiscore.annotate"
@@ -250,9 +250,9 @@ def main(args):
         "--dataset", story_generation_base_output_path,
         "--output", story_evaluation_base_output_path, 
     ]
-    if not run_command(story_evaluation_command_base, env=my_env):
-        print("\nStory evaluation (base model) failed. Exiting.")
-        sys.exit(1)
+    # if not run_command(story_evaluation_command_base, env=my_env):
+    #     print("\nStory evaluation (base model) failed. Exiting.")
+    #     sys.exit(1)
 
     # --- Training Step (Conditional) ---
     if args.stage:

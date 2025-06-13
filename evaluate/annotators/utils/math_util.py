@@ -15,8 +15,6 @@
 
 
 def compute_score(solution_str, ground_truth) -> float:
-    solution_str = str(solution_str)
-    ground_truth = str(ground_truth)
     retval = 0.
     try:
         string_in_last_boxed = last_boxed_only_string(solution_str)

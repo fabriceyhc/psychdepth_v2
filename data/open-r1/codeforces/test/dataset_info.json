@@ -1,0 +1,207 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "solutions",
+  "dataset_name": "codeforces-cots",
+  "dataset_size": 4968115656,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00000-of-00010.parquet": {
+      "num_bytes": 173613880,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00001-of-00010.parquet": {
+      "num_bytes": 192375022,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00002-of-00010.parquet": {
+      "num_bytes": 182819231,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00003-of-00010.parquet": {
+      "num_bytes": 183457043,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00004-of-00010.parquet": {
+      "num_bytes": 181782276,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00005-of-00010.parquet": {
+      "num_bytes": 208241208,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00006-of-00010.parquet": {
+      "num_bytes": 188629441,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00007-of-00010.parquet": {
+      "num_bytes": 194734886,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00008-of-00010.parquet": {
+      "num_bytes": 187886704,
+      "checksum": null
+    },
+    "hf://datasets/open-r1/codeforces-cots@39ac85c150806230473c70ad72c31f6232fe3f41/solutions/train-00009-of-00010.parquet": {
+      "num_bytes": 193509488,
+      "checksum": null
+    }
+  },
+  "download_size": 1887049179,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "aliases": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "contest_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "contest_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "contest_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "contest_start": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "contest_start_year": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "index": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "time_limit": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "memory_limit": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "description": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input_format": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output_format": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "examples": [
+      {
+        "input": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "output": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "note": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "editorial": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "generation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "finish_reason": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "api_metadata": {
+      "completion_tokens": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "prompt_tokens": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "prompt_tokens_details": {
+        "dtype": "null",
+        "_type": "Value"
+      },
+      "total_tokens": {
+        "dtype": "int64",
+        "_type": "Value"
+      }
+    },
+    "interaction_format": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "messages": [
+      {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ]
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 6855164835,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4968115656,
+      "num_examples": 47780,
+      "shard_lengths": [
+        5778,
+        4778,
+        5778,
+        5778,
+        4778,
+        5778,
+        4778,
+        4778,
+        4778,
+        778
+      ],
+      "dataset_name": "codeforces-cots"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

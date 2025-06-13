@@ -1,0 +1,54 @@
+{
+    "report_metadata": {
+        "pipeline_run_model_evaluated": "OpenR1-Qwen-7B",
+        "base_model_evaluated": "Qwen2.5-Math-7B-Instruct",
+        "stage_trained": "none",
+        "fine_tuned_model_used_if_no_training": "open-r1/OpenR1-Qwen-7B",
+        "evaluation_directory": "./pipeline/results/Qwen2.5-Math-7B-Instruct_OpenR1-Qwen-7B",
+        "evaluation_dataset": "aime",
+        "training_datasets": null,
+        "report_generated_time": "2025-04-28 15:43:03"
+    },
+    "evaluation_results": {
+        "base_model_results": {
+            "model_name": "Qwen2.5-Math-7B-Instruct",
+            "math_evaluation": {
+                "raw_data_file": "Qwen2.5-Math-7B-Instruct_0shot.csv",
+                "accuracy": 23.4,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "Qwen2.5-Math-7B-Instruct_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 1.01,
+                    "emotion_provoking_score": 1.0,
+                    "empathy_score": 1.0,
+                    "engagement_score": 1.0,
+                    "narrative_complexity_score": 1.0,
+                    "human_likeness_score": 1.0
+                },
+                "error": null
+            }
+        },
+        "post_training_or_fine_tuned_results": {
+            "model_name": "OpenR1-Qwen-7B",
+            "math_evaluation": {
+                "raw_data_file": "OpenR1-Qwen-7B_0shot.csv",
+                "accuracy": 40.43,
+                "error": null
+            },
+            "story_evaluation": {
+                "raw_data_file": "OpenR1-Qwen-7B_stories_scored.csv",
+                "mean_scores": {
+                    "authenticity_score": 1.69,
+                    "emotion_provoking_score": 1.35,
+                    "empathy_score": 1.37,
+                    "engagement_score": 1.36,
+                    "narrative_complexity_score": 1.52,
+                    "human_likeness_score": 1.48
+                },
+                "error": null
+            }
+        }
+    }
+}
