@@ -219,12 +219,14 @@ def main(args):
         "--save_dir", eval_save_dir, 
         "--shots", str(shots) 
     ]
-    # if not run_command(math_evaluation_command_base, env=my_env):
-    #     print(f"\n{args.eval_dataset} evaluation (base model) failed. Exiting.")
-    #     sys.exit(1)
+    if args.base_math_eval:
+        print(f"\n--- Running Math Evaluation (Base Model) ---")
+        if not run_command(math_evaluation_command_base, env=my_env):
+            print(f"\n{args.eval_dataset} evaluation (base model) failed. Exiting.")
+            sys.exit(1)
 
     math_evaluation_script_base_output_csv = os.path.join(eval_save_dir, f"{os.path.basename(args.base_model)}_{shots}shot.csv")
-    temparature = 1.0
+    # temparature = 1.0
     print("\n--- Generating Stories (Base Model) ---")
     story_gen_module = "dataset.generate_stories"
     story_generation_base_output_file = f"{os.path.basename(args.base_model)}_stories.csv"
@@ -236,11 +238,13 @@ def main(args):
         "--backend_type", args.backend_type,
         "--output_dir", eval_save_dir,
         "--output_csv", story_generation_base_output_file,
-        "--default_temperature", str(temparature)
+        "--default_temperature", str(args.temparature),
+        "--num_versions", str(args.num_versions)
     ]
-    # if not run_command(story_generation_command_base, env=my_env):
-    #     print("\nStory generation (base model) failed. Exiting.")
-    #     sys.exit(1)
+    if args.base_story_gen:
+        if not run_command(story_generation_command_base, env=my_env):
+            print("\nStory generation (base model) failed. Exiting.")
+            sys.exit(1)
 
     print("\n--- Evaluating Generated Stories (Base Model) ---")
     story_eval_module = "story_eval.dspy.multiscore.annotate"
@@ -252,9 +256,10 @@ def main(args):
         "--dataset", story_generation_base_output_path,
         "--output", story_evaluation_base_output_path, 
     ]
-    # if not run_command(story_evaluation_command_base, env=my_env):
-    #     print("\nStory evaluation (base model) failed. Exiting.")
-    #     sys.exit(1)
+    if args.base_story_eval:
+        if not run_command(story_evaluation_command_base, env=my_env):
+            print("\nStory evaluation (base model) failed. Exiting.")
+            sys.exit(1)
 
     # --- Training Step (Conditional) ---
     if args.stage:
@@ -297,9 +302,10 @@ def main(args):
         "--save_dir", eval_save_dir,
         "--shots", str(shots)
     ]
-    if not run_command(math_evaluation_command_post, env=my_env):
-        print(f"\n{args.eval_dataset} evaluation (post-training/fine-tuned) failed. Exiting.")
-        sys.exit(1)
+    if args.fine_tuned_math_eval:
+        if not run_command(math_evaluation_command_post, env=my_env):
+            print(f"\n{args.eval_dataset} evaluation (post-training/fine-tuned) failed. Exiting.")
+            sys.exit(1)
     math_evaluation_script_post_output_csv = os.path.join(eval_save_dir, f"{os.path.basename(trained_model_path)}_{shots}shot.csv")
 
     print(f"\n--- Generating Stories ({'After Training' if args.stage else 'Fine-tuned'}) ---")
@@ -312,11 +318,13 @@ def main(args):
         "--backend_type", args.backend_type,
         "--output_dir", eval_save_dir, 
         "--output_csv", story_generation_post_output_file ,
-        "--default_temperature", str(temparature)
+        "--default_temperature", str(args.temparature),
+        "--num_versions", str(args.num_versions)
     ]
-    if not run_command(story_generation_command_post, env=my_env):
-        print("\nStory generation (post-training/fine-tuned) failed. Exiting.")
-        sys.exit(1)
+    if args.fine_tuned_story_gen:
+        if not run_command(story_generation_command_post, env=my_env):
+            print("\nStory generation (post-training/fine-tuned) failed. Exiting.")
+            sys.exit(1)
 
     print(f"\n--- Evaluating Generated Stories ({'After Training' if args.stage else 'Fine-tuned'}) ---")
     story_evaluation_post_output_file = f"{os.path.basename(trained_model_path)}_stories_scored.csv"
@@ -328,9 +336,10 @@ def main(args):
         "--output", story_evaluation_post_output_path,
         "--strategy", args.strategy
     ]
-    if not run_command(story_evaluation_command_post, env=my_env):
-        print("\nStory evaluation (post-training/fine-tuned) failed. Exiting.")
-        sys.exit(1)
+    if args.fine_tuned_story_eval:
+        if not run_command(story_evaluation_command_post, env=my_env):
+            print("\nStory evaluation (post-training/fine-tuned) failed. Exiting.")
+            sys.exit(1)
 
     # --- Final JSON Report Generation ---
     print("\n--- Generating Final Evaluation Report ---")
@@ -397,6 +406,16 @@ def main(args):
 
     sys.exit(0) 
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
@@ -417,7 +436,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--eval_dataset",
         required=True,
-        choices=["aime", "math500"],
+        choices=["aime", "math500", "math500_guidance"],
         help="Dataset identifier for evaluation."
     )
     parser.add_argument(
@@ -459,6 +478,60 @@ if __name__ == "__main__":
         type=str,
         default="./story_eval/dspy/multiscore/optimized_prompts/meta-llama/Llama-3.1-70B-Instruct/MIPROv2_Predict-PsychDepthAssessment_handpicked-demos=7_persona.json",
     )
+    parser.add_argument(
+        "--temparature",
+        type=float,
+        default=1.0,
+        help="Temperature for story generation."
+    )
+    parser.add_argument(
+        "--num_versions",
+        type=int,
+        default=1,
+    )
+    parser.add_argument(
+        "--base_math_eval",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    parser.add_argument(
+        "--fine_tuned_math_eval",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    parser.add_argument(
+        "--base_story_gen",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    parser.add_argument(
+        "--fine_tuned_story_gen",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    parser.add_argument(
+        "--base_story_eval",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    parser.add_argument(
+        "--fine_tuned_story_eval",
+        type=str2bool, 
+        nargs='?',
+        const=True, 
+        default=False,
+    )
+    
 
     args = parser.parse_args()
 
