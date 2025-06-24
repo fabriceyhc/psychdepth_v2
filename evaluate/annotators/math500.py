@@ -78,11 +78,13 @@ class MATH500Processor(BaseDatasetProcessor):
         
         # 2. Second turn: Generate final answer
         answer_prompt = self.create_answer_prompt(row['problem'], solution)
+
+        STOP_ANSWER = self.STOP_STRINGS + ["\n\n", "."]
         
         predicted_answer = self.generate_text(
             answer_prompt,
             max_new_tokens=50,
-            stop_strings=self.STOP_STRINGS
+            stop_strings=STOP_ANSWER
         )
         
         time_taken = time.time() - start_time
@@ -91,7 +93,10 @@ class MATH500Processor(BaseDatasetProcessor):
         predicted_answer = predicted_answer.replace('**', '').replace('__', '').strip()
         
         # 3. Grade answer using compute_score (no need for extract_answer)
-        is_correct = self.grade_answer(predicted_answer, row["answer"])
+        if predicted_answer == row["answer"] or predicted_answer == f"{row['answer']}.":
+            is_correct = True
+        else:
+            is_correct = self.grade_answer(predicted_answer, row["answer"])
         
         print(f"Question: {row['problem']}")
         print(f"Solution: {solution}")

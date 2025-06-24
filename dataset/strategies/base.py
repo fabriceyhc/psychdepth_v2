@@ -33,7 +33,8 @@ class BaseGenerator:
         self.max_input_len = max_input_len
         self.model_id = model_id
         self.stop_strings = ['<|im_end|>','</|im_end|>','</|im_start|>', '<|im_start|>', '```', 
-                          '<|reserved_special_token_*|>', '---', '.Human:', '.Assistant']
+                          '<|reserved_special_token_*|>', '---', '.Human:', '.Assistant', '\n********\n', 'End of Story', 'END OF STORY',
+                          '(500 words)', '\nAssistant:']
 
         if backend_type == "transformers":
             self._init_transformers_backend(model_id, load_in_8bit, device_map, cache_dir)
