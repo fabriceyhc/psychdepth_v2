@@ -21,11 +21,6 @@
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "Andy works in the pro shop of a tennis resort. He has 12 racquets that need restringing. 3 of them are to be strung with synthetic gut, 5 of them will be strung with polyester string, and X of them will be strung with a hybrid set (half synthetic gut, half polyester string). How long will it take Andy to string all of those racquets if it takes him an average of 15 minutes for him to string with synthetic gut, 22 minutes to string with polyester string, and 18 minutes for hybrid sets? If we know the answer to the above question is 227, what is the value of unknown variable 'X'?",
-    "output": NaN
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Mary has x jars of sprinkles in her pantry. Each jar of sprinkles can decorate 8 cupcakes. Mary wants to bake enough cupcakes to use up all of her sprinkles. If each pan holds 12 cupcakes, how many pans worth of cupcakes should she bake?\nIf we know the answer of the above question is 4, what is the value of unknown variable x?",
     "output": "Mary has x jars of sprinkles.\nEach jar of sprinkles can decorate 8 cupcakes.\nTo use up all of her sprinkles, Mary needs to bake enough cupcakes to use up x * 8 sprinkles.\nEach pan holds 12 cupcakes.\nTo find out how many pans worth of cupcakes Mary should bake, we can divide the total number of cupcakes needed by the number of cupcakes per pan: (x * 8) / 12.\nWe are given that the number of pans worth of cupcakes is 4, so we can write: (x * 8) / 12 = 4.\nMultiplying both sides by 12, we get: x * 8 = 48.\nDividing both sides by 8, we get: x = 6.\nThe value of x is 6.\n#### 6\nThe answer is: 6"
   },
@@ -53,11 +48,6 @@
     "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "The Hortex company produces bottled carrot juices. Every day it can produce x bottles of these juices. Each juice can cover 20% of 1 person'ts daily energy demand. How many more bottles of juices would Hortex have to produce to be able to satisfy 100% of the daily energy needs of 2300 people?\nIf we know the answer of the above question is 7300, what is the value of unknown variable x?",
     "output": "Each bottle of juice can cover 20% of 1 person's daily energy demand, which means each bottle can cover 0.2 * 1 = 0.2 units of energy.\nTo satisfy 100% of the daily energy needs of 2300 people, we need 2300 * 1 = 2300 units of energy.\nIf each bottle can cover 0.2 units of energy, then we need 2300 / 0.2 = 11500 bottles of juice.\nWe are given that Hortex can produce x bottles of juice per day, so we need to find the difference between the number of bottles needed and the number of bottles produced: 11500 - x.\nWe are given that the difference is 7300, so we can write: 11500 - x = 7300.\nSolving for x, we get: x = 4200.\nThe value of x is 4200.\n#### 4200\nThe answer is: 4200"
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "A family of parents and a child go to the cinema. The cost of an adult ticket is $X and a child ticket is $8. Then they buy 2 popcorns for $3 each. How many dollars do they pay in total? If we know the answer to the above question is 38, what is the value of unknown variable 'X'?",
-    "output": NaN
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
@@ -306,11 +296,6 @@
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "Dexter has five pigs. Each one eats X pounds of feed, twice a day. If Dexter ordered 300 pounds of feed, how many pounds of feed is left after a week? If we know the answer to the above question is 20, what is the value of unknown variable 'X'?",
-    "output": NaN
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Jane has saved $4 of her allowance every week for the past 8 weeks. If she continues to save the same amount each week, how many more weeks will it take for her to have saved a total of $60?",
     "output": "She has already saved 8 * $4 = $<<8*4=32>>32.\nShe needs to save an additional $60 - $32 = $<<60-32=28>>28.\nIt will take her 28 / 4 = <<28/4=7>>7 more weeks to save the rest of the money.\n#### 7"
   },
@@ -408,11 +393,6 @@
     "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Erika is saving for a new laptop. The laptop she wants costs $600. The sales assistant told her that if she traded in her old laptop, the price of the new one would be reduced by $200. She thinks this is a good deal and agrees to do it. She already has some savings in her purse, and has also been paid $150 this week for her part-time job. Her mom agrees to give her $80 to help her. If Erika now only needs an extra $50 to buy the laptop, how much money does she have in her purse?",
     "output": "Selling the old laptop reduced the cost of the new laptop to $600 \u2013 $200 = $<<600-200=400>>400 dollars.\nWe know she doesn't have all the money yet, so she actually has $400 \u2013 $50 = $<<400-50=350>>350 dollars.\nSome of this money came from her mom, so the money she had herself was $350 \u2013 $80 = $<<350-80=270>>270.\nSubtracting her part-time wages shows that she had $270 \u2013 $150 = $<<270-150=120>>120 in her purse.\n#### 120"
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "A new program had X downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months? If we know the answer to the above question is 366, what is the value of unknown variable 'X'?",
-    "output": NaN
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
@@ -881,11 +861,6 @@
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "Mike bought X face masks while Johnny bought 2 more than thrice as many as Mike. How many face masks did Johnny buy? If we know the answer to the above question is 17, what is the value of unknown variable 'X'?",
-    "output": NaN
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Carson lives in an old house where the pipes will freeze if the temperature inside the house falls below 32 degrees. Every log of wood Carson burns heats the house up by 5 degrees. If it was x degrees during the day, and it's 33 degrees colder during the night compared to the day, how many logs does Carson need to burn to prevent the pipes from freezing?\nIf we know the answer of the above question is 4, what is the value of unknown variable x?",
     "output": "Let's think step by step.\nWe know that every log of wood Carson burns heats the house up by 5 degrees.\nDuring the day, the temperature is x degrees.\nDuring the night, the temperature is 33 degrees colder than the day, so the temperature at night is x - 33 degrees.\nTo prevent the pipes from freezing, the temperature inside the house needs to be above 32 degrees.\nSo, we can write the equation: x - 33 + (4 * 5) > 32.\nSimplifying the equation, we get: x - 33 + 20 > 32.\nCombining like terms, we get: x - 13 > 32.\nAdding 13 to both sides, we get: x > 45.\nThe value of x is greater than 45."
   },
@@ -903,11 +878,6 @@
     "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Emil is 19 years old now. When he turns 24, he will be half the age of his dad but twice as old as his brother.\u00a0 What is the sum of the ages of his dad and his brother now?",
     "output": "His dad will be 24 x 2 = <<24*2=48>>48 years old when Emil is 24.\nHis brother will be 24 / 2 = <<24/2=12>>12 years old then.\nEmil will turn 24 in 24 - 19 = <<24-19=5>>5 years.\nThe age of his father now is 48 - 5= <<48-5=43>>43.\nHis brother is 12 - 5 = <<12-5=7>>7 years old right now.\nThe sum of his dad's and his brother's ages now is 43 + 7 = <<43+7=50>>50.\n#### 50"
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "George has 45% more pears than bananas. If George has X bananas, how many fruits does George have? If we know the answer to the above question is 490, what is the value of unknown variable 'X'?",
-    "output": NaN
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",
@@ -1308,11 +1278,6 @@
     "instruction": "Solve the given math problem. Please show your reasoning.",
     "input": "Millie decides to open a lemonade stand. She spends $18 to buy enough supplies to make 3 pitchers of lemonade. Each pitcher holds x cups of lemonade. She sells each cup of lemonade for $1. She sells an average of 4 cups per hour that her lemonade stand is open. If Millie sells all of the lemonade, how much profit will she make per hour that she spends running the lemonade stand?\nIf we know the answer of the above question is 2, what is the value of unknown variable x?",
     "output": "Let's think step by step.\nMillie spends $18 to buy enough supplies to make 3 pitchers of lemonade, which means she spends $18/3 = $6 per pitcher.\nEach pitcher holds x cups of lemonade, so the cost per cup of lemonade is $6/x.\nMillie sells each cup of lemonade for $1, so her profit per cup of lemonade is $1 - ($6/x).\nShe sells an average of 4 cups per hour, so her profit per hour is 4 * ($1 - ($6/x)) = 4 - (24/x).\nWe are given that her profit per hour is $2, so we can write: 4 - (24/x) = 2.\nSubtracting 4 from both sides, we get: - (24/x) = -2.\nDividing both sides by -2, we get: 24/x = 2.\nMultiplying both sides by x, we get: 24 = 2x.\nDividing both sides by 2, we get: x = 12.\nThe value of x is 12."
-  },
-  {
-    "instruction": "Solve the given math problem. Please show your reasoning.",
-    "input": "A crocodile grows 8 inches long in X years. At this rate, how many inches will it grow in 13 years? If we know the answer to the above question is 26, what is the value of unknown variable 'X'?",
-    "output": NaN
   },
   {
     "instruction": "Solve the given math problem. Please show your reasoning.",

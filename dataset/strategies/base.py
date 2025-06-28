@@ -127,6 +127,7 @@ class BaseGenerator:
         # Check if it's an instruction-tuned model that needs special formatting
         self.is_llama = "llama" in model_id.lower()
         self.is_mistral = "mistral" in model_id.lower()
+        self.is_qwen = "qwen" in model_id.lower()
 
     def _init_openai_backend(self, model_id, base_url=None):
         """Initialize OpenAI backend."""
@@ -153,7 +154,7 @@ class BaseGenerator:
     def _format_prompt(self, system_prompt, user_prompt):
         """Format the prompt based on model type."""
         if self.backend_type == "transformers":
-            if self.is_llama:
+            if self.is_llama or self.is_qwen:
                 # Llama style formatting
                 if system_prompt:
                     full_prompt = f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
@@ -254,6 +255,8 @@ class BaseGenerator:
                     # by looking for common patterns in instruction-following formats
                     if "Assistant:" in full_output:
                         generated_text = full_output.split("Assistant:", 1)[1].strip()
+                    elif "Only respond with the story text." in full_output: # Dealing with Qwen
+                        generated_text = full_output.split("Only respond with the story text.")[1].strip().removeprefix("assistant").strip()
                     else:
                         generated_text = full_output
                 
