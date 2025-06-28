@@ -1,4 +1,25 @@
 {
+  "lsat-all-train": {
+    "file_name": "short-train-lsat-ar-all-model-traces.json"
+  },
+  "lsat-all-dev": {
+    "file_name": "short-val-lsat-ar-all-model-traces.json"
+  },
+  "lsat-better-train": {
+    "file_name": "short-train-lsat-ar-better-model-traces.json"
+  },
+  "lsat-better-dev": {
+    "file_name": "short-val-lsat-ar-better-model-traces.json"
+  },
+  "lsat-train": {
+    "file_name": "lsat-train.json"
+  },
+  "lsat-test": {
+    "file_name": "lsat-test.json"
+  },
+  "lsat-eval": {
+    "file_name": "lsat-validation.json"
+  },
   "codeforces_ai_cots_solution": {
     "file_name": "codeforces/sft/codeforces_ai_cots.json",
     "ranking": false,
@@ -30,6 +51,55 @@
     "columns": {
       "messages": "conversations"
     }
+  },
+  "gsm8k_shuffled": {
+    "file_name": "sft_gsm8k_shuffled_answer.json"
+  },
+  "gsm8k_kto": {
+    "file_name": "kto_gsm8k_model_output_steps.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "kto_tag": "label"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "gsm8k_kto_eval": {
+    "file_name": "dev_kto_gsm8k_model_output_steps.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "kto_tag": "label"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "gsm8k_solution": {
+    "file_name": "sft_gsm8k_ground_truth_solution.json"
+  },
+  "gsm8k_solution_eval": {
+    "file_name": "dev_sft_gsm8k_ground_truth_solution.json"
+  },
+  "gsm8k_answer": {
+    "file_name": "sft_gsm8k_ground_truth_answer.json"
+  },
+  "gsm8k_answer_eval": {
+    "file_name": "dev_sft_gsm8k_ground_truth_answer.json"
+  },
+  "arc_challenge_sft": {
+    "file_name": "sft_ARC-Challenge_train.json"
+  },
+  "arc_easy_sft": {
+    "file_name": "sft_ARC-Easy_train.json"
   },
   "AIME_1983_2024_sft": {
     "file_name": "pdsv2/sft/AIME_1983_2024_sft.json",
