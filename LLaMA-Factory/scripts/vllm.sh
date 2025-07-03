@@ -11,5 +11,5 @@ do
     --temperature 0 \
     --dataset gsm8k_test \
     --save_name /data2/yihewang/psychdepth_v2/LLaMA-Factory/vllm/new_test/temp0_qwen_gsm8k_answer_$i.jsonl \
-    --max_new_tokens 10
+    --max_new_tokens 4096
 done

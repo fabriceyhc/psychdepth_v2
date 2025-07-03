@@ -29,9 +29,6 @@ for subset in subsets:
             'input': inputs,
             'output': row['answerKey']
         })
-        # if len(row['targets']) != 1:
-        #     print(row)
-        #     exit()
         
         continue
         inputs = inputs.removeprefix("In what follows, we provide short narratives, each of which illustrates a common proverb.")
@@ -44,18 +41,6 @@ for subset in subsets:
             'input': inputs,
             'output': row['targets'][0]
         })
-    with open(f"sft_{subset}_train.json", "w") as f:
-        json.dump(pairs, f)
-    
-    from pprint import pprint as p
-    p(pairs[0])
-    # print(type(ds['inputs'][0]))
-    # print(type(ds['targets'][0]))
-    # print(type(ds['multiple_choice_targets'][0]))
-    # prompt = "You will be given a question and a list of options. Choose the single most appropriate option."
-exit()
-    #             gray red
-    # black blue 
 files = {}
 ds = ds.to_pandas()
 files['easy'] = ds[ds["level"] <= 3]
@@ -100,15 +85,7 @@ if False:
             
         else:
             item_['from'] = 'human'
-    
-    # road = [i['from'] for i in traj]
-    # if len(road) > 1:
-    #     h = True
-    #     for jj in road:
-    #         assert (jj == 'human') == h
-    #         h = bool(1 - h)
-        # print(road)
-    # continue
+
             
     pairs.append({
         "chosen": {

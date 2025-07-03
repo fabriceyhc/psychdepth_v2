@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /data2/.shared_models/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28 #.shared_models/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5 #/data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b
+adapter_name_or_path: /data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/qwen2.5-7b/lora/sft/ans-0701/checkpoint-1200
+template: qwen
+trust_remote_code: true
+
+### export
+export_dir: /data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/qwen2.5-7b/merged/ans-0701/ckpt-1200
+export_size: 5
+export_device: cpu
+export_legacy_format: false

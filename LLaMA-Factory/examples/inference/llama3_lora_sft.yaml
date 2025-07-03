@@ -1,6 +1,6 @@
 # model_name_or_path: /data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b
 # adapter_name_or_path: /data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/llama3.1-8b/merged/gsm8k_answer
-model_name_or_path: /data2/yihewang/psychdepth_v2/LLaMA-Factory/saves/llama3.1-8b/merged/gsm8k_answer
-template: llama3
-infer_backend: vllm  # choices: [huggingface, vllm]
+model_name_or_path: /data2/.shared_models/models--Qwen--Qwen3-8B/snapshots/9c925d64d72725edaf899c6cb9c377fd0709d9c5
+template: qwen3
+infer_backend: vllm  # choices: [huggingface, vllm, sglang]]
 trust_remote_code: true

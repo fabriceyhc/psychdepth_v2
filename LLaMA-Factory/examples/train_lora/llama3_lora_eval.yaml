@@ -1,6 +1,6 @@
 ### model
-model_name_or_path: /data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b
-adapter_name_or_path: saves/llama3.1-8b/lora/gsm8k_answer/checkpoint-350
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
+adapter_name_or_path: saves/llama3-8b/lora/sft
 trust_remote_code: true
 
 ### method
@@ -13,7 +13,7 @@ lang: en
 n_shot: 5
 
 ### output
-save_dir: saves/llama3.1-8b/lora/eval
+save_dir: saves/llama3-8b/lora/eval
 
 ### eval
 batch_size: 4

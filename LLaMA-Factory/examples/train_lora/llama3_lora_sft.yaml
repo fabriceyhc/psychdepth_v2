@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: /data2/yihewang/models/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/llama3.1-8b
+model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
 trust_remote_code: true
 
 ### method
@@ -10,8 +10,8 @@ lora_rank: 8
 lora_target: all
 
 ### dataset
-dataset: gsm8k_solution # gsm8k_answer
-template: llama3
+dataset: gsm8k_answer
+template: qwen #llama3
 cutoff_len: 2048
 max_samples: 3000
 overwrite_cache: true
@@ -19,7 +19,7 @@ preprocessing_num_workers: 16
 dataloader_num_workers: 4
 
 ### output
-output_dir: saves/llama3-8b/lora/sft/solution-0612 #ans-0531
+output_dir: saves/qwen2.5-7b/lora/sft/ans-0701 #ans-0531
 logging_steps: 10
 save_steps: 200
 plot_loss: true
@@ -31,7 +31,7 @@ report_to: none  # choices: [none, wandb, tensorboard, swanlab, mlflow]
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 8
 learning_rate: 5.0e-5
-num_train_epochs: 20.0
+num_train_epochs: 10.0
 weight_decay: 0.01
 lr_scheduler_type: cosine
 warmup_ratio: 0.1
@@ -40,7 +40,7 @@ ddp_timeout: 180000000
 resume_from_checkpoint: null
 
 ### eval
-eval_dataset: gsm8k_solution_eval
+eval_dataset: gsm8k_answer_eval
 # val_size: 0.1
 per_device_eval_batch_size: 1
 eval_strategy: steps
