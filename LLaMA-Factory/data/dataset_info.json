@@ -1,4 +1,24 @@
 {
+  "uncommonsense-train-enhanced_as_positive": {
+    "file_name": "train_uncommonsense_dpo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
+  "uncommonsense-dev-enhanced_as_positive": {
+    "file_name": "dev_uncommonsense_dpo.json",
+    "ranking": true,
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected"
+    }
+  },
   "lsat-all-train": {
     "file_name": "short-train-lsat-ar-all-model-traces.json"
   },

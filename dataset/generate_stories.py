@@ -94,7 +94,11 @@ def main(args):
 
                         if result:
                             story_text = result['story']
-                            word_count = len(story_text.split())
+                            if 'Qwen3' in args.model_id:
+                                word_count = len(story_text.split("</think>")[1].split())
+                            else:
+                                word_count = len(story_text.split())
+                                
                             generation_time = result['generation_time']
 
                             if lower_bound <= word_count <= upper_bound:

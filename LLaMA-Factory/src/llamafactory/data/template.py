@@ -546,18 +546,18 @@ def parse_template(tokenizer: "PreTrainedTokenizer") -> "Template":
     prefix = tokenizer.decode(tokenizer.encode(""))
 
     messages = [{"role": "system", "content": "{{content}}"}]
-    system_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=False, tokenize=False)[len(prefix) :]
+    system_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=False, tokenize=False, enable_thinking=False)[len(prefix) :]
 
     messages = [{"role": "system", "content": ""}, {"role": "user", "content": "{{content}}"}]
-    user_slot_empty_system = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
+    user_slot_empty_system = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False, enable_thinking=False)
     user_slot_empty_system = user_slot_empty_system[len(prefix) :]
 
     messages = [{"role": "user", "content": "{{content}}"}]
-    user_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
+    user_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False, enable_thinking=False)
     user_slot = user_slot[len(prefix) :]
 
     messages = [{"role": "user", "content": "{{content}}"}, {"role": "assistant", "content": "{{content}}"}]
-    assistant_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=False, tokenize=False)
+    assistant_slot = tokenizer.apply_chat_template(messages, add_generation_prompt=False, tokenize=False, enable_thinking=False)
     assistant_slot = assistant_slot[len(prefix) + len(user_slot) :]
     template_class = ReasoningTemplate if "<think>" in assistant_slot else Template
     assistant_slot = assistant_slot.replace("<think>", "").replace("</think>", "").lstrip("\n")  # remove thought tags
