@@ -94,7 +94,7 @@ def main(args):
 
                         if result:
                             story_text = result['story']
-                            if 'Qwen3' in args.model_id:
+                            if 'qwen3' in model_name.lower():
                                 word_count = len(story_text.split("</think>")[1].split())
                             else:
                                 word_count = len(story_text.split())
@@ -144,7 +144,11 @@ def main(args):
                         result_row['num_words'] = best_word_count
 
                 results.append(result_row)
-                pd.DataFrame(results).to_csv(save_path, index=False)
+                results_df = pd.DataFrame(results)
+                if 'qwen3' in model_name.lower():
+                    results_df['original_text'] = results_df['text']
+                    results_df['text'] = results_df['text'].apply(lambda x: x.split("</think>")[1].strip())
+                results_df.to_csv(save_path, index=False)
 
     except Exception as e:
         print(f"Error with {backend_type} backend: {traceback.format_exc()}")

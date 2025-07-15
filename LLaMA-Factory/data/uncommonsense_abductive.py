@@ -12,28 +12,52 @@ sft_data = []
 for i in ds['validation']:
     instruction_template = rocstories_template if i['source'] == 'rocstories' else socialiqa_template
     instruction = instruction_template % (i['context'], i['outcome'])
-    for expl in i['enhanced_explanations']:
-        sft_data.append({
-            'conversations': [
-                {
-                    'from': 'human',
-                    'value': instruction
-                }
-            ],
-            'chosen': {
-                'from': 'gpt',
-                'value': expl
-            },
-            'rejected': {
-                'from': 'gpt',
-                'value': i['gpt4_explanations']
+    min_length_diff = 100_000
+    chosen_human_expl = None
+    for human_expl in i['human_explanations']:
+        diff = abs(len(human_expl) - len(i['gpt4_explanations']))
+        if diff < min_length_diff:
+            chosen_human_expl = human_expl
+            min_length_diff = diff
+    assert chosen_human_expl is not None
+    sft_data.append({
+        'conversations': [
+            {
+                'from': 'human',
+                'value': instruction
             }
-        })
+        ],
+        'chosen': {
+            'from': 'gpt',
+            'value': chosen_human_expl
+        },
+        'rejected': {
+            'from': 'gpt',
+            'value': i['gpt4_explanations']
+        }
+    })
+    # for expl in i['enhanced_explanations']:
+    #     sft_data.append({
+    #         'conversations': [
+    #             {
+    #                 'from': 'human',
+    #                 'value': instruction
+    #             }
+    #         ],
+    #         'chosen': {
+    #             'from': 'gpt',
+    #             'value': expl
+    #         },
+    #         'rejected': {
+    #             'from': 'gpt',
+    #             'value': i['gpt4_explanations']
+    #         }
+    #     })
         
 sft_data = np.random.permutation(sft_data)
 dev_data = list(sft_data[:len(sft_data) // 2])
 test_data = list(sft_data[len(sft_data) // 2:])
-with open("dev_uncommonsense_dpo.json", "w") as f:
+with open("dev_uncommonsense_dpo_human_as_positive.json", "w") as f:
     json.dump(dev_data, f, indent=2)
-with open("test_uncommonsense_dpo.json", "w") as f:
+with open("test_uncommonsense_dpo_human_as_positive.json", "w") as f:
     json.dump(test_data, f, indent=2)

@@ -87,7 +87,7 @@ class WriterProfileGenerator(BaseGenerator):
             result = self.generate(
                 user_prompt=user_prompt,
                 system_prompt=system_prompt,
-                max_tokens=int(num_words * 2) + (2000 if 'Qwen3' in self.model_id else 0),  # Allocate enough tokens for the story
+                max_tokens=int(num_words * 2) + (2000 if 'qwen3' in self.model_id.lower() else 0),  # Allocate enough tokens for the story
                 temperature=temperature,
                 top_p=top_p,
                 top_k=top_k,
