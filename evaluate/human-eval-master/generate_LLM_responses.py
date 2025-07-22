@@ -33,7 +33,7 @@ def generate(model, tokenizer, prompt, max_new=192, temperature=0.8, top_p=0.9):
     )
     return tokenizer.decode(out[0], skip_special_tokens=True)
 
-# ----------------------------- main ------------------------------------ #
+
 
 def main(args):
     problems = load_problems(args.problem_file)
